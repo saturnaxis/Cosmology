@@ -1,0 +1,30 @@
+# Table of content
+# Learn more at https://jupyterbook.org/customize/toc.html
+#
+format: jb-book
+root: home
+parts:
+- caption: Preamble
+  chapters:
+  - file: Preamble/who-for
+  - file: Preamble/Python-basics
+  - file: Preamble/Markdown-basics
+- caption: Introduction
+  numbered: true
+  chapters:
+  - file: Chapter_01/intro-cosmology
+  - file: Chapter_04/theory-of-special-relativity
+  - file: Chapter_17/general-relativity-and-black-holes
+- caption: Galaxies
+  numbered: true
+  chapters: 
+  - file: Chapter_24/nature-of-galaxies
+  - file: Chapter_25/milky-way-galaxy
+  - file: Chapter_26/galactic-evolution
+- caption: Universe
+  numbered: true
+  chapters:
+  - file: Chapter_27/structure-of-the-universe
+  - file: Chapter_28/active-galaxies
+  - file: Chapter_29/cosmology
+  - file: Chapter_30/early-universe
