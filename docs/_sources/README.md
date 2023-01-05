@@ -9,6 +9,8 @@ and
 
 where both presentations will be assessed by both the instructor and fellow students.  The presentation using the astropy tutorials must explain to the class: how to use the relevant tools and connect to the material in the associated chapters of the textbook (as indicated below).
 
+The JupyterBook can be found at [saturnaxis.github.io/Cosmology](https://saturnaxis.github.io/Cosmology/home.html)
+
 ## [Astropy](https://learn.astropy.org/) 
 
 - Extracting and Plotting Position-Velocity Diagrams
@@ -21,7 +23,7 @@ where both presentations will be assessed by both the instructor and fellow stud
 ## Papers for presentations
 - A Geometric Determination of the Distance to the Galactic Center ([Eisenhauer et al. 2003](https://ui.adsabs.harvard.edu/link_gateway/2003ApJ...597L.121E/PUB_PDF))
 - Extragalactic nebulae ([Hubble 1926](https://ui.adsabs.harvard.edu/link_gateway/1926ApJ....64..321H/ADS_PDF))
-- Rotation velocities of 16 SA galaxies and a comparison of Sa, SB and SC rotation properties ([Rubin et al. 2985](https://ui.adsabs.harvard.edu/link_gateway/1985ApJ...289...81R/ADS_PDF))
+- Rotation velocities of 16 SA galaxies and a comparison of Sa, SB and SC rotation properties ([Rubin et al. 1985](https://ui.adsabs.harvard.edu/link_gateway/1985ApJ...289...81R/ADS_PDF))
 - On the Ellipticity of the Galactic Disk ([Kuijken and Tremaine 1994](https://ui.adsabs.harvard.edu/link_gateway/1994ApJ...421..178K/ADS_PDF))
 - Galactic Bridges and Tails ([Toomre & Toomre 1972](https://ui.adsabs.harvard.edu/link_gateway/1972ApJ...178..623T/ADS_PDF))
 - Galaxy morphology in rich clusters: implications for the formation and evolution of galaxies ([Dressler 1980](https://ui.adsabs.harvard.edu/link_gateway/1980ApJ...236..351D/ADS_PDF))
