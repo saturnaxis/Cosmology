@@ -27,6 +27,8 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/exercise.css" />
     <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mycss.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -52,6 +54,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="4. The Nature of Galaxies" href="../Chapter_24/nature-of-galaxies.html" />
@@ -106,7 +110,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../home.html">
-                    ASTR4410: Modern Astrophysics
+                    ASTR3220: Cosmology
                 </a>
             </li>
         </ul>
@@ -131,6 +135,11 @@ const thebe_selector_output = ".output, .cell_output"
    Introduction to Markdown
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Preamble/HW_template.html">
+   Homework Assignments
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -140,7 +149,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../Chapter_01/intro-cosmology.html">
-   1. The Theory of Special Relativity
+   1. Introduction to Cosmology
   </a>
  </li>
  <li class="toctree-l1">
@@ -200,6 +209,18 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../Chapter_30/early-universe.html">
    10. The Early Universe
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Appendix
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Appendix/Student_Summaries.html">
+   Student Participation (Spring 2023)
   </a>
  </li>
 </ul>
@@ -461,7 +482,7 @@ title="Print to PDF"
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#the-bending-of-light">
-     3.1.3. THe Bending of Light
+     3.1.3. The Bending of Light
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -594,7 +615,7 @@ title="Print to PDF"
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#the-bending-of-light">
-     3.1.3. THe Bending of Light
+     3.1.3. The Bending of Light
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -705,53 +726,803 @@ title="Print to PDF"
 <h1><span class="section-number">3. </span>General Relativity and Black Holes<a class="headerlink" href="#general-relativity-and-black-holes" title="Permalink to this headline">#</a></h1>
 <div class="section" id="the-general-theory-of-relativity">
 <h2><span class="section-number">3.1. </span>The General Theory of Relativity<a class="headerlink" href="#the-general-theory-of-relativity" title="Permalink to this headline">#</a></h2>
+<p>Gravity plays a fundamental role in sculpting the universe on the largest scale, even though Newton developed his law of gravitation mainly to solve the problem of motion on Earth and among the bodies of the Solar System.  Newton’s law of universal gravitation between two bodies of mass <span class="math notranslate nohighlight">\(m_1\)</span> and <span class="math notranslate nohighlight">\(m_2\)</span> is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-a227fa68-59d5-49e6-8f6d-a50899d0b5f5">
+<span class="eqno">(3.1)<a class="headerlink" href="#equation-a227fa68-59d5-49e6-8f6d-a50899d0b5f5" title="Permalink to this equation">#</a></span>\[\begin{align}
+\mathbf{F} = \frac{Gm_1m_2}{r_{12}^3}\mathbf{r}_{12},
+\end{align}\]</div>
+<p>which depends on the displacement vector <span class="math notranslate nohighlight">\(\mathbf{r}_{12} = \mathbf{r_2}-\mathbf{r_1}\)</span>, and its magnitude <span class="math notranslate nohighlight">\(r_{12}\)</span>.  This relation remained an unquestioned cornerstone of astronomers’ understanding of heavenly motions for 300+ year (i.e., until the beginning of the 20th century).  Its application had explained the motions of the known planets.  Most notably, it had accurately <em>predicted</em> the existence and position of the planet Neptune in 1846.  The sole blemish (as of the early 20th century) was the inexplicably large shift in the orientation (i.e., precession) of Mercury’s orbit.</p>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/8Sm99OVG5A8"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
+<p>The gravitational influences of the other planets cause the major axis of Mercury’s elliptical orbit to slowly swing around the Sun in a counter-clockwise direction relative to the fixed stars.  The angular position at which the perihelion occurs shifts at a rate of <span class="math notranslate nohighlight">\(574^{\prime\prime}\)</span> per century through centuries of observation.  Newton’s law of gravitation could not account for the full rate and was unable to explain <span class="math notranslate nohighlight">\(43^{\prime \prime}\)</span> per century of this shift.</p>
+<p>Some mid-19th century physicists suggested that Newton’s law of gravity should be modified from an exact inverse-square law.  Others believed that an unseen planet (<a class="reference external" href="https://en.wikipedia.org/wiki/Vulcan_(hypothetical_planet)">Vulcan</a>) might occupy an orbit interior to Mercury.</p>
 <div class="section" id="the-curvature-of-spacetime">
 <h3><span class="section-number">3.1.1. </span>The Curvature of Spacetime<a class="headerlink" href="#the-curvature-of-spacetime" title="Permalink to this headline">#</a></h3>
+<p>After developing the special theory of relativity in 1905, he spent the ~7 years (1907-1915) expanding it to produce a new theory of gravity called his <strong>general theory of relativity</strong>.  This new theory resolved the mystery of Mercury’s orbit and predicted new phenomena that were later confirmed by experiment.</p>
+<p>The general theory of relativity is fundamentally a <em>geometric</em> description of how distances (or intervals) are measured in the presence of mass.  In most cases, considering space and time separately was an adequate description of nature.  However, you should remember that relativity deals with a unified spacetime, where both space and time must be described in a new way near an object.</p>
+<p>Distances between points in the space surrounding a massive object are altered so that we can describe the spacetime as becoming <em>curved</em> through a fourth spatial dimension that is perpendicular to <em>all</em> of the usual three spatial dimensions.  Consider this analogy:</p>
+<ul class="simple">
+<li><p>Imagine four people holding the corners of a rubber sheet, stretching it tight and flat.  This represents the flatness of empty space and exists in the absence of mass.</p></li>
+<li><p>Also imagine that a polar coordinate system is painted on the sheet with evenly spaced concentric circles spreading out from its center.</p></li>
+<li><p>Lay a heavy bowling ball (representing the Sun) at the center of the sheet, and watch the indentation of the sheet as it curves down and stretches in response to the ball’s weight.</p></li>
+<li><p>Closer to the ball, the sheet’s curvature increases and the distance between points on the circles is stretched more.</p></li>
+</ul>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/MTY1Kje0yLg"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
 </div>
+<p>Just as the sheet curves in a third direction perpendicular to its original flat 2D plane, the space surrounding a massive object may be though of as curving in a fourth spatial dimension perpendicular to the usual three of “flat space.”</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is important to note that this fourth spatial dimension has nothing at all to do with the role played by time as a fourth nonspatial coordinate in the theory of relativity.</p>
+</div>
+<p>The first essential element of general relativity is that <em>mass has an effect on the surrounding space</em>.  The curvature is just one aspect of the effect of mass on spacetime.  In the language of unified spacetime, <code class="docutils literal notranslate"><span class="pre">mass</span> <span class="pre">acts</span> <span class="pre">on</span> <span class="pre">spacetime,</span> <span class="pre">telling</span> <span class="pre">it</span> <span class="pre">how</span> <span class="pre">to</span> <span class="pre">curve.</span></code></p>
+<p>Now imagine rolling a tennis ball (representing a planet) across the sheet.  As it passes near the bowling ball, the tennis ball’s path is curved.  If the ball were rolled in just the right circumstances, it could even “orbit” the more massive bowling ball.  Planets orbit the Sun as a response to the curved spacetime around it.  Thus <code class="docutils literal notranslate"><span class="pre">curved</span> <span class="pre">spacetime</span> <span class="pre">acts</span> <span class="pre">on</span> <span class="pre">mass,</span> <span class="pre">telling</span> <span class="pre">it</span> <span class="pre">how</span> <span class="pre">to</span> <span class="pre">move.</span></code></p>
+<p>The passage of a light ray near the Sun can be represented by rolling a ping-pong ball very quickly past the bowling ball.  <em>Remember that analogies are only approximations of reality.</em> But, it is reasonable to expect that as the photon moves through the curved space surrounding the Sun, its path will be <em>deflected</em> from a straight line.  The bend of the photon’s trajectory is small because the photon’s speed carries it quickly through the curved space.</p>
+<p>In general relativity, gravity is the result of objects moving through curved spacetime, and everything that passes through is affected (even massless particles such as photons).</p>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/b9K5sq5AlhA"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
+<p>Nothing can move between two points in space faster than light, and light must follow the quickest route between any two points.  In flat, empty space, this path is a straight line.  But <em>what is the quickest route through curved space?</em></p>
+<div class="figure align-default" id="curved-shortcut">
+<a class="reference internal image-reference" href="../_images/Figure_04.jpg"><img alt="curved shortcut" src="../_images/Figure_04.jpg" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.1 </span><span class="caption-text">Comparison of two photon paths through curved space between points <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>.  The path <span class="math notranslate nohighlight">\(ACB\)</span> is a straight line when projected onto a flat plane.  Image Credit: Carroll &amp; Ostlie (2007).</span><a class="headerlink" href="#curved-shortcut" title="Permalink to this image">#</a></p>
+</div>
+<p>Suppose we use a series of mirrors to force the light beam to trave between points <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> by the apparent “shortcut” of moving through the indentation of the Sun (see Fig. <a class="reference internal" href="#curved-shortcut"><span class="std std-numref">3.1</span></a>).  <em>Would the light taking this path outrace the beam free to follow its natural route around the curved space?</em></p>
+<p>The answer is no–the curved beam would win the race.  This result seems to imply that the beam following the “shortcut” would slow down along the way.  However this can’t be correct because the postulates of special theory of relativity state that every observer observes the same speed of light.  There are just two possible answers.</p>
+<ol class="simple">
+<li><p>The distance along the “shortcut” path might actually be <em>longer</em> than the light beam’s natural path and/or</p></li>
+<li><p>time might run more slowly along the dashed path.</p></li>
+</ol>
+<p>Either answer would retard (slow down) the beam’s passage.  According to general relativity, these effects contribute equally to delaying the light beam’s trip from <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span>.  The curving light beam actually does travel the <em>shorter</em> path.  If two space travelers were to lay meter sticks end-to-end along the two paths, the dashed path would require a greater number of meter sticks because it penetrates deeper into the curved space.  In addition, the curvature of space involves an accompanying slowing down of time, so clocks placed along the dashed path would actually <em>run more slowly</em>.  Therefore, <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">runs</span> <span class="pre">more</span> <span class="pre">slowly</span> <span class="pre">in</span> <span class="pre">curved</span> <span class="pre">spacetime.</span></code></p>
+<ul class="simple">
+<li><p>As soon as Einstein competed his theory, he applied it to the problem of Mercury’s unexplained residual perihelion shift of <span class="math notranslate nohighlight">\(43^{\prime\prime}\)</span> per century.</p></li>
+<li><p>Another triumph came in 1919 when the curving path of starlight passing near the Sun was first measured (by <a class="reference external" href="https://en.wikipedia.org/wiki/Arthur_Eddington">Sir Arthur Eddington</a>) during a total solar eclipse.  In this observation, the apparent positions of stars close to the Sun’s eclipsed edge were shifted from their actual positions by a small angle.  Einstein’s theory predicted this angular deflection would be <span class="math notranslate nohighlight">\(1.75^{\prime\prime}\)</span>, which is in good agreement with Eddington’s observations.</p></li>
+<li><p>The superior conjunction of Mars that occurred in 1976 let to a spectacular confirmation of the theory.  Radio signals beamed to Earth from the Viking spacecraft on Mars’ surface were delayed as they traveled through the curved spacetime surrounding the Sun.  The time delay agreed with the predictions of general relativity to within <span class="math notranslate nohighlight">\(0.1\%\)</span>.</p></li>
+</ul>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/LVGAKbRdKcY"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div></div>
 <div class="section" id="the-principle-of-equivalence">
 <h3><span class="section-number">3.1.2. </span>The Principle of Equivalence<a class="headerlink" href="#the-principle-of-equivalence" title="Permalink to this headline">#</a></h3>
+<p>One of the postulates of special relativity states that the laws of physics are the same in all inertial reference frames.  Accelerating reference frames are not inertial, because the introduce <em>fictitious</em> forces that depend on the acceleration.  For example, an apple at rest on the seat of a car will not remain at rest if the car suddenly brakes to a halt.  However, the acceleration produced by gravity has a unique aspect.</p>
+<p>Consider two massive, charged objects separated by a distance <span class="math notranslate nohighlight">\(r\)</span>: one of mass <span class="math notranslate nohighlight">\(m\)</span> and charge <span class="math notranslate nohighlight">\(q, while the other is of mass \)</span>M<span class="math notranslate nohighlight">\( and charge \)</span>Q<span class="math notranslate nohighlight">\(.  The magnitude of the acceleration \)</span>a_g<span class="math notranslate nohighlight">\( of mass \)</span>m$ <em>due to the gravitational force</em> is found from</p>
+<div class="math notranslate nohighlight" id="equation-grav-equiv">
+<span class="eqno">(3.2)<a class="headerlink" href="#equation-grav-equiv" title="Permalink to this equation">#</a></span>\[m a_g = \frac{GMm}{r^2},\]</div>
+<p>while the magnitude of the acceleration <span class="math notranslate nohighlight">\(a_e\)</span> <em>due to the electrostatic force</em> is found from</p>
+<div class="math notranslate nohighlight" id="equation-elec-equiv">
+<span class="eqno">(3.3)<a class="headerlink" href="#equation-elec-equiv" title="Permalink to this equation">#</a></span>\[m a_e = \frac{qQ}{4\pi \epsilon_o r^2}.\]</div>
+<p>The mass <span class="math notranslate nohighlight">\(m\)</span> (coupled on the left side with an <span class="math notranslate nohighlight">\(a\)</span>) is an <em>inertial mass</em> and measures the object’s resistance to being accelerated (i.e., its inertia).  The masses (<span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(M\)</span>) and charges (<span class="math notranslate nohighlight">\(q\)</span> and <span class="math notranslate nohighlight">\(Q\)</span>) on the right are numbers that couple the masses or charges to their respective forces and determine the strength of these forces.  The mystery is the appearance of <span class="math notranslate nohighlight">\(m\)</span> on both sides of the formula.</p>
+<p><em>Why should a quantity that measures an object’s inertia be the same as the “gravitational charge” that determines the force of gravity?</em>  Actually Eq. <a class="reference internal" href="#equation-grav-equiv">(3.2)</a> is not properly written and should be expressed as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-637e07fe-0c76-47bb-97e3-f254ffe148e7">
+<span class="eqno">(3.4)<a class="headerlink" href="#equation-637e07fe-0c76-47bb-97e3-f254ffe148e7" title="Permalink to this equation">#</a></span>\[\begin{align}
+m_ia_g &amp;= \frac{GM_g}{r^2}m_g,\\
+a_g &amp;= \frac{GM_g}{r^2} \frac{m_g}{m_i}
+\end{align}\]</div>
+<p>to distinguish between the <em>inertial</em> and <em>gravitational</em> mass of each object.  Similarly, Eq. <a class="reference internal" href="#equation-elec-equiv">(3.3)</a> should be</p>
+<div class="amsmath math notranslate nohighlight" id="equation-879a6738-027d-4397-97bf-a6da9adbe5bb">
+<span class="eqno">(3.5)<a class="headerlink" href="#equation-879a6738-027d-4397-97bf-a6da9adbe5bb" title="Permalink to this equation">#</a></span>\[\begin{align}
+a_e = \frac{qQ}{4\pi \epsilon_o r^2} \frac{1}{m_i}.
+\end{align}\]</div>
+<p>In this case the only mass that enters the expression is the inertial mass.</p>
+<p>Experimentally, we have found that the ratio <span class="math notranslate nohighlight">\(m_g/m_i\)</span> is a constant to a precision of 1 part in <span class="math notranslate nohighlight">\(10^{12}\)</span> (i.e., 1 ppt).  For convenience, this constant is chosen to be unity so that the two types of mass will be numerically equal.</p>
+<p>If the gravitational mass were chosen to be <em>twice</em> the inertial mass, the laws of physics would be unchanged because the gravitational constant <span class="math notranslate nohighlight">\(G\)</span> would be assigned a new value that is only one-fourth as large.  The proportionality of the inertial and gravitational masses means that, at a given location, all objects experience the <em>same</em> gravitational acceleration.  The constancy of <span class="math notranslate nohighlight">\(m_g/m_i\)</span> is sometimes referred to as the <strong>weak equivalence principle</strong>.</p>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/1J54o1T6jwE"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
+<p>The aspect of gravity in which every object falls with the same acceleration is not new and known since the time of Galileo. Einstein realized that if an entire laboratory were in free-fall, with all of its contents together, there would be no way to detect its acceleration.  It would be impossible to experimentally determine whether the laboratory was floating in space (far from any massive object) or falling freely in a gravitational field.  This posed a serious problem for the theory of special relativity, which requires that inertial frames have a constant velocity.  An inertial frame cannot even be defined in the presence of gravity because it is equivalent to an accelerating laboratory.</p>
+<p>The way to eliminate gravity in a laboratory is to surrender to it by entering into a state of free-fall.  There was an obstacle to applying this to special relativity because its inertial reference frames are <em>infinite</em> collections of meter sticks and synchronized clocks.  It would be impossible to eliminate gravity everywhere in an infinite, freely falling reference frame, because different points would have to be falling at different rates in different directions.</p>
+<p>Einstein realized that he would have to use <em>local</em> reference frames, just small enough that the acceleration due to gravity would be essentially constant in both magnitude and direction everywhere inside the reference frame.  Gravity would then be abolished inside a local, freely falling reference frame.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Free-fall means that the only acceleration on the laboratory is due to gravity.  <a class="reference external" href="https://en.wikipedia.org/wiki/John_Archibald_Wheeler">John Wheeler</a> suggested the term <em>free-float</em>, since gravity has been abolished, why should falling even be mentioned?</p>
+</div>
+<p>In 1907, Einstein adopted this as the cornerstone of his theory of gravity, calling it the principle of equivalence.</p>
+<blockquote class="epigraph">
+<div><p><strong>The Principle of Equivalence</strong>: All local, freely falling, nonrotating laboratories are fully equivalent for the performance of all physical experiments.</p>
+</div></blockquote>
+<p>The restriction to nonrotating labs is necessary to eliminate the fictitious forces associated with rotation (e.g., the Coriolis and centrifugal forces).  To simply the jargon: local, freely falling, nonrotating laboratories are called <strong>local inertial reference frames</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Special relativity is incorporated into the principle of equivalence.  For example, two measurements made from two local inertial frames in relative motion are related by the Lorentz transformations using the <em>instantaneous</em> value of the relative velocity between the two frames.  As a result, general relativity is an extension of the theory of special relativity.</p>
+</div>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/wOoV7MbPCxg"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
 </div>
 <div class="section" id="the-bending-of-light">
-<h3><span class="section-number">3.1.3. </span>THe Bending of Light<a class="headerlink" href="#the-bending-of-light" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">3.1.3. </span>The Bending of Light<a class="headerlink" href="#the-bending-of-light" title="Permalink to this headline">#</a></h3>
+<p>Imagine an elevator suspended above the ground by a cable.  A photon leaves a horizontal flashlight at the same instant the cable holding the elevator is cut.  Gravity has been abolished from this freely falling elevator, so it is now a local inertial reference frame.  According to the equivalence principle, an observer falling with the lab will measure the light’s path across the elevator as a straight horizontal line, in agreement with all of the laws of physics.</p>
+<p>But another observer on the ground sees an elevator that is falling under the influence of gravity.  The ground observer must measure a photon that falls with the elevator following a curved path.  The curved path taken by the photon is the quickest route possible through the curved spacetime surrounding Earth (e.g., the rubber sheet analogy).</p>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/sbSxxsb30_E"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
+<div class="figure align-default" id="light-bending">
+<a class="reference internal image-reference" href="../_images/Figure_10.jpg"><img alt="light bending" src="../_images/Figure_10.jpg" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.2 </span><span class="caption-text">Geometry for the radius of curvature <span class="math notranslate nohighlight">\(r_c\)</span> and angular deflection <span class="math notranslate nohighlight">\(\phi\)</span>.  Image Credit: Carroll &amp; Ostlie (2007).</span><a class="headerlink" href="#light-bending" title="Permalink to this image">#</a></p>
+</div>
+<p>The angle of deflection <span class="math notranslate nohighlight">\(\phi\)</span> of the photon is very slight.  The photon does not follow a circular path, but we can use a <em>best-fitting circle</em> of radius <span class="math notranslate nohighlight">\(r_c\)</span> as an approximation of the path measured by the ground observer.  The center of the best-fitting circle is at point <span class="math notranslate nohighlight">\(O\)</span>, and the arc of the circle subtends an angle <span class="math notranslate nohighlight">\(\phi\)</span> between the radii <span class="math notranslate nohighlight">\(OA\)</span> and <span class="math notranslate nohighlight">\(OB\)</span>.  If the width of the elevator is <span class="math notranslate nohighlight">\(\ell\)</span>, then the photon crosses the lab in time <span class="math notranslate nohighlight">\(t=\ell/c\)</span>.  In this amount of time, the lab falls a distance <span class="math notranslate nohighlight">\(d=\frac{1}{2}gt^2\)</span>.  Because triangles <span class="math notranslate nohighlight">\(ABC\)</span> and <span class="math notranslate nohighlight">\(OBD\)</span> are similar (i.e., contain a right angle and another angle <span class="math notranslate nohighlight">\(\phi/2\)</span>)</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{\overline{BC}}{\overline{AC}} &amp;= \frac{\overline{BD}}{\overline{OD}}, \\ \\
+\frac{d}{\ell} &amp;= \frac{\ell/(2\cos{(\phi/2)})}{\overline{OD}}.
+\end{align*}\]</div>
+<p>Since <span class="math notranslate nohighlight">\(\phi \ll 1\)</span>, we can set <span class="math notranslate nohighlight">\(\cos{(\phi/2)}\simeq 1\)</span> and the distance <span class="math notranslate nohighlight">\(\overline{OD} \simeq r_c\)</span>.  Substituting variables and solving for <span class="math notranslate nohighlight">\(r_c\)</span>, we get for the radius of curvature for the photon’s path</p>
+<div class="math notranslate nohighlight" id="equation-radius-curve">
+<span class="eqno">(3.6)<a class="headerlink" href="#equation-radius-curve" title="Permalink to this equation">#</a></span>\[\begin{split}\frac{g}{2}\frac{\ell^2}{c^2}\frac{1}{\ell} &amp;= \frac{\ell}{2r_c}, \\
+r_c &amp;= \frac{c^2}{g} = 9.17 \times 10^{15}\ {\rm m},\end{split}\]</div>
+<p>using <span class="math notranslate nohighlight">\(g=9.8\ \rm m/s^2\)</span>, which is nearly a light-year!  If we assume that the width of the elevator <span class="math notranslate nohighlight">\(\ell\)</span> roughly equals the arclength of the curvature and <span class="math notranslate nohighlight">\(\ell = 10\ \rm m\)</span>, then we can calculate <span class="math notranslate nohighlight">\(\phi\)</span></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\ell &amp;= r_c \phi, \\
+\phi &amp;= \frac{\ell}{r_c} = 1.09 \times 10^{-15}\ {\rm rad},
+\end{align*}\]</div>
+<p>or only <span class="math notranslate nohighlight">\(2.25 \times 10^{-10}\ {\rm arcsec}\)</span>.  The large radius of the photon’s path indicates that spacetime near Earth is only <em>slightly</em> curved.  The curvature is still great enough to produce the circular orbits of satellites, which move slowly (compared to the speed of light) through the curved spacetime.</p>
 </div>
 <div class="section" id="gravitational-redshift-and-time-dilation">
 <h3><span class="section-number">3.1.4. </span>Gravitational Redshift and Time Dilation<a class="headerlink" href="#gravitational-redshift-and-time-dilation" title="Permalink to this headline">#</a></h3>
+<p>Returning to the elevator, but with a monochromatic light of frequency <span class="math notranslate nohighlight">\(\nu_o\)</span> leaving a <em>vertical</em> flashlight on the floor at the same instant the cable holding the elevator is cut.  The freely falling elevator is again a local inertial frame, and so the equivalence principle requires that a frequency detector in the ceiling record the same frequency <span class="math notranslate nohighlight">\(\nu_o\)</span>.</p>
+<p>But an observer on the ground sees a lab that is falling under the influence of gravity.  If the light has traveled upward a height <span class="math notranslate nohighlight">\(h\)</span> toward the meter in time <span class="math notranslate nohighlight">\(t=h/c\)</span>, then the detector has gained a downward speed toward the light of <span class="math notranslate nohighlight">\(v = gt = gh/c\)</span>.  We would expect that in the ground observer’s frame, the detector should have measured a <em>blueshifted</em> frequency greater than <span class="math notranslate nohighlight">\(\nu_o\)</span>.  For the slow free-fall speeds involved, the expected <em>increase</em> in frequency is</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\Delta \nu}{\nu_o} = \frac{v}{c} = \frac{gh}{c^2}. \]</div>
+<p>However the detector records <em>no change</em> in frequency.  Therefore, there must be another effect of the light’s upward journey through the curved spacetime around Earth that compensates for the blueshift exactly.  This is a <strong>gravitational redshift</strong> that tends to <em>decrease</em> the frequency of the light as it travels upward a distance <span class="math notranslate nohighlight">\(h\)</span>, which is exactly opposite the blueshift, or</p>
+<div class="math notranslate nohighlight" id="equation-grav-redshift">
+<span class="eqno">(3.7)<a class="headerlink" href="#equation-grav-redshift" title="Permalink to this equation">#</a></span>\[ \frac{\Delta \nu}{\nu_o} = -\frac{v}{c} = -\frac{gh}{c^2}.\]</div>
+<p>An outside observer would measure only this gravitational redshift.  If the light were traveling downward, a corresponding blueshift would be measured.</p>
+<div class="exercise orange admonition" id="Chapter_17/general-relativity-and-black-holes-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 3.1 </span></p>
+<div class="section" id="exercise-content">
+<p><strong>In 1960, a test of the gravitational redshift formula was carried out at Harvard University.  A <span class="math notranslate nohighlight">\(\gamma\)</span> ray was emitted by an unstable isotope of iron <span class="math notranslate nohighlight">\(^{57}_{26}{\rm Fe}\)</span> at the bottom of a tower <span class="math notranslate nohighlight">\(22.6\ \rm m\)</span> tall, and received at the top of the tower.</strong></p>
+<p><em>What is the expected gravitational redshift <span class="math notranslate nohighlight">\(\Delta \nu/\nu_o\)</span>?</em></p>
+<p>From the gravitational redshift formula, we only need to know <span class="math notranslate nohighlight">\(h\)</span> because the acceleration due to gravity <span class="math notranslate nohighlight">\(g\)</span> is approximately constant (i.e., <span class="math notranslate nohighlight">\(h\ll r_\oplus\)</span>) and the speed of light is a known constant.  Therefore, we find using <span class="math notranslate nohighlight">\(h = 22.6\ \rm m\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\Delta \nu}{\nu_o} = -\frac{v}{c} = -\frac{gh}{c^2} = -2.46 \times 10^{-15}, \]</div>
+<p>which is in excellent agreement with the experimental result of <span class="math notranslate nohighlight">\(\frac{\Delta \nu}{\nu_o}  = -(2.57 \pm 0.26) \times 10^{-15}\)</span>.  More precise experiments carried out since have obtained agreement to within <span class="math notranslate nohighlight">\(0.007\%\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The experiment was performed with <em>both</em> upward and downward traveling <span class="math notranslate nohighlight">\(\gamma\)</span> rays providing tests of both the gravitational redshift and blueshift.</p>
+</div>
+</div>
+</div>
+<p>An approximate expression for the total gravitational redshift for a light beam that escapes out to infinity can be calculated by integrating Eq. <a class="reference internal" href="#equation-grav-redshift">(3.7)</a> from an initial position <span class="math notranslate nohighlight">\(r_o\)</span> to <span class="math notranslate nohighlight">\(\infty\)</span>.  Instead of using a constant acceleration due to gravity, we can use <span class="math notranslate nohighlight">\(g = GM/r^2\)</span> from Newtonian gravity and set <span class="math notranslate nohighlight">\(h\)</span> equal to the differential radial element <span class="math notranslate nohighlight">\(dr\)</span> for a spherical mass <span class="math notranslate nohighlight">\(M\)</span>.</p>
+<p>By integrating we are really adding up the redshifts obtained for a chain of <em>different</em> frames.  The radial coordinate <span class="math notranslate nohighlight">\(r\)</span> can be used to measure distances for these frames if spacetime is nearly flat (i.e., <span class="math notranslate nohighlight">\(r_c \gg r_o\)</span>).  In this case, the “stretching” of distances is not too severe, and we can integrate</p>
+<div class="math notranslate nohighlight">
+\[ \int_{\nu_o}^{\nu_\infty} \frac{d\nu}{\nu} \simeq - \int_{r_o}^\infty \frac{GM}{r^2c^2}dr, \]</div>
+<p>where <span class="math notranslate nohighlight">\(\nu_o\)</span> and <span class="math notranslate nohighlight">\(\nu_\infty\)</span> are the frequencies at <span class="math notranslate nohighlight">\(r_o\)</span> and <span class="math notranslate nohighlight">\(\infty\)</span>, respectively.  The result</p>
+<div class="math notranslate nohighlight">
+\[ \ln{\left(\frac{\nu_\infty}{\nu_o} \right)} \simeq -\frac{GM}{r_oc^2}, \]</div>
+<p>is valid when gravity is weak (i.e., <span class="math notranslate nohighlight">\(r_o/r_c = GM/r_oc^2 \ll 1\)</span>).  This can be rewritten as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-e9152204-f37a-42c7-b47d-236103e8855f">
+<span class="eqno">(3.8)<a class="headerlink" href="#equation-e9152204-f37a-42c7-b47d-236103e8855f" title="Permalink to this equation">#</a></span>\[\begin{align}
+\frac{\nu_\infty}{\nu_o} \simeq e^{-GM/(r_oc^2)}.
+\end{align}\]</div>
+<p>When the exponent <span class="math notranslate nohighlight">\(x\)</span> in <span class="math notranslate nohighlight">\(e^{-x}\)</span> is small (i.e., <span class="math notranslate nohighlight">\(x \ll 1\)</span>), we can use the approximation <span class="math notranslate nohighlight">\(e^{-x} \simeq 1 - x\)</span> to get</p>
+<div class="amsmath math notranslate nohighlight" id="equation-3b157e39-0d28-4560-904c-408bc21e08d1">
+<span class="eqno">(3.9)<a class="headerlink" href="#equation-3b157e39-0d28-4560-904c-408bc21e08d1" title="Permalink to this equation">#</a></span>\[\begin{align}
+\frac{\nu_\infty}{\nu_o} \simeq 1-\frac{GM}{r_oc^2}.\
+\end{align}\]</div>
+<p>This approximation shows the <em>first-order</em> correction to the frequency of the photon.  The exact result for the gravitational redshift (valid even for a strong gravitational field) is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-a76eaecd-f1f1-4f4d-bb91-4d723dd8a3ac">
+<span class="eqno">(3.10)<a class="headerlink" href="#equation-a76eaecd-f1f1-4f4d-bb91-4d723dd8a3ac" title="Permalink to this equation">#</a></span>\[\begin{align}
+\frac{\nu_\infty}{\nu_o} = \left(1-\frac{2GM}{r_oc^2} \right)^{1/2}.
+\end{align}\]</div>
+<p>The gravitational redshift can be incorporated into the redshift parameter (using Eq. <a class="reference internal" href="../Chapter_04/theory-of-special-relativity.html#equation-alt-rad-z">(2.26)</a>), giving</p>
+<div class="amsmath math notranslate nohighlight" id="equation-7e8c6d9a-1018-4955-a077-c0b293214741">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-7e8c6d9a-1018-4955-a077-c0b293214741" title="Permalink to this equation">#</a></span>\[\begin{align}
+z &amp;= \frac{\Delta \lambda}{\lambda_o} = \frac{\nu_o}{\nu_\infty} - 1, \\
+&amp;= \left(1-\frac{2GM}{r_oc^2} \right)^{-1/2}, \\
+&amp;\simeq \frac{2GM}{r_oc^2},
+\end{align}\]</div>
+<p>which is valid only for a weak gravitational field because we used the approximation <span class="math notranslate nohighlight">\((1-x)^{1/2} \simeq 1-x/2\)</span> for <span class="math notranslate nohighlight">\(x\ll 1\)</span>.</p>
+<p>To understand the origin of the gravitational redshift, imagine a clock that is constructed to tick once with each vibration of a monochromatic light wave.  The time between ticks is then equal to the period of the oscillation of the wave <span class="math notranslate nohighlight">\(\Delta t = 1/\nu\)</span>.  The gravitational redshift implies that the clock at <span class="math notranslate nohighlight">\(r_o\)</span> will tick more slowly than an identical clock at <span class="math notranslate nohighlight">\(r = \infty\)</span>.  If an amount of time <span class="math notranslate nohighlight">\(\Delta t_o\)</span> passes at position <span class="math notranslate nohighlight">\(r_o\)</span> outside a spherical mass <span class="math notranslate nohighlight">\(M\)</span>, then the time <span class="math notranslate nohighlight">\(\Delta t_\infty\)</span> at <span class="math notranslate nohighlight">\(r=\infty\)</span> is</p>
+<div class="math notranslate nohighlight" id="equation-grav-time-dilation">
+<span class="eqno">(3.12)<a class="headerlink" href="#equation-grav-time-dilation" title="Permalink to this equation">#</a></span>\[\frac{\Delta t_o}{\Delta t_\infty} = \frac{\nu_\infty}{\nu_o} = \left(1-\frac{2GM}{r_oc^2}\right)^{1/2},\]</div>
+<p>using Eq. <a class="reference internal" href="../Chapter_04/theory-of-special-relativity.html#equation-alt-rad-z">(2.26)</a>.  For a weak field, this simplifies to</p>
+<div class="amsmath math notranslate nohighlight" id="equation-de484d76-3c82-4da0-9481-f8349a70fb1d">
+<span class="eqno">(3.13)<a class="headerlink" href="#equation-de484d76-3c82-4da0-9481-f8349a70fb1d" title="Permalink to this equation">#</a></span>\[\begin{align}
+\frac{\Delta t_o}{\Delta t_\infty} \simeq 1-\frac{GM}{r_oc^2}.
+\end{align}\]</div>
+<p>We must conclude that <em>time passes more slowly as the surrounding spacetime becomes more curved</em>, which is called <strong>gravitational time dilation</strong>.  The gravitational redshift is therefore a consequence of time running at a slower rate near a massive object.</p>
+<div class="exercise orange admonition" id="Chapter_17/general-relativity-and-black-holes-exercise-1">
+
+<p class="admonition-title"><span class="caption-number">Exercise 3.2 </span></p>
+<div class="section" id="exercise-content">
+<p><strong>The white dwarf Sirius B has a radius <span class="math notranslate nohighlight">\(R = 5.8 \times 10^{6}\ {\rm m} = 0.0084\ R_\odot\)</span> and a mass <span class="math notranslate nohighlight">\(M = 2.026 \times 10^{30}\ {\rm kg} = 1.018\ M_\odot\)</span>.</strong></p>
+<p><strong>(a)</strong> <em>What is the radius of curvature <span class="math notranslate nohighlight">\(r_c\)</span> for a light beam near the surface?</em></p>
+<p><strong>(b)</strong> <em>What is the gravitational redshift parameter <span class="math notranslate nohighlight">\(z\)</span> an emitted photon from the surface?</em></p>
+<p><strong>(c)</strong> <em>What is the gravitational time dilation <span class="math notranslate nohighlight">\((\Delta t_\infty - \Delta t_o)\)</span> experienced by the photon as seen from a distant observer?</em></p>
+<hr class="docutils" />
+<p><strong>(a)</strong> The radius of curvature of a horizontally traveling light beam near the surface of Sirius B can be determined via Eq. <a class="reference internal" href="#equation-radius-curve">(3.6)</a>,</p>
+<div class="math notranslate nohighlight">
+\[ r_c = \frac{c^2}{g} = \frac{R^2c^2}{GM} = 2.3 \times 10^{10}\ \rm m, \]</div>
+<p>using the given values for the mass and radius of Sirius B.  Since <span class="math notranslate nohighlight">\(R/r_c =2.57 \times 10^{-4} \ll 1\)</span>, the curvature is not severe and we can use the weak field approximation.  Even at the surface of a white dwarf, gravity is considered relatively weak in terms of its effect on the curvature of spacetime.</p>
+<p><strong>(b)</strong> The gravitational redshift of a photon emitted from the surface can be calculated via the weak field approximation</p>
+<div class="math notranslate nohighlight">
+\[ z \simeq \frac{GM}{Rc^2} = \frac{R}{r_c} = 2.6 \times 10^{-4}. \]</div>
+<p>This is in excellent agreement with the measured gravitational redshift for Sirius B (<a class="reference external" href="https://academic.oup.com/mnras/article/481/2/2361/5090416">Joyce et al. 2018</a>), where the percent error is only <span class="math notranslate nohighlight">\({\sim}4.5\%\)</span>.</p>
+<p><strong>(c)</strong>  To compare the rate at which time passes at the surface of Sirius B relative to a distant observer (i.e., <span class="math notranslate nohighlight">\(r\rightarrow \infty\)</span>), let’s suppose that exactly <strong>one hour</strong> is measured by a distant clock.  The time recorded by a clock at the surface of Sirius B would be <em>less</em> than one hour using the weak field approximation:</p>
+<div class="math notranslate nohighlight">
+\[ \Delta t_\infty - \Delta t_o = \Delta t_\infty\left(1 - \frac{\Delta t_o}{\Delta t_\infty}\right) \simeq (3600\ {\rm s})\left(\frac{GM}{Rc^2}\right) = 0.93\ {\rm s}. \]</div>
+<p>The clock at the surface of Sirius B runs more slowly by about <strong>one second</strong> per hour compared to an identical clock far out in space.</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">G</span><span class="p">,</span><span class="n">c</span> 
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">R_sun</span> <span class="o">=</span> <span class="mf">6.957e8</span> <span class="c1">#radius of the Sun in m</span>
+<span class="n">M_sun</span> <span class="o">=</span> <span class="mf">1.99e30</span> <span class="c1">#mass of the Sun in kg</span>
+<span class="n">R</span> <span class="o">=</span> <span class="mf">0.0084</span><span class="o">*</span><span class="n">R_sun</span> <span class="c1">#radius of Sirius B in m</span>
+<span class="n">M</span> <span class="o">=</span> <span class="mf">1.018</span><span class="o">*</span><span class="n">M_sun</span> <span class="c1">#mass of Sirius B in kg</span>
+
+<span class="c1">#part a: Calculate the radius of curvature for Sirius B</span>
+<span class="n">r_c</span> <span class="o">=</span> <span class="p">(</span><span class="n">R</span><span class="o">*</span><span class="n">c</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="n">G</span><span class="o">*</span><span class="n">M</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;part a: The radius of curvature r_c is </span><span class="si">%1.1e</span><span class="s2"> m.&quot;</span> <span class="o">%</span> <span class="n">r_c</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The parameter R/r_c is </span><span class="si">%1.3e</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">R</span><span class="o">/</span><span class="n">r_c</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;--------------&quot;</span><span class="p">)</span>
+<span class="c1">#part b: Calculate the gravitational redshift parameter z</span>
+<span class="c1">#Using 0.01 as cutoff for weak field approximation</span>
+<span class="k">if</span> <span class="n">R</span><span class="o">/</span><span class="n">r_c</span> <span class="o">&lt;</span> <span class="mf">0.01</span><span class="p">:</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="n">R</span><span class="o">/</span><span class="n">r_c</span> 
+<span class="k">elif</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">R</span><span class="o">/</span><span class="n">r_c</span><span class="p">)</span><span class="o">&lt;</span><span class="mi">1</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;strong field&quot;</span><span class="p">)</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="mf">1.</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">R</span><span class="o">/</span><span class="n">r_c</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The radius of curvature can&#39;t be less than twice the stellar radius.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;part b: The gravitational parameter z is </span><span class="si">%1.1e</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="n">z</span><span class="p">)</span>
+<span class="c1">#measured z from (Joyce et al. 2018) https://academic.oup.com/mnras/article/481/2/2361/5090416</span>
+<span class="n">z_meas</span> <span class="o">=</span> <span class="mf">80.65e3</span><span class="o">/</span><span class="n">c</span>
+<span class="n">z_err</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">z</span><span class="o">-</span><span class="n">z_meas</span><span class="p">)</span><span class="o">/</span><span class="n">z</span><span class="o">*</span><span class="mi">100</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The gravitational parameter z measured from HST is </span><span class="si">%1.1e</span><span class="s2">, which gives an error of </span><span class="si">%2.1f</span><span class="s2"> percent.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">z_meas</span><span class="p">,</span><span class="n">z_err</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;--------------&quot;</span><span class="p">)</span>
+
+<span class="c1">#part c: Calculate the time dilation</span>
+<span class="n">dt_inf</span> <span class="o">=</span> <span class="mf">3600.</span> <span class="c1">#time measured by a distance clock (at infinity)</span>
+<span class="n">delta_t</span> <span class="o">=</span> <span class="n">dt_inf</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="mf">1.</span><span class="o">/</span><span class="p">(</span><span class="n">z</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;part c: The time dilation due to the curvature of spacetime is </span><span class="si">%1.2f</span><span class="s2"> s.&quot;</span> <span class="o">%</span> <span class="n">delta_t</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>part a: The radius of curvature r_c is 2.3e+10 m.
+The parameter R/r_c is 2.574e-04.
+--------------
+part b: The gravitational parameter z is 2.6e-04.
+The gravitational parameter z measured from HST is 2.7e-04, which gives an error of 4.5 percent.
+--------------
+part c: The time dilation due to the curvature of spacetime is 0.93 s.
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="intervals-and-geodesics">
 <h2><span class="section-number">3.2. </span>Intervals and Geodesics<a class="headerlink" href="#intervals-and-geodesics" title="Permalink to this headline">#</a></h2>
+<p>An event in <em>spacetime</em> unifies the concepts of space and time because it is expressed using four coordinates <span class="math notranslate nohighlight">\((x,\ y,\ z,\ t)\)</span>.  Einstein’s achievement was the deduction of his <em>field equations</em> for calculating the geometry of spacetime produced by a given distribution of mass and energy.  His equations have the form</p>
+<div class="amsmath math notranslate nohighlight" id="equation-e00c77b3-8460-4727-bb7d-4d0cce8d6d97">
+<span class="eqno">(3.14)<a class="headerlink" href="#equation-e00c77b3-8460-4727-bb7d-4d0cce8d6d97" title="Permalink to this equation">#</a></span>\[\begin{align}
+\mathcal{G} = - \frac{8\pi G}{c^4}\mathcal{T},
+\end{align}\]</div>
+<p>which depends on the <a class="reference external" href="https://en.wikipedia.org/wiki/Stress%E2%80%93energy_tensor"><em>stress-energy tensor</em></a> <span class="math notranslate nohighlight">\(\mathcal{T}\)</span>.  The stress-energy tensor evaluates the effect of a given distribution of mass and energy on the curvature of spacetime.  The appearance of the gravitational constant <span class="math notranslate nohighlight">\(G\)</span> and the speed of light <span class="math notranslate nohighlight">\(c\)</span> symbolizes the extension of special relativity to include gravity.  It is beyond the scope of this course to explicitly evaluate this equation.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Einstein’s field equations are similar to how <a class="reference external" href="https://en.wikipedia.org/wiki/Maxwell%27s_equations">Maxwell’s equations</a> describe the changes in the electric or magnetic field due to the presence of charges.</p>
+</div>
 <div class="section" id="worldlines-and-light-cones">
 <h3><span class="section-number">3.2.1. </span>Worldlines and Light Cones<a class="headerlink" href="#worldlines-and-light-cones" title="Permalink to this headline">#</a></h3>
+<p><em>Spacetime diagrams</em> represent a 2D physical plane <span class="math notranslate nohighlight">\((x,\ y)\)</span> with a perpendicular axis denoting time <span class="math notranslate nohighlight">\(t\)</span>.  The third spatial dimension <span class="math notranslate nohighlight">\(z\)</span> is ignored for simplicity.  The path of an object as it moves through spacetime is called its <a class="reference external" href="https://en.wikipedia.org/wiki/World_line"><strong>worldline</strong></a>.  Our task will be to calculate the worldline of a freely falling object in response to the local curvature of spacetime.  The worldline’s spatial components can describe the trajectory of a baseball arcing toward an outfielder, a planet orbiting the Sun, or a photon attempting to escape a black hole.</p>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/hTxWAQGgeQw"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
+<p>Suppose a flashbulb is set off at the origin <span class="math notranslate nohighlight">\((0,\ 0)\)</span> at <span class="math notranslate nohighlight">\(t=0\)</span> and is designated as event <span class="math notranslate nohighlight">\(A\)</span>.  The worldlines of photons traveling in the <span class="math notranslate nohighlight">\(x-y\)</span> plane form a <a class="reference external" href="https://en.wikipedia.org/wiki/Light_cone"><strong>light cone</strong></a> that represents a widening series of circular slices through the expanding wavefront of light.  By analogy, this is like the widening ripples of a disturbance in water projected along a third dimensions.</p>
+<div class="figure align-default" id="light-cone">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/World_line.svg/1003px-World_line.svg.png"><img alt="light cone" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/World_line.svg/1003px-World_line.svg.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.3 </span><span class="caption-text">Diagram of a light cone. A light cone (or “null cone”) is the path that a flash of light, emanating from a single event (localized to a single point in space and a single moment in time) and traveling in all directions, would take through spacetime.  Image Credit: <a class="reference external" href="https://en.wikipedia.org/wiki/Light_cone">Wikipedia:light cone</a>.</span><a class="headerlink" href="#light-cone" title="Permalink to this image">#</a></p>
+</div>
+<p>A massive object initially at event <span class="math notranslate nohighlight">\(A\)</span> must travel slower than light, so the angle between its worldline and the time axis must be less than <span class="math notranslate nohighlight">\(45^\circ\)</span>.  The region inside the light cone represents the possible <em>future</em> of event <span class="math notranslate nohighlight">\(A\)</span>.  It consists of all the events possible for a traveler initially at rest at event <span class="math notranslate nohighlight">\(A\)</span>.  By extension, it also represents all the events that the traveler could every influence in a <em>causal</em> way.</p>
+<p>Extending the diverging photon worldlines back through the origin generates a lower light cone.  Within this light cone is the possible past of event <span class="math notranslate nohighlight">\(A\)</span>, or the collection of all the events from whence a traveler could have arrived just as the bulb flashed.  By extension, it contains all the events by which could have possibly caused the flashbulb to go off.</p>
+<p>Outside the future and past light cones is an unknowable <em>elsewhere</em>, which is outside the ability of the traveler to receive or transmit information.  In other words, the traveler cannot be influenced nor influence events that lie outside of his/her light cone.  There are vast regions of spacetime that are hidden from us!</p>
+<p>In principle, every event in spacetime has a pair of light cones extending from it.  The light cone divides spacetime into that event’s future, past, and elsewhere.  Two events can influence each other only if their light cones overlap in the past or future.  Your entire future worldline (i.e., your <em>destiny</em>) must lie within your future light cone at every instant.  Light cones represent horizons in space that separate the knowable from the unknowable.</p>
 </div>
 <div class="section" id="spacetime-intervals-proper-time-and-proper-distance">
 <h3><span class="section-number">3.2.2. </span>Spacetime Intervals, Proper Time, and Proper Distance<a class="headerlink" href="#spacetime-intervals-proper-time-and-proper-distance" title="Permalink to this headline">#</a></h3>
+<p>Measuring the progress of an object as it moves along its worldline involves defining a “distance” for spacetime.  Consider two points (<span class="math notranslate nohighlight">\(p_1\)</span> and <span class="math notranslate nohighlight">\(p_2\)</span>) using 3D Cartesian coordinates</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+p_1 &amp;= (x_1,\ y_1,\ z_1),\\
+p_2 &amp;= (x_2,\ y_2,\ z_2),
+\end{align*}\]</div>
+<p>then the distance <span class="math notranslate nohighlight">\(\Delta \ell\)</span> measured along the straight line between two points in flat space is defined by</p>
+<div class="math notranslate nohighlight">
+\[ (\Delta \ell)^2 = (x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2. \]</div>
+<p>The analogous measure of “distance” in spacetime is called a <strong>spacetime interval</strong> (or <em>interval</em>).  Let two events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> have the spacetime coordinates</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+A &amp;= (x_A,\ y_A,\ z_A,\ t_A),\\
+B &amp;= (x_B,\ y_B,\ z_B,\ t_B),
+\end{align*}\]</div>
+<p>measured by an observer in an inertial reference frame <span class="math notranslate nohighlight">\(S\)</span>.  Then the interval <span class="math notranslate nohighlight">\(\Delta s\)</span> measured along the straight worldline between two events in flat spacetime is defined by</p>
+<div class="amsmath math notranslate nohighlight" id="equation-ac3a4ff3-d9ab-4fa4-9e3b-0b951b6b2a4d">
+<span class="eqno">(3.15)<a class="headerlink" href="#equation-ac3a4ff3-d9ab-4fa4-9e3b-0b951b6b2a4d" title="Permalink to this equation">#</a></span>\[\begin{align}
+(\Delta s)^2 = [c(t_B-t_A)]^2 - (x_B-x_A)^2 - (y_B-y_A)^2 - (z_B-z_A)^2.
+\end{align}\]</div>
+<p>This definition of the interval is very useful because <span class="math notranslate nohighlight">\((\Delta s)^2\)</span> is <em>invariant</em> under a Lorentz transformation.  An observer in another inertial reference frame <span class="math notranslate nohighlight">\(S^\prime\)</span> will measure the same value for the interval between two events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> (i.e., <span class="math notranslate nohighlight">\(\Delta s= \Delta s^\prime\)</span>).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The interval <span class="math notranslate nohighlight">\((\Delta s)^2\)</span> can be positive, negative or zero.  The sign tells us whether the light has enough time to travel between two events.</p>
+</div>
+<ol>
+<li><p>If <span class="math notranslate nohighlight">\((\Delta s)^2 &gt; 0\)</span>, then the interval is <em>timelike</em> and light has more than enough time to travel between the two events. An inertial frame <span class="math notranslate nohighlight">\(S\)</span> can be chosen that moves along the straight worldline connecting events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> so that the two events happen at the <em>same location</em> in <span class="math notranslate nohighlight">\(S\)</span>.  The time measured between the two events is <span class="math notranslate nohighlight">\(\Delta s/c\)</span>.  By definition, the time between two events that occur at the same location is the <strong>proper time</strong> <span class="math notranslate nohighlight">\(\Delta \tau\)</span>, or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-a187eb65-8d79-4b36-a946-2e6427c8a285">
+<span class="eqno">(3.16)<a class="headerlink" href="#equation-a187eb65-8d79-4b36-a946-2e6427c8a285" title="Permalink to this equation">#</a></span>\[\begin{align}
+    \Delta \tau \equiv \frac{\Delta s}{c}.
+    \end{align}\]</div>
+<ul class="simple">
+<li><p>The proper time is the elapsed time recorded by a clock moving along the worldline from <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
+<li><p>An observer in any inertial frame can use the interval to calculate the proper time between two events that separated by a timelike interval.  <p> </p></p></li>
+</ul>
+</li>
+<li><p>If <span class="math notranslate nohighlight">\((\Delta s)^2 = 0\)</span>, then the interval is <em>lightlike</em> or <em>null</em>.  In this case, light has exactly enough time to travel between events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>.  Only light can make the journey from one event to the other, and the proper time along a null in is zero. <p> </p></p></li>
+<li><p>If <span class="math notranslate nohighlight">\((\Delta s)^2 &lt; 0\)</span>, then the interval is <em>spacelike</em>.  Light does not have enough time to travel between events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>.  No observer could travel between the events because a speed greater than <span class="math notranslate nohighlight">\(c\)</span> would be required.</p>
+<ul class="simple">
+<li><p>The lack of absolute simultaneity in this situation, means that there are inertial reference frames in which the two events occur in the opposite temporal order, or even at the <em>same time</em>.</p></li>
+<li><p>By definition, the distance measured between two events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> in a reference frame for which they occur simultaneously (i.e., <span class="math notranslate nohighlight">\(t_A = t_B\)</span>) has a <strong>proper distance</strong> separating them,</p></li>
+</ul>
+</li>
+</ol>
+<div class="math notranslate nohighlight" id="equation-proper-distance">
+<span class="eqno">(3.17)<a class="headerlink" href="#equation-proper-distance" title="Permalink to this equation">#</a></span>\[\Delta \mathcal{L} = \sqrt{-(\Delta s)^2}.\]</div>
+<ul class="simple">
+<li><p>If a straight rod were connected between the locations of the two events, this would be the <em>rest length</em> of the rod.</p></li>
+<li><p>An observer in any inertial reference frame can use this to calculate the proper distance between two events that separated by a spacelike interval.</p></li>
+</ul>
+<p>The interval is clearly related to the light cones.</p>
+<ul class="simple">
+<li><p>The <em>surfaces</em> of the light cones (where the photons are at any time <span class="math notranslate nohighlight">\(t\)</span>), are the locations of all events <span class="math notranslate nohighlight">\(B\)</span> that are connected to <span class="math notranslate nohighlight">\(A\)</span> by a null interval.</p></li>
+<li><p>The events within the future and past light cones are connect to <span class="math notranslate nohighlight">\(A\)</span> by a timelike interval, and</p></li>
+<li><p>the events that occur elsewhere are connected to <span class="math notranslate nohighlight">\(A\)</span> by a spacelike interval.</p></li>
+</ul>
 </div>
 <div class="section" id="the-metric-for-flat-spacetime">
 <h3><span class="section-number">3.2.3. </span>The Metric for Flat Spacetime<a class="headerlink" href="#the-metric-for-flat-spacetime" title="Permalink to this headline">#</a></h3>
+<p>Obviously, a path connecting two points in 3D space doesn’t have to be straight.  Two points can be connected by infinitely many curved lines.  To measure the distance along a curved path <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> from one point to the other, we use a differential distance formula called a <strong>metric</strong>:</p>
+<div class="math notranslate nohighlight">
+\[ (d\ell)^2 = (dx)^2 + (dy)^2 + (dz)^2. \]</div>
+<p>The <span class="math notranslate nohighlight">\(d\ell\)</span> may be integrated along the path <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> (e.g., using a <em>line integral</em>) to calculate the total distance between two points,</p>
+<div class="math notranslate nohighlight">
+\[ \Delta \ell = \int_1^2 \sqrt{(d\ell)^2} = \int_1^2 \sqrt{(dx)^2 + (dy)^2 + (dz)^2} \quad (\text{along } \mathcal{P}). \]</div>
+<p>The distance between two points depends on the path connecting them.  The <em>shortest</em> distance between two points in flat space is measured along a straight line, where the “straightest possible line” is when <span class="math notranslate nohighlight">\(\Delta \ell\)</span> is a minimum.</p>
+<p>A worldline between two events in spacetime is not required to be straight either.  To measure the interval along a curved worldline <span class="math notranslate nohighlight">\(\mathcal{W}\)</span> connecting two events in spacetime with no mass present, we use the <strong>metric for flat spacetime</strong>,</p>
+<div class="amsmath math notranslate nohighlight" id="equation-d2e18f4b-00ef-494b-a4bc-011fe572b6fa">
+<span class="eqno">(3.18)<a class="headerlink" href="#equation-d2e18f4b-00ef-494b-a4bc-011fe572b6fa" title="Permalink to this equation">#</a></span>\[\begin{align}
+(ds)^2 = (c\ dt)^2 - (d\ell)^2 = (c\ dt)^2 - (dx)^2 - (dy^2) - (dz)^2.
+\end{align}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There are two conventions for defining the metric: one where the space components have the <span class="math notranslate nohighlight">\(-\)</span>, or the opposite (time component has the <span class="math notranslate nohighlight">\(-\)</span> and space components have a <span class="math notranslate nohighlight">\(+\)</span>).  See the notes by <a class="reference external" href="https://ned.ipac.caltech.edu/level5/March01/Carroll3/Carroll1.html">Sean Carroll</a>.</p>
+</div>
+<p>Then <span class="math notranslate nohighlight">\(ds\)</span> is integrated to determine the total interval along the worldline <span class="math notranslate nohighlight">\(\mathcal{W}\)</span>,</p>
+<div class="amsmath math notranslate nohighlight" id="equation-84a35056-6cd5-4be3-9a7f-6c89b5f44b88">
+<span class="eqno">(3.19)<a class="headerlink" href="#equation-84a35056-6cd5-4be3-9a7f-6c89b5f44b88" title="Permalink to this equation">#</a></span>\[\begin{align}
+(ds)^2 = \int_A^B \sqrt{(ds)^2} = \int_A^B \sqrt{ (c\ dt)^2 - (dx)^2 - (dy^2) - (dz)^2} \quad (\text{along } \mathcal{W}).
+\end{align}\]</div>
+<p>The interval is still related to the proper time measured along the worldline.</p>
+<ul class="simple">
+<li><p>For timelike worldlines, the proper time is <span class="math notranslate nohighlight">\(\Delta \tau = \Delta s/c\)</span>.</p></li>
+<li><p>For a null worldline, the proper time is zero.</p></li>
+<li><p>For a spacelike worldline, the proper time is undefined.</p></li>
+</ul>
+<p>In flat spacetime, the interval measured along a straight timelike worldline between two points is a <em>maximum</em>.  Any other worldline between the same two events will not be straight and will have a smaller interval (i.e., <span class="math notranslate nohighlight">\((c\ dt)^2 &gt; (d\ell)^2\)</span>).  For a massless particle (e.g., a photon), all worldlines have a null interval <span class="math notranslate nohighlight">\((\int \sqrt{(ds)^2}=0)\)</span>.</p>
+<p>Suppose there are two events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> that occur at times <span class="math notranslate nohighlight">\(t_A\)</span> and <span class="math notranslate nohighlight">\(t_B\)</span>, respectively.  The events are observed from an inertial reference frame <span class="math notranslate nohighlight">\(S\)</span> that moves from <span class="math notranslate nohighlight">\(A\)</span> to <span class="math notranslate nohighlight">\(B\)</span>, chosen such that the two events occur at the origin of <span class="math notranslate nohighlight">\(S\)</span>.  The interval measured along the straight worldline connecting <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\Delta s(A\rightarrow B) &amp;= \int_A^B \sqrt{(ds)^2}, \\
+&amp;= \int_A^B \sqrt{ (c\ dt)^2 - (dx)^2 - (dy^2) - (dz)^2}, \\
+&amp;= \int_{t_A}^{t_B} c\ dt = c(t_B-t_A).
+\end{align*}\]</div>
+<p>Now consider the interval measured along another worldline connecting <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> that includes event <span class="math notranslate nohighlight">\(C\)</span>, which occurs at <span class="math notranslate nohighlight">\((x,\ y,\ z,\ t) = (x_C,\ 0,\ 0,\ t_C)\)</span>.  In this case,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\Delta s(A\rightarrow C \rightarrow B) &amp;= \int_A^C \sqrt{(ds)^2} + \int_C^B \sqrt{(ds)^2}, \\
+&amp;= \int_A^C \sqrt{ (c\ dt)^2 - (dx)^2 - (dy^2) - (dz)^2} + \int_C^B \sqrt{ (c\ dt)^2 - (dx)^2 - (dy^2) - (dz)^2}.
+\end{align*}\]</div>
+<p>Using <span class="math notranslate nohighlight">\(dx/dt = v_{AC}\)</span> and <span class="math notranslate nohighlight">\(dx/dt = v_{CB}\)</span>, for the constant velocity along worldline <span class="math notranslate nohighlight">\(A\rightarrow C\)</span> in the first integral and <span class="math notranslate nohighlight">\(C\rightarrow B\)</span> in the second integral, respectively, leads to</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\Delta s(A\rightarrow C \rightarrow B) &amp;= (t_C-t_A)\sqrt{c^2-v^2_{AC}} + (t_B-t_C)\sqrt{c^2-v^2_{CB}}, \\
+&amp;&lt; c(t_C-t_A) + c(t_B-t_C), \\
+&amp;&lt; \Delta s(A\rightarrow B).
+\end{align*}\]</div>
+<p>Thus, the straight worldline <span class="math notranslate nohighlight">\((\Delta s(A\rightarrow B))\)</span> has the longer interval.  Any worldline connecting event <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> can be represented as a series of short segments, so we can conclude that the interval is indeed a maximum for the straight worldline.</p>
+<div class="figure align-default" id="worldlines">
+<a class="reference internal image-reference" href="../_images/Figure_15.jpg"><img alt="worldlines" src="../_images/Figure_15.jpg" style="width: 400px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.4 </span><span class="caption-text">Worldlines connecting events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>  Image Credit: Carroll &amp; Ostlie (2007)).</span><a class="headerlink" href="#worldlines" title="Permalink to this image">#</a></p>
+</div>
 </div>
 <div class="section" id="curved-spacetime-and-the-schwarzschild-metric">
 <h3><span class="section-number">3.2.4. </span>Curved Spacetime and the Schwarzschild Metric<a class="headerlink" href="#curved-spacetime-and-the-schwarzschild-metric" title="Permalink to this headline">#</a></h3>
+<p>In a spacetime that is curved in the presence of mass, even the “straightest possible worldline” will be curved.  These straightest possible worldlines are called <a class="reference external" href="https://en.wikipedia.org/wiki/Geodesic"><strong>geodesics</strong></a>.  Just like circles are special cases of an ellipse, a straight worldline is a special geodesic  in a flat spacetime.</p>
+<p>In curved spacetime, a timelike geodesic between two events has either a <em>maximum</em> or <em>minimum</em> interval.  The value of <span class="math notranslate nohighlight">\(\Delta s\)</span> along a timelike geodesic is an <em>extremum</em>, when compared with the intervals of nearby worldlines between the same two events.</p>
+<p>A massless particle (e.g., a photon) follows a <em>null geodesic</em>.  Einstein’s key realization was that the paths followed by freely falling objects through spacetime are geodesics.  From this he develops three fundamental features in general relativity.</p>
+<ul class="simple">
+<li><p>Mass acts on space time, telling it how to curve.</p></li>
+<li><p>Spacetime in turn acts on mass, telling it how to move.</p></li>
+<li><p>Any freely falling particle (including a photon) follows the straightest possible worldline (a geodesic) through spacetime.  For a massive particle, the geodesic has a <em>maximum</em> or <em>minimum</em> interval, while for light the geodesic has a <em>null</em> interval.</p></li>
+</ul>
+<p>For situations with spherical symmetry, it will be more convenient to use the familiar spherical coordinates <span class="math notranslate nohighlight">\((r,\ \theta,\ \phi)\)</span> instead of Cartesian coordinates.  The metric between two nearby points in flat space is then</p>
+<div class="amsmath math notranslate nohighlight" id="equation-7d63f0e6-ca7c-4e08-8bab-09417b9c04b2">
+<span class="eqno">(3.20)<a class="headerlink" href="#equation-7d63f0e6-ca7c-4e08-8bab-09417b9c04b2" title="Permalink to this equation">#</a></span>\[\begin{align}
+(d\ell)^2 = (dr)^2 + (r\ d\theta)^2 + (r\ \sin{\theta}\ d\phi)^2,
+\end{align}\]</div>
+<p>and the corresponding expression for the flat spacetime metric is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-9ec95797-f42d-4ebe-8bd2-f9087db3d46b">
+<span class="eqno">(3.21)<a class="headerlink" href="#equation-9ec95797-f42d-4ebe-8bd2-f9087db3d46b" title="Permalink to this equation">#</a></span>\[\begin{align}
+(ds)^2 = (c\ dt)^2 - (dr)^2 - (r\ d\theta)^2 - (r\ \sin{\theta}\ d\phi)^2.
+\end{align}\]</div>
+<p>The specific situation to be investigated is the motion of a particle through the curved spacetime produced by a massive sphere (e.g., a planet, star, or a black hole).  The first task is to calculate how this massive objects acts on spacetime, telling it how to curve.  This requires a description of the metric.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In a flat spacetime:</p>
+<ul class="simple">
+<li><p>The variables <span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(\theta\)</span>, <span class="math notranslate nohighlight">\(\phi\)</span>, and <span class="math notranslate nohighlight">\(t\)</span> are the <em>coordinates</em> used by an observer at rest, a great (i.e., practically infinite) distance from the origin.</p></li>
+<li><p>In the absence of a central mass at the origin, <span class="math notranslate nohighlight">\(r\)</span> would be the distance from the origin, and differences in <span class="math notranslate nohighlight">\(r\)</span> would measure the distance between points on a radial line.</p></li>
+<li><p>The time <span class="math notranslate nohighlight">\(t\)</span> measured by clock scatter throughout the coordinate system would remain synchronized, advancing everywhere at the same rate.</p></li>
+</ul>
+</div>
+<p>In a curved spacetime around a massive sphere (mass <span class="math notranslate nohighlight">\(M\)</span> and radius <span class="math notranslate nohighlight">\(R\)</span>):</p>
+<ul class="simple">
+<li><p>The origin (which is inside the sphere) should not be used as a point of reference (i.e., infinity at the origin).  Instead imagine a series of nested concentric spheres centered at the origin.</p></li>
+<li><p>The surface area of a sphere can be measured without approaching the origin, so the coordinate <span class="math notranslate nohighlight">\(r\)</span> will be defined by the surface of that sphere having an area <span class="math notranslate nohighlight">\(4\pi r^2\)</span>.</p></li>
+<li><p>As an object moves through the curved spacetime, its *<em>coordinate speed</em> is just the rate of change of the spatial coordinates.</p></li>
+</ul>
+<p>At large distances (<span class="math notranslate nohighlight">\(r\simeq \infty\)</span>), spacetime is essentially flat, and the gravitational time dilation of a photon is given by Eq. <a class="reference internal" href="#equation-grav-time-dilation">(3.12)</a>.  The factor <span class="math notranslate nohighlight">\(\sqrt{1-2GM/(rc^2)}\)</span> plays a role in defining the metric.  Recall that the stretching of space and the slowing down of time contribute equally to delaying a light bean’s passage through curved spacetime.  The angular terms are the same as those for a flat spacetime.</p>
+<p>In 1916, just <em>two months</em> after Einstein published his general theory of relativity, <a class="reference external" href="https://en.wikipedia.org/wiki/Karl_Schwarzschild">Karl Schwarzschild</a> solved Einstein’s field equations (from the WWI trenches, where he died) to obtain a metric for the massive sphere:</p>
+<div class="math notranslate nohighlight" id="equation-schwarzschild-metric">
+<span class="eqno">(3.22)<a class="headerlink" href="#equation-schwarzschild-metric" title="Permalink to this equation">#</a></span>\[(ds)^2 = \left(c\ dt\sqrt{1-2GM/(rc^2)} \right)^2 - \left(\frac{dr}{\sqrt{1-2GM/(rc^2)}}\right)^2 - (r\ d\theta)^2 - (r\ \sin{\theta}\ d\phi)^2,\]</div>
+<p>which is now called the <a class="reference external" href="https://en.wikipedia.org/wiki/Schwarzschild_metric"><strong>Schwarzschild metric</strong></a>.</p>
+<p>It is important to realize that the Schwarzschild metric is the spherically symmetric <em>vacuum solution</em> of Einstein’s field equations.  It is valid only in the empty space <em>outside</em> the object.  The mathematical form is different in the object’s interior which is occupied by matter.</p>
+<p>The Schwarzschild metric contains the “curvature of space” in the radial term.  The radial distance measured simultaneously <span class="math notranslate nohighlight">\((dt = 0)\)</span> between two nearby points on the same radial line <span class="math notranslate nohighlight">\((\theta = d\phi = 0)\)</span> is just the proper distance (Eq. <a class="reference internal" href="#equation-proper-distance">(3.17)</a>),</p>
+<div class="amsmath math notranslate nohighlight" id="equation-cc21574b-0abf-4fd2-94d4-3922112a63cc">
+<span class="eqno">(3.23)<a class="headerlink" href="#equation-cc21574b-0abf-4fd2-94d4-3922112a63cc" title="Permalink to this equation">#</a></span>\[\begin{align}
+d\mathcal{L} = \sqrt{-(ds)^2} = \frac{dr}{\sqrt{1-2GM/(rc^2)}}.
+\end{align}\]</div>
+<p>The spatial distance <span class="math notranslate nohighlight">\(d\mathcal{L}\)</span> between two points on the same radial line is <em>greater</em> than the coordinate difference <span class="math notranslate nohighlight">\(dr\)</span> (i.e., the denominator must be less than unity).  This represents the stretched grid lines in the rubber sheet analogy.  The factor <span class="math notranslate nohighlight">\(1/\sqrt{1-2GM/(rc^2)}\)</span> must be included in any calculation of spatial distances.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When using a topographic map to measure the distances along a steep trail, the elevation contour lines must be included in any calculation of the actual hiking distance.  The same is true for measuring distances in a curved spacetime.</p>
+</div>
+<p>The Schwarzschild metric also incorporates time dilation and the gravitational redshift.  If a clock is at rest at the radial coordinate <span class="math notranslate nohighlight">\(r\)</span>, then the proper time <span class="math notranslate nohighlight">\(d\tau\)</span> it records is related to the time that elapses at an infinite distance by</p>
+<div class="amsmath math notranslate nohighlight" id="equation-08a33e4f-bf0d-4a09-b78a-943306362ed7">
+<span class="eqno">(3.24)<a class="headerlink" href="#equation-08a33e4f-bf0d-4a09-b78a-943306362ed7" title="Permalink to this equation">#</a></span>\[\begin{align}
+d\tau = \frac{ds}{c} = dt \sqrt{1-2GM/(rc^2)}.
+\end{align}\]</div>
+<p>Since <span class="math notranslate nohighlight">\(d\tau &lt; dt\)</span>, this shows that time passes more slowly closer to the massive sphere.</p>
 </div>
 <div class="section" id="the-orbit-of-a-satellite">
 <h3><span class="section-number">3.2.5. </span>The Orbit of a Satellite<a class="headerlink" href="#the-orbit-of-a-satellite" title="Permalink to this headline">#</a></h3>
+<p>General relativity shows us that a curved spacetime tells an orbiting particle of mass <span class="math notranslate nohighlight">\(m\)</span> <em>how</em> to move around a central massive object of mass <span class="math notranslate nohighlight">\(M\)</span>.  The rule is that it will follow the straightest possible worldline, the worldline with an <em>extremal</em> interval (assuming <span class="math notranslate nohighlight">\(m\ll M\)</span>).</p>
+<p>According to Newton, the motion of a satellite in a circular orbit around Earth is found by simply equating the centripetal and gravitational accelerations, through</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{v^2}{r} &amp;= \frac{GM}{r^2}, \\
+v &amp;= \sqrt{\frac{GM}{r}},
+\end{align*}\]</div>
+<p>where <span class="math notranslate nohighlight">\(v\)</span> is the orbital speed.</p>
+<p>Einstein and Newton must agree on the limiting case of weak gravity, so this result must come naturally from the Schwarzschild metric for curved spacetime (after some approximation).  Using the Schwarzschild metric, we find that the straightest possible worldline is a circular orbit.</p>
+<p>Determining the maximum interval between two fixed events requires applying the laws of conservation of energy, momentum, and angular momentum because they are built into Einstein’s field equations.  However, a simpler strategy <em>assumes</em> that the satellite travels around the <a class="reference external" href="https://en.wikipedia.org/wiki/Spherical_coordinate_system">equator</a> of the host body <span class="math notranslate nohighlight">\((\text{polar angle, }\theta = 90^\circ)\)</span> in a circular orbit with a specified angular speed <span class="math notranslate nohighlight">\(\omega = v/r\)</span>.  For a closed, unperturbed orbit, we find <span class="math notranslate nohighlight">\(dr = 0\)</span>, <span class="math notranslate nohighlight">\(d\theta = 0\)</span>, and <span class="math notranslate nohighlight">\(d\phi = \omega dt\)</span>.  Applying these conditions to the Schwarzschild metric (Eq. <a class="reference internal" href="#equation-schwarzschild-metric">(3.22)</a>) gives,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+(ds)^2 &amp;= \left[ \left(c\sqrt{1-2GM/rc^2 }\right) - r^2 \omega^2 \right]dt^2, \\
+&amp;= \left( c^2 - \frac{2GM}{r} -r^2\omega^2 \right)dt^2.
+\end{align*}\]</div>
+<p>Integrating the spacetime interval for one orbit <span class="math notranslate nohighlight">\((T = 2\pi/\omega = 2\pi r/v)\)</span> is just</p>
+<div class="math notranslate nohighlight" id="equation-orbit-integral">
+<span class="eqno">(3.25)<a class="headerlink" href="#equation-orbit-integral" title="Permalink to this equation">#</a></span>\[\Delta s = \int_0^T \sqrt{c^2-\frac{2GM}{r} - r^2\omega^2 }\ dt.\]</div>
+<p>Since we assumed that the orbit is closed and unperturbed, we must be certain that the endpoints of the satellite’s worldline remain fixed (i.e., the satellites must begin and end at the same position <span class="math notranslate nohighlight">\(r_o\)</span> for all worldlines).  The satellite can move (rapidly) radially outward from <span class="math notranslate nohighlight">\(r_o\)</span> to a radius <span class="math notranslate nohighlight">\(r\)</span>, as long as the satellite returns just as rapidly to its starting point.  The net effect is a purely circular motion.</p>
+<p>In Eq. <a class="reference internal" href="#equation-orbit-integral">(3.25)</a>, the limits of integration are constant and the only variable is <span class="math notranslate nohighlight">\(r\)</span>.  The value of the radial coordinate actually followed by the satellite must be for which <span class="math notranslate nohighlight">\(\Delta s\)</span> is an extremum. <em>Recall from Calculus that extremum are found by setting the first derivative to zero.</em>  Doing so produces,</p>
+<div class="math notranslate nohighlight">
+\[ \frac{d}{dr}(\Delta s) = \frac{d}{dr} \left(\int_0^T \sqrt{c^2-\frac{2GM}{r} - r^2\omega^2 }dt \right) = 0. \]</div>
+<p>The derivative may be taken inside the integral to obtain</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d}{dr} \sqrt{c^2-\frac{2GM}{r} - r^2\omega^2 } &amp;= 0,\\
+\frac{d}{dr} \left( \frac{2GM}{r} - r^2\omega^2 \right) &amp;= 0,\\
+\frac{2GM}{r^2} - 2r\omega^2 &amp;=0.
+\end{align*}\]</div>
+<p>Using <span class="math notranslate nohighlight">\(v=r\omega\)</span> allows us to write</p>
+<div class="amsmath math notranslate nohighlight" id="equation-3a0f2a7f-bb6a-4990-8a3f-2f23d104b093">
+<span class="eqno">(3.26)<a class="headerlink" href="#equation-3a0f2a7f-bb6a-4990-8a3f-2f23d104b093" title="Permalink to this equation">#</a></span>\[\begin{align}
+v = r \omega = \sqrt{\frac{GM}{r}},
+\end{align}\]</div>
+<p>which is the coordinate speed of the satellite for a circular orbit.  This result is valid even for the very large spacetime curvature around a black hole!</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By coordinate speed, we mean that <span class="math notranslate nohighlight">\(v = r\ d\phi/dt\)</span> is the speed of the satellite measured in the <span class="math notranslate nohighlight">\((r,\ \theta,\ \phi,\ t)\)</span> coordinate system by a distant observer.</p>
+</div>
+<div class="figure align-default" id="orbital-worldline">
+<a class="reference internal image-reference" href="../_images/Figure_18.jpg"><img alt="orbital worldline" src="../_images/Figure_18.jpg" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.5 </span><span class="caption-text">The straightest possible worldline through curved spacetime and its projection onto the orbital plane of the satellite.  Image Credit: Carroll &amp; Ostlie (2007).</span><a class="headerlink" href="#orbital-worldline" title="Permalink to this image">#</a></p>
+</div>
 </div>
 </div>
 <div class="section" id="black-holes">
 <h2><span class="section-number">3.3. </span>Black Holes<a class="headerlink" href="#black-holes" title="Permalink to this headline">#</a></h2>
+<p>In 1783, <a class="reference external" href="https://en.wikipedia.org/wiki/John_Michell">John Michell</a> considered the implications of Newton’s <a class="reference external" href="https://en.wikipedia.org/wiki/Corpuscular_theory_of_light">corpuscular theory of light</a>, where light exists as a stream of particles.  Michell reasoned that this stream of particles should be influenced by gravity and a star with 500 times more gravity than the Sun (keeping the average density constant) would be sufficiently strong to prevent light from escaping it.  The escape velocity of Michell’s star would be the speed of light.</p>
+<p>Naively, we can use the Newtonian formula for the escape velocity equal to c to show that</p>
+<div class="math notranslate nohighlight">
+\[ R = \frac{2GM}{c^2}\]</div>
+<p>is the radius of a star whose escape velocity equals the speed of light.  Using the mass of the Sun, <span class="math notranslate nohighlight">\(R = 2.95(M/M_\odot)\ {\rm km}\)</span>.  The resulting radius of such a star seemed unrealistically small, and so it held little interest for astronomers until the mid 1900s.</p>
+<p>In 1939, <a class="reference external" href="https://en.wikipedia.org/wiki/J._Robert_Oppenheimer">J. Robert Oppenheimer</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Hartland_Snyder">Hartland Snyder</a> described the ultimate gravitational collapse of a massive star that exhausted its sources of nuclear fusion.  Oppenheimer and Snyder pursued the question of the fate of a degenerate star that might exceed this limit and surrender completely to the force of gravity.  See <a class="reference external" href="https://journals.aps.org/pr/pdf/10.1103/PhysRev.56.455">Oppenheimer &amp; Snyder 1939</a> for more details.</p>
 <div class="section" id="the-schwarzschild-radius">
 <h3><span class="section-number">3.3.1. </span>The Schwarzschild Radius<a class="headerlink" href="#the-schwarzschild-radius" title="Permalink to this headline">#</a></h3>
+<p>For the simplest case of a nonrotating star, we can estimate the radius of an object where gravity dominates over light.  The answer lies in the Schwarzschild metric (Eq. <a class="reference internal" href="#equation-schwarzschild-metric">(3.22)</a>), where the time and radial terms have a common factor</p>
+<div class="math notranslate nohighlight">
+\[ \sqrt{1-\frac{2GM}{rc^2}}.\]</div>
+<p>To find the limiting radius, we simply identify when the square root in the metric goes to zero:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-17dc5e0e-7652-46f9-8a9c-47a8100254e2">
+<span class="eqno">(3.27)<a class="headerlink" href="#equation-17dc5e0e-7652-46f9-8a9c-47a8100254e2" title="Permalink to this equation">#</a></span>\[\begin{align}
+R_S = \frac{2GM}{c^2},
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(R_S\)</span> is the <strong>Schwarzschild radius</strong>.  The behavior at the Schwarzschild radius (i.e., <span class="math notranslate nohighlight">\(r=R_S\)</span>) is bizarre, where the proper time is <span class="math notranslate nohighlight">\(d\tau = 0\)</span>.  Time has slowed to a complete stop, as measured by a distant observer.  <em>Nothing ever happens at the Schwarzschild radius!</em></p>
+<p><em>Does it imply that even light is frozen in time?</em>  The speed of light measured by an observed suspended above the collapsed star must always be <span class="math notranslate nohighlight">\(c\)</span>.  A distant observer can determine that the light is delayed as it moves through curved spacetime.  The apparent speed of light (i.e., the rate of change for the spatial coordinates of a photon) is called the <em>coordinate speed of light</em>.  For a radially moving photon (i.e., <span class="math notranslate nohighlight">\(d\theta = d\phi = 0\)</span>), we can determine the coordinate speed of light suing the Schwarzschild metric (with <span class="math notranslate nohighlight">\(ds=0\)</span>) as</p>
+<div class="math notranslate nohighlight" id="equation-coord-speed-light">
+<span class="eqno">(3.28)<a class="headerlink" href="#equation-coord-speed-light" title="Permalink to this equation">#</a></span>\[\begin{split}0 &amp;= \left(c\ dt\sqrt{1-2GM/(rc^2)} \right)^2 - \left(\frac{dr}{\sqrt{1-2GM/(rc^2)}} \right)^2, \\
+\frac{dr}{dt} &amp;= c \left(1-\frac{2GM}{rc^2} \right), \\
+&amp;= c\left(1-\frac{R_S}{r}\right).\end{split}\]</div>
+<p>When <span class="math notranslate nohighlight">\(r\gg R_S\)</span>, then <span class="math notranslate nohighlight">\(dr/dt \simeq c\)</span>, as expected in flat spacetime.  However, at <span class="math notranslate nohighlight">\(r=R_S\)</span>, <span class="math notranslate nohighlight">\(dr/dt = 0\)</span> (see Fig. <a class="reference internal" href="#coordinate-speed"><span class="std std-numref">3.6</span></a> and its python code for implementation).  Light is indeed frozen in time at the Schwarzschild radius.  The spherical surface at <span class="math notranslate nohighlight">\(r=R_S\)</span> acts as a barrier and prevents any information to flow outward from within.</p>
+<div class="figure align-default" id="coordinate-speed" style="width: 600px">
+<div class="cell_output docutils container">
+<img alt="../_images/general-relativity-and-black-holes_14_0.png" src="../_images/general-relativity-and-black-holes_14_0.png" />
+</div>
+<p class="caption"><span class="caption-number">Fig. 3.6 </span><span class="caption-text">The coordinate speed from the reference of the photon (black), the reference frame <span class="math notranslate nohighlight">\(S\)</span> (red), and from a freely falling distant observer at infinity (blue).</span><a class="headerlink" href="#coordinate-speed" title="Permalink to this image">#</a></p>
+</div>
+<div class="cell tag_remove-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">rcParams</span>
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+
+<span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">14</span><span class="p">})</span>
+<span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;mathtext.fontset&#39;</span><span class="p">:</span> <span class="s1">&#39;cm&#39;</span><span class="p">})</span>
+
+<span class="n">fs</span> <span class="o">=</span> <span class="s1">&#39;large&#39;</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mf">0.1</span><span class="p">)</span> <span class="c1">#radius r relative to the Schwarzschild radius R_s </span>
+
+<span class="n">v_light</span> <span class="o">=</span> <span class="mf">1.</span> <span class="o">-</span> <span class="mf">1.</span><span class="o">/</span><span class="n">r</span> <span class="c1">#Coordinate speed of light</span>
+<span class="n">v_S</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">r</span><span class="p">)</span> <span class="c1">#Coordinate speed of frame seen from S</span>
+<span class="n">v_inf</span> <span class="o">=</span> <span class="n">v_light</span><span class="o">*</span><span class="n">v_S</span> <span class="c1">#Coordinate speed of frame seen from infinity</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">v_light</span><span class="p">,</span><span class="s1">&#39;k-&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Coordinate speed of light&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">v_S</span><span class="p">,</span><span class="s1">&#39;r-&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Coordinate speed of frame (from frame $S$)&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">r</span><span class="p">,</span><span class="n">v_inf</span><span class="p">,</span><span class="s1">&#39;b-&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Coordinate speed of frame (from $\infty$)&quot;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="s1">&#39;small&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">minorticks_on</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;major&#39;</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">direction</span><span class="o">=</span><span class="s1">&#39;out&#39;</span><span class="p">,</span><span class="n">length</span> <span class="o">=</span> <span class="mf">8.0</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mf">6.0</span><span class="p">,</span><span class="n">labelsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;minor&#39;</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span> <span class="n">direction</span><span class="o">=</span><span class="s1">&#39;out&#39;</span><span class="p">,</span><span class="n">length</span> <span class="o">=</span> <span class="mf">6.0</span><span class="p">,</span> <span class="n">width</span> <span class="o">=</span> <span class="mf">4.0</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;$r/R_S$&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Coordinate speed $v/c$&quot;</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="n">fs</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+
+
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;coordinate_speed_fig&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>For this reason, a star that has collapsed down within the Schwarzschild radius is called a <a class="reference external" href="https://en.wikipedia.org/wiki/Black_hole"><strong>black hole</strong></a>.  It is enclosed by the <strong>event horizon</strong>, which is a <em>spherical surface</em> at <span class="math notranslate nohighlight">\(r=R_S\)</span>.</p>
+<p>Although the interior of a black hole is a region that is forever hidden from us, its properties can still be calculated.  A nonrotating black hole has a <strong>singularity</strong> (i.e., a point of zero volume and infinite density) at the center, where all the black hole’s mass is located.  Spacetime is infinitely curved at the singularity.  Cloaking the central singularity is the event horizon, where there is a hypothesis dubbed the <a class="reference external" href="https://en.wikipedia.org/wiki/Cosmic_censorship_hypothesis">Law of Cosmic Censorship</a> that forbids a <em>naked singularity</em> from appearing without an associated event horizon (i.e., unclothed).</p>
 </div>
 <div class="section" id="a-trip-into-a-black-hole">
 <h3><span class="section-number">3.3.2. </span>A Trip into a Black Hole<a class="headerlink" href="#a-trip-into-a-black-hole" title="Permalink to this headline">#</a></h3>
+<p>Imagine an attempt to investigate the black hole by starting a safe distance and reflecting a radio wave from an object at the event horizon.  <em>How much time will it take for a photon to reach the event horizon from a radial coordinate <span class="math notranslate nohighlight">\(r\gg R_S\)</span> and then return?</em></p>
+<p>Since the roundtrip is symmetric, it is necessary to only determine half of the journey and double the result.  It is easiest to <a class="reference external" href="https://www.wolframalpha.com/input?i=integral+dr%2F%281-R%2Fr%29">integrate</a> the coordinate speed of light in the radial direction (Eq. <a class="reference internal" href="#equation-coord-speed-light">(3.28)</a>) between two arbitrary values of <span class="math notranslate nohighlight">\(r_1\)</span> and <span class="math notranslate nohighlight">\(r_2\)</span> to obtain</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\Delta t &amp;= \int_{r_1}^{r_2} \frac{dr}{dr/dt} = \int_{r_1}^{r_2} \frac{dr}{c(1-R_s/r)}, \\
+&amp;= \frac{r_2-r_1}{c} + \frac{R_s}{c} \ln{\left(\frac{r_2-R_S}{r_1-R_S}\right)},
+\end{align*}\]</div>
+<p>assuming that <span class="math notranslate nohighlight">\(r_1&lt; r_2\)</span>.  Inserting <span class="math notranslate nohighlight">\(r_1 = R_s\)</span> for the photon’s original position, we find that <span class="math notranslate nohighlight">\(\Delta t = \infty\)</span>.  The radio photon will <em>never</em> reach the event horizon.  Instead the photon’s coordinate velocity will slow down until it finally stops at the event horizon in the infinite future.  Any object falling toward the event horizon will suffer the same fate.  In a sense, a black hole is a <em>frozen star</em> because the surface of the event horizon appears frozen from the outside.</p>
+<p>A brave (and <em>indestructible</em>) astronomer decides to start from rest at a great distance, and fall freely toward a <span class="math notranslate nohighlight">\(10\ M_\odot\)</span> black hole (<span class="math notranslate nohighlight">\(R_s\simeq 30 {\rm km}\)</span>).  The astronomer’s local inertial frame <span class="math notranslate nohighlight">\(S\)</span> falls with a coordinate speed <span class="math notranslate nohighlight">\(dr/dt\)</span> all the way to the event horizon.  During the acceleration, a monochromatic flashlight sends a pulse of photons in our direction once per second.  As the infall progresses, the light signals arrive farther and farther apart for several reasons:</p>
+<ol class="simple">
+<li><p>Subsequent signals must travel a longer distance as the astronomer accelerates.  The proper time <span class="math notranslate nohighlight">\(\tau\)</span> is running more slowly than our coordinate time <span class="math notranslate nohighlight">\(t\)</span> from the location (gravitational time dilation) and motion (special relativity time dilation) of the astronomer.</p></li>
+<li><p>The coordinate speed of light becomes slower as the astronomer approaches the black hole, so the signals travel back to us more slowly.</p></li>
+<li><p>The frequency of light waves we receive is increasingly redshifted.  This is cased by the astronomer’s acceleration away from us and the gravitational redshift.  The redshifted light may be in a range that is not optimal for our detector.</p></li>
+<li><p>The light becomes dimmer as the rate at which the flashlight pulses decreases and the energy per photon <span class="math notranslate nohighlight">\((hc/\lambda)\)</span> declines.</p></li>
+</ol>
+<p>At about <span class="math notranslate nohighlight">\(2\ R_S\)</span> from the event horizon, the time between signals begins to increase without limit as the strength of the signals decreases.  The astronomer is frozen in time.</p>
+<p><em>How does all of this appear from the astronomer’s frame?</em>  Because gravity is abolished in the local frame, initially the approach to the black hole goes unnoticed.  The astronomer’s watch displays the proper time <span class="math notranslate nohighlight">\(\tau\)</span>, from which the flashlight pulses are timed.</p>
+<p>However, the astronomer begins to feel stretched in the radial direction and compressed in the perpendicular direction.  The gravitational pull on the astronomer’s feet (nearer to the black hole) is stronger than on the astronomer’s head.  The variation in the direction of gravity from side to side produces a compression that is even more severe.  The differential <em>tidal forces</em> increase in strength as the astronomer approaches the event horizon.  The size of the local frame (where gravity is abolished) becomes smaller as the spatial variation in the gravitational acceleration vector increases.  this is why the astronomer need be indestructible, because the tidal force would tear the astronomer apart at a distance of several hundred kilometers from the black hole.</p>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/QqsLTNkzvaY"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
+<p>In just <span class="math notranslate nohighlight">\(2\ \rm ms\)</span> (proper time), the astronomer falls the final few hundred kilometers to the event horizon and crosses it.  It is impossible for any particle to be at rest when <span class="math notranslate nohighlight">\(r &lt; R_S\)</span>, as can be seen from the Schwarzschild metric (Eq. <a class="reference internal" href="#equation-schwarzschild-metric">(3.22)</a>).  The interval can be calculated for an object at rest (i.e., <span class="math notranslate nohighlight">\(dr=d\theta=d\phi=0\)</span>) by</p>
+<div class="math notranslate nohighlight">
+\[ (ds)^2 = (c\ dt)^2\left(1-\frac{R_S}{r}\right) &lt;0, \]</div>
+<p>when <span class="math notranslate nohighlight">\(r&lt;R_S\)</span>.  This is a <em>spacelike</em> interval that is not permitted for particles.  Therefore it is impossible to remain at rest.  Within the event horizon of a nonrotating black hole, all world lines converge a the singularity.  Even photons are pulled in toward the center.</p>
+<p>To see an object, you need to bounce photons off of the object and detect them with your retinas.  If the photons are pulled toward the center, then they can’t make the return trip for you to detect them.  This means that the astronomer never has an opportunity to glimpse the singularity.  Although the elapsed coordinate time in the outside world does become infinite, the light from all of these events does not have time to read the astronomer.  Instead, the events occur outside the astronomer’s light cone (in the elsewhere).  See more detail in <a class="reference external" href="https://www.google.com/books/edition/Frontiers_of_Modern_Physics/1DUbAQAAIAAJ?hl=en&amp;kptab=overview">Rothman et al. (1985)</a>.</p>
 </div>
 <div class="section" id="mass-ranges-of-black-holes">
 <h3><span class="section-number">3.3.3. </span>Mass Ranges of Black Holes<a class="headerlink" href="#mass-ranges-of-black-holes" title="Permalink to this headline">#</a></h3>
+<p>Black holes appear to exist within a range of masses.</p>
+<ul class="simple">
+<li><p><strong>Stellar-mass</strong> black holes (<span class="math notranslate nohighlight">\({\sim}3-15\ M_\odot\)</span>) may from directly or indirectly as a consequence of the core-collapse of a sufficiently massive supergiant star.</p>
+<ul>
+<li><p>The direct collapse of the core to a black hole may be responsible for the production of <a class="reference external" href="https://en.wikipedia.org/wiki/Collapsar">collapsar</a>, whereas a delayed collapse of a rapidly rotating neutron star may result in a supranova (<a class="reference external" href="https://ui.adsabs.harvard.edu/link_gateway/1998ApJ...507L..45V/PUB_PDF">Vietri &amp; Stella (1998)</a>).</p></li>
+<li><p>It is also possible that a neutron star in a close binary system may gravitationally strip enough mass from its companion that the neutron’s self-gravity exceeds the ability of the degeneracy pressure to support it, resulting in a black hole.</p></li>
+</ul>
+</li>
+<li><p><strong>Intermediate-mass</strong> black holes (IMBHs) may exist from <span class="math notranslate nohighlight">\(100\ M_\odot\)</span> to <span class="math notranslate nohighlight">\(&gt;10^3-10^4\ M_\odot\)</span>.</p>
+<ul>
+<li><p>Evidence for them exists in the detection of <a class="reference external" href="https://en.wikipedia.org/wiki/Ultraluminous_X-ray_source"><strong>ultraluminious X-ray sources</strong></a> (ULXs) with space telescopes <a class="reference external" href="https://chandra.harvard.edu/">Chandra</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/XMM-Newton">XMM-Newton</a>.</p></li>
+<li><p>It is not clear how these objects might form, although correlation of IMBHs with the cores of globular clusters and low-mass galaxies suggests that they develop through mergers of stars (to form supermassive stars that undergo core-collapse), or by the merger of stellar-mass black holes.</p></li>
+</ul>
+</li>
+<li><p><strong>Supermassive</strong> black holes (SMBHs) range in mass from <span class="math notranslate nohighlight">\(10^5-10^9\ M_\odot\)</span> and lie at the centers of many galaxies (probably most).  Our own Milky Way Galaxy has a central black hole of mass <span class="math notranslate nohighlight">\(M = (3.7 \pm 0.2) \times 10^6\ M_\odot\)</span>.</p>
+<ul>
+<li><p>How these behemoths formed remains an open question.  One popular suggestion is that they formed from galaxy collisions.  Another is that they formed as an extension of the IMBH formation process.</p></li>
+<li><p>SMBHs appear to be closely linked with some bulk properties of galaxies, implying an important connection between galaxy formation and the formation of SMBHs.</p></li>
+</ul>
+</li>
+<li><p><strong>Primordial</strong> black holes may have been manufactured in the instants of the universe and may range from <span class="math notranslate nohighlight">\(10^{-8}\ {\rm kg}\)</span> to <span class="math notranslate nohighlight">\(10^5\ M_\odot\)</span>.</p></li>
+</ul>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/sqfbHyfuYDM"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
+<div class="exercise orange admonition" id="Chapter_17/general-relativity-and-black-holes-exercise-2">
+
+<p class="admonition-title"><span class="caption-number">Exercise 3.3 </span></p>
+<div class="section" id="exercise-content">
+<p><strong>If Earth could somehow be compressed sufficiently to become a black hole:</strong></p>
+<p><em>What would be its Schwarzschild radius?</em></p>
+<p>The Schwarzschild radius of any object can be computed using</p>
+<div class="math notranslate nohighlight">
+\[R_S = \frac{2GM}{c^2}, \]</div>
+<p>where we substitute <span class="math notranslate nohighlight">\(M_\oplus = 5.972 \times 10^{24}\ {\rm kg}\)</span> for the <span class="math notranslate nohighlight">\(M\)</span> in the above equation.  This results in</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+R_S &amp;= \frac{2(6.674 \times 10^{-11}\ \rm N\ m^2/kg^2)(5.972 \times 10^{24}\ \rm kg)}{(3 \times 10^8\ \rm m/s)^2}, \\
+&amp; = 8.87 \times 10^{-3}\ {\rm m} = 8.87\ \rm mm.
+\end{align*}\]</div>
+<p>Although a primordial black hole could be this size, it is almost impossible to imagine packing Earth’s entire mass into so small a ball.</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">c</span><span class="p">,</span> <span class="n">G</span>
+
+<span class="n">M_Earth</span> <span class="o">=</span> <span class="mf">5.972e24</span> <span class="c1">#Earth mass in kg</span>
+<span class="n">R_S</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">G</span><span class="o">*</span><span class="n">M_Earth</span><span class="o">/</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The Schwarzschild radius R_S for an Earth-mass object is </span><span class="si">%1.3e</span><span class="s2"> m.&quot;</span> <span class="o">%</span> <span class="n">R_S</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The Schwarzschild radius R_S for an Earth-mass object is 8.870e-03 m.
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="black-holes-have-no-hair">
 <h3><span class="section-number">3.3.4. </span>Black Holes Have No Hair!<a class="headerlink" href="#black-holes-have-no-hair" title="Permalink to this headline">#</a></h3>
+<p>The formation of black holes are probably complicated, where the core-collapse of a star is almost certainly not symmetrical.  Detailed calculations have demonstrated that any irregularities are radiated away by gravitational waves.  Once the surface of collapsing star reaches the event horizon, the exterior spacetime horizon is spherically symmetric and described by the Schwarzschild metric.</p>
+<p>Another complication is the fact that stars rotate, and therefore so will the resulting black hole.  Remarkably, any black hole can be completely described by just three numbers: its mass, angular momentum, and electric charge.  Black holes have no other attributes or adornments, a condition commonly expressed by saying that <a class="reference external" href="https://en.wikipedia.org/wiki/No-hair_theorem">“a black hole has no hair”</a>.</p>
+<p>There is a firm upper limit for a rotating black hole’s angular momentum given by</p>
+<div class="amsmath math notranslate nohighlight" id="equation-d1549adc-9b50-4804-b9f0-13326d1d24a5">
+<span class="eqno">(3.29)<a class="headerlink" href="#equation-d1549adc-9b50-4804-b9f0-13326d1d24a5" title="Permalink to this equation">#</a></span>\[\begin{align}
+L_{\rm max} = \frac{GM^2}{c}.
+\end{align}\]</div>
+<p>If the angular momentum of a rotating black hole were to exceed this limit, there would be no event horizon and a naked singularity would appear (in violation of the Law of Cosmic Censorship).</p>
+<div class="exercise orange admonition" id="Chapter_17/general-relativity-and-black-holes-exercise-3">
+
+<p class="admonition-title"><span class="caption-number">Exercise 3.4 </span></p>
+<div class="section" id="exercise-content">
+<p><strong>The mass of the Sun is <span class="math notranslate nohighlight">\(M_\odot = 1.989 \times 10^{30}\ \rm kg\)</span> and its angular momentum is <span class="math notranslate nohighlight">\(L_{\rm Sun} = 1.63 \times 10^{41}\ {\rm kg\ m^2/s}\)</span>.</strong>  Note that the subscript <span class="math notranslate nohighlight">\(\rm Sun\)</span> is used so that one is not confused by the notation of a solar luminosity <span class="math notranslate nohighlight">\(L_\odot\)</span>.</p>
+<p><em>What is the maximum angular momentum for a solar-mass black hole and how does it compare with <span class="math notranslate nohighlight">\(L_{\rm Sun}\)</span>?</em></p>
+<p>The maximum angular moment for a solar-mass black hole is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+L_{\rm max} &amp;= \frac{GM_\odot^2}{c}, \\
+&amp;= \frac{(6.674 \times 10^{-11}\ \rm N\ m^2/kg^2)(1.989 \times 10^{30}\ \rm kg)^2}{3 \times 10^8\ \rm m/s}, \\
+&amp; = 8.81 \times 10^{41} {\rm kg\ m^2/s}.
+\end{align*}\]</div>
+<p>The Sun’s current angular momentum is <span class="math notranslate nohighlight">\(L_{\rm Sun} = 0.18 L_{\rm max}\)</span>, or 18% of the maximum value.  Many stars will have angular momenta that are comparable to <span class="math notranslate nohighlight">\(L_{\rm max}\)</span>, and fast rotation ought to be common for stellar-mass black holes.</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">c</span><span class="p">,</span> <span class="n">G</span>
+
+<span class="n">M_odot</span> <span class="o">=</span> <span class="mf">1.989e30</span> <span class="c1">#mass of the Sun in kg</span>
+<span class="n">L_sun</span> <span class="o">=</span> <span class="mf">1.63e41</span> <span class="c1">#angular momentum of the Sun in kg m^2/s</span>
+<span class="n">L_max</span> <span class="o">=</span> <span class="p">(</span><span class="n">G</span><span class="o">*</span><span class="n">M_odot</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="n">c</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The maximum angular momentum of a solar-mass black hole is </span><span class="si">%1.2e</span><span class="s2"> kg m^2/s.&quot;</span> <span class="o">%</span> <span class="n">L_max</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The Sun&#39;s current angular momentum is </span><span class="si">%i</span><span class="s2"> percent of this maximum value.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">L_sun</span><span class="o">/</span><span class="n">L_max</span><span class="o">*</span><span class="mi">100</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The maximum angular momentum of a solar-mass black hole is 8.81e+41 kg m^2/s.
+The Sun&#39;s current angular momentum is 18 percent of this maximum value.
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 <div class="section" id="spacetime-frame-dragging">
 <h3><span class="section-number">3.3.5. </span>Spacetime Frame Dragging<a class="headerlink" href="#spacetime-frame-dragging" title="Permalink to this headline">#</a></h3>
+<p>The structure of a maximally rotating black hole (see Fig. <a class="reference internal" href="#rotating-blackhole"><span class="std std-numref">3.7</span></a>) distorts the central singularity from a point into a flat ring, and the event horizon assumes an ellipsoid shape.  As a massive object spins, it induces a rotation in the surrounding spacetime, which is known as <strong>frame dragging</strong>.  The <a class="reference external" href="https://en.wikipedia.org/wiki/Kerr_metric"><strong>Kerr metric</strong></a> is used to describe rotating black holes, which was derived from Einstein’s field equations by <a class="reference external" href="https://en.wikipedia.org/wiki/Roy_Kerr">Roy Kerr</a> in 1963.</p>
+<div class="figure align-default" id="rotating-blackhole">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/0/00/Ergosphere_and_event_horizon_of_a_rotating_black_hole_%28no_animation%29.gif?20170706075355"><img alt="rotating black hole" src="https://upload.wikimedia.org/wikipedia/commons/0/00/Ergosphere_and_event_horizon_of_a_rotating_black_hole_%28no_animation%29.gif?20170706075355" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.7 </span><span class="caption-text">The boundaries of a Kerr black hole relevant to astrophysics. Note that there are no physical “surfaces” as such. The boundaries are mathematical surfaces, or sets of points in spacetime, relevant to analysis of the black hole’s properties and interactions.  Image Credit:[Wikipedia:Rotating_black_hole].</span><a class="headerlink" href="#rotating-blackhole" title="Permalink to this image">#</a></p>
+</div>
+<p>Recall the behavior of a pendulum swinging at the north pole of Earth.  As Earth rotates, the plane of the pendulum’s swing remains fixed with respect to the distant stars.  The stars define a nonrotating reference frame for the universe, and it is relative to this frame that the pendulum’s swing remains planar.</p>
+<p>However, the rotating spacetime close to a massive spinning object produces a local deviation from the nonrotating frame.  Near a rotating black hole, frame dragging is so severe that there is a nonspherical region outside the event horizon called the <strong>ergosphere</strong>, where any particle <em>must</em> move in the same direction as the black hole rotates.  Spacetime within the ergosphere is rotating so rapidly that a particle’s speed would exceed the speed of light to remain at the same angular coordinate (i.e., at the same <span class="math notranslate nohighlight">\(\phi\)</span> for a distant observer).  The outer boundary of the ergosphere is called the <strong>static limit</strong>, where a particle can remain at the same coordinate as the effect of frame dragging diminishes.</p>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/yqopDx2F6Lk"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
+<p>Even Earth’s rotation produces very weak frame dragging.  Detecting the effect of frame dragging was the mission of the <a class="reference external" href="https://einstein.stanford.edu/">Stanford Gravity Probe B experiment</a>.  The polar-orbit spacecraft (from April 2004–October 2005) employed four superconducting gyroscopes made of precisely shaped spheres of fused quartz (<span class="math notranslate nohighlight">\(3.8\ \rm cm\)</span> in diameter).  The gyroscopes were so nearly freely rotating that they formed an almost perfect spacetime reference frame.</p>
+<p>Although the predicted precession rate of the gyroscopes was only <span class="math notranslate nohighlight">\(0.042\ ^{\prime\prime}{\rm /yr}\)</span>, the effect of frame dragging is cumulative.  The experiment measured the effect due to the this precision to <span class="math notranslate nohighlight">\(20\%\)</span> precision, where other experiments measured the effect down to <span class="math notranslate nohighlight">\(10\%\)</span> precision (see an article from <a class="reference external" href="https://www.science.org/content/article/long-last-gravity-probe-b-satellite-proves-einstein-right">Science</a> for more detail.)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The previous descriptions of a black hole’s interior structure are based on vacuum solutions to Einstein’s field equations.  These solutions ignored the effects of the collapsing star’s mass, so the vacuum solutions do not describe the interior of a real black hole.  The present laws of physics (including general relativity) break down under the extreme conditions found very near the center.  The details of the singularity cannot be fully described until a theory of quantum gravity is found.</p>
+</div>
 </div>
 <div class="section" id="tunnels-in-spacetime">
 <h3><span class="section-number">3.3.6. </span>Tunnels in Spacetime<a class="headerlink" href="#tunnels-in-spacetime" title="Permalink to this headline">#</a></h3>
@@ -761,13 +1532,46 @@ title="Print to PDF"
 </div>
 <div class="section" id="hawking-radiation">
 <h3><span class="section-number">3.3.8. </span>Hawking Radiation<a class="headerlink" href="#hawking-radiation" title="Permalink to this headline">#</a></h3>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/9XkHBmE-N34"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
 </div>
 </div>
 <div class="section" id="homework">
 <h2><span class="section-number">3.4. </span><strong>Homework</strong><a class="headerlink" href="#homework" title="Permalink to this headline">#</a></h2>
 <div class="admonition-problem-1 admonition">
 <p class="admonition-title">Problem 1</p>
-<p>Problem 1 goes here.</p>
+<p><strong>A photon near the surface of Earth travels a horizontal distance of <span class="math notranslate nohighlight">\(1\ \rm km\)</span>.  How far does the photon “fall” in this time?</strong></p>
+</div>
+<div class="admonition-problem-2 admonition">
+<p class="admonition-title">Problem 2</p>
+<p><strong>Estimate the radius of curvature of a horizontally traveling photon at eh surface of a <span class="math notranslate nohighlight">\(1.4\ M_\odot\)</span> neutron star, and compare the result with the <span class="math notranslate nohighlight">\(10\ \rm km\)</span> radius of the star.  Can general relativity be neglected when studying the neutron stars?</strong></p>
+</div>
+<div class="admonition-problem-3 admonition">
+<p class="admonition-title">Problem 3</p>
+<p><strong><a class="reference external" href="https://en.wikipedia.org/wiki/Tau_Ceti"><span class="math notranslate nohighlight">\(\tau\)</span> Ceti</a> is the closest single star that is Sun-like.  At time <span class="math notranslate nohighlight">\(t=0\)</span>, Alice leaves Earth in her starship and travels at a speed of <span class="math notranslate nohighlight">\(0.95c\)</span> to <span class="math notranslate nohighlight">\(\tau\)</span> Ceti.  Her twin brother Bob, remains at home.</strong></p>
+<p><strong>(a)</strong> According to Bob, what is the interval between Alice’s leaving Earth and arriving at <span class="math notranslate nohighlight">\(\tau\)</span> Ceti?</p>
+<p><strong>(b)</strong> According to Alice, what is the interval between her leaving Earth and arriving at <span class="math notranslate nohighlight">\(\tau\)</span> Ceti?</p>
+<p><strong>(c)</strong> Upon arriving at <span class="math notranslate nohighlight">\(\tau\)</span> Ceti, Alice immediately turns around and returns to Earth at the same speed (<span class="math notranslate nohighlight">\(0.95c\)</span>).  What was the proper time for Alice during her round trip to <span class="math notranslate nohighlight">\(\tau\)</span> Ceti?</p>
+<p><strong>(d)</strong> When Alice and Bob are reunited on Earth, how much younger will Alice be than her brother?</p>
+</div>
+<div class="admonition-problem-4 admonition">
+<p class="admonition-title">Problem 4</p>
+<p><strong>Consider four black holes with masses of <span class="math notranslate nohighlight">\(10^{12}\ \rm kg\)</span>, <span class="math notranslate nohighlight">\(10\ M_\odot\)</span>, <span class="math notranslate nohighlight">\(10^5\ M_\odot\)</span>, and <span class="math notranslate nohighlight">\(10^9\ M_\odot\)</span>.</strong></p>
+<p><strong>(a)</strong> Calculate the Schwarzschild radius for each.</p>
+<p><strong>(b)</strong> Calculate the average density, defined by <span class="math notranslate nohighlight">\(\rho = M/(\frac{4}{3}\pi R_S^3)\)</span>, for each.</p>
+</div>
+<div class="admonition-problem-5 admonition">
+<p class="admonition-title">Problem 5</p>
+<p><strong>It can be shown that the orbit of a massive particle orbiting a nonrotating black hole is not stable unless <span class="math notranslate nohighlight">\(r \geq 3 R_S\)</span>, where any disturbance will cause a particle in a smaller orbit to spiral down to the event horizon.  For a <span class="math notranslate nohighlight">\(10\ M_\odot\)</span> black hole, and using</strong></p>
+<div class="math notranslate nohighlight">
+\[ v = r\omega = \sqrt{\frac{GM}{r}}\]</div>
+<p><strong>(a)</strong> Find the coordinate speed of a particle in the smallest stable orbit.</p>
+<p><strong>(b)</strong> Find the orbital period (in coordinate time <span class="math notranslate nohighlight">\(t\)</span>) for this smallest stable orbit.</p>
 </div>
 </div>
 </div>
@@ -822,7 +1626,7 @@ title="Print to PDF"
   
     By Billy Quarles<br/>
   
-      &copy; Copyright 2022.<br/>
+      &copy; Copyright 2023.<br/>
 </p>
         </footer>
     </div>

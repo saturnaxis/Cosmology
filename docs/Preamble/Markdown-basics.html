@@ -27,6 +27,8 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/exercise.css" />
     <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mycss.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -56,7 +58,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="1. The Theory of Special Relativity" href="../Chapter_01/intro-cosmology.html" />
+    <link rel="next" title="1. Introduction to Cosmology" href="../Chapter_01/intro-cosmology.html" />
     <link rel="prev" title="Introduction to Python" href="Python-basics.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -108,7 +110,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../home.html">
-                    ASTR4410: Modern Astrophysics
+                    ASTR3220: Cosmology
                 </a>
             </li>
         </ul>
@@ -142,7 +144,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../Chapter_01/intro-cosmology.html">
-   1. The Theory of Special Relativity
+   1. Introduction to Cosmology
   </a>
  </li>
  <li class="toctree-l1">
@@ -540,6 +542,11 @@ title="Print to PDF"
      Math Environment with LaTeX
     </a>
    </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adding-images-to-google-colab-markdown-cells">
+     Adding images to Google Colab Markdown cells
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -653,6 +660,11 @@ title="Print to PDF"
    <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#math-environment-with-latex">
      Math Environment with LaTeX
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adding-images-to-google-colab-markdown-cells">
+     Adding images to Google Colab Markdown cells
     </a>
    </li>
   </ul>
@@ -770,8 +782,8 @@ title="Print to PDF"
 </div>
 <div class="section" id="links">
 <h2>Links<a class="headerlink" href="#links" title="Permalink to this headline">#</a></h2>
-<p>To create a link with a word, enclose the link text in brackets (e.g., <code class="docutils literal notranslate"><span class="pre">[Modern</span> <span class="pre">Astrophysics]</span></code>) and then follow it immediately with the URL in parentheses (e.g., https://saturnaxis.github.io/ModernAstro/home.html).  The rendered output looks like this:</p>
-<p><a class="reference external" href="https://saturnaxis.github.io/ModernAstro/home.html">Modern Astrophysics</a></p>
+<p>To create a link with a word, enclose the link text in brackets (e.g., <code class="docutils literal notranslate"><span class="pre">[Cosmology]</span></code>) and then follow it immediately with the URL in parentheses (e.g., https://saturnaxis.github.io/Cosmology/home.html).  The rendered output looks like this:</p>
+<p><a class="reference external" href="https://saturnaxis.github.io/Cosmology/home.html">Modern Astrophysics</a></p>
 </div>
 <div class="section" id="math-environment-with-latex">
 <h2>Math Environment with LaTeX<a class="headerlink" href="#math-environment-with-latex" title="Permalink to this headline">#</a></h2>
@@ -781,6 +793,27 @@ title="Print to PDF"
 <li><p>Similar to other best practices, be sure to have 1 blank line before and after the equation.</p></li>
 <li><p>Also make sure that you end your equation with an appropriate <code class="docutils literal notranslate"><span class="pre">$</span></code> character.</p></li>
 </ul>
+</div>
+<div class="section" id="adding-images-to-google-colab-markdown-cells">
+<h2>Adding images to Google Colab Markdown cells<a class="headerlink" href="#adding-images-to-google-colab-markdown-cells" title="Permalink to this headline">#</a></h2>
+<p>Google Colab does not recognize images stored locally.  If you want the full explanation and directions, see this forum from stackoverflow</p>
+<p>https://stackoverflow.com/questions/50670920/how-to-insert-an-inline-image-in-google-colaboratory-from-google-drive/50672083#50672083</p>
+<p>If you want to load an image into your Markdown cell in Google Colab, you need to do the following:</p>
+<ul class="simple">
+<li><p>upload your image to your Google Drive</p></li>
+<li><p>right click on the file and select Get Link</p></li>
+<li><p>Change the permissions to allow anyone with a link to view the file</p></li>
+<li><p>Copy the link</p></li>
+<li><p>Then you can use the standard way to add an image to Markdown (i.e., <code class="docutils literal notranslate"><span class="pre">![image</span> <span class="pre">text](image_url))</span></code>. But you have to use <code class="docutils literal notranslate"><span class="pre">https://drive.google.com/uc?export=view&amp;id=</span></code> with the image id from your image link to make the image_url</p></li>
+</ul>
+<blockquote>
+<div><p>galaxy_wallpaper.jpg is in my Google Drive with permissions enabled</p>
+<p><code class="docutils literal notranslate"><span class="pre">https://drive.google.com/file/d/</span></code>image_id<code class="docutils literal notranslate"><span class="pre">/view?usp=sharing</span></code> is the shared file link</p>
+<p><code class="docutils literal notranslate"><span class="pre">https://drive.google.com/uc?export=view&amp;id=imageid</span></code> is the image_url for Markdown in Google Colab</p>
+</div></blockquote>
+<p>Here is another workaround using the Python code cell.  It assumes that you have uploaded your file already.  Just replace “galaxy.jpg” with your filename, and adjust as needed.</p>
+<p>from IPython.display import Image
+Image(‘galaxy.jpg’,width=400, height=400)</p>
 </div>
 </div>
 
@@ -821,7 +854,7 @@ title="Print to PDF"
     <a class='right-next' id="next-link" href="../Chapter_01/intro-cosmology.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">1. </span>The Theory of Special Relativity</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Introduction to Cosmology</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
@@ -834,7 +867,7 @@ title="Print to PDF"
   
     By Billy Quarles<br/>
   
-      &copy; Copyright 2022.<br/>
+      &copy; Copyright 2023.<br/>
 </p>
         </footer>
     </div>

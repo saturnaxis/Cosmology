@@ -27,6 +27,8 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/exercise.css" />
     <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mycss.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -57,7 +59,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="3. General Relativity and Black Holes" href="../Chapter_17/general-relativity-and-black-holes.html" />
-    <link rel="prev" title="1. The Theory of Special Relativity" href="../Chapter_01/intro-cosmology.html" />
+    <link rel="prev" title="1. Introduction to Cosmology" href="../Chapter_01/intro-cosmology.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -108,7 +110,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../home.html">
-                    ASTR4410: Modern Astrophysics
+                    ASTR3220: Cosmology
                 </a>
             </li>
         </ul>
@@ -133,6 +135,11 @@ const thebe_selector_output = ".output, .cell_output"
    Introduction to Markdown
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Preamble/HW_template.html">
+   Homework Assignments
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -142,7 +149,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../Chapter_01/intro-cosmology.html">
-   1. The Theory of Special Relativity
+   1. Introduction to Cosmology
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -202,6 +209,18 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../Chapter_30/early-universe.html">
    10. The Early Universe
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Appendix
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Appendix/Student_Summaries.html">
+   Student Participation (Spring 2023)
   </a>
  </li>
 </ul>
@@ -496,13 +515,18 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#time-dilation-and-length-contraction-are-complementary">
+     2.3.3. Time Dilation and Length Contraction are Complementary
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#the-relativistic-doppler-shift">
-     2.3.3. The Relativistic Doppler Shift
+     2.3.4. The Relativistic Doppler Shift
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#the-relativistic-velocity-transformation">
-     2.3.4. The Relativistic Velocity Transformation
+     2.3.5. The Relativistic Velocity Transformation
     </a>
    </li>
   </ul>
@@ -604,13 +628,18 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#time-dilation-and-length-contraction-are-complementary">
+     2.3.3. Time Dilation and Length Contraction are Complementary
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#the-relativistic-doppler-shift">
-     2.3.3. The Relativistic Doppler Shift
+     2.3.4. The Relativistic Doppler Shift
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#the-relativistic-velocity-transformation">
-     2.3.4. The Relativistic Velocity Transformation
+     2.3.5. The Relativistic Velocity Transformation
     </a>
    </li>
   </ul>
@@ -657,51 +686,655 @@ title="Print to PDF"
 <h1><span class="section-number">2. </span>The Theory of Special Relativity<a class="headerlink" href="#the-theory-of-special-relativity" title="Permalink to this headline">#</a></h1>
 <div class="section" id="the-failure-of-the-galilean-transformations">
 <h2><span class="section-number">2.1. </span>The Failure of the Galilean Transformations<a class="headerlink" href="#the-failure-of-the-galilean-transformations" title="Permalink to this headline">#</a></h2>
+<p>A <em>wave</em> is a disturbance (or energy) that flows through a medium (e.g., water waves, sound waves).  <a class="reference external" href="https://en.wikipedia.org/wiki/James_Clerk_Maxwell">James Clerk Maxwell</a> combined the mathematical descriptions of electricity and magnetism, which together can describe light as “modulations of the same medium through which is the cause of electric and magnetic phenomena.”  This insight did not precisely describe what was the medium through which light traveled.</p>
+<p>In the late 19th century, physicists believed that light waves moved through a medium called the <a class="reference external" href="https://en.wikipedia.org/wiki/Luminiferous_aether">luminiferous aether</a>, which is an all-pervading ether that had its roots in the science of early Greece.  The ancient Greeks believed that everything was composed of <em>five</em> elements: earth, air, fire, water, and the ether.  The ether was a more perfect element (compared to the other four) and was a major component of the crystalline spheres that held up the heavens.</p>
+<blockquote class="epigraph">
+<div><p>There can be no doubt that the interplanetary and interstellar spaces are not empty, but are occupied by a material substance or body, which is certainly the largest, and probably the most uniform body of which we have any knowledge.</p>
+<p>James Clerk Maxwell</p>
+</div></blockquote>
+<p>Scientists of the 1800s proposed the ether for the sole purpose of transporting light waves, where an object moving through the ether would experience <strong>no mechanical resistance</strong>, so Earth’s velocity through the ether could not be directly measured.  See my <a class="reference external" href="https://saturnaxis.github.io/ModernPhysics/Chapter_2/special-theory-of-relativity.html#need-for-ether">Modern Physics Notes</a> for more details concerning the need for ether.</p>
 <div class="section" id="the-galilean-transformations">
 <h3><span class="section-number">2.1.1. </span>The Galilean Transformations<a class="headerlink" href="#the-galilean-transformations" title="Permalink to this headline">#</a></h3>
+<p>It is impossible to tell whether you are at rest or in uniform motion (i.e., not accelerating).  Galileo described a laboratory completely enclosed below the deck of a smoothly sailing ship and argued that no experiment done in this uniformly moving laboratory could measure the ship’s velocity.</p>
+<p><strong>Consider two inertial reference frames</strong>, <span class="math notranslate nohighlight">\(S\)</span> and <span class="math notranslate nohighlight">\(S^\prime\)</span>.  An inertial frame is an environment where Newton’s first law is valid:</p>
+<ul class="simple">
+<li><p>An object at rest will remain at rest, and an object in motion will remain in motion in a straight line at constant speed, unless acted upon by an external force.</p></li>
+</ul>
+<p>An environment consists of an infinite collection of meter stick and synchronized clocks so that the position <span class="math notranslate nohighlight">\((x,\ y,\ \text{and}\ z)\)</span> and time <span class="math notranslate nohighlight">\(t\)</span> of any event can be recorded or identified.  In such a frame, there is no time delay for relaying information about an event to a distant recording device.  Suppose the frame <span class="math notranslate nohighlight">\(S^\prime\)</span> is moving along the <span class="math notranslate nohighlight">\(x\)</span> direction relative to the frame <span class="math notranslate nohighlight">\(S\)</span> with a constant velocity <span class="math notranslate nohighlight">\(u\)</span>.  The clocks in the two frames are started when the origins <span class="math notranslate nohighlight">\(O\)</span> and <span class="math notranslate nohighlight">\(O^\prime\)</span>, coincide at time <span class="math notranslate nohighlight">\(t=t^\prime = 0\)</span> as shown in Figure  <a class="reference internal" href="#reference-frame-fig"><span class="std std-numref">2.1</span></a>.</p>
+<div class="figure align-default" id="reference-frame-fig">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/6/64/Frames_of_reference_in_relative_motion.svg"><img alt="reference frame" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Frames_of_reference_in_relative_motion.svg" width="600px" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.1 </span><span class="caption-text">The standard configuration of two frames of reference, the primed system in motion relative to the unprimed system only along the <span class="math notranslate nohighlight">\(x\)</span>-axis and with speed <span class="math notranslate nohighlight">\(v\)</span>. Image Credit: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Frames_of_reference_in_relative_motion.svg">Wikipedia</a>; Krea.</span><a class="headerlink" href="#reference-frame-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>Observers in the two frames <span class="math notranslate nohighlight">\(S\)</span> and <span class="math notranslate nohighlight">\(S^\prime\)</span> measure the same moving object in terms of its position <span class="math notranslate nohighlight">\((x,\ y,\ \text{and}\ z)\)</span> and the time of the event <span class="math notranslate nohighlight">\(t\)</span> in prime and unprimed coordinates, respectively.  The instantaneous measurements are related by the <strong>Galilean transformation equations</strong>:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-325803c4-92a0-4496-b090-7a50421bd177">
+<span class="eqno">(2.1)<a class="headerlink" href="#equation-325803c4-92a0-4496-b090-7a50421bd177" title="Permalink to this equation">#</a></span>\[\begin{align}
+x^\prime &amp;= x-ut, \\
+y^\prime &amp;= y, \\
+z^\prime &amp;= z, \\
+t^\prime &amp;= t.
+\end{align}\]</div>
+<p>The relationship between velocity measurements form another component to the Galilean transformation by:</p>
+<div class="math notranslate nohighlight" id="equation-gal-vel">
+<span class="eqno">(2.2)<a class="headerlink" href="#equation-gal-vel" title="Permalink to this equation">#</a></span>\[\begin{split}v_x^\prime &amp;= v_x - u \\
+v_y^\prime &amp;= v_y, \\
+v_z^\prime &amp;= v_z.\end{split}\]</div>
+<p>Since <span class="math notranslate nohighlight">\(u\)</span> is a constant, its time derivative is equal to zero.  As a result the measurement of acceleration (or force) is the same in both reference frames:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-f2a0320c-13b6-4c0d-88eb-a16745f8eb0c">
+<span class="eqno">(2.3)<a class="headerlink" href="#equation-f2a0320c-13b6-4c0d-88eb-a16745f8eb0c" title="Permalink to this equation">#</a></span>\[\begin{align}
+a_x^\prime &amp;= a_x  \\
+a_y^\prime &amp;= a_y, \\
+a_z^\prime &amp;= a_z.
+\end{align}\]</div>
+<p>Thus <span class="math notranslate nohighlight">\(\vec{F} = m\vec{a} = m\vec{a}^\prime\)</span> for an object of mass <span class="math notranslate nohighlight">\(m\)</span>.  Newton’s laws are obey in both reference frames.  No mechanical experiment can be done to measure the <em>absolute</em> velocity of the environment.</p>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/hTxWAQGgeQw"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
 </div>
 <div class="section" id="the-michelson-morley-experiment">
 <h3><span class="section-number">2.1.2. </span>The Michelson-Morley Experiment<a class="headerlink" href="#the-michelson-morley-experiment" title="Permalink to this headline">#</a></h3>
+<p>Maxwell showed that electromagnetic waves move through the ether with a speed <span class="math notranslate nohighlight">\(c\simeq 3 \times 10^8\ \rm m/s\)</span>, which seemed to open the possibility of detecting Earth’s <em>absolute</em> motion through the ether by measuring the speed of light from Earth’s frame of reference and comparing it to Maxwell’s theoretical value of <span class="math notranslate nohighlight">\(c\)</span>.</p>
+<p>In 1887, <a class="reference external" href="https://en.wikipedia.org/wiki/Albert_A._Michelson">Albert A. Michelson</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Edward_W._Morley">Edward W. Morley</a> performed an experiment that attempted to measure the Earth’s absolute velocity.  Although the Earth orbits the Sun at approximately <span class="math notranslate nohighlight">\(30\ \rm km/s\)</span>, the results of the Michelson-Morley experiment were consistent with a velocity of Earth through the ether of zero!</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Strictly speaking, an environment on the Earth is not in an inertial reference frame because the Earth spins on its axis and accelerates (i.e., not constant motion) as it orbits the Sun.  These noninertial effects are unimportant for the Michelson-Morley experiment.</p>
+</div>
+<p>As Earth spins on its axis and orbits the Sun, the speed of an environment should be changing as it travels through the ether.  The constantly shifting <em>ether wind</em> should be easily detected.  However, all physicists now and since have reported the same null result.  Everyone measures exactly the same value for the speed of light, regardless of the velocity of the environment or the velocity of the source of the light.</p>
+<p>Inspecting Eq. <a class="reference internal" href="#equation-gal-vel">(2.2)</a>, we expect that two observers moving with a relative velocity <span class="math notranslate nohighlight">\(u\)</span> should obtain <em>different</em> values for the speed of light. The contradiction between the Galilean transformation and the experimentally determined constant speed of light means that the Galilean transformation cannot be correct in all cases.  The Galilean transformations adequately describe the familiar low-speed world of everyday life (i.e., <span class="math notranslate nohighlight">\(v\ll c\)</span>), but they are in sharp disagreement with the experimental results involving velocities near the speed of light, <span class="math notranslate nohighlight">\(v \sim c\)</span>.  Thus, a crisis in the Newtonian paradigm was nigh.</p>
 </div>
 </div>
 <div class="section" id="the-lorentz-transformations">
 <h2><span class="section-number">2.2. </span>The Lorentz Transformations<a class="headerlink" href="#the-lorentz-transformations" title="Permalink to this headline">#</a></h2>
+<p>Einstein used <a class="reference external" href="https://en.wikipedia.org/wiki/Einstein%27s_thought_experiments">thought experiments</a> or <em>Gendankenexperiment</em> as a tool for understanding the universe.  One such discussion asked: <em>What would you see if you looked in a mirror while moving at the speed of light? Would you see your image in the mirror or not?</em> After much reflection, Einstein rejected the notion of the ether and developed his postulates for special relativity.</p>
+<p>From his 1905 paper, <a class="reference external" href="https://github.com/saturnaxis/ModernPhysics/blob/75349248a0037fb5358841561c04645377f97ead/Chapter_2/Einstein_1905_relativity.pdf">On the Electrodynamics of Moving Bodies</a></p>
+<blockquote class="epigraph">
+<div><p>The phenomena of electrodynamics as well as of mechanics posses no properties corresponding to the idea of absolute rest.  They suggest rather that <span class="math notranslate nohighlight">\(\ldots\)</span> the same laws of electrodynamics and optics will be valid for all frames of reference for which the equations of mechanics hold good.  We will raise this conjecture (the purport of which will hereafter be called the “Principle of Relativity”) to the status of a postulate, and also introduce another postulate, which is only apparently irreconcilable to the former, namely, that light is always propagated in empty space with a definite speed <span class="math notranslate nohighlight">\(c\)</span> which is independent of the state of motion of the emitting body.</p>
+</div></blockquote>
+<p>Einstein develops two postulates as:</p>
+<ul class="simple">
+<li><p><strong>The Principle of Relativity</strong>: The laws of physics are the same in all inertial reference frames.</p></li>
+<li><p><strong>The Constancy of the Speed of Light</strong>: Light moves through a vacuum at a constant speed <span class="math notranslate nohighlight">\(c\)</span> that is independent of the motion of the light source.</p></li>
+</ul>
 <div class="section" id="the-derivation-of-the-lorentz-transformations">
 <h3><span class="section-number">2.2.1. </span>The Derivation of the Lorentz Transformations<a class="headerlink" href="#the-derivation-of-the-lorentz-transformations" title="Permalink to this headline">#</a></h3>
+<p>At the heart of Einstein’s theory of special relativity are the <strong>Lorentz transformations</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Lorentz transformation equations were first derived by <a class="reference external" href="https://en.wikipedia.org/wiki/Hendrik_Lorentz">Hendrik A. Lorentz</a>, but were applied to a different situation involving a reference frame at absolute rest with respect to the ether.</p>
+</div>
+<p>For the two inertial reference frames shown in Fig. <a class="reference internal" href="#reference-frame-fig"><span class="std std-numref">2.1</span></a>, the most general set of linear transformation equation between space and time coordinates <span class="math notranslate nohighlight">\((x,\ y,\ z,\ t)\)</span> and <span class="math notranslate nohighlight">\((x^\prime,\ y^\prime,\ z^\prime,\ t^\prime)\)</span> of the <em>same event</em> measured from <span class="math notranslate nohighlight">\(S\)</span> and <span class="math notranslate nohighlight">\(S^\prime\)</span> are:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-95006150-0e3b-4c1b-ba06-4efd85b1cf69">
+<span class="eqno">(2.4)<a class="headerlink" href="#equation-95006150-0e3b-4c1b-ba06-4efd85b1cf69" title="Permalink to this equation">#</a></span>\[\begin{align}
+\begin{bmatrix}
+x^\prime \\
+y^\prime \\
+z^\prime \\
+t^\prime
+\end{bmatrix} &amp;= 
+\begin{bmatrix}
+a_{11} &amp; a_{12} &amp; a_{13} &amp; a_{14}\\
+a_{21} &amp; a_{22} &amp; a_{23} &amp; a_{24}\\
+a_{31} &amp; a_{32} &amp; a_{33} &amp; a_{34}\\
+a_{41} &amp; a_{42} &amp; a_{43} &amp; a_{44},
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y \\
+z \\
+t
+\end{bmatrix}
+\end{align}\]</div>
+<p>or</p>
+<div class="amsmath math notranslate nohighlight" id="equation-8952bcc3-af2b-4904-baf6-f12c2097ffd8">
+<span class="eqno">(2.5)<a class="headerlink" href="#equation-8952bcc3-af2b-4904-baf6-f12c2097ffd8" title="Permalink to this equation">#</a></span>\[\begin{align}
+x^\prime &amp;= a_{11}x + a_{12}y + a_{13}z + a_{14}t \\
+y^\prime &amp;= a_{21}x + a_{22}y + a_{23}z + a_{24}t \\
+z^\prime &amp;= a_{31}x + a_{32}y + a_{33}z + a_{34}t \\
+t^\prime &amp;= a_{41}x + a_{42}y + a_{43}z + a_{44}t.
+\end{align}\]</div>
+<p>If the transformation equations were not linear, then the length of a moving object or the time interval between two events would depend on the choice of the origin for the frames <span class="math notranslate nohighlight">\(S\)</span> and <span class="math notranslate nohighlight">\(S^\prime\)</span>.  This is unacceptable because it would violate Einstein’s first postulate (i.e., the laws of physics cannot depend on the coordinate system).</p>
+<p>The coefficients <span class="math notranslate nohighlight">\(a_{ij}\)</span> can be determined by using Einstein’s two postulates and some simple symmetry arguments.  Most derivations start from using two parallel planes passing along the <span class="math notranslate nohighlight">\(x\)</span> direction (i.e., Fig. <a class="reference internal" href="#reference-frame-fig"><span class="std std-numref">2.1</span></a>).  There are no changes in the <span class="math notranslate nohighlight">\(y\)</span> or <span class="math notranslate nohighlight">\(z\)</span> directions between the two frames.  Thus, <span class="math notranslate nohighlight">\(y^\prime = y\)</span> and <span class="math notranslate nohighlight">\(z^\prime = z\)</span>, so that <span class="math notranslate nohighlight">\(a_{22}=a_{33}=1\)</span>, whereas <span class="math notranslate nohighlight">\(a_{21}=a_{23} = a_{24}=a_{31}=a_{32}=a_{34}=0\)</span>.</p>
+<p>Another simplification comes from requiring that the <span class="math notranslate nohighlight">\(t^\prime\)</span> equation give the same result for <span class="math notranslate nohighlight">\(\pm y\)</span> or <span class="math notranslate nohighlight">\(\pm z\)</span>.  This must be true because rotational symmetry about the axis parallel to the relative velocity <span class="math notranslate nohighlight">\(u\)</span> implies that a time measurement cannot depend on the side of the <span class="math notranslate nohighlight">\(x\)</span> axis on which an event occurs.  Thus <span class="math notranslate nohighlight">\(a_{42} = a_{43} = 0\)</span>.</p>
+<p>Consider the motion of the origin <span class="math notranslate nohighlight">\(O^\prime\)</span> of the frame <span class="math notranslate nohighlight">\(S^\prime\)</span>.  Since the frames’ clocks are synchronized at <span class="math notranslate nohighlight">\(t=t^\prime=0\)</span>, the <span class="math notranslate nohighlight">\(x\)</span> coordinate of <span class="math notranslate nohighlight">\(O^\prime\)</span> is given by <span class="math notranslate nohighlight">\(x=ut\)</span> in frame <span class="math notranslate nohighlight">\(S\)</span> and by <span class="math notranslate nohighlight">\(x^\prime = 0\)</span> in frame <span class="math notranslate nohighlight">\(S^\prime\)</span>.  When <span class="math notranslate nohighlight">\(t^\prime = 0\)</span>, then <span class="math notranslate nohighlight">\(a_{12}=a_{13} = 0\)</span> and <span class="math notranslate nohighlight">\(a_{11}u = -a_{14}\)</span>.  Collecting the results found thus far reveals that</p>
+<div class="math notranslate nohighlight" id="equation-lorentz-deriv">
+<span class="eqno">(2.6)<a class="headerlink" href="#equation-lorentz-deriv" title="Permalink to this equation">#</a></span>\[\begin{split}x^\prime &amp;= a_{11}(x - ut) \\
+y^\prime &amp;= y \\
+z^\prime &amp;= z \\
+t^\prime &amp;= a_{41}x + a_{44}t.\end{split}\]</div>
+<p>If <span class="math notranslate nohighlight">\(a_{11}=a_{44}=1\)</span> and <span class="math notranslate nohighlight">\(a_{41}=0\)</span>, then we would obtain the Galilean transformation.  Nothing new. Now we use Einstein’s second postulate, which requires that the speed of light to be a constant.  Suppose a flashbulb is set off at the common origins. At a later time <span class="math notranslate nohighlight">\(t\)</span> an observer in frame <span class="math notranslate nohighlight">\(S\)</span> will measure a spherical wavefront of light with radius <span class="math notranslate nohighlight">\(ct\)</span>, moving away from the origin <span class="math notranslate nohighlight">\(O\)</span> with speed <span class="math notranslate nohighlight">\(c\)</span> and satisfying</p>
+<div class="amsmath math notranslate nohighlight" id="equation-54c010d0-0971-4559-8379-9273b794fe9e">
+<span class="eqno">(2.7)<a class="headerlink" href="#equation-54c010d0-0971-4559-8379-9273b794fe9e" title="Permalink to this equation">#</a></span>\[\begin{align}
+x^2 + y^2 + z^2 &amp;= (ct)^2.
+\end{align}\]</div>
+<p>Similarly, at a time <span class="math notranslate nohighlight">\(t^\prime\)</span>, an observer in frame <span class="math notranslate nohighlight">\(S^\prime\)</span> will measure a spherical wavefront of light with radius <span class="math notranslate nohighlight">\(ct^\prime\)</span>, moving away from the origin <span class="math notranslate nohighlight">\(O^\prime\)</span> with speed <span class="math notranslate nohighlight">\(c\)</span> and satisfying</p>
+<div class="amsmath math notranslate nohighlight" id="equation-0b1c95f0-dada-4167-bd09-0b72a5e0d4b5">
+<span class="eqno">(2.8)<a class="headerlink" href="#equation-0b1c95f0-dada-4167-bd09-0b72a5e0d4b5" title="Permalink to this equation">#</a></span>\[\begin{align}
+{x^\prime}^2 + {y^\prime}^2 + {z^\prime}^2 &amp;= (ct^\prime)^2.
+\end{align}\]</div>
+<p>Inserting the results in Eq. <a class="reference internal" href="#equation-lorentz-deriv">(2.6)</a> into the above primed equation produces:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-628fe8d1-a763-4f1c-89cd-df1f0d21221e">
+<span class="eqno">(2.9)<a class="headerlink" href="#equation-628fe8d1-a763-4f1c-89cd-df1f0d21221e" title="Permalink to this equation">#</a></span>\[\begin{align}
+a_{11}^2(x-ut)^2 + y^2 + z^2 &amp;= (ca_{41}x + ca_{44}t)^2.
+\end{align}\]</div>
+<p>Comparing the coefficients for the <span class="math notranslate nohighlight">\(x^2\)</span> and <span class="math notranslate nohighlight">\(t^2\)</span> terms from the unprimed equation results in the following relations (and a bit of <a class="reference external" href="https://en.wikipedia.org/wiki/Derivations_of_the_Lorentz_transformations">algebra</a>),</p>
+<div class="amsmath math notranslate nohighlight" id="equation-ffcdba54-9330-4e49-b61c-07dc0715744e">
+<span class="eqno">(2.10)<a class="headerlink" href="#equation-ffcdba54-9330-4e49-b61c-07dc0715744e" title="Permalink to this equation">#</a></span>\[\begin{align}
+a_{11} &amp;= \frac{1}{\sqrt{1-\frac{u^2}{c^2}}} = a_{44},\\
+a_{41} &amp;= -\frac{u}{c^2}a_{11}.
+\end{align}\]</div>
+<p>Thus the Lorentz transformation equations linking the two frames <span class="math notranslate nohighlight">\(S\)</span> and <span class="math notranslate nohighlight">\(S^\prime\)</span> to the same event are:</p>
+<div class="math notranslate nohighlight" id="equation-lorentz-eqn">
+<span class="eqno">(2.11)<a class="headerlink" href="#equation-lorentz-eqn" title="Permalink to this equation">#</a></span>\[\begin{split}x^\prime &amp;= \frac{x - ut}{\sqrt{1-\frac{u^2}{c^2}}} \\
+y^\prime &amp;= y \\
+z^\prime &amp;= z \\
+t^\prime &amp;= \frac{t-\frac{u}{c^2}x}{\sqrt{1-\frac{u^2}{c^2}}}.\end{split}\]</div>
+<p>If the inertial reference frame <span class="math notranslate nohighlight">\(S^\prime\)</span> is moving in the positive <span class="math notranslate nohighlight">\(x\)</span> direction with a velocity <span class="math notranslate nohighlight">\(u\)</span> relative to the frame <span class="math notranslate nohighlight">\(S\)</span>, we get the ubiquitous factor of</p>
+<div class="amsmath math notranslate nohighlight" id="equation-f1b687f9-ea95-45be-926f-c28313a34832">
+<span class="eqno">(2.12)<a class="headerlink" href="#equation-f1b687f9-ea95-45be-926f-c28313a34832" title="Permalink to this equation">#</a></span>\[\begin{align}
+\gamma \equiv \frac{1}{\sqrt{1-\frac{u^2}{c^2}}},
+\end{align}\]</div>
+<p>called the <strong>Lorentz factor</strong>, which may be used to estimate the importance of relativistic effects.  The inverse transformation equation are obtained by replacing <span class="math notranslate nohighlight">\(u\)</span> by <span class="math notranslate nohighlight">\(-u\)</span> and by exchanging the primed and unprimed quantities (i.e., <span class="math notranslate nohighlight">\(x\rightarrow x^\prime\)</span>).</p>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/_qiFIMviIeM"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/Lm_Yn_MZU6k"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
+<p>Notice that the Lorentz transformation is approximately the Galilean transformation for <span class="math notranslate nohighlight">\(u\ll c\)</span> and become significantly more different as <span class="math notranslate nohighlight">\(u / c \rightarrow 1\)</span>.  The python code below produces a figure that illustrates how the relativistic factor <span class="math notranslate nohighlight">\(\gamma\)</span> changes with <span class="math notranslate nohighlight">\(u / c\)</span>.</p>
 </div>
 <div class="section" id="four-dimensional-spacetime">
 <h3><span class="section-number">2.2.2. </span>Four-Dimensional Spacetime<a class="headerlink" href="#four-dimensional-spacetime" title="Permalink to this headline">#</a></h3>
-</div>
+<p>The Lorentz transformation equations show that space and time are related (not independent of one another).  Thus, they form the core of special relativity.  In the words of Einstein’s professor</p>
+<blockquote class="epigraph">
+<div><p>Henceforth space by itself, and time by itself are doomed to fade away into mere shadows, and only a kind union between the two will preserve an independent reality.</p>
+<p>Hermann Minkowski</p>
+</div></blockquote>
+<p>The physical world exists on a four dimensional <a class="reference external" href="https://en.wikipedia.org/wiki/Spacetime"><strong>spacetime</strong></a>, where events are identified by their spacetime coordinates <span class="math notranslate nohighlight">\((x,\ y,\ z,\ t)\)</span>.</p>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/Rh0pYtQG5wI"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div></div>
 </div>
 <div class="section" id="time-and-space-in-special-relativity">
 <h2><span class="section-number">2.3. </span>Time and Space in Special Relativity<a class="headerlink" href="#time-and-space-in-special-relativity" title="Permalink to this headline">#</a></h2>
+<p>An event describes a precise location in spacetime coordinates <span class="math notranslate nohighlight">\((x,\ y,\ z,\ t)\)</span>.  Let’s suppose an observer in a frame <span class="math notranslate nohighlight">\(S\)</span> measures two flashbulbs going off <em>simultaneously</em> at a time <span class="math notranslate nohighlight">\(t\)</span>, but at different <span class="math notranslate nohighlight">\(x\)</span> coordinates <span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span>.  An observer in frame <span class="math notranslate nohighlight">\(S^\prime\)</span> would measure the time interval <span class="math notranslate nohighlight">\(t_1^\prime - t_2^\prime\)</span> between the flashbulbs as</p>
+<div class="math notranslate nohighlight" id="equation-time-interval">
+<span class="eqno">(2.13)<a class="headerlink" href="#equation-time-interval" title="Permalink to this equation">#</a></span>\[t_1^\prime - t_2^\prime = \frac{\gamma u}{c^2}(x_2-x_1).\]</div>
+<p>According to the observer in the <span class="math notranslate nohighlight">\(S^\prime\)</span> frame: if <span class="math notranslate nohighlight">\(x_1 \neq x_2\)</span>, then the flashbulbs do not go off simultaneously because <span class="math notranslate nohighlight">\(t_1^\prime - t_2^\prime &gt; 0\)</span> (for <span class="math notranslate nohighlight">\(u&gt;0\)</span> and <span class="math notranslate nohighlight">\(x_2&gt;x_1\)</span>). Events that occur simultaneously in one inertial reference frame do not occur simultaneously in all other inertial reference frames.</p>
+<p>Consider one observer measures flashbulb 1 to go off after flashbulb 2.  An observer moving at the same speed but in the opposite direction (<span class="math notranslate nohighlight">\(u\rightarrow -u\)</span>) will come to the opposite conclusion: flashbulb goes off after flashbulb 1.  It is tempting to ask “<em>Which observer is really correct?</em>”  This question is meaningless because it is equivalent to asking, “<em>Which observer is really moving?</em>”  There is not absolute simultaneity, just as there is no absolute motion.  Due to the finite speed of light, it takes time for information to flow (through photons) from one location to another.</p>
+<p>The implications of this <strong>downfall of universal simultaneity</strong> are far-reaching.  The absence of a universal simultaneity means that clocks in relative motion will not stay synchronized.  Newton’s idea of an absolute universal time has been overthrown.  Different observers in relative motion will measure <em>different</em> time intervals between the same two events!</p>
 <div class="section" id="proper-time-and-time-dilation">
 <h3><span class="section-number">2.3.1. </span>Proper Time and Time Dilation<a class="headerlink" href="#proper-time-and-time-dilation" title="Permalink to this headline">#</a></h3>
+<p>Imagine that a strobe light located at rest relative the <span class="math notranslate nohighlight">\(S^\prime\)</span> frame produces a flash of light every <span class="math notranslate nohighlight">\(\Delta t^\prime\)</span> seconds.  If one flash is emitted at time <span class="math notranslate nohighlight">\(t_1^\prime\)</span>, then the next flash will be emitted at time <span class="math notranslate nohighlight">\(t_2^\prime = t_1^\prime + \Delta t^\prime\)</span> (as measured by a clock in the <span class="math notranslate nohighlight">\(S^\prime\)</span> frame).  Using Eq. {eq}`lorentz_eqn’, the time interval <span class="math notranslate nohighlight">\(\Delta t \equiv t_2 - t_1\)</span> between the same to flashes measured by a clock in the <span class="math notranslate nohighlight">\(S\)</span> frame is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-e271704c-a261-4231-a945-b133b80ddd70">
+<span class="eqno">(2.14)<a class="headerlink" href="#equation-e271704c-a261-4231-a945-b133b80ddd70" title="Permalink to this equation">#</a></span>\[\begin{align}
+t_2-t_1 &amp;= \gamma\left[(t_2^\prime-t_1^\prime) + \frac{u}{c^2}(x_2^\prime-x_1^\prime)\right].
+\end{align}\]</div>
+<p>When <span class="math notranslate nohighlight">\(x_2^\prime = x_1^\prime\)</span>, then the above expression becomes</p>
+<div class="amsmath math notranslate nohighlight" id="equation-c835bef0-2d28-4341-8f0b-dfad2a5bfe3a">
+<span class="eqno">(2.15)<a class="headerlink" href="#equation-c835bef0-2d28-4341-8f0b-dfad2a5bfe3a" title="Permalink to this equation">#</a></span>\[\begin{align}
+\Delta t = \gamma \Delta t^\prime.
+\end{align}\]</div>
+<p>This equation shows the effect of <strong>time dilation</strong> on a clock in the <span class="math notranslate nohighlight">\(S\)</span> frame relative to the <span class="math notranslate nohighlight">\(S^\prime\)</span> frame.  The time interval between two events is measured differently by different observers in relative motion.  The <em>shortest time interval</em> is measured by a clock <em>at rest</em> relative to to the two events, where this clock measures the <strong>proper time</strong> between the two events.  Any other clock moving relative to the two events will measure a longer time interval between them.</p>
 </div>
 <div class="section" id="proper-length-and-length-contraction">
 <h3><span class="section-number">2.3.2. </span>Proper Length and Length Contraction<a class="headerlink" href="#proper-length-and-length-contraction" title="Permalink to this headline">#</a></h3>
+<p>Both time dilation and the downfall of simultaneity contradict the Newtonian notion of absolute time.  The time measured between two events differs for different observers in relative motion (only noticeable when <span class="math notranslate nohighlight">\(v\sim c\)</span>).  Since Newton believe in a separation of space and time, he also suggested that an “absolute space, in its own nature, without relation to anything external, remains always similar and immovable.”  The Lorentz transformation equations require that different observers in relative motion will measure space differently as well.</p>
+<p>Imagine a rod lies at rest relative to the <span class="math notranslate nohighlight">\(S^\prime\)</span> frame along the <span class="math notranslate nohighlight">\(x^\prime\)</span> axis.  The rod’s left end is located by <span class="math notranslate nohighlight">\(x_1^\prime\)</span>, while the right end is located by <span class="math notranslate nohighlight">\(x_2^\prime\)</span>.  Then the length of the rod is measured as <span class="math notranslate nohighlight">\(L^\prime = x_2^\prime - x_1^\prime\)</span> in the <span class="math notranslate nohighlight">\(S^\prime\)</span> frame. <em>What is the length of the rod measured from the <span class="math notranslate nohighlight">\(S\)</span> frame?</em></p>
+<p>Because the rod is moving relative to <span class="math notranslate nohighlight">\(S\)</span> (i.e., the <span class="math notranslate nohighlight">\(S^\prime\)</span> frame is moving relative to <span class="math notranslate nohighlight">\(S\)</span>), we use Eq. <a class="reference internal" href="#equation-lorentz-eqn">(2.11)</a> to get</p>
+<div class="amsmath math notranslate nohighlight" id="equation-61da4a08-70c7-4d56-9d6a-196418f419c3">
+<span class="eqno">(2.16)<a class="headerlink" href="#equation-61da4a08-70c7-4d56-9d6a-196418f419c3" title="Permalink to this equation">#</a></span>\[\begin{align}
+x_2^\prime - x_1^\prime = \gamma\left[(x_2-x_1) -u (t_2-t_1) \right]
+\end{align}\]</div>
+<p>to measure the length in the <span class="math notranslate nohighlight">\(S^\prime\)</span> frame.  When the measurement is take at <span class="math notranslate nohighlight">\(t_2=t_1\)</span>, then we have</p>
+<div class="amsmath math notranslate nohighlight" id="equation-c28d55c0-b3ec-4d12-a509-f8bca713026a">
+<span class="eqno">(2.17)<a class="headerlink" href="#equation-c28d55c0-b3ec-4d12-a509-f8bca713026a" title="Permalink to this equation">#</a></span>\[\begin{align}
+L^\prime = \gamma L.
+\end{align}\]</div>
+<p>To get the length in the <span class="math notranslate nohighlight">\(S\)</span> frame, we simply invert the above relation to get</p>
+<div class="amsmath math notranslate nohighlight" id="equation-e2a4ad7b-712a-418f-aae8-0712ecb998df">
+<span class="eqno">(2.18)<a class="headerlink" href="#equation-e2a4ad7b-712a-418f-aae8-0712ecb998df" title="Permalink to this equation">#</a></span>\[\begin{align}
+L &amp;= L^\prime/\gamma \\
+  &amp;= L^\prime\sqrt{1-u^2/c^2}.
+\end{align}\]</div>
+<p>This equation shows the effect of <strong>length contraction</strong> on a moving rod.  It says that length or distance is measured differently by two observers in relative motion.  The <em>longest length</em>, called the rod’s <strong>proper length</strong>, is measured in the rod’s rest frame.  Only lengths or distances <em>parallel</em> to the direction of the relative motion are affect by length contraction; distances perpendicular to the direction of the relative motion are unchanged.</p>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/-NN_m2yKAAk"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
 </div>
+</div>
+<div class="section" id="time-dilation-and-length-contraction-are-complementary">
+<h3><span class="section-number">2.3.3. </span>Time Dilation and Length Contraction are Complementary<a class="headerlink" href="#time-dilation-and-length-contraction-are-complementary" title="Permalink to this headline">#</a></h3>
+<p>Time dilation and length contraction are not independent effects because they come together from the Lorentz transformation equations.  They are complementary, where the magnitude of either effect depends on the motion of the event begin observed relative to the observer.</p>
+<div class="exercise orange admonition" id="Chapter_04/theory-of-special-relativity-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.1 </span></p>
+<div class="section" id="exercise-content">
+<p><strong>Cosmic rays from space collide with the nuclei from atoms in Earth’s upper atmosphere, producing elementary particles called <em>muons</em>.  Muons are unstable and decay after an average lifetime <span class="math notranslate nohighlight">\(\tau=2.20\ \rm \mu s\)</span>, as measured in a laboratory where the muons are at rest.  The number of muons in a given sample should decrease with time according to <span class="math notranslate nohighlight">\(N(t) = N_o e^{-t/\tau}\)</span>, where <span class="math notranslate nohighlight">\(N_o\)</span> is the original number of muons in the sample at <span class="math notranslate nohighlight">\(t=0\)</span>.  At the top of Mt. Washington (<span class="math notranslate nohighlight">\(1907\ \rm m\)</span> above sea level in New Hampshire), a detector counted <span class="math notranslate nohighlight">\(563\ \rm muons/hr\)</span> moving downward at a speed <span class="math notranslate nohighlight">\(u = 0.9952c\)</span>.</strong></p>
+<p><em>How many muons per hour would be counted at sea level?</em></p>
+<p>Naively, we might find the time-of-flight <span class="math notranslate nohighlight">\(t\)</span> for the muons to get from the top of the mountain to the ground using <span class="math notranslate nohighlight">\(t=L/u\)</span>, and substitute the time-of-flight into the equation for exponential decay to get</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+t &amp;= (1907\ \text{m})/(0.9952c) = 6.392\ {\rm \mu s}, \\ 
+N &amp;= N_o e^{-t/\tau} = (\text{563 muons/hr})e^{-(6.392\ {\rm \mu s})/(2.20\ {\rm \mu s})} = 31\ \text{muons/hr}.
+\end{align*}\]</div>
+<p>A muon detector at sea level measures <span class="math notranslate nohighlight">\(\text{408 muons/hr}\)</span>, which shows that our naive calculation is incorrect.  The muons are moving near the speed of light and thus must be treated relativistically.</p>
+<p>The distance from the mountain top to sea level is contracted and the decay timescale is dilated due to special relativity.  The difference between these two effects depends on the assumed reference frame: mountain or muon.</p>
+<p>From a muon’s rest frame it’s lifetime is only <span class="math notranslate nohighlight">\(2.20\ \rm \mu s\)</span>, where an observer riding along with the muon would measure a severely-contracted Mt. Washington in the direction of motion.  The distance traveled <span class="math notranslate nohighlight">\(L^\prime\)</span>, time-of-flight <span class="math notranslate nohighlight">\(t^\prime\)</span>, and measured number of muons/hr would be</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+L^\prime &amp;= L_{\rm rest}\sqrt{1-u^2/c^2} = (1907\ {\rm m})\sqrt{1-0.9952^2} = 186.6\ {\rm m}, \\
+t^\prime &amp;= (186.6\ {\rm m})/(0.9952c) = 0.6255\ {\rm \mu s}, \\
+N^\prime &amp;= N_o e^{-t^\prime/\tau} = (\text{563 muons/hr})e^{-(0.6255\ {\rm \mu s})/(2.20\ {\rm \mu s})} = 424\ \text{muons/hr}.
+\end{align*}\]</div>
+<p>Alternatively, the experimenters clocks on Mt. Washington are moving relative to the muons, which means they will measure a longer (dilated) lifetime <span class="math notranslate nohighlight">\(\tau^\prime\)</span>.  After correcting for the dilated lifetime, we can follow the naive calculation to get</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\tau^\prime &amp;= \frac{\tau}{\sqrt{1-u^2/c^2}} = \frac{2.20\ {\rm \mu s}}{\sqrt{1-0.9952^2}} = 22.5\ {\rm \mu s}, \\
+N^\prime &amp;= N_o e^{-t^\prime/\tau} = (\text{563 muons/hr})e^{-(6.392\ {\rm \mu s})/(22.5\ {\rm \mu s})} = 424\ \text{muons/hr}.
+\end{align*}\]</div>
+<p>Note that the relativistic muon lifetime is more than <em>ten</em> times the muon’s lifetime when measured in its own rest frame.  The moving muons’ clocks run slower, so more of them survive long enough to reach sea level.</p>
+<p>Both methods (length contraction and time dilation) give good agreement with the measured value at sea level.  Moreover, they agree with each other, which shows that an effect due to time dilation as measured in one frame may instead be attributed to length contraction as measured in another frame.</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">c</span> 
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">N_o</span> <span class="o">=</span> <span class="mf">563.</span> <span class="c1">#muons per hr</span>
+<span class="n">tau</span> <span class="o">=</span> <span class="mf">2.2e-6</span> <span class="c1">#average muon lifetime in sec</span>
+<span class="n">u</span> <span class="o">=</span> <span class="mf">0.9952</span><span class="o">*</span><span class="n">c</span> <span class="c1">#speed of muons on Mt. Washington</span>
+<span class="n">L</span> <span class="o">=</span> <span class="mi">1907</span> <span class="c1">#height of Mt. Washington above sea level in m</span>
+
+<span class="c1">#First approach using t = L/u</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">L</span><span class="o">/</span><span class="n">u</span> 
+<span class="n">N</span> <span class="o">=</span> <span class="n">N_o</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">t</span><span class="o">/</span><span class="n">tau</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The expected number of muons/hr (Netwonian) at sea level is </span><span class="si">%i</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">N</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+
+<span class="c1">#Relativistic approach using gamma factor and length contraction</span>
+<span class="n">gamma</span> <span class="o">=</span> <span class="mf">1.</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">u</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">L_prime</span> <span class="o">=</span> <span class="n">L</span><span class="o">/</span><span class="n">gamma</span>
+<span class="n">t_prime</span> <span class="o">=</span> <span class="n">L_prime</span><span class="o">/</span><span class="n">u</span> 
+<span class="n">N</span> <span class="o">=</span> <span class="n">N_o</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">t_prime</span><span class="o">/</span><span class="n">tau</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The contracted distance is </span><span class="si">%3.1f</span><span class="s2"> m.&quot;</span> <span class="o">%</span> <span class="n">L_prime</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The expected number of muons/hr (relativistically) at sea level is </span><span class="si">%i</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">N</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+
+<span class="c1">#Relativistic approach using gamma factor and time dilation</span>
+<span class="n">tau_prime</span> <span class="o">=</span> <span class="n">gamma</span><span class="o">*</span><span class="n">tau</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">L</span><span class="o">/</span><span class="n">u</span> 
+<span class="n">N</span> <span class="o">=</span> <span class="n">N_o</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">t</span><span class="o">/</span><span class="n">tau_prime</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The dilated time is </span><span class="si">%2.2f</span><span class="s2"> microsec.&quot;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">((</span><span class="n">t</span><span class="o">/</span><span class="mf">1e-6</span><span class="p">),</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The expected number of muons/hr (relativistically) at sea level is </span><span class="si">%i</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">N</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The expected number of muons/hr (Netwonian) at sea level is 31.
+The contracted distance is 186.6 m.
+The expected number of muons/hr (relativistically) at sea level is 424.
+The dilated time is 6.39 microsec.
+The expected number of muons/hr (relativistically) at sea level is 424.
+</pre></div>
+</div>
+</div>
+</div>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/rbzt8gDSYIM"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div></div>
 <div class="section" id="the-relativistic-doppler-shift">
-<h3><span class="section-number">2.3.3. </span>The Relativistic Doppler Shift<a class="headerlink" href="#the-relativistic-doppler-shift" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">2.3.4. </span>The Relativistic Doppler Shift<a class="headerlink" href="#the-relativistic-doppler-shift" title="Permalink to this headline">#</a></h3>
+<p>In 1842 <a class="reference external" href="https://en.wikipedia.org/wiki/Christian_Doppler">Christian Doppler</a> showed that as a source of sound moves through a medium (e.g., air), the wavelength is compressed in the forward direction and expanded in the backward direction.  This change in wavelength of any type of wave caused by the motion of the source or the observer is called <strong>Doppler shift</strong>.</p>
+<p>Doppler deduced that the difference between the observed wavelength <span class="math notranslate nohighlight">\(\lambda_{\rm obs}\)</span> for a moving source of sound and the rest wavelength <span class="math notranslate nohighlight">\(\lambda_{\rm rest}\)</span> measured in the laboratory for a reference source is related to the radial velocity <span class="math notranslate nohighlight">\(v_r\)</span> (i.e., the component of velocity <em>directly</em> toward or away from the observer) by</p>
+<div class="amsmath math notranslate nohighlight" id="equation-645442e4-2ac8-42fe-ac72-540dd6999b47">
+<span class="eqno">(2.19)<a class="headerlink" href="#equation-645442e4-2ac8-42fe-ac72-540dd6999b47" title="Permalink to this equation">#</a></span>\[\begin{align}
+\frac{\lambda_{\rm obs}-\lambda_{\rm rest}}{\lambda_{\rm rest}} = \frac{\Delta \lambda}{\lambda_{\rm rest}} = \frac{v_r}{v_s},
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(v_s\)</span> is the speed of sound in the medium.  However, this expression cannot be precisely correct for light.  The Doppler shift for light is a qualitatively different phenomenon from its counterpart for sound waves.</p>
+<p>Consider a distant light source that emits a light signal at time <span class="math notranslate nohighlight">\(t_1\)</span> and another signal at time <span class="math notranslate nohighlight">\(t_2 = t_1 + \Delta t\)</span> as measured by a clock at <em>rest</em> relative to the source.  If this light source is moving relative to an observer with a velocity <strong>u</strong>, then the time-of-flight and the distance traveled by the light signals will be different.  The time between the emission of the light signals as measured in the observer’s frame is</p>
+<div class="math notranslate nohighlight">
+\[ t_o = \frac{t_2-t_1}{\sqrt{1-\frac{u^2}{c^2}}}. \]</div>
+<p>In this time, the observer determines that the distance to the light source has changed by an amount</p>
+<div class="math notranslate nohighlight">
+\[L_o = \frac{u(t_2-t_1)\cos{\theta}}{\sqrt{1-\frac{u^2}{c^2}}}. \]</div>
+<p>Thus the time interval <span class="math notranslate nohighlight">\(\Delta t_{\rm obs}\)</span> between the arrival of the two light signals at the observer’s location is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-ccb69ad2-d475-459a-a79a-d30b136ceb6b">
+<span class="eqno">(2.20)<a class="headerlink" href="#equation-ccb69ad2-d475-459a-a79a-d30b136ceb6b" title="Permalink to this equation">#</a></span>\[\begin{align}
+\Delta t_{\rm obs} &amp;= t_o + \frac{L_o}{c}, \\
+ &amp;= \frac{t_2-t_1}{\sqrt{1-\frac{u^2}{c^2}}}\left[1 +\frac{u}{c}\cos{\theta} \right].
+\end{align}\]</div>
+<p>If <span class="math notranslate nohighlight">\(\Delta t\)</span> is the time between the emission of the light wave crests and <span class="math notranslate nohighlight">\(\Delta t_{\rm obs}\)</span> is the time between their arrival, then the frequencies of the light wave are <span class="math notranslate nohighlight">\(\nu_{\rm rest} = 1/\Delta t\)</span> and <span class="math notranslate nohighlight">\(\nu_{\rm obs}= 1/\Delta t_{\rm obs}\)</span>.  The equation describing the <strong>relativistic Doppler shift</strong> is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-1f94a01b-b5e1-42a6-b6b8-e8a93fed105a">
+<span class="eqno">(2.21)<a class="headerlink" href="#equation-1f94a01b-b5e1-42a6-b6b8-e8a93fed105a" title="Permalink to this equation">#</a></span>\[\begin{align}
+\frac{\nu_{\rm obs}}{\nu_{\rm rest}} = \frac{\sqrt{1-u^2/c^2}}{1+(u/c)\cos{\theta}} =  \frac{\sqrt{1-u^2/c^2}}{1+v_r/c},
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(v_r = u\cos{\theta}\)</span> is the <em>radial velocity</em> of the light source.  If the light source is moving directly away or toward the observer, then the angle <span class="math notranslate nohighlight">\(\theta\)</span> is <span class="math notranslate nohighlight">\(0^\circ\)</span> or <span class="math notranslate nohighlight">\(180^\circ\)</span>, respectively.  The relativistic Doppler shift reduces to</p>
+<div class="amsmath math notranslate nohighlight" id="equation-81c5498b-609e-4313-8578-71702612da23">
+<span class="eqno">(2.22)<a class="headerlink" href="#equation-81c5498b-609e-4313-8578-71702612da23" title="Permalink to this equation">#</a></span>\[\begin{align}
+\frac{\nu_{\rm obs}}{\nu_{\rm rest}} = \sqrt{\frac{1-v_r/c}{1+v_r/c}}\qquad \text{(radial motion)}.
+\end{align}\]</div>
+<p>There is also a <strong>transverse Doppler shift</strong> for perpendicular motion relative to the observer’s line-of-sight (i.e., <span class="math notranslate nohighlight">\(\theta = 90^\circ\)</span>).  This transverse shift is entirely due to time dilation.</p>
+<p>When astronomers observe a star or galaxy moving away from or toward Earth, the wavelength of the light they receive is shifted toward longer or shorter wavelengths, respectively.</p>
+<ul class="simple">
+<li><p>If the source of light is moving <em>away</em> from the observer <span class="math notranslate nohighlight">\((v_r&gt;0)\)</span>, then <span class="math notranslate nohighlight">\(\lambda_{\rm obs} &gt; \lambda_{\rm rest}\)</span>.  This shift to a longer wavelength is called a <strong>redshift</strong>.</p></li>
+<li><p>Similarly, if the source is moving <em>toward</em> the observer <span class="math notranslate nohighlight">\((v_r&lt;0)\)</span>, then there is a shift to a shorter wavelength, or a <strong>blueshift</strong>.</p></li>
+</ul>
+<p>Because most of the objects in the universe outside of our own Milky Way Galaxy are moving away from us, redshifts are more commonly measured.  A <strong>redshift parameter</strong> <span class="math notranslate nohighlight">\(z\)</span> is used to describe the change in wavelength and is defined as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-3d9923ce-5851-4c04-9a47-488cc4138ddb">
+<span class="eqno">(2.23)<a class="headerlink" href="#equation-3d9923ce-5851-4c04-9a47-488cc4138ddb" title="Permalink to this equation">#</a></span>\[\begin{align}
+z \equiv \frac{\lambda_{\rm obs}-\lambda_{\rm rest}}{\lambda_{\rm rest}} = \frac{\Delta \lambda}{\lambda_{\rm rest}}.
+\end{align}\]</div>
+<p>Using the relativistic frequency <span class="math notranslate nohighlight">\(\nu_{\rm obs}/\nu_{\rm rest}\)</span> for radial motion and <span class="math notranslate nohighlight">\(c = \lambda \nu\)</span>, we get</p>
+<div class="amsmath math notranslate nohighlight" id="equation-125f6156-e09d-483d-908d-5a2190fdec3f">
+<span class="eqno">(2.24)<a class="headerlink" href="#equation-125f6156-e09d-483d-908d-5a2190fdec3f" title="Permalink to this equation">#</a></span>\[\begin{align}
+\frac{\lambda_{\rm obs}}{\lambda_{\rm rest}} = \sqrt{\frac{1+v_r/c}{1-v_r/c}}\qquad \text{(radial motion)},
+\end{align}\]</div>
+<p>and the redshift parameter becomes</p>
+<div class="math notranslate nohighlight" id="equation-radial-z">
+<span class="eqno">(2.25)<a class="headerlink" href="#equation-radial-z" title="Permalink to this equation">#</a></span>\[z = \sqrt{\frac{1+v_r/c}{1-v_r/c}} - 1\qquad \text{(radial motion)}.\]</div>
+<p>Alternative forms of the redshift parameter are:</p>
+<div class="math notranslate nohighlight" id="equation-alt-rad-z">
+<span class="eqno">(2.26)<a class="headerlink" href="#equation-alt-rad-z" title="Permalink to this equation">#</a></span>\[\begin{split}z + 1 &amp;= \frac{\nu_{\rm rest}}{\nu_{\rm obs}},\\
+z + 1 &amp; = \frac{\Delta t_{\rm obs}}{\Delta t_{\rm rest}}.\end{split}\]</div>
+<p>If the luminosity of an astrophysical source with redshift parameter <span class="math notranslate nohighlight">\(z&gt;0\)</span> (receding) is observed to vary during a time <span class="math notranslate nohighlight">\(\Delta t_{\rm obs}\)</span>, then the change in luminosity occurred over a <em>shorter</em> time <span class="math notranslate nohighlight">\(\Delta t_{\rm rest} = \Delta t_{\rm obs}/(z+1)\)</span> in the rest frame of the source.</p>
+<div class="exercise orange admonition" id="Chapter_04/theory-of-special-relativity-exercise-1">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.2 </span></p>
+<div class="section" id="exercise-content">
+<p><strong>In its rest frame, the quasar SDSS 1030+0524 produces a hydrogen emission line of wavelength <span class="math notranslate nohighlight">\(\lambda_{\rm rest} = 121.6\ \rm nm\)</span>. On Earth, this emission line is observed to have a wavelength of <span class="math notranslate nohighlight">\(\lambda_{\rm obs} = 885.2\ \rm nm\)</span>.</strong></p>
+<p><em>What is the redshift parameter <span class="math notranslate nohighlight">\(z\)</span> and radial velocity <span class="math notranslate nohighlight">\(v_r\)</span> for this quasar?</em></p>
+<p>The redshift parameter can be determined through the ratio of the difference in wavelengths to the rest wavelength.  Quantitatively, this is given by</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+z &amp;= \frac{\lambda_{\rm obs}-\lambda_{\rm rest}}{\lambda_{\rm rest}}, \\
+  &amp;= \frac{885.2\ {\rm nm} - 121.6\ {\rm nm} }{121.6\ {\rm nm}} = 6.28
+\end{align*}\]</div>
+<p>The redshift parameter is needed to determine the radial velocity.  Using Eq. <a class="reference internal" href="#equation-radial-z">(2.25)</a>, we may calculate the recessional speed of the quasar by</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+z &amp;= \sqrt{\frac{1+v_r/c}{1-v_r/c}} - 1, \\
+(z + 1)^2 &amp;= \frac{1+v_r/c}{1-v_r/c}, \\
+\frac{v_r}{c} &amp;= \frac{(z + 1)^2-1}{(z + 1)^2+1} = 0.963,
+\end{align*}\]</div>
+<p>which results in <span class="math notranslate nohighlight">\(v_r = 0.963c.\)</span></p>
+<p>Quasar SDSS 1030+0524 appears to moving away from us at <span class="math notranslate nohighlight">\(&gt;96\%\)</span> of the speed of light!  However, the overall expansion of the universe contributes to large recessional speeds for objects that are very far away from us.  In these cases, the increase in the observed wavelength is actually due to the <em>expansion of space itself</em> rather than being due to the motion of the object through space!  This is known as <em>cosmological redshift</em> and is a consequence of the Big Bang.*</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lambda_rest</span> <span class="o">=</span> <span class="mf">121.6</span> <span class="c1">#rest wavelength in nm</span>
+<span class="n">lambda_obs</span> <span class="o">=</span> <span class="mf">885.2</span> <span class="c1">#observed wavelength in nm</span>
+
+<span class="c1">#Calculation of z parameter</span>
+<span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="n">lambda_obs</span><span class="o">-</span><span class="n">lambda_rest</span><span class="p">)</span><span class="o">/</span><span class="n">lambda_rest</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The redshift parameter is </span><span class="si">%1.2f</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="n">z</span><span class="p">)</span>
+
+<span class="c1">#Calculation of radial velocity (in units of c)</span>
+<span class="n">v_r</span> <span class="o">=</span> <span class="p">((</span><span class="n">z</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="p">((</span><span class="n">z</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The recessional velocity is </span><span class="si">%1.3f</span><span class="s2"> c.&quot;</span> <span class="o">%</span> <span class="n">v_r</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The redshift parameter is 6.28.
+The recessional velocity is 0.963 c.
+</pre></div>
+</div>
+</div>
+</div>
+<p>Suppose the speed <em>u</em> of a light source is small compared to the speed of light (i.e., <span class="math notranslate nohighlight">\(u/c\ll 1\)</span>). We can evaluate <span class="math notranslate nohighlight">\((1+v_r/c)\)</span> terms in the equation for the redshift parameter <span class="math notranslate nohighlight">\(z\)</span> (Eq. <a class="reference internal" href="#equation-radial-z">(2.25)</a>).  This binomial approximation produces</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\left(1 \pm \frac{v_r}{c} \right)^{1/2} &amp;\simeq 1 \pm \frac{v_r}{2c}.
+\end{align*}\]</div>
+<p>Applying the above approximations to the redshift parameter equation gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+z &amp;\simeq \frac{1 + v_r/(2c)}{1-v_r/(2c)} - 1, \\
+  &amp;\simeq \frac{v_r/c}{1-v_r/(2c)}, \\
+  &amp;\simeq \frac{v_r}{c}.
+\end{align*}\]</div>
+<p>Since <span class="math notranslate nohighlight">\(v_r/c \ll 1\)</span>, then <span class="math notranslate nohighlight">\(1-v_r/(2c) \approx 1\)</span>.  At low speeds, we can obtain</p>
+<div class="amsmath math notranslate nohighlight" id="equation-9bb64640-4ef0-419d-90e1-c63eac1157b5">
+<span class="eqno">(2.27)<a class="headerlink" href="#equation-9bb64640-4ef0-419d-90e1-c63eac1157b5" title="Permalink to this equation">#</a></span>\[\begin{align}
+z = \frac{\Delta \lambda}{\lambda_{\rm rest}} \simeq \frac{v_r}{c},
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(v_r &gt; 0\)</span> for a receding source (and vice versa for an approaching source).  Although this equation is similar to the equation derived by Doppler, you should remember that it is an <em>approximation</em>, valid only for low speeds.  Misapplying this equation to the relativistic qusaar SDSS 1030+0524 would lead to the erroneous conclusion that the quasar is moving away from us at <span class="math notranslate nohighlight">\(6.28\)</span> times the speed of light!</p>
 </div>
 <div class="section" id="the-relativistic-velocity-transformation">
-<h3><span class="section-number">2.3.4. </span>The Relativistic Velocity Transformation<a class="headerlink" href="#the-relativistic-velocity-transformation" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">2.3.5. </span>The Relativistic Velocity Transformation<a class="headerlink" href="#the-relativistic-velocity-transformation" title="Permalink to this headline">#</a></h3>
+<p>Because space and time intervals are measured differently by different observers in relative motion, velocities must be transformed as well.  The equations describing the relativistic transformation of velocities may be easily found from the Lorentz transformation equations (Eq. <a class="reference internal" href="#equation-lorentz-eqn">(2.11)</a>) by writing them as differentials:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-4ebfb6ab-7a7c-4183-a5f2-e39aee95315a">
+<span class="eqno">(2.28)<a class="headerlink" href="#equation-4ebfb6ab-7a7c-4183-a5f2-e39aee95315a" title="Permalink to this equation">#</a></span>\[\begin{align}
+dx^\prime &amp;= \gamma\left(dx - udt\right), \\
+dy^\prime &amp;= dy, \\
+dz^\prime &amp;= dz, \\
+dt^\prime &amp;= \gamma \left[dt - \left(u/c^2 \right)dx\right].
+\end{align}\]</div>
+<p>Then dividing the <span class="math notranslate nohighlight">\(dx^\prime\)</span>, <span class="math notranslate nohighlight">\(dy^\prime\)</span>, and <span class="math notranslate nohighlight">\(dz^\prime\)</span> equations by the <span class="math notranslate nohighlight">\(dt^\prime\)</span> equation to get:</p>
+<div class="math notranslate nohighlight" id="equation-rel-vel-trans">
+<span class="eqno">(2.29)<a class="headerlink" href="#equation-rel-vel-trans" title="Permalink to this equation">#</a></span>\[\begin{split}v_x^\prime &amp;= \frac{v_x-u}{1-\left(u/c^2\right)v_x},\\
+v_y^\prime &amp;= \frac{v_y}{\gamma\left[1-\left(u/c^2\right)v_x\right]},\\
+v_z^\prime &amp;= \frac{v_z}{\gamma\left[1-\left(u/c^2\right)v_x\right]}.\\\end{split}\]</div>
+<p>As with the inverse Lorentz transformations, the inverse velocity transformations may be obtained switching primed and unprimed quantities and by <span class="math notranslate nohighlight">\(u\rightarrow -u\)</span>.</p>
+<div class="exercise orange admonition" id="Chapter_04/theory-of-special-relativity-exercise-2">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.3 </span></p>
+<div class="section" id="exercise-content">
+<p><strong>As measured in the <span class="math notranslate nohighlight">\(S^\prime\)</span> reference frame, a light source is at rest and radiates equally in all directions.  In particular, half of the light is emitted into the forward (<span class="math notranslate nohighlight">\(x^\prime&gt;0\)</span>) hemisphere.</strong></p>
+<p><em>Is the situation any different when viewed from the <span class="math notranslate nohighlight">\(S\)</span> reference frame?</em></p>
+<p>In the <span class="math notranslate nohighlight">\(S\)</span> frame, the light source is traveling in the <span class="math notranslate nohighlight">\(x&gt;0\)</span> direction with a relativistic speed <span class="math notranslate nohighlight">\(u\)</span>.  Consider the velocity components of a light ray in the <span class="math notranslate nohighlight">\(S^\prime\)</span> frame as</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+v_x^\prime &amp;= 0,\\
+v_y^\prime &amp;= c, \\
+v_z^\prime &amp;= 0.
+\end{align*}\]</div>
+<p>This light ray travels along the boundary between the forward and backward hemispheres of light measured in the <span class="math notranslate nohighlight">\(S^\prime\)</span> frame.  However, as measured in the <span class="math notranslate nohighlight">\(S\)</span> frame, this light ray has the velocity components given by the inverse transformation of the velocity Lorentz transformation, or</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+v_x &amp;= \frac{v_x^\prime+u}{1+\left(u/c^2\right)v_x^\prime} = u,\\
+v_y &amp;= \frac{v_y^\prime}{\gamma\left[1+\left(u/c^2\right)v_x^\prime\right]} = \frac{c}{\gamma},\\
+v_z&amp;= \frac{v_z^\prime}{\gamma\left[1+\left(u/c^2\right)v_x^\prime\right]}= 0.\\
+\end{align*}\]</div>
+<p>In the <span class="math notranslate nohighlight">\(S\)</span> frame, the light ray has a <span class="math notranslate nohighlight">\(v_y\)</span> component and is not traveling perpendicular to the <span class="math notranslate nohighlight">\(x\)</span> axis.  In fact, for <span class="math notranslate nohighlight">\(u/c \sim 1\)</span>, the angle <span class="math notranslate nohighlight">\(\theta\)</span> measured by the light ray and the <span class="math notranslate nohighlight">\(x\)</span> axis may be found from <span class="math notranslate nohighlight">\(\sin{\theta} = v_y/v\)</span>, where</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+v &amp;= \sqrt{v_x^2+v_y^2+v_z^2}, \\
+  &amp;= \sqrt{u^2 + c^2(1-u^2/c^2)}, \\
+  &amp;= \sqrt{u^2 + c^2 - u^2} = c,
+\end{align*}\]</div>
+<p>is the speed of the light ray measured in the <span class="math notranslate nohighlight">\(S\)</span> frame.  Thus</p>
+<div class="amsmath math notranslate nohighlight" id="equation-7a91c94a-d2f0-41c0-a1e6-be0bcbbb6e04">
+<span class="eqno">(2.30)<a class="headerlink" href="#equation-7a91c94a-d2f0-41c0-a1e6-be0bcbbb6e04" title="Permalink to this equation">#</a></span>\[\begin{align}
+\sin{\theta} = \frac{v_y}{v} = \sqrt{1-\frac{u^2}{c^2}} = \frac{1}{\gamma},
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\gamma\)</span> is the Lorentz factor.  For relativistic speeds <span class="math notranslate nohighlight">\(u \approx c\)</span>, which implies that <span class="math notranslate nohighlight">\(\gamma\)</span> is large and <span class="math notranslate nohighlight">\(\sin{\theta}\)</span> becomes very small.  All of the light emitted into the forward hemisphere is concentrated into a narrow cone in the direction of the light source’s motion when measured in the <span class="math notranslate nohighlight">\(S\)</span> frame.  This is called the <strong>headlight effect</strong> and plays an important role in many areas of astrophysics.  For example, as relativistic electron spiral around magnetic field lines, they emit <strong>synchrotron radiation</strong>.  This radiation is concentrated in the direction of the electron’s motion and is strongly plane-polarized.  Synchrotron radiation is an important electromagnetic radiation process in the Sun, Jupiter’s magnetosphere, pulsars, and active galaxies.</p>
+</div>
+</div>
 </div>
 </div>
 <div class="section" id="relativistic-momentum-and-energy">
 <h2><span class="section-number">2.4. </span>Relativistic Momentum and Energy<a class="headerlink" href="#relativistic-momentum-and-energy" title="Permalink to this headline">#</a></h2>
+<p>Up to this point, the position and velocities are transformed through the Lorentz transformation.  Einstein’s theory of special relativity incorporates these ideas to transform the concepts of momentum and energy.  According to the Principle of Relativity, if momentum is conserved in one inertial frame of reference, then it must be conserved in all inertial frames.  This leads to a definition of the <strong>relativistic momentum vector p</strong>:</p>
+<div class="math notranslate nohighlight" id="equation-rel-momentum">
+<span class="eqno">(2.31)<a class="headerlink" href="#equation-rel-momentum" title="Permalink to this equation">#</a></span>\[\mathbf{p} = \frac{m\mathbf{v}}{1-v^2/c^2} = \gamma m\mathbf{v},\]</div>
+<p>where <span class="math notranslate nohighlight">\(\gamma\)</span> is the Lorentz factor.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The mass <span class="math notranslate nohighlight">\(m\)</span> of a particle is taken to be the same value in <em>all</em> inertial reference frames.  Thus, the mass of a moving particle <em>does not</em> increase with increasing speed, although its <em>momentum</em> approaches infinity as <span class="math notranslate nohighlight">\(v \rightarrow c\)</span>.  Also note that the <span class="math notranslate nohighlight">\(v\)</span> in the denominator is the magnitude of the particle’s velocity relative to the observer, <em>not</em> the relative velocity <span class="math notranslate nohighlight">\(u\)</span> between two reference frames.</p>
+</div>
 <div class="section" id="the-derivation-of-e-mc-2">
 <h3><span class="section-number">2.4.1. </span>The Derivation of <span class="math notranslate nohighlight">\(E=mc^2\)</span><a class="headerlink" href="#the-derivation-of-e-mc-2" title="Permalink to this headline">#</a></h3>
+<p>Using Eq. <a class="reference internal" href="#equation-rel-momentum">(2.31)</a> and the relation for the kinetic energy (e.g., <span class="math notranslate nohighlight">\(K = p^2/2m\)</span>), we can derive an expression for the <em>relativistic kinetic energy</em>.</p>
+<p>Starting with Newton’s second law (<span class="math notranslate nohighlight">\(\mathbf{F} = d\mathbf{p}/dt\)</span>) applied to a particle of mass <span class="math notranslate nohighlight">\(m\)</span> that is initially at rest.  Consider a force of magnitude <span class="math notranslate nohighlight">\(F\)</span> that acts on the particle in the <span class="math notranslate nohighlight">\(x\)</span> direction.  The particle’s final kinetic energy <span class="math notranslate nohighlight">\(K\)</span> equals the total work done by the force on the particle as it travels from its initial position <span class="math notranslate nohighlight">\(x_i\)</span> to its final position <span class="math notranslate nohighlight">\(x_f\)</span>:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+K &amp;= \int_{x_i}^{x_f} F\ dx = \int_{x_i}^{x_f} \frac{dp}{dt}\ dx, \\
+  &amp;= \int_{p_i}^{p_f} \frac{dx}{dt}\ dp = \int_{p_i}^{p_f} v\ dp,
+\end{align*}\]</div>
+<p>where <span class="math notranslate nohighlight">\(p_i\)</span> and <span class="math notranslate nohighlight">\(p_f\)</span> are the initial and final momenta of the particle, respectively.  <a class="reference external" href="https://openstax.org/books/university-physics-volume-3/pages/5-9-relativistic-energy">Integrating by parts</a> using the initial condition <span class="math notranslate nohighlight">\(p_i = 0\)</span> gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+K &amp;= p_fv_f - \int_0^{v_f} p\ dv, \\
+  &amp;= \frac{mv_f^2}{\sqrt{1-v_f^2/c^2}} - \int_0^{v_f} \frac{mv}{\sqrt{1-v^2/c^2}}\ dv, \\
+  &amp;= \frac{mv_f^2}{\sqrt{1-v_f^2/c^2}} + mc^2 \left(\sqrt{1-v_f^2/c^2}-1 \right).
+\end{align*}\]</div>
+<p>If we drop the <span class="math notranslate nohighlight">\(f\)</span> in the subscript, the expression for the <strong>relativistic kinetic energy</strong> becomes</p>
+<div class="amsmath math notranslate nohighlight" id="equation-d17da318-6ba6-4224-9a36-a94b54869c29">
+<span class="eqno">(2.32)<a class="headerlink" href="#equation-d17da318-6ba6-4224-9a36-a94b54869c29" title="Permalink to this equation">#</a></span>\[\begin{align}
+K = mc^2 \left(\frac{1}{\sqrt{1-v_f^2/c^2}} -1 \right) = mc^2(\gamma -1).
+\end{align}\]</div>
+<p>The right-hand side of the expression for the kinetic energy consists of the difference between two energy terms.  The first is identified as the <strong>total relativistic energy</strong> <span class="math notranslate nohighlight">\(E\)</span>,</p>
+<div class="amsmath math notranslate nohighlight" id="equation-d3dec632-4791-4f15-a261-921ceb54748f">
+<span class="eqno">(2.33)<a class="headerlink" href="#equation-d3dec632-4791-4f15-a261-921ceb54748f" title="Permalink to this equation">#</a></span>\[\begin{align}
+E &amp;= \frac{mc^2}{\sqrt{1-v^2/c^2}} = \gamma mc^2.
+\end{align}\]</div>
+<p>The second term is an energy that does not depend on the speed of the particle.  The particle has this energy at rest, and thus, it is called the <strong>rest energy</strong> of the particle:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-668e76ee-6b40-4f79-80d9-5580f4dd1248">
+<span class="eqno">(2.34)<a class="headerlink" href="#equation-668e76ee-6b40-4f79-80d9-5580f4dd1248" title="Permalink to this equation">#</a></span>\[\begin{align}
+E_{\rm rest} = mc^2.
+\end{align}\]</div>
+<p>The particle’s kinetic energy is its total energy minus its rest energy.  When the energy of a particle is given (e.g., <span class="math notranslate nohighlight">\(40\ \rm MeV\)</span>), the implicit meaning is that it refers to the particle’s <em>kinetic energy</em>, where the rest energy is not included.</p>
+<p>A very useful expression relates a particle’s total energy <span class="math notranslate nohighlight">\(E\)</span>, the magnitude of its momentum <span class="math notranslate nohighlight">\(p\)</span>, and its rest energy <span class="math notranslate nohighlight">\(mc^2\)</span>, which is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-b03d56c4-6c69-4e7a-84f1-29b537b59f9c">
+<span class="eqno">(2.35)<a class="headerlink" href="#equation-b03d56c4-6c69-4e7a-84f1-29b537b59f9c" title="Permalink to this equation">#</a></span>\[\begin{align}
+E^2 = p^2c^2 + m^2c^4.
+\end{align}\]</div>
+<p>The above equation is valid even for particles with no mass (e.g., photons).</p>
+<p>For a system of <span class="math notranslate nohighlight">\(n\)</span> particles, the total energy <span class="math notranslate nohighlight">\(E_{\rm sys}\)</span> is the sum of the total energies <span class="math notranslate nohighlight">\(E_i\)</span> of the individual particles:</p>
+<div class="math notranslate nohighlight">
+\[ E_{\rm sys} = \sum_{i=1}^n E_i.\]</div>
+<p>Similarly, the vector momentum <span class="math notranslate nohighlight">\(\mathbf{p}_{\rm sys}\)</span> is the sum of the momenta <span class="math notranslate nohighlight">\(\mathbf{p}_i\)</span> of the individual particles:</p>
+<div class="math notranslate nohighlight">
+\[ \mathbf{p}_{\rm sys} = \sum_{i=1}^n \mathbf{p}_i. \]</div>
+<p>If the momentum of the system of particles is conserved, then the total energy is also conserved, <em>even for inelastic collisions</em> in which the kinetic energy of the system:</p>
+<div class="math notranslate nohighlight">
+\[ K_{\rm sys} = \sum_{i=1}^n K_i, \]</div>
+<p>is reduced.  The kinetic energy lost in the inelastic collisions goes into increasing the rest energy, and hence the mass of the particles.  This increase in energy allows the total energy of the system to be conserved.  <strong>Mass and energy are two sides of the same coin; one can be transformed into the other.</strong></p>
+<div class="exercise orange admonition" id="Chapter_04/theory-of-special-relativity-exercise-3">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2.4 </span></p>
+<div class="section" id="exercise-content">
+<p><strong>In a one-dimensional completely inelastic collision, two identical particles of mass <span class="math notranslate nohighlight">\(m\)</span> and speed <span class="math notranslate nohighlight">\(v\)</span> approach each other, collide head-on, and merge to form a particle of mass <span class="math notranslate nohighlight">\(M\)</span>.</strong></p>
+<p><em>Show how the lost kinetic energy is transformed into mass relativistically.</em></p>
+<p>The initial energy of the system of particles is</p>
+<div class="math notranslate nohighlight">
+\[ E_{{\rm sys},i} = \frac{2mc^2}{1-v^2/c^2} = 2\gamma mc^2. \]</div>
+<p>Since the initial momenta of the particles are equal in magnitude and opposite in direction the momentum of the system <span class="math notranslate nohighlight">\(\mathbf{p}_{\rm sys} = 0\)</span> <em>before</em> and <em>after</em> the collision.  Thus after the collision, the particle is at rest and its final energy is</p>
+<div class="math notranslate nohighlight">
+\[ E_{{\rm sys},f} = Mc^2. \]</div>
+<p>Equating the initial and final system energies shows that the mass <span class="math notranslate nohighlight">\(M\)</span> of the conglomerate particle is</p>
+<div class="math notranslate nohighlight">
+\[ M = \frac{2m}{\sqrt{1-v^2/c^2}} = 2\gamma m. \]</div>
+<p>Thus the particle mass has increased by an amount:</p>
+<div class="math notranslate nohighlight">
+\[ \Delta m = M-2m = 2\gamma m - 2m = 2m (\gamma -1). \]</div>
+<p>The origin of this mass increase is found by comparing the initial and final values of the kinetic energy.  The initial kinetic energy of the system is</p>
+<div class="math notranslate nohighlight">
+\[ K_{{\rm sys},i} = 2mc^2(\gamma -1) \]</div>
+<p>and the final kinetic energy <span class="math notranslate nohighlight">\(K_{{\rm sys},f} = 0.\)</span>  Dividing the kinetic energy lost in this inelastic collision by <span class="math notranslate nohighlight">\(c^2\)</span> equals the particle mass increase, <span class="math notranslate nohighlight">\(\Delta m\)</span>.</p>
+</div>
+</div>
 </div>
 <div class="section" id="the-derivation-of-relativistic-momentum">
 <h3><span class="section-number">2.4.2. </span>The Derivation of Relativistic Momentum<a class="headerlink" href="#the-derivation-of-relativistic-momentum" title="Permalink to this headline">#</a></h3>
+<p>For the relativistic momentum, let’s consider a glancing elastic collision between two <em>identical</em> particles of mass <span class="math notranslate nohighlight">\(m\)</span>.  This collision can be observed from three carefully chosen inertial reference frames (<span class="math notranslate nohighlight">\(S\)</span>, <span class="math notranslate nohighlight">\(S^\prime\)</span>, and <span class="math notranslate nohighlight">\(S^{\prime\prime}\)</span>) as shown in Figure <a class="reference internal" href="#collision-fig"><span class="std std-numref">2.2</span></a>.</p>
+<div class="figure align-default" id="collision-fig">
+<a class="reference internal image-reference" href="../_images/Figure_11.jpg"><img alt="elastic collision" src="../_images/Figure_11.jpg" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2.2 </span><span class="caption-text">An elastic collision measured in frames (a) <span class="math notranslate nohighlight">\(S\)</span>, (b) <span class="math notranslate nohighlight">\(S^{\prime\prime}\)</span>, and (c) <span class="math notranslate nohighlight">\(S^{\prime}\)</span>.  As observed from the <span class="math notranslate nohighlight">\(S^{\prime\prime}\)</span> frame, the <span class="math notranslate nohighlight">\(S\)</span> frame moves in the <em>negative</em> <span class="math notranslate nohighlight">\(x^{\prime\prime}\)</span> direction, along with particle <span class="math notranslate nohighlight">\(A\)</span>, and the <span class="math notranslate nohighlight">\(S^\prime\)</span> frame moves in the positive <span class="math notranslate nohighlight">\(x^{\prime \prime}\)</span> direction, along with particle <span class="math notranslate nohighlight">\(B\)</span>.  For each reference frame, a vertical sequence of three figures shows the situation before (top), during, and after the collision. Figure credit: Carroll &amp; Ostlie (2007).</span><a class="headerlink" href="#collision-fig" title="Permalink to this image">#</a></p>
+</div>
+<p>When measured in the inertial <span class="math notranslate nohighlight">\(S^{\prime\prime}\)</span> frame, the two particles <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> have velocities and momenta that are equal in magnitude and opposite in direction <em>before</em> and <em>after</em> the collision (i.e., momentum is conserved).</p>
+<ul class="simple">
+<li><p>If the <span class="math notranslate nohighlight">\(S\)</span> frame moves in the <em>negative</em> <span class="math notranslate nohighlight">\(x^{\prime\prime}\)</span> direction with a velocity equal to the <span class="math notranslate nohighlight">\(x^{\prime\prime}\)</span> component of particle <span class="math notranslate nohighlight">\(A\)</span> in the <span class="math notranslate nohighlight">\(S^{\prime\prime}\)</span> frame, then the velocity of particle <span class="math notranslate nohighlight">\(A\)</span> has only a <span class="math notranslate nohighlight">\(y\)</span> component in the <span class="math notranslate nohighlight">\(S\)</span> frame.</p></li>
+<li><p>Similarly, if <span class="math notranslate nohighlight">\(S^\prime\)</span> moves in the <em>positive</em> <span class="math notranslate nohighlight">\(x^{\prime\prime}\)</span> direction with a velocity equal to the <span class="math notranslate nohighlight">\(x^{\prime\prime}\)</span> component of particle <span class="math notranslate nohighlight">\(B\)</span> in the <span class="math notranslate nohighlight">\(S^{\prime\prime}\)</span> frame, then the velocity of particle <span class="math notranslate nohighlight">\(B\)</span> has only a <span class="math notranslate nohighlight">\(y\)</span> component.</p></li>
+</ul>
+<p>This means that the change in the <span class="math notranslate nohighlight">\(y\)</span> component of particle <span class="math notranslate nohighlight">\(A\)</span>’s momentum as measured in the <span class="math notranslate nohighlight">\(S\)</span> frame is the same as the change in the <span class="math notranslate nohighlight">\(y^\prime\)</span> component of particle <span class="math notranslate nohighlight">\(B\)</span>’s momentum as measured in the <span class="math notranslate nohighlight">\(S^\prime\)</span> frame, except for a  change in sign: <span class="math notranslate nohighlight">\(\Delta p_{A,y} = -\Delta p^\prime_{B,y}\)</span>.</p>
+<p>The momentum must be conserved in the <span class="math notranslate nohighlight">\(S\)</span> and <span class="math notranslate nohighlight">\(S^\prime\)</span> frames, just as it is in the <span class="math notranslate nohighlight">\(S^{\prime\prime}\)</span> frame.  This means that in the <span class="math notranslate nohighlight">\(S^\prime\)</span> frame, the sum of the changes in the <span class="math notranslate nohighlight">\(y^\prime\)</span> components of particle <span class="math notranslate nohighlight">\(A\)</span>’s and <span class="math notranslate nohighlight">\(B\)</span>’s momenta must be zero: $\Delta p^\prime_{A,y} + \Delta p^\prime_{B,y} = 0.  Combining these results gives</p>
+<div class="math notranslate nohighlight" id="equation-momentum-cons">
+<span class="eqno">(2.36)<a class="headerlink" href="#equation-momentum-cons" title="Permalink to this equation">#</a></span>\[\begin{split}\Delta p^\prime_{A,y} + \Delta p^\prime_{B,y} &amp;= 0, \\
+\Delta p^\prime_{A,y} - \Delta p_{A,y} &amp;= 0, \\
+\Delta p^\prime_{A,y} &amp;= \Delta p_{A,y}.\end{split}\]</div>
+<p>So far, the argument has been independent of a specific formula for the relativistic momentum vector <span class="math notranslate nohighlight">\(\mathbf{p}\)</span>.  Let’s make a couple of assumptions.</p>
+<ol class="simple">
+<li><p>The relativistic momentum vector has the form: <span class="math notranslate nohighlight">\(\mathbf{p} = fm\mathbf{v}\)</span>, where <span class="math notranslate nohighlight">\(f\)</span> is a relativistic factor that depends on the <em>magnitude</em> of the particle’s velocity, but not its direction.</p></li>
+<li><p>The <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(y^\prime\)</span> components of each particle’s velocity are chose to be arbitrarily small compared to the speed of light <span class="math notranslate nohighlight">\(c\)</span>.</p></li>
+</ol>
+<p>The <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(y^\prime\)</span> components of particle <span class="math notranslate nohighlight">\(A\)</span>’s velocity are extremely small and the <span class="math notranslate nohighlight">\(x^\prime\)</span> component of particle <span class="math notranslate nohighlight">\(A\)</span>’s velocity is taken to be relativistic.  Since</p>
+<div class="math notranslate nohighlight">
+\[ v_A^\prime = \sqrt{{v^\prime}^2_{A,x} + {v^\prime}^2_{A,y}} \approx c \]</div>
+<p>in the <span class="math notranslate nohighlight">\(S^\prime\)</span> frame, the relativistic factor <span class="math notranslate nohighlight">\(f^\prime\)</span> for particle <span class="math notranslate nohighlight">\(A\)</span> in the <span class="math notranslate nohighlight">\(S^\prime\)</span> frame is not equal to 1, whereas <span class="math notranslate nohighlight">\(f\)</span> is arbitrarily close to unity in the <span class="math notranslate nohighlight">\(S\)</span> frame.  If <span class="math notranslate nohighlight">\(v_{A,y}\)</span> is the final <span class="math notranslate nohighlight">\(y\)</span> component of particle <span class="math notranslate nohighlight">\(A\)</span>’s velocity, and similarly for <span class="math notranslate nohighlight">\(v^\prime_{A,y}\)</span>, then Eq. <a class="reference internal" href="#equation-momentum-cons">(2.36)</a> becomes</p>
+<div class="math notranslate nohighlight" id="equation-rel-vel-fact">
+<span class="eqno">(2.37)<a class="headerlink" href="#equation-rel-vel-fact" title="Permalink to this equation">#</a></span>\[2f^\prime mv^\prime_{A,y} = 2mv_{A,y}.\]</div>
+<p>The relative velocity <span class="math notranslate nohighlight">\(u\)</span> of frames <span class="math notranslate nohighlight">\(S\)</span> and <span class="math notranslate nohighlight">\(S^\prime\)</span> is needed to relate <span class="math notranslate nohighlight">\(v^\prime_{A,y}\)</span> and <span class="math notranslate nohighlight">\(v_{A,y}\)</span> using Eq. <a class="reference internal" href="#equation-rel-vel-trans">(2.29)</a>.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(v_{A,x} = 0\)</span> in the <span class="math notranslate nohighlight">\(S\)</span> frame, so <span class="math notranslate nohighlight">\(u=v^\prime_{A,x}\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(v^\prime_{A,y}\)</span> is arbitrarily small, we can set <span class="math notranslate nohighlight">\(v^\prime_{A,x} = v^\prime_A = u\)</span></p></li>
+</ul>
+<p>From Eq. <a class="reference internal" href="#equation-rel-vel-trans">(2.29)</a> for the <span class="math notranslate nohighlight">\(y\)</span> component we get</p>
+<div class="math notranslate nohighlight">
+\[ v^\prime_{A,y} = v_{A,y}\sqrt{1-{v^\prime}^2/c^2}. \]</div>
+<p>Inserting this relation into Eq. <a class="reference internal" href="#equation-rel-vel-fact">(2.37)</a> reveals the relativistic factor <span class="math notranslate nohighlight">\(f\)</span> to be</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+2f^\prime mv_{A,y}\sqrt{1-{v^\prime}^2/c^2} &amp;= 2mv_{A,y}, \\
+f^\prime &amp;= \frac{1}{\sqrt{1-{v^\prime}^2/c^2}},
+\end{align*}\]</div>
+<p>as measured in the <span class="math notranslate nohighlight">\(S^\prime\)</span> frame. Dropping the prime superscript and the <span class="math notranslate nohighlight">\(A\)</span> subscript gives</p>
+<div class="math notranslate nohighlight">
+\[f = \frac{1}{\sqrt{1-v^2/c^2}}. \]</div>
+<p>The formula for the <strong>relativistic momentum vector</strong> is thus</p>
+<div class="math notranslate nohighlight">
+\[ \mathbf{p} = \frac{m\mathbf{v}}{\sqrt{1-v^2/c^2}} = \gamma m \mathbf{v}, \]</div>
+<p>which is equivalent to Eq. <a class="reference internal" href="#equation-rel-momentum">(2.31)</a>.</p>
 </div>
 </div>
 <div class="section" id="homework">
 <h2><span class="section-number">2.5. </span><strong>Homework</strong><a class="headerlink" href="#homework" title="Permalink to this headline">#</a></h2>
 <div class="admonition-problem-1 admonition">
 <p class="admonition-title">Problem 1</p>
-<p>Problem 1 goes here.</p>
+<p><strong>A rod moving relative to an observer is measured to have its length <span class="math notranslate nohighlight">\(L\)</span> contracted to one-half of its length when measured at rest.  Find the value of <span class="math notranslate nohighlight">\(u/c\)</span> for the rod’s rest frame relative to the observer’s frame of reference.</strong></p>
+</div>
+<div class="admonition-problem-2 admonition">
+<p class="admonition-title">Problem 2</p>
+<p><strong>An astronaut in a starship travels to <span class="math notranslate nohighlight">\(\alpha\)</span> Centauri (<span class="math notranslate nohighlight">\(4.367\ \rm ly\)</span> away from Earth) at a speed of <span class="math notranslate nohighlight">\(u = 0.8c\)</span>.</strong></p>
+<p><strong>(a)</strong> How long does the trip to <span class="math notranslate nohighlight">\(\alpha\)</span> Centauri take, as measured by a clock on Earth?</p>
+<p><strong>(b)</strong> How long does the trip to <span class="math notranslate nohighlight">\(\alpha\)</span> Centauri take, as measured by the starship pilot?</p>
+<p><strong>(c)</strong> What is the distance between Earth and <span class="math notranslate nohighlight">\(\alpha\)</span> Centauri, as measured by the starship pilot?</p>
+<p><strong>(d)</strong> A radio signal is sent from Earth to the starship every 6 months, as measured bya clock on Earth.  What is the time interval between the reception of one of these signals and reception of the next signal aboard the starship?</p>
+<p><strong>(e)</strong> A radio signal is sent from the starship to the Earth every 6 months, as measured bya clock aboard the starship.  What is the time interval between the reception of one of these signals and reception of the next signal on Earth?</p>
+<p><strong>(f)</strong> If the wavelength of the radio signal sent from Earth is <span class="math notranslate nohighlight">\(\lambda = 15\ \rm cm\)</span>, to what wavelength must the starship’s receiver be tuned?</p>
+</div>
+<div class="admonition-problem-3 admonition">
+<p class="admonition-title">Problem 3</p>
+<p><strong>In its rest frame, quasar Q2204+29 produce a hydrogen emission line of wavelength <span class="math notranslate nohighlight">\(121.6\ \rm nm\)</span>.  Astronomers on Earth measure a wavelength of <span class="math notranslate nohighlight">\(656.8\ \rm nm\)</span> for this line.  Determine the redshift parameter and the apparent speed of recession for this quasar.</strong>  (For more information about this quasar, see <a class="reference external" href="https://ui.adsabs.harvard.edu/link_gateway/1988ApJ...328L..29M/ADS_PDF">McCarthy et al. 1988</a>)</p>
+</div>
+<div class="admonition-problem-4 admonition">
+<p class="admonition-title">Problem 4</p>
+<p><strong>Starship A moves away from Earth with a speed of <span class="math notranslate nohighlight">\(v_A = 0.8c\)</span>.  Starship B moves away from Earth in the opposite direction with a speed of <span class="math notranslate nohighlight">\(v_B = 0.6c\)</span>.</strong></p>
+<p><strong>(a)</strong> What is the speed of starship A as measured by starship B?</p>
+<p><strong>(b)</strong> What is the speed of starship B as measured by starship A?</p>
 </div>
 </div>
 </div>
@@ -737,7 +1370,7 @@ title="Print to PDF"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">1. </span>The Theory of Special Relativity</p>
+            <p class="prev-next-title"><span class="section-number">1. </span>Introduction to Cosmology</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../Chapter_17/general-relativity-and-black-holes.html" title="next page">
@@ -756,7 +1389,7 @@ title="Print to PDF"
   
     By Billy Quarles<br/>
   
-      &copy; Copyright 2022.<br/>
+      &copy; Copyright 2023.<br/>
 </p>
         </footer>
     </div>

@@ -1,0 +1,1541 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Participation (Spring 2023) &#8212; ASTR3220 Cosmology</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mycss.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/tabs.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="10. The Early Universe" href="../Chapter_30/early-universe.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">ASTR3220 Cosmology</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../home.html">
+                    ASTR3220: Cosmology
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Preamble
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Preamble/who-for.html">
+   Who are these notes for?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Preamble/Python-basics.html">
+   Introduction to Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Preamble/Markdown-basics.html">
+   Introduction to Markdown
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Preamble/HW_template.html">
+   Homework Assignments
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Chapter_01/intro-cosmology.html">
+   1. Introduction to Cosmology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Chapter_04/theory-of-special-relativity.html">
+   2. The Theory of Special Relativity
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Chapter_17/general-relativity-and-black-holes.html">
+   3. General Relativity and Black Holes
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Galaxies
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Chapter_24/nature-of-galaxies.html">
+   4. The Nature of Galaxies
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Chapter_25/milky-way-galaxy.html">
+   5. The Milky Way Galaxy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Chapter_26/galactic-evolution.html">
+   6. Galactic Evolution
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Universe
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Chapter_27/structure-of-the-universe.html">
+   7. The Structure of the Universe
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Chapter_28/active-galaxies.html">
+   8. Active Galaxies
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Chapter_29/cosmology.html">
+   9. Cosmology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Chapter_30/early-universe.html">
+   10. The Early Universe
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Appendix
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Student Participation (Spring 2023)
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/saturnaxis/Cosmology/main?urlpath=tree/Appendix/Student_Summaries.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/saturnaxis/Cosmology/blob/main/Appendix/Student_Summaries.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="initThebeSBT()"
+  class="headerbtn headerbtn-launch-thebe"
+  data-toggle="tooltip"
+data-placement="left"
+title="Launch Thebe"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="headerbtn__text-container">Live Code</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/saturnaxis/Cosmology"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/saturnaxis/Cosmology/issues/new?title=Issue%20on%20page%20%2FAppendix/Student_Summaries.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/Appendix/Student_Summaries.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jan-10">
+   Jan 10
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class-overview">
+     Class Overview
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jan-12">
+   Jan 12
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#intro-to-cosmology-i">
+     Intro to Cosmology I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jan-17">
+   Jan 17
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#intro-to-cosmology-ii">
+     Intro to Cosmology II
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jan-19">
+   Jan 19
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#special-theory-of-relativity-i">
+     Special Theory of Relativity I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jan-24">
+   Jan 24
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#special-theory-of-relativity-ii">
+     Special Theory of Relativity II
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jan-26">
+   Jan 26
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#general-relativity-i">
+     General Relativity I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jan-31">
+   Jan 31
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#general-relativity-ii">
+     General Relativity II
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feb-2">
+   Feb 2
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#black-holes-i">
+     Black Holes I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feb-7">
+   Feb 7
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#black-holes-ii">
+     Black Holes II
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feb-9">
+   Feb 9
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nature-of-galaxies-i">
+     Nature of Galaxies I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feb-14">
+   Feb 14
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nature-of-galaxies-ii">
+     Nature of Galaxies II
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feb-16">
+   Feb 16
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nature-of-galaxies-iii">
+     Nature of Galaxies III
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feb-21">
+   Feb 21
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#milky-way-galaxy-i">
+     Milky Way Galaxy I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feb-23">
+   Feb 23
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#milky-way-galaxy-ii">
+     Milky Way Galaxy II
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feb-28">
+   Feb 28
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#milky-way-galaxy-iii">
+     Milky Way Galaxy III
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mar-2-exam-i">
+   Mar 2 (Exam I)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mar-7">
+   Mar 7
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#galactic-evolution-i">
+     Galactic Evolution I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mar-9">
+   Mar 9
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#galactic-evolution-ii">
+     Galactic Evolution II
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#astropy-teaching-presentations">
+     Astropy (Teaching) Presentations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mar-14-16-spring-break">
+   Mar 14 &amp; 16 (Spring Break)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mar-21">
+   Mar 21
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#galactic-evolution-iii">
+     Galactic Evolution III
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Astropy (Teaching) Presentations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mar-23">
+   Mar 23
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#structure-of-the-universe-i">
+     Structure of the Universe I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mar-28">
+   Mar 28
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#structure-of-the-universe-ii">
+     Structure of the Universe II
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mar-30">
+   Mar 30
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#structure-of-the-universe-iii">
+     Structure of the Universe III
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#apr-4">
+   Apr 4
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#active-galaxies-i">
+     Active Galaxies I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#apr-6">
+   Apr 6
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#active-galaxies-ii">
+     Active Galaxies II
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#apr-11">
+   Apr 11
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#active-galaxies-iii">
+     Active Galaxies III
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#apr-13-exam-ii">
+   Apr 13 (Exam II)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#apr-18">
+   Apr 18
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cosmology-i">
+     Cosmology I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#apr-20">
+   Apr 20
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cosmology-ii">
+     Cosmology II
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#paper-presentations">
+     Paper Presentations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#apr-25">
+   Apr 25
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-early-universe-i">
+     The Early Universe I
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Paper Presentations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#apr-27">
+   Apr 27
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-early-universe-ii">
+     The Early Universe II
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Paper Presentations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#may-5-final-exam">
+   May 5 (Final Exam)
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Student Participation (Spring 2023)</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jan-10">
+   Jan 10
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class-overview">
+     Class Overview
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jan-12">
+   Jan 12
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#intro-to-cosmology-i">
+     Intro to Cosmology I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jan-17">
+   Jan 17
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#intro-to-cosmology-ii">
+     Intro to Cosmology II
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jan-19">
+   Jan 19
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#special-theory-of-relativity-i">
+     Special Theory of Relativity I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jan-24">
+   Jan 24
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#special-theory-of-relativity-ii">
+     Special Theory of Relativity II
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jan-26">
+   Jan 26
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#general-relativity-i">
+     General Relativity I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jan-31">
+   Jan 31
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#general-relativity-ii">
+     General Relativity II
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feb-2">
+   Feb 2
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#black-holes-i">
+     Black Holes I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feb-7">
+   Feb 7
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#black-holes-ii">
+     Black Holes II
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feb-9">
+   Feb 9
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nature-of-galaxies-i">
+     Nature of Galaxies I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feb-14">
+   Feb 14
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nature-of-galaxies-ii">
+     Nature of Galaxies II
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feb-16">
+   Feb 16
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#nature-of-galaxies-iii">
+     Nature of Galaxies III
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feb-21">
+   Feb 21
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#milky-way-galaxy-i">
+     Milky Way Galaxy I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feb-23">
+   Feb 23
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#milky-way-galaxy-ii">
+     Milky Way Galaxy II
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feb-28">
+   Feb 28
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#milky-way-galaxy-iii">
+     Milky Way Galaxy III
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mar-2-exam-i">
+   Mar 2 (Exam I)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mar-7">
+   Mar 7
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#galactic-evolution-i">
+     Galactic Evolution I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mar-9">
+   Mar 9
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#galactic-evolution-ii">
+     Galactic Evolution II
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#astropy-teaching-presentations">
+     Astropy (Teaching) Presentations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mar-14-16-spring-break">
+   Mar 14 &amp; 16 (Spring Break)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mar-21">
+   Mar 21
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#galactic-evolution-iii">
+     Galactic Evolution III
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Astropy (Teaching) Presentations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mar-23">
+   Mar 23
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#structure-of-the-universe-i">
+     Structure of the Universe I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mar-28">
+   Mar 28
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#structure-of-the-universe-ii">
+     Structure of the Universe II
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mar-30">
+   Mar 30
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#structure-of-the-universe-iii">
+     Structure of the Universe III
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#apr-4">
+   Apr 4
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#active-galaxies-i">
+     Active Galaxies I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#apr-6">
+   Apr 6
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#active-galaxies-ii">
+     Active Galaxies II
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#apr-11">
+   Apr 11
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#active-galaxies-iii">
+     Active Galaxies III
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#apr-13-exam-ii">
+   Apr 13 (Exam II)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#apr-18">
+   Apr 18
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cosmology-i">
+     Cosmology I
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#apr-20">
+   Apr 20
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cosmology-ii">
+     Cosmology II
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#paper-presentations">
+     Paper Presentations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#apr-25">
+   Apr 25
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-early-universe-i">
+     The Early Universe I
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Paper Presentations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#apr-27">
+   Apr 27
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-early-universe-ii">
+     The Early Universe II
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Paper Presentations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#may-5-final-exam">
+   May 5 (Final Exam)
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="student-participation-spring-2023">
+<h1>Student Participation (Spring 2023)<a class="headerlink" href="#student-participation-spring-2023" title="Permalink to this headline">#</a></h1>
+<p>Students will work in pairs to produce summaries of each class meeting.  These summaries should list the main topics discussed and emphasized ideas/examples during the respective lecture.  Students are encouraged to be as detailed as possible without being overly verbose.  The summaries should be submitted as a <a class="reference external" href="https://docs.github.com/en/codespaces/the-githubdev-web-based-editor">pull request</a> from <strong>your forked repository</strong> before the next class meeting.</p>
+<div class="section" id="jan-10">
+<h2>Jan 10<a class="headerlink" href="#jan-10" title="Permalink to this headline">#</a></h2>
+<div class="section" id="class-overview">
+<h3>Class Overview<a class="headerlink" href="#class-overview" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Introductions</p>
+<ul>
+<li><p>Dr. Quarles told us about his research.</p></li>
+<li><p>He studies how a planet’s orbit evolves with two stars, where the changes in the planet’s orbit can affect the climate through obliquity variations.  Obliquity is a way of describing a planet’s spin axis, where it can precess (like a top) due to the perturbations from the companion star.  This precession can be responsible for large changes in obliquity.  Current models suggest that Mars may have undergone a climate catastrophe in part due to its obliquity variations, while the Earth’s climate has been regulated by the Moon.</p></li>
+</ul>
+</li>
+<li><p>Syllabus</p>
+<ul>
+<li><p>The class syllabus provides us with a roadmap for the course.</p></li>
+<li><p>The course is structured for the students to learn through class participation/activities and homework.</p></li>
+<li><p>Student learning will be assessed through exams and in-class presentations.</p></li>
+</ul>
+</li>
+<li><p>Course website</p>
+<ul>
+<li><p>Class notes are provided on the course website, which includes web urls (for jargon) and video explanations of some topics.</p></li>
+</ul>
+</li>
+<li><p>GitHub accounts</p>
+<ul>
+<li><p>GitHub is a convenient way to store and share information.</p></li>
+<li><p>Create GitHub account and fork repository.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="jan-12">
+<h2>Jan 12<a class="headerlink" href="#jan-12" title="Permalink to this headline">#</a></h2>
+<div class="section" id="intro-to-cosmology-i">
+<h3>Intro to Cosmology I<a class="headerlink" href="#intro-to-cosmology-i" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="jan-17">
+<h2>Jan 17<a class="headerlink" href="#jan-17" title="Permalink to this headline">#</a></h2>
+<div class="section" id="intro-to-cosmology-ii">
+<h3>Intro to Cosmology II<a class="headerlink" href="#intro-to-cosmology-ii" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="jan-19">
+<h2>Jan 19<a class="headerlink" href="#jan-19" title="Permalink to this headline">#</a></h2>
+<div class="section" id="special-theory-of-relativity-i">
+<h3>Special Theory of Relativity I<a class="headerlink" href="#special-theory-of-relativity-i" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="jan-24">
+<h2>Jan 24<a class="headerlink" href="#jan-24" title="Permalink to this headline">#</a></h2>
+<div class="section" id="special-theory-of-relativity-ii">
+<h3>Special Theory of Relativity II<a class="headerlink" href="#special-theory-of-relativity-ii" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="jan-26">
+<h2>Jan 26<a class="headerlink" href="#jan-26" title="Permalink to this headline">#</a></h2>
+<div class="section" id="general-relativity-i">
+<h3>General Relativity I<a class="headerlink" href="#general-relativity-i" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="jan-31">
+<h2>Jan 31<a class="headerlink" href="#jan-31" title="Permalink to this headline">#</a></h2>
+<div class="section" id="general-relativity-ii">
+<h3>General Relativity II<a class="headerlink" href="#general-relativity-ii" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="feb-2">
+<h2>Feb 2<a class="headerlink" href="#feb-2" title="Permalink to this headline">#</a></h2>
+<div class="section" id="black-holes-i">
+<h3>Black Holes I<a class="headerlink" href="#black-holes-i" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="feb-7">
+<h2>Feb 7<a class="headerlink" href="#feb-7" title="Permalink to this headline">#</a></h2>
+<div class="section" id="black-holes-ii">
+<h3>Black Holes II<a class="headerlink" href="#black-holes-ii" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="feb-9">
+<h2>Feb 9<a class="headerlink" href="#feb-9" title="Permalink to this headline">#</a></h2>
+<div class="section" id="nature-of-galaxies-i">
+<h3>Nature of Galaxies I<a class="headerlink" href="#nature-of-galaxies-i" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="feb-14">
+<h2>Feb 14<a class="headerlink" href="#feb-14" title="Permalink to this headline">#</a></h2>
+<div class="section" id="nature-of-galaxies-ii">
+<h3>Nature of Galaxies II<a class="headerlink" href="#nature-of-galaxies-ii" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="feb-16">
+<h2>Feb 16<a class="headerlink" href="#feb-16" title="Permalink to this headline">#</a></h2>
+<div class="section" id="nature-of-galaxies-iii">
+<h3>Nature of Galaxies III<a class="headerlink" href="#nature-of-galaxies-iii" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="feb-21">
+<h2>Feb 21<a class="headerlink" href="#feb-21" title="Permalink to this headline">#</a></h2>
+<div class="section" id="milky-way-galaxy-i">
+<h3>Milky Way Galaxy I<a class="headerlink" href="#milky-way-galaxy-i" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="feb-23">
+<h2>Feb 23<a class="headerlink" href="#feb-23" title="Permalink to this headline">#</a></h2>
+<div class="section" id="milky-way-galaxy-ii">
+<h3>Milky Way Galaxy II<a class="headerlink" href="#milky-way-galaxy-ii" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="feb-28">
+<h2>Feb 28<a class="headerlink" href="#feb-28" title="Permalink to this headline">#</a></h2>
+<div class="section" id="milky-way-galaxy-iii">
+<h3>Milky Way Galaxy III<a class="headerlink" href="#milky-way-galaxy-iii" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="mar-2-exam-i">
+<h2>Mar 2 (Exam I)<a class="headerlink" href="#mar-2-exam-i" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="mar-7">
+<h2>Mar 7<a class="headerlink" href="#mar-7" title="Permalink to this headline">#</a></h2>
+<div class="section" id="galactic-evolution-i">
+<h3>Galactic Evolution I<a class="headerlink" href="#galactic-evolution-i" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="mar-9">
+<h2>Mar 9<a class="headerlink" href="#mar-9" title="Permalink to this headline">#</a></h2>
+<div class="section" id="galactic-evolution-ii">
+<h3>Galactic Evolution II<a class="headerlink" href="#galactic-evolution-ii" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="astropy-teaching-presentations">
+<h3>Astropy (Teaching) Presentations<a class="headerlink" href="#astropy-teaching-presentations" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="mar-14-16-spring-break">
+<h2>Mar 14 &amp; 16 (Spring Break)<a class="headerlink" href="#mar-14-16-spring-break" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="mar-21">
+<h2>Mar 21<a class="headerlink" href="#mar-21" title="Permalink to this headline">#</a></h2>
+<div class="section" id="galactic-evolution-iii">
+<h3>Galactic Evolution III<a class="headerlink" href="#galactic-evolution-iii" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="id1">
+<h3>Astropy (Teaching) Presentations<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="mar-23">
+<h2>Mar 23<a class="headerlink" href="#mar-23" title="Permalink to this headline">#</a></h2>
+<div class="section" id="structure-of-the-universe-i">
+<h3>Structure of the Universe I<a class="headerlink" href="#structure-of-the-universe-i" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="mar-28">
+<h2>Mar 28<a class="headerlink" href="#mar-28" title="Permalink to this headline">#</a></h2>
+<div class="section" id="structure-of-the-universe-ii">
+<h3>Structure of the Universe II<a class="headerlink" href="#structure-of-the-universe-ii" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="mar-30">
+<h2>Mar 30<a class="headerlink" href="#mar-30" title="Permalink to this headline">#</a></h2>
+<div class="section" id="structure-of-the-universe-iii">
+<h3>Structure of the Universe III<a class="headerlink" href="#structure-of-the-universe-iii" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="apr-4">
+<h2>Apr 4<a class="headerlink" href="#apr-4" title="Permalink to this headline">#</a></h2>
+<div class="section" id="active-galaxies-i">
+<h3>Active Galaxies I<a class="headerlink" href="#active-galaxies-i" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="apr-6">
+<h2>Apr 6<a class="headerlink" href="#apr-6" title="Permalink to this headline">#</a></h2>
+<div class="section" id="active-galaxies-ii">
+<h3>Active Galaxies II<a class="headerlink" href="#active-galaxies-ii" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="apr-11">
+<h2>Apr 11<a class="headerlink" href="#apr-11" title="Permalink to this headline">#</a></h2>
+<div class="section" id="active-galaxies-iii">
+<h3>Active Galaxies III<a class="headerlink" href="#active-galaxies-iii" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="apr-13-exam-ii">
+<h2>Apr 13 (Exam II)<a class="headerlink" href="#apr-13-exam-ii" title="Permalink to this headline">#</a></h2>
+</div>
+<div class="section" id="apr-18">
+<h2>Apr 18<a class="headerlink" href="#apr-18" title="Permalink to this headline">#</a></h2>
+<div class="section" id="cosmology-i">
+<h3>Cosmology I<a class="headerlink" href="#cosmology-i" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="apr-20">
+<h2>Apr 20<a class="headerlink" href="#apr-20" title="Permalink to this headline">#</a></h2>
+<div class="section" id="cosmology-ii">
+<h3>Cosmology II<a class="headerlink" href="#cosmology-ii" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="paper-presentations">
+<h3>Paper Presentations<a class="headerlink" href="#paper-presentations" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="apr-25">
+<h2>Apr 25<a class="headerlink" href="#apr-25" title="Permalink to this headline">#</a></h2>
+<div class="section" id="the-early-universe-i">
+<h3>The Early Universe I<a class="headerlink" href="#the-early-universe-i" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="id2">
+<h3>Paper Presentations<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="apr-27">
+<h2>Apr 27<a class="headerlink" href="#apr-27" title="Permalink to this headline">#</a></h2>
+<div class="section" id="the-early-universe-ii">
+<h3>The Early Universe II<a class="headerlink" href="#the-early-universe-ii" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="id3">
+<h3>Paper Presentations<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
+</div>
+</div>
+<div class="section" id="may-5-final-exam">
+<h2>May 5 (Final Exam)<a class="headerlink" href="#may-5-final-exam" title="Permalink to this headline">#</a></h2>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "saturnaxis/Cosmology",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Appendix"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../Chapter_30/early-universe.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span class="section-number">10. </span>The Early Universe</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Billy Quarles<br/>
+  
+      &copy; Copyright 2023.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

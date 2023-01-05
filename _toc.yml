@@ -9,6 +9,7 @@ parts:
   - file: Preamble/who-for
   - file: Preamble/Python-basics
   - file: Preamble/Markdown-basics
+  - file: Preamble/HW_template
 - caption: Introduction
   numbered: true
   chapters:
@@ -28,3 +29,6 @@ parts:
   - file: Chapter_28/active-galaxies
   - file: Chapter_29/cosmology
   - file: Chapter_30/early-universe
+- caption: Appendix
+  chapters:
+  - file: Appendix/Student_Summaries

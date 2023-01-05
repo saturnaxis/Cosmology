@@ -11,16 +11,26 @@ where both presentations will be assessed by both the instructor and fellow stud
 
 ## [Astropy](https://learn.astropy.org/) 
 
+- Extracting and Plotting Position-Velocity Diagrams
+- Cube Reprojection Tutorial
+- Make a plot with both redshift and universe age axes using astropy.cosmology
+- Using Astropy Quantities and Units for astrophysical calculations
+- Computing Galactic Orbits of Stars with Gala
+- Viewing and manipulating FITS images
 
-
-## Paper topics
-
+## Papers for presentations
+- A Geometric Determination of the Distance to the Galactic Center ([Eisenhauer et al. 2003](https://ui.adsabs.harvard.edu/link_gateway/2003ApJ...597L.121E/PUB_PDF))
+- Extragalactic nebulae ([Hubble 1926](https://ui.adsabs.harvard.edu/link_gateway/1926ApJ....64..321H/ADS_PDF))
+- Rotation velocities of 16 SA galaxies and a comparison of Sa, SB and SC rotation properties ([Rubin et al. 2985](https://ui.adsabs.harvard.edu/link_gateway/1985ApJ...289...81R/ADS_PDF))
+- On the Ellipticity of the Galactic Disk ([Kuijken and Tremaine 1994](https://ui.adsabs.harvard.edu/link_gateway/1994ApJ...421..178K/ADS_PDF))
+- Galactic Bridges and Tails ([Toomre & Toomre 1972](https://ui.adsabs.harvard.edu/link_gateway/1972ApJ...178..623T/ADS_PDF))
+- Galaxy morphology in rich clusters: implications for the formation and evolution of galaxies ([Dressler 1980](https://ui.adsabs.harvard.edu/link_gateway/1980ApJ...236..351D/ADS_PDF))
 
 ## Other Useful links
-- An awesome list of resources for professional astronomers (https://github.com/jonathansick/awesome-astronomy)
-- Astrobetter: Tips and Tricks for Professional Astronomers (https://www.astrobetter.com/)
-- Astrobites: astro-ph reader's digest (https://astrobites.org/)
-- Arxiv:astro-ph preprint server (https://arxiv.org/archive/astro-ph)
+- An awesome [list of resources](https://github.com/jonathansick/awesome-astronomy) for professional astronomers 
+- [Astrobetter](https://www.astrobetter.com/): Tips and Tricks for Professional Astronomers 
+- [Astrobites](https://astrobites.org/): astro-ph reader's digest 
+- [Arxiv:astro-ph](https://arxiv.org/archive/astro-ph) preprint server 
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 

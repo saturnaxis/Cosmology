@@ -27,6 +27,8 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/exercise.css" />
     <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mycss.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -57,7 +59,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="2. The Theory of Special Relativity" href="../Chapter_04/theory-of-special-relativity.html" />
-    <link rel="prev" title="Introduction to Markdown" href="../Preamble/Markdown-basics.html" />
+    <link rel="prev" title="Homework Assignments" href="../Preamble/HW_template.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -133,6 +135,11 @@ const thebe_selector_output = ".output, .cell_output"
    Introduction to Markdown
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Preamble/HW_template.html">
+   Homework Assignments
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -202,6 +209,18 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1">
   <a class="reference internal" href="../Chapter_30/early-universe.html">
    10. The Early Universe
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Appendix
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Appendix/Student_Summaries.html">
+   Student Participation (Spring 2023)
   </a>
  </li>
 </ul>
@@ -505,12 +524,12 @@ title="Print to PDF"
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#galileo-the-telescope-and-cosmology">
-     1.2.7. Galileo, the Telescope and Cosmology
+     1.2.7. Galileo, the Telescope, and Cosmology
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cosmology-in-bentley-newton-and-others">
-     1.2.8. Cosmology in Bentley, Newton and Others
+    <a class="reference internal nav-link" href="#cosmology-in-bentley-and-newton">
+     1.2.8. Cosmology in Bentley and Newton
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -521,8 +540,8 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#differences-in-historical-and-scientific-cosmology">
-   1.3. Differences in Historical and Scientific Cosmology
+  <a class="reference internal nav-link" href="#differences-in-historical-scientific-and-mathematical-cosmology">
+   1.3. Differences in Historical, Scientific, and Mathematical Cosmology
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -531,8 +550,8 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#developing-a-description-of-what-is-and-not-what-ought">
-     1.3.2. Developing a description of ‘what is’ and not ‘what ought’
+    <a class="reference internal nav-link" href="#models-of-the-universe">
+     1.3.2. Models of the Universe
     </a>
    </li>
   </ul>
@@ -623,12 +642,12 @@ title="Print to PDF"
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#galileo-the-telescope-and-cosmology">
-     1.2.7. Galileo, the Telescope and Cosmology
+     1.2.7. Galileo, the Telescope, and Cosmology
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cosmology-in-bentley-newton-and-others">
-     1.2.8. Cosmology in Bentley, Newton and Others
+    <a class="reference internal nav-link" href="#cosmology-in-bentley-and-newton">
+     1.2.8. Cosmology in Bentley and Newton
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -639,8 +658,8 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#differences-in-historical-and-scientific-cosmology">
-   1.3. Differences in Historical and Scientific Cosmology
+  <a class="reference internal nav-link" href="#differences-in-historical-scientific-and-mathematical-cosmology">
+   1.3. Differences in Historical, Scientific, and Mathematical Cosmology
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -649,8 +668,8 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#developing-a-description-of-what-is-and-not-what-ought">
-     1.3.2. Developing a description of ‘what is’ and not ‘what ought’
+    <a class="reference internal nav-link" href="#models-of-the-universe">
+     1.3.2. Models of the Universe
     </a>
    </li>
   </ul>
@@ -732,6 +751,9 @@ allowfullscreen></iframe>
 <h2><span class="section-number">1.2. </span>Cosmology Among Many Cultures (<a class="reference external" href="https://www.google.com/books/edition/The_Norton_History_of_Astronomy_and_Cosm/NoB5QgAACAAJ?hl=en">North (1995)</a>)<a class="headerlink" href="#cosmology-among-many-cultures-north-1995" title="Permalink to this headline">#</a></h2>
 <div class="section" id="ancient-egypt">
 <h3><span class="section-number">1.2.1. </span>Ancient Egypt<a class="headerlink" href="#ancient-egypt" title="Permalink to this headline">#</a></h3>
+<p>Early Egyptian culture developed a cosmology during the 2nd and 3rd millennia B.C., where our record of these beliefs come from hieroglyphs on archeological remains.  The key to the rediscovery of ancient Egyptian culture was with the <a class="reference external" href="https://en.wikipedia.org/wiki/Rosetta_Stone">Rosetta Stone</a>, which was decoded in the 1820s by Jean-François Champollion.  From two centuries of scholarly works, it appears that the pharaohs (i.e., Egyptian kings) used some of the Egyptian gods (e.g., Osiris, Isis, Ptah, horus and Anubis) to establish their right to rule.  To this end, the monuments of Egypt were built, which included the pyramids and <a class="reference external" href="https://www.memphis.edu/hypostyle/meaning_function/model-universe.php">temples</a>.  The former was a vessel for the pharaoh to travel through the cosmos in the afterlife, while the latter was to be a replica of the Universe at the time of creation.</p>
+<p>In the beginning, the creator sun-god Atum was adrift in the primordial (cosmic) sea called Nun (pronounced Noon).  Upon waking, Atum brought forth into creation an island that sat in the middle of Nun.  Atum ascended to the highest point on the island and proceeded to bring gods for the air (Shu) and moisture (Tefnut) into being.  Later, Shu and Tefnut joined to create a place for all the things of the world to live, where this union created the earth (Geb) and sky (Nut).  From the union of Geb and Nut, the other gods were created who held dominion over different aspects of the world.</p>
+<p>Osiris controlled fertility, agriculture, and the afterlife representing the forces of order, while Isis represented motherhood and is the sister-wife of Osiris.  The brother of Osiris was Set, who controlled the deserts, violence, and foreigners representing the forces of chaos (or disorder), with his sister-wife Nephthys who is associated with mourning, night, childbirth, and service to the temple.  Together, these gods allowed Egyptian life to be explained by a direct lineage from Atum and a connection to the natural forces that shaped their daily existence.  However, this is but one of five creation stories produced by the ancient Egyptians.</p>
 <div align="center">
 <iframe width="560" height="315"
 src="https://www.youtube.com/embed/wHdg8yENKJk"
@@ -742,15 +764,49 @@ allowfullscreen></iframe>
 </div>
 <div class="section" id="cosmology-in-the-sixth-century-bc">
 <h3><span class="section-number">1.2.2. </span>Cosmology in the Sixth Century (BC)<a class="headerlink" href="#cosmology-in-the-sixth-century-bc" title="Permalink to this headline">#</a></h3>
+<p>Aristotle in the 4th century BC established a tradition of collecting opinions of previous thinkers and subjecting them to criticism; sometimes as vigorously as if they were still alive.  Some of his material dates back to the 6th century BC, but not all of it is reliable as they were not first-hand accounts and subject to variations like a game of telephone.  Four notable philosophers of the 6th century BC were <a class="reference external" href="https://en.wikipedia.org/wiki/Thales_of_Miletus">Thales</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Anaximander">Anaximander</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Anaximenes_of_Miletus">Anaximenes</a>, and <a class="reference external" href="https://en.wikipedia.org/wiki/Pythagoras">Pythagoras</a>.</p>
+<p>Anaximander and Anaximenes held cosmological views that are almost as similar as their names.  Anaximander is thought to have create a map of the inhabited world, and invented a cosmology that could explain the physical state of the Earth including its inhabitants.  The infinite Universe contained an infinity of worlds, which our planet was just one of the many.  Our world separated off and gathered its parts by rotation, which was an analogy to the separation of materials in spinning cooking vessels.  Masses of fire and air were sent outwards to become the stars.  The Earth was a floating circular disc, while the Sun and Moon were ring-shaped surrounded by air.  The Sun acted on water to bring life to the surface and people descended from fish.  Anaximenes elaborated on this reasoning, and argues that air is the primeval infinite substance.  Bodies are produced by condensation and rarefaction, where he introduces rotary motions to explain how the heavenly bodies could be formed out of air and water.</p>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/uk1fA5nDP88"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
+<p>Pythagoras took the ideas of Anaximander and Anaximenes further by stating that the Universe was produced by the heavens inhaling the infinite so as to form groups of numbers.  Pythagoras had an almost religious following who he taught that numbers were essential to understanding all things.  In his fervor, Pythagoras discovered the arithmetical basis of musical intervals, which gave rise to mystical forms of numerology.  Everything (e.g., opinions, opportunities, injustices, and the most distant stars) is rooted in arithmetic and has a corresponding place in the Universe as a whole.  He developed a geometrical model of the Universe involving a central fire (not the Sun) around which celestial bodies move in circles.  Additionally, he taught that the Earth was spherical, which would be universally accepted by Greek intellectuals by the late 5th century BC.</p>
 </div>
 <div class="section" id="aristotelian-cosmology">
 <h3><span class="section-number">1.2.3. </span>Aristotelian Cosmology<a class="headerlink" href="#aristotelian-cosmology" title="Permalink to this headline">#</a></h3>
+<p>Aristotle’s writings influenced the progress of science for 1000 years because they are highly systematic, coherent, and cover a large part of human knowledge.  The most important single source for Aristotle’s cosmology (his <em>De Caelo</em> or ‘On the heavens’) was an early <a class="reference external" href="https://en.wikipedia.org/wiki/Treatise">treatise</a>.  Aristotle writes in a semi-historical way, where he reviews the main arguments of his predecessors and modern scientific papers follow this style in their introductions.  The longest chapter in <em>De Caelo</em> describes the celestial sphere, where he mentions the theories of the <a class="reference external" href="https://en.wikipedia.org/wiki/Pythagorean_astronomical_system">Pythagoreans</a> and an unnamed school to which the Earth rotates at the center of the Universe.  Aristotle dismisses the idea of the Earth rotating, as well as that of an orbital motion for the Earth.  He was persuaded by a theory by <a class="reference external" href="https://en.wikipedia.org/wiki/Eudoxus_of_Cnidus">Eudoxus</a> that the stars would be subject to deviations and turnings (i.e., parallax shifts) if the Earth rotates or moves in an orbit.</p>
+<p>Aristotle argued for the spherical nature of the Earth and Universe from the natural movement of (earthly) matter is from all places downward, and the line dividing light from dark regions during a lunar eclipse.  The Universe he conceives is built on layer-on-layer over a spherical Earth.  Only circular motion is capable of endless repetition without a reversal of direction.   Circular motions are a distinguishing characteristic of perfection to Aristotle, and the heavens acquired a special place in any discussion of perfection.  He has a vision of heaven that is in sharp contrast to the terrestrial realm of change and decay.</p>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/rh0fxJkvL44"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
+<p>Aristotle developed his planetary system within his <em>Metaphysics</em>, where he is accepting of the theory of <a class="reference external" href="https://en.wikipedia.org/wiki/Callippus">Callippus</a> that consists of concentric spheres.  The spheres of Callippus require special rules concerning the planetary motions, where some spheres affect affect each other while others are neutralized.  Callippus required a number of spheres (and counteracting spheres) for each planet four (<em>three</em>) for Saturn; four (<em>three</em>) for Jupiter; five (<em>four</em>) for Mars; five (<em>four</em>) for Venus; five (<em>four</em>) for Mercury; five (<em>four</em>) for the Sun; and five (<em>none</em>) for the Moon.  The total number of spheres is fifty-five.</p>
+<p>His view is that we live in a mechanistic Universe of spherical shells with various functions and some shells carry planets.  The spheres were not abstractions, but a result of the physics of cause and effect.  THe first sphere of all (the first heaven) shows perpetual circular movement, which it transmits to all lower spheres.  The movement of the spheres are attributed divine movers, where the prime mover controls the first heaven.  Aristotle may have treated these movers as ‘gods’, which would later be spoke of as ‘intelligences’ or angels by Renaissance scholars.  Other ancient scholars defended the theory, but some acknowledged that <em>it was deficient because it failed to account for the changes in brightness of the planets.</em></p>
 </div>
 <div class="section" id="ancient-china">
 <h3><span class="section-number">1.2.4. </span>Ancient China<a class="headerlink" href="#ancient-china" title="Permalink to this headline">#</a></h3>
-</div>
+<p>Early Chinese interest in cosmological matters was not markedly scientific, at least to the western world.  Schools of deductive reasoning were not developed in the same sense as was with Aristotle or Ptolemy.  The great scholar known as Confucius (551-478 BC) wrote a chapter on the harmony of the natural world, but is was lost with a number of stories that suggested Confucius having no great interest in the heavens as such.</p>
+<p>However, astronomy (in general) was intimately connected with government and civil administration. There were two offices: the imperial astronomer and imperial astrologer, where the former observed the planetary motions (for omens of good and evil) and the latter observed the weather (e.g., the five types of clouds).  For more than 2000 years, these officials headed governmental departments with a large staff. They were the keepers of time.  The Chinese developed a series of water clocks to improve their measurements relative to the movement of the heavens.</p>
+<p>From the 4th century BC onwards, there was a steady increase in the number of works focused on stars and their grouping within the visible Universe.  In the <em>Kai Thien</em> cosmology, the heavens were pictured as a hemispherical bowl placed over a hemispherical Earth.  The oldest surviving Chinese description of the heavens as <em>completely spherical</em> is by <a class="reference external" href="https://en.wikipedia.org/wiki/Zhang_Heng">Zhang Heng</a>.  The sphere’s circumference is divided into 365.25 units corresponding to the distance traversed by the Sun in one day.  It is said that Zhang was the first to turn an <a class="reference external" href="https://en.wikipedia.org/wiki/Zhang_Heng#Water-powered_armillary_sphere">armillary sphere</a> (i.e., representation of the celestial sphere) by a water wheel.</p>
+<p>By the time of the Song dynasty (960-1126 AD), there were two observatories in the capital, one imperial and the other belonging to the Hanlin Academy.  The two were meant to make independent observations and then compare the results.  A new Astronomer Royal ascended in 1070 AD, he discovered that the two sets of astronomers had (for years) copied each others’ reports, and even taking the positions of heavenly bodies from old tables.</p>
+<!--ADD CREATION STORY OF PANGU AND COSMIC EGG -->
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/G7vget_QAmo"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div></div>
 <div class="section" id="pre-columbian-america">
 <h3><span class="section-number">1.2.5. </span>Pre-Columbian America<a class="headerlink" href="#pre-columbian-america" title="Permalink to this headline">#</a></h3>
+<p>Central and South America saw a number of advanced city-cultures rise and fall over 2000 years prior to the arrival of Europeans.  The four most notable are the Olmec, Zatopec, Aztec, and Maya, where the Maya developed an ability to analyze astronomical events using mathematical techniques.  All of them seem to have a common cosmology of a layered Universe, where each layer contains only one sort of celestial body.  The Earth was the bottom layer, where the layers on top progress with the Moon, clouds, stars, Sun, Venus, comets, and so on until the thirteenth layer which is the domain of the creator-god.</p>
+<p>The Maya produced a series of books, but only five now survive due to destruction by early Spanish conquests or simply through neglect.  One book includes both lunar and solar calendars, along with a Venus calendar.  The most well-know is the <em>Dresden Codex</em>, which has many drawings of the the gods of the Maya and dated to have been written during the 13th or 14th century.  Each Mayan book is made of a single sheet of bark-cloth paper up to 6.7 m long, pleated into folds making pages about half as wide as they are high (20-22 cm).  In addition to the evidence of calendars, there are farmers’ almanacs and multiplication tables.  Gods are frequently mentioned, including gods of rain, the Moon, death, creation, maize, and the Sun (in rough order of frequency).  Their almanacs were for different purposes, such as net-making, fire drilling, maize planting, marriage, and child-bearing.</p>
 <div align="center">
 <iframe width="560" height="315"
 src="https://www.youtube.com/embed/FIxT-1dN33A"
@@ -761,15 +817,51 @@ allowfullscreen></iframe>
 </div>
 <div class="section" id="medieval-and-early-renaissance-europe">
 <h3><span class="section-number">1.2.6. </span>Medieval and Early Renaissance Europe<a class="headerlink" href="#medieval-and-early-renaissance-europe" title="Permalink to this headline">#</a></h3>
+<p>The beliefs and practices of th the early Christian Church had an impact on the development of cosmology in Medieval and Early Renaissance Europe centuries later.  The Christian scriptures make use of many primitive analogies between the Universe and the furniture of the everyday world.  The tabernacle that Moses constructed in the wilderness was the world and the seven-branched lamp represents the Sun, Moon, and planets.  Some of the Church Fathers did their best to reconcile the scriptures to Greek philosophy (i.e., flat vs. spherical Earth), but the book of Genesis gave problems because the waters were suspended above the firmament.</p>
+<p>A Roman aristocrat, Boethius (480-524 AD), wanted to reconcile the writings of Plato and Aristotle.  As a result, he propagated a broad cosmology that was more or less Aristotle’s and strengthened a broad respect for a Universe that was governed by chains of cause and effect.  This prepared the way for an Aristotelian invasion to occur in the 13th century.  It was also distinct because it brought forth a more physical approach to cosmology.  In the 13th century, Richard of Wallingford, spent a large sum of money in the construction of a mechanical clock model of the Universe.  He employed astronomers to work on the problem of controlling a wheel in its rotation, so as to provide it with the daily motion.  The clock was lost to history after the dissolution of the monasteries in the time of Henry VIII.  It was reported that the clock showed planetary movements and the changing tides.</p>
+<p>The mechanical clock had an hour-striking on a 24 hour system, where it struck the equal hours of the astronomer, rather than the common man’s seasonal hours.  It had spiral gears, and an oval wheel to give a carefully calculated variable velocity for the Moon’s motion around an astrolabe dial.  After Richard’s premature death, another astronomical clock was constructed by Giovanni de Dondi called the <em>astrarium</em>.  The Dondi clock had a seven-sided frame, with a dial for each of the planets, the Sun, and the Moon.  Each planetary mechanism was essentially a geared Ptolemaic diagram.  Like the previous Ptolemaic models, it failed to represent the Universe as a single system.</p>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/UzwC6Wr9SQo"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
 </div>
 <div class="section" id="galileo-the-telescope-and-cosmology">
-<h3><span class="section-number">1.2.7. </span>Galileo, the Telescope and Cosmology<a class="headerlink" href="#galileo-the-telescope-and-cosmology" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">1.2.7. </span>Galileo, the Telescope, and Cosmology<a class="headerlink" href="#galileo-the-telescope-and-cosmology" title="Permalink to this headline">#</a></h3>
+<p>By the time of Copernicus, Aristotelian cosmology was begin seriously questioned, where the cometary observations worked against Aristotle. The rational astronomer could in principle reject Copernicus (Tycho Brahe did so) and at the same time accept the cometary evidence.  Kepler introduced new phenomena for which Aristotelian cosmology had no answer, including the solar corona and the appearance of new stars (in 1572 and 1604).  Galileo is often regarded as a pivotal figure who introduced a marked change in attitude toward the empirical sciences.</p>
+<p>Galileo began to criticize many parts of Aristotelian natural philosophy and his laws of falling bodies.  The new star of 1604 gave him an opportunity to lecture on the difficulties inherent in Aristotelian ideas about the incorruptibility of the heavens.  The first telescopic discoveries were the discovery of mountains on the Moon and that the Milky Way is an association of separate stars were explicable in Aristotelian terms.  However the absence of parallax in comets and that Jupiter had satellites was more of a problem.  In the case of the latter, it suggested that there were other centers of rotation in the Universe other than the Earth.</p>
+<p>Of more importance to the wider cosmological debate were Galileo’s discoveries of the seemingly endless aggregate of point-like fixed stars and the phase of Venus.  The phases of Venus, in particular, presented much greater problems because the various collinear arrangements of the Sun, Venus and the Earth are limited.  The three principal planetary systems of the early 17th century (i.e., the Ptolemaic, Copernican, and Tychonic) allowed for the three to lie in order with Venus in the middle (EVS).  However, to produce a fully illuminated Venus (i.e., the analog of a full Moon) requires the Sun to lie in the middle (ESV), which was not produced in the Ptolemaic model.  Only the Copernican model could produce the full set of phases for Venus and Galileo saw a full set with the help of his telescope.</p>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/-FYvy3_egHw?start=588&end=704"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
 </div>
-<div class="section" id="cosmology-in-bentley-newton-and-others">
-<h3><span class="section-number">1.2.8. </span>Cosmology in Bentley, Newton and Others<a class="headerlink" href="#cosmology-in-bentley-newton-and-others" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="cosmology-in-bentley-and-newton">
+<h3><span class="section-number">1.2.8. </span>Cosmology in Bentley and Newton<a class="headerlink" href="#cosmology-in-bentley-and-newton" title="Permalink to this headline">#</a></h3>
+<p>In 1685, Isaac Newton had written <em>De mundi systemate</em> where he used a technique due to James Gregory to show that the stars lie at much greater distances from the Sun than had previously been supposed.  This <em>photometric</em> method compared the brightness of the Sun, with that of the star, and on the inverse-square law of photometry.  The observations of the Sun’s light couldn’t be made directly and so the light reflected from Saturn was used to estimate the Sun’s brightness.  When Newton used this method on Sirius, he found its distance to be a million times that of the mean distance of the Sun from the Earth (i.e., the astronomical unit; AU).  If the stars were at enormous distances, Newton felt he could assume that their gravitational attraction on one another were minimal.  This was important to him because otherwise everything would eventually collapse on itself under gravity.</p>
+<p>Late in 1692, Richard Bentley asked Newton for advice on a theme in the first series of Boyle lectures.  He inquired about what would happen if matter were spread uniformly throughout space and allowed to move under gravity? Newton replied considering</p>
+<ul class="simple">
+<li><p>if space were limited, then it would fall into one large spherical mass.</p></li>
+<li><p>if space were infinite, then all the masses could stay in place.</p></li>
+</ul>
+<p>This problem would be later known as <a class="reference external" href="https://en.wikipedia.org/wiki/Bentley%27s_paradox">Bentley’s paradox</a>, which both Bentley and Newton were happy to dodge in that some force or deity existed to keep everything in place.</p>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/nyJ6i_eV3lI"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>
 </div>
 <div class="section" id="the-renewal-of-cosmology">
 <h3><span class="section-number">1.2.9. </span>The Renewal of Cosmology<a class="headerlink" href="#the-renewal-of-cosmology" title="Permalink to this headline">#</a></h3>
+<p>The ancestry of almost all modern theories of the overall structure of the Universe can be traced back in part to the ideas of Albert Einstein.  His theories of Special (SR) and General Relativity (GR) developed the idea that a system of bodies should be independent of the way an observer studying those bodies is moving.  In SR, Einstein considered only frames of reference moving at constant relative speed, where he introduced that the speed of light is a constant in a vacuum and doesn’t depend on the relative motion of the observer and the source.  His GR expanded SR to consider how the laws of physics changed when two frames of reference are <em>accelerating</em> relative to one another.  For this he broadened his previous approach beyond Euclidean geometry (i.e., flat space-time) to work in Minkowski (i.e., curved space-time).</p>
+<p>The curvature of space-time in GR developed into a feature such that a particle moving freely under gravity follows a geodesic (i.e., the shortest line between two points in curved space-time).  One of the most conspicuous properties of Einstein’s GR is that small scale gravitational problems cannot be solved in principle until the geometry of the space-time is known.  The new theory of gravitation therefore became implicated in developing a cosmological view quite inevitably.</p>
 <div align="center">
 <iframe width="560" height="315"
 src="https://www.youtube.com/embed/Cqqppm1MYE0"
@@ -778,20 +870,54 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 </div></div>
 </div>
-<div class="section" id="differences-in-historical-and-scientific-cosmology">
-<h2><span class="section-number">1.3. </span>Differences in Historical and Scientific Cosmology<a class="headerlink" href="#differences-in-historical-and-scientific-cosmology" title="Permalink to this headline">#</a></h2>
+<div class="section" id="differences-in-historical-scientific-and-mathematical-cosmology">
+<h2><span class="section-number">1.3. </span>Differences in Historical, Scientific, and Mathematical Cosmology<a class="headerlink" href="#differences-in-historical-scientific-and-mathematical-cosmology" title="Permalink to this headline">#</a></h2>
 <div class="section" id="connections-between-astronomy-and-the-state">
 <h3><span class="section-number">1.3.1. </span>Connections between Astronomy and the State<a class="headerlink" href="#connections-between-astronomy-and-the-state" title="Permalink to this headline">#</a></h3>
+<p>Astronomy began in most cultures as a method for understanding the world so that agriculture could feed larger and larger populations.  Apparently, the societal leaders noticed the power in this new way of knowing and found ways to combine it with the affairs of State.  In some societies, this meant that ritual would (in some way) influence the heavens to bring about the desired result.  Individuals were “trained” in the art of Astronomy to advise the rulers to act when necessary as they had the knowledge of the correct timing for planting or harvesting the crops.  Had modern science come sooner, then modern science fiction would have shown them that</p>
+<blockquote class="epigraph">
+<div><p>Any sufficiently advanced technology is indistinguishable from magic.</p>
+<p>Arthur C. Clarke</p>
+</div></blockquote>
+<p>The influence of Astronomy quickly became intertwined with the State, whether it be Julius Caesar or the emperors of the Sung Dynasty.  Historical cosmology arose out of these connections because religion was also often merged with the affairs of State.  Some of the critical functions for any religion are to provide an explanation for why things exist in the Universe (i.e., where did they originate) and how does the Universe work.  Therefore historical cosmology becomes first associated with mythmaking and explaining the most obvious things around, the differences between the ground, day sky, and night sky.  Eventually, there is communication between civilizations and more detailed observations require explanation.  Historical cosmology begins to falter and the State turns to scientific cosmology, which is a description in terms of natural laws and repeatable experiments/observations.</p>
+<p>Astronomy and cosmology are studies of bodies far beyond the reach of humankind for millennia.  As a result many of the observations are correlative, which means they fall within the natural pattern recognition of human observers.  If A only happens when B is present, we might infer that B causes A to occur.  This can lead to some false paths that persist for a thousand years.  Early Greek astronomers suggested both geocentric and heliocentric cosmologies to describe the Sun, Moon, and other planets.  The lack of sufficient technology to differentiate between the hypotheses kept civilizations in the dark (<em>pun very much intended</em>) regarding the true nature of the cosmos.  The development of the telescope was supported (in part) by the state for nautical or other purposes.  But Galileo turned his creation to the Moon, planets, and stars, much to our collective benefit.</p>
+<p>A sea change in scientific thinking in the Renaissance brought empiricism to the fore, which allowed many ideas in cosmology to be corrected.  The description of how the Universe works became more mathematical rigorous, which allowed the development of mathematical-based cosmology.  This new approach allowed for thought experiments that were largely untestable among contemporaries, but marked a pivotal change in our understanding of the Universe centuries later as the technology improved.  Bentley’s paradox introduces a problem that would now be solved for another 400 years using a “new” mathematics.</p>
 </div>
-<div class="section" id="developing-a-description-of-what-is-and-not-what-ought">
-<h3><span class="section-number">1.3.2. </span>Developing a description of ‘what is’ and not ‘what ought’<a class="headerlink" href="#developing-a-description-of-what-is-and-not-what-ought" title="Permalink to this headline">#</a></h3>
-</div>
+<div class="section" id="models-of-the-universe">
+<h3><span class="section-number">1.3.2. </span>Models of the Universe<a class="headerlink" href="#models-of-the-universe" title="Permalink to this headline">#</a></h3>
+<p>In the early 20th century, Sir Arthur Eddington was overtaken by Einstein’s GR and threw himself in to understanding the mathematical underpinning of GR.  In 1918, he wrote a report which would later become Eddington’s <em>Mathematical Theory of Relativity</em> in 1923.  In GR, gravitational masses affect the <em>entire system</em> and that gravitational behavior required matter because there would be no solution of the field equations that describe a Universe empty of matter.</p>
+<p>In 1917, Einstein tired to find a static model with a spatially finite character to avoid problems of infinity.  He couldn’t find a static model with such a character without introducing a notorious <em>cosmological term</em>.  This was considered to be a universal constant of an unknown but necessarily very small value.  Einstein gave many interpretations of this constant, but some considered it a term that detracts from the elegance of Einstein’s original theory.  The cosmological constant was a veritable Trojan Horse, carrying within it a solution to a cosmological phenomenon as yet undiscovered.</p>
+<p>At this time, the Universe had three separate fates:</p>
+<ol class="simple">
+<li><p>closed; gravity eventually dominates and leads to a big crunch (i.e., Newton’s original fear)</p></li>
+<li><p>open; whatever is responsible for the cosmological constant wins and the Universe expands forever</p></li>
+<li><p>static; gravity and cosmic repulsion balance out.</p></li>
+</ol>
+<div align="center">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/ndS3kIWrjk8"
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div></div>
 </div>
 <div class="section" id="homework">
 <h2><span class="section-number">1.4. </span><strong>Homework</strong><a class="headerlink" href="#homework" title="Permalink to this headline">#</a></h2>
 <div class="admonition-problem-1 admonition">
 <p class="admonition-title">Problem 1</p>
-<p>Problem 1 goes here.</p>
+<p><strong>Describe the main components of a cosmology.  What function does a cosmology serve for a culture?</strong></p>
+</div>
+<div class="admonition-problem-2 admonition">
+<p class="admonition-title">Problem 2</p>
+<p><strong>Summarize how cosmologies are different over time and across cultures.</strong></p>
+</div>
+<div class="admonition-problem-3 admonition">
+<p class="admonition-title">Problem 3</p>
+<p><strong>Explain how observations in cosmology can influence the affairs of state.</strong></p>
+</div>
+<div class="admonition-problem-3 admonition">
+<p class="admonition-title">Problem 3</p>
+<p><strong>Summarize the changes and problems of cosmology over the last century.</strong></p>
 </div>
 </div>
 </div>
@@ -823,11 +949,11 @@ allowfullscreen></iframe>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../Preamble/Markdown-basics.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../Preamble/HW_template.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Introduction to Markdown</p>
+            <p class="prev-next-title">Homework Assignments</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../Chapter_04/theory-of-special-relativity.html" title="next page">
@@ -846,7 +972,7 @@ allowfullscreen></iframe>
   
     By Billy Quarles<br/>
   
-      &copy; Copyright 2022.<br/>
+      &copy; Copyright 2023.<br/>
 </p>
         </footer>
     </div>
