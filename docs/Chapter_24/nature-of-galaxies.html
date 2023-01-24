@@ -614,7 +614,7 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#elliptical-galaxies">
+  <a class="reference internal nav-link" href="#id1">
    4.4. Elliptical Galaxies
   </a>
   <ul class="nav section-nav flex-column">
@@ -827,7 +827,7 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#elliptical-galaxies">
+  <a class="reference internal nav-link" href="#id1">
    4.4. Elliptical Galaxies
   </a>
   <ul class="nav section-nav flex-column">
@@ -957,8 +957,8 @@ allowfullscreen></iframe>
 </div>
 <p>Hubble originally thought (<em>incorrectly</em>) that the tuning-fork diagram represented an evolutionary sequence for galaxies (i.e., galaxies start as E0 and transition through stages into Sc/SBC).  As a result, he referred to galaxies toward the left or right as <em>early types</em> or <em>late types</em>, respectively.</p>
 <p>Within the category of ellipticals, Hubble made divisions based on the observed <strong>ellipticity</strong> of the galaxy by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-607197c7-ccde-4e78-b1fa-2b683f7145d8">
-<span class="eqno">(4.1)<a class="headerlink" href="#equation-607197c7-ccde-4e78-b1fa-2b683f7145d8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b84f86c4-1fe8-484b-96dc-0b9ca0bcb871">
+<span class="eqno">(4.1)<a class="headerlink" href="#equation-b84f86c4-1fe8-484b-96dc-0b9ca0bcb871" title="Permalink to this equation">#</a></span>\[\begin{align}
 \epsilon \equiv 1-\frac{\beta}{\alpha},
 \end{align}\]</div>
 <p>which depends on the the <em>apparent</em> major (<span class="math notranslate nohighlight">\(\alpha\)</span>) and minor (<span class="math notranslate nohighlight">\(\beta\)</span>) axes of the ellipse, projected onto the plane of the sky.  The Hubble type is then quoted in terms of <span class="math notranslate nohighlight">\(10\epsilon\)</span>.  Ellipticals range from a spherical distribution of stars (E0) to a highly flattened distribution (E7).  Galaxies with high ellipticities <span class="math notranslate nohighlight">\((\epsilon &gt; 0.7)\)</span> have not been observed.  While the limit in the literature is about E7, it has been known since 1966 (<a class="reference external" href="https://ui.adsabs.harvard.edu/link_gateway/1966ApJ...146...28L/ADS_PDF">Liller 1966</a>) that the E4 to E7 galaxies are misclassified lenticular galaxies with disks inclined at different angles to our line of sight.</p>
@@ -967,11 +967,13 @@ allowfullscreen></iframe>
 <a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Ellipsoid-rot-ax.svg/525px-Ellipsoid-rot-ax.svg.png"><img alt="spheroid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Ellipsoid-rot-ax.svg/525px-Ellipsoid-rot-ax.svg.png" style="width: 500px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 4.3 </span><span class="caption-text">The assignment of semi-axes on a spheroid. It is oblate if <span class="math notranslate nohighlight">\(c &lt; a\)</span> (left) and prolate if <span class="math notranslate nohighlight">\(c &gt; a\)</span> (right).  Image Credit:<a class="reference external" href="https://en.wikipedia.org/wiki/Spheroid">Wikipedia:spheroid</a>.</span><a class="headerlink" href="#spheroid-diagram" title="Permalink to this image">#</a></p>
 </div>
-<p>The python code below illustrates views of an oblate spheroid seen from different observers.</p>
 <div class="figure align-default" id="spheroid" style="width: 600px">
-<p class="caption"><span class="caption-number">Fig. 4.4 </span><span class="caption-text">An oblate spheroidal galaxy with <span class="math notranslate nohighlight">\(a=b;\ c/a=0.6\)</span> can be seen looking down the <span class="math notranslate nohighlight">\(x\)</span>-axis as the <span class="math notranslate nohighlight">\(y-z\)</span> plane (panel a), inclined by <span class="math notranslate nohighlight">\(45^\circ\)</span> (panel b), or inclined by <span class="math notranslate nohighlight">\(90^\circ\)</span> (panel c).  The galaxy appears as an E0 (<span class="math notranslate nohighlight">\(\beta/alpha=1\)</span>) when from the perspective in panel c, and resembles an E4 galaxy (<span class="math notranslate nohighlight">\(\beta/alpha=0.6\)</span>) in panel b.  A prolate spheroidal galaxy resembles an E0 galaxy in panel b, and an E4 in panel c.  The python code below demonstrates how to create such a figure in python.</span><a class="headerlink" href="#spheroid" title="Permalink to this image">#</a></p>
+<div class="cell_output docutils container">
+<img alt="../_images/nature-of-galaxies_2_0.png" src="../_images/nature-of-galaxies_2_0.png" />
 </div>
-<div class="cell tag_hide-output docutils container">
+<p class="caption"><span class="caption-number">Fig. 4.4 </span><span class="caption-text">An oblate spheroidal galaxy with <span class="math notranslate nohighlight">\(a=b;\ c/a=0.6\)</span> can be seen looking down the <span class="math notranslate nohighlight">\(x\)</span>-axis as the <span class="math notranslate nohighlight">\(y-z\)</span> plane (panel a), inclined by <span class="math notranslate nohighlight">\(45^\circ\)</span> (panel b), or inclined by <span class="math notranslate nohighlight">\(90^\circ\)</span> (panel c).  The galaxy appears as an E0 (<span class="math notranslate nohighlight">\(\beta/\alpha=1\)</span>) when from the perspective in panel c, and resembles an E4 galaxy (<span class="math notranslate nohighlight">\(\beta/\alpha=0.6\)</span>) in panel b.  A prolate spheroidal galaxy resembles an E0 galaxy in panel b, and an E4 in panel c.  The python code below demonstrates how to create such a figure in python.</span><a class="headerlink" href="#spheroid" title="Permalink to this image">#</a></p>
+</div>
+<div class="cell tag_remove-output docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -1016,15 +1018,100 @@ allowfullscreen></iframe>
     
     
 <span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">wspace</span><span class="o">=-</span><span class="mf">0.75</span><span class="p">,</span><span class="n">hspace</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-
 <span class="n">glue</span><span class="p">(</span><span class="s2">&quot;spheroid_fig&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/nature-of-galaxies_2_1.png" src="../_images/nature-of-galaxies_2_1.png" />
+</div>
+<p>The physical properties of elliptical galaxies span a wide range:</p>
+<ul class="simple">
+<li><p>absolute <span class="math notranslate nohighlight">\(B\)</span> magnitudes range from <span class="math notranslate nohighlight">\(-8\)</span> (brightest) to <span class="math notranslate nohighlight">\(-23\)</span> (faintest)</p></li>
+<li><p>masses (including both luminous and dark matter) vary from <span class="math notranslate nohighlight">\(10^7\ M_\odot\)</span> to more than <span class="math notranslate nohighlight">\(10^{13}\ M_\odot\)</span></p></li>
+<li><p>diameters can be <span class="math notranslate nohighlight">\(0.1\ \rm kpc\)</span> or as large as 100s of <span class="math notranslate nohighlight">\(\rm kpc\)</span>.</p></li>
+</ul>
+<p>The giant elliptical galaxies are some of the largest objects in the universe, while dwarf galaxies can be as small as a globular cluster.  The lenticular galaxies have masses and luminosities comparable to the larger ellipticals.  The dwarfs are the most numerous, even though the giant ellipticals and lenticulars are easier to observe.  Typical examples of elliptical galaxies are shown in Fig. <a class="reference internal" href="#elliptical-galaxies"><span class="std std-numref">4.5</span></a>, along with an S0 and SB0.</p>
+<div class="figure align-default" id="elliptical-galaxies">
+<a class="reference internal image-reference" href="../_images/Fig_04.jpg"><img alt="early galaxies" src="../_images/Fig_04.jpg" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.5 </span><span class="caption-text">Typical early-type galaxies (a) <a class="reference external" href="https://theskylive.com/sky/deepsky/ic4296-object">IC 4296</a> (E0), (b) <a class="reference external" href="https://theskylive.com/sky/deepsky/ngc4365-object">NGC 4365</a> (E3), (c) <a class="reference external" href="https://theskylive.com/sky/deepsky/ngc4564-object">NGC 4564</a> (E6), (d) <a class="reference external" href="https://theskylive.com/sky/deepsky/ngc4263-object">NGC 4263</a> (E7), (e) <a class="reference external" href="https://theskylive.com/sky/deepsky/ngc4251-object">NGC 4251</a> (S0), (f) <a class="reference external" href="https://theskylive.com/sky/deepsky/ngc4350-object">NGC 4350</a> (RSB0).  Image Credit: Sandage and Bedke (1994) from <em>The Carnegie Atlas of Galaxies</em>.</span><a class="headerlink" href="#elliptical-galaxies" title="Permalink to this image">#</a></p>
+</div>
+<p>Hubble subdivided the spiral sequences into Sa, Sab, Sb, Sbc, Sc, and SBa, SBab, SBb, SBbc, SBc.  The galaxies with the</p>
+<ul class="simple">
+<li><p>most prominent bulges (i.e., the largest bulge-to-disk luminosity ratios, <span class="math notranslate nohighlight">\(L_{\rm bulge}/L_{\rm disk} \sim 0.3\)</span>),</p></li>
+<li><p>most tightly wound wound spiral arms (with <a class="reference external" href="https://ned.ipac.caltech.edu/level5/STRUCTURE/spst.html">pitch angles</a>)
+of approximately <span class="math notranslate nohighlight">\(6^\circ\)</span>), and</p></li>
+<li><p>the smoothest distribution of stars in the arms</p></li>
+</ul>
+<p>are classified as Sa (or SBa), while Sc (or Sbc) have</p>
+<ul class="simple">
+<li><p>smaller bulge-to-disk ratios (<span class="math notranslate nohighlight">\(L_{\rm bulge}/L_{\rm disk} \sim 0.05\)</span>)),</p></li>
+<li><p>more loosely wound spiral arms (<span class="math notranslate nohighlight">\(18^\circ\)</span>), and</p></li>
+<li><p>spiral arms that resolve into clumps of stars and H II regions. Examples of normal and barred spiral galaxies are shown in Figs. <a class="reference internal" href="#normal-spirals"><span class="std std-numref">4.6</span></a> and <a class="reference internal" href="#barred-spirals"><span class="std std-numref">4.7</span></a>, respectively.  M31 and NGC 891 are type Sb, whereas the Milky Way is probably a type SBbc.</p></li>
+</ul>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="c84b6f4d-8f3e-4e62-9e72-0e3215c8a02c" name="d5a5e76a-4aa3-4232-8e51-15848e763732" type="radio">
+</input><label class="sd-tab-label" for="c84b6f4d-8f3e-4e62-9e72-0e3215c8a02c">
+Normal spirals (Fig. 4.6)</label><div class="sd-tab-content docutils">
+<div class="figure align-default" id="normal-spirals">
+<a class="reference internal image-reference" href="../_images/Fig_05.jpg"><img alt="normal spirals" src="../_images/Fig_05.jpg" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.6 </span><span class="caption-text">Typical normal spiral galaxies. (a) <a class="reference external" href="https://theskylive.com/sky/deepsky/ngc7096-object">NGC 7096</a> (Sa(r)I), (b) <a class="reference external" href="https://theskylive.com/sky/deepsky/ngc3031-object">M81/NGC 3031</a> (Sb(r)I-II), (c) <a class="reference external" href="https://theskylive.com/sky/deepsky/ngc5457-object">M101/NGC 5457/Pinwheel</a> (Sc(s)I), (d) <a class="reference external" href="https://theskylive.com/sky/deepsky/ngc4594-object">M104/NGC 4594/Sombrero</a> (Sa/Sb) seen nearly edge on.  Image Credit: Sandage and Bedke (1994) from <em>The Carnegie Atlas of Galaxies</em>.</span><a class="headerlink" href="#normal-spirals" title="Permalink to this image">#</a></p>
 </div>
 </div>
+<input id="af425b0e-5854-4265-aca5-8f486a374ef1" name="d5a5e76a-4aa3-4232-8e51-15848e763732" type="radio">
+</input><label class="sd-tab-label" for="af425b0e-5854-4265-aca5-8f486a374ef1">
+Barred spirals (Fig. 4.7)</label><div class="sd-tab-content docutils">
+<div class="figure align-default" id="barred-spirals">
+<a class="reference internal image-reference" href="../_images/Fig_06.jpg"><img alt="barred spirals" src="../_images/Fig_06.jpg" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.7 </span><span class="caption-text">Typical barred spiral galaxies. (a) <a class="reference external" href="https://theskylive.com/sky/deepsky/ngc175-object">NGC 175</a> (SBab(s)I-II), (b) <a class="reference external" href="https://theskylive.com/sky/deepsky/ngc1300-object">NGC 1300</a> (SBb(r)I), (c) <a class="reference external" href="https://theskylive.com/sky/deepsky/ngc2525-object">NGC 2525/ Pinwheel</a> (SBc(s)I).  Image Credit: Sandage and Bedke (1994) from <em>The Carnegie Atlas of Galaxies</em>.</span><a class="headerlink" href="#barred-spirals" title="Permalink to this image">#</a></p>
+</div>
+</div>
+<input id="41abf63a-e851-4e2b-a16b-a99dd47b2472" name="d5a5e76a-4aa3-4232-8e51-15848e763732" type="radio">
+</input><label class="sd-tab-label" for="41abf63a-e851-4e2b-a16b-a99dd47b2472">
+Irregular (Fig. 4.8)</label><div class="sd-tab-content docutils">
+<div class="figure align-default" id="irr-galaxies">
+<a class="reference internal image-reference" href="../_images/Fig_07.jpg"><img alt="irregular" src="../_images/Fig_07.jpg" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4.8 </span><span class="caption-text">Examples of irregular galaxies. (a) <a class="reference external" href="https://en.wikipedia.org/wiki/Large_Magellanic_Cloud">Large Magellanic Cloud</a> (Irr I/SBmIII), (b) <a class="reference external" href="https://en.wikipedia.org/wiki/Small_Magellanic_Cloud">Small Magellanic Cloud</a> (Irr I/ImIV-V), (c) <a class="reference external" href="https://theskylive.com/sky/deepsky/ngc3034-object">M82/NGC 3034</a> (Irr II/Ir/Amorphous).  Image Credit: Sandage and Bedke (1994) from <em>The Carnegie Atlas of Galaxies</em>.</span><a class="headerlink" href="#irr-galaxies" title="Permalink to this image">#</a></p>
+</div>
+</div>
+</div>
+<p>Sa-Sc (SBa-SBc) galaxies tend to have much smaller variations in their physical parameters than do ellipticals.  On average, spirals tend to be the largest galaxies in the universe, with</p>
+<ul class="simple">
+<li><p>absolute <span class="math notranslate nohighlight">\(B\)</span> magnitudes from <span class="math notranslate nohighlight">\(-16\)</span> to less than <span class="math notranslate nohighlight">\(-23\)</span>,</p></li>
+<li><p>masses between <span class="math notranslate nohighlight">\(10^9-10^{12}\ \rm M_\odot\)</span>, and</p></li>
+<li><p>disk diameters of <span class="math notranslate nohighlight">\(5-100\ \rm kpc\)</span>.</p></li>
+</ul>
+<p>Hubble split the remaining category of irregulars into Irr I if there was at least some hint of an organized structure (e.g., spiral arms) and Irr II for the most extremely disorganized structures.  The Large and Small Magellanic Clouds are examples of Irr I galaxies, while M82 (NGC 3034) is an example of an Irr II (see Fig. <a class="reference internal" href="#irr-galaxies"><span class="std std-numref">4.8</span></a>).</p>
+<p>Irregular galaxies have a wide range of characteristics, although they tend not to be particularly large.  They have</p>
+<ul class="simple">
+<li><p>absolute <span class="math notranslate nohighlight">\(B\)</span> magnitudes from <span class="math notranslate nohighlight">\(-13\)</span> to <span class="math notranslate nohighlight">\(-20\)</span>,</p></li>
+<li><p>masses between <span class="math notranslate nohighlight">\(10^8-10^{10}\ M_\odot\)</span>, and</p></li>
+<li><p>diameters that range from <span class="math notranslate nohighlight">\(1-10\ \rm kpc\)</span>.</p></li>
+</ul>
+<p>Most irregulars also tend to have noticeable bars that are off-center.</p>
+<p>Since Hubble’s publication of his tuning-fork diagram, astronomers have made modifications to his original classification scheme.  Gerard de Vaucoulers suggested the elimination of the irregular classifications, Irr I and Irr II, in favor of the addition of other morphological classes later than Sc (or SBc).  Those galaxies that were binned into Irr I have been designated Sd (SBd), Sm (SBm), or Im (where m stands for <em>Magellanic</em> type).  The truly irregular galaxies are simply designated Ir (e.g., M82).</p>
+<p>Sandage and Brucato further suggested that the Ir class should more appropriately be termed <strong>amorphous</strong> to indicate the lack of any organized structure.  Spirals of Hubble-type Sd and later tend to be significantly smaller than earlier-type spirals, where they are sometimes referred to as <strong>dwarf spirals</strong>.</p>
+<p>To make finer distinctions between normal and barred spirals, de Vaucouleurs had also suggested referring to normal spirals as SA rather than simply S.  Intermediate types with weak bars are then characterized as SAB, and strongly barred galaxies are SB.</p>
+<p>A further refinement to the system, the lenticular galaxies are also sometimes subdivided according to the amount of dust absorption in their disks. S03 galaxies have no discernable dust in their disks, while S03 galaxies have significant amounts of dust, and similarly for SB01 through SB03.  The modern sequence from early ellipticals through normal late-type galaxies is</p>
+<p>E0, E1, <span class="math notranslate nohighlight">\(\ldots\)</span>, E7, S01, S02, S03, Sa, Sb, Sbc, Sc, Scd, Sd, Sm, Im, Ir.</p>
+<p>A similar sequence exists for barred spirals.</p>
+<p>Sydney van den Bergh introduced the <strong>luminosity class</strong> for spirals.  The class ranges from I through IV, with I representing spirals with well-defined arms; galaxies with the least distinct arms are classified as V.</p>
+<ul class="simple">
+<li><p>M31 is classified as SbI-II (intermediate between I and II),</p></li>
+<li><p>the Milky Way is an SbbcI-II,</p></li>
+<li><p>M101 is an ScI,</p></li>
+<li><p>the Large Magellanic Cloud (LMC) is an SBmIII, and</p></li>
+<li><p>the Small Magellanic Cloud (SMC) is an ImIV-V.</p></li>
+</ul>
+<p>Except for the largest elliptical galaxies, the Milky Way and M31 are mong some of the largest and brightest galaxies in the universe.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Despite its name, luminosity class does not necessarily correlate well with absolute magnitude.</p>
+</div>
+<p>Besides their striking arms, spirals also show an amazing array of more complex and subtle features. While some galaxies have spiral arms that can be followed nearly all the way into the center, others have arms that appear to terminate at the location of an inner ring.  Special designations help further classify these systems.</p>
+<ul class="simple">
+<li><p>M101 is a galaxy of the former type and is a labeled as an Sc(s)I, where <strong>(s)</strong> designates that the <strong>spiral</strong> can be traced to the center of the galaxy.</p></li>
+<li><p>On the other hand, NGC 7096 and M81 are galaxies of the later type and are classified as Sa(r)I and Sb(r)I-II, respectively, where <strong>(r)</strong> indicates an <strong>inner ring</strong>.</p></li>
+<li><p>Galaxies may also have outer rings (e.g., NGC 4340), which is designated as an RSB0, and the <strong>R</strong> prefix stands for <strong>outer ring</strong>.</p></li>
+</ul>
 </div>
 </div>
 <div class="section" id="spiral-and-irregular-galaxies">
@@ -1090,8 +1177,8 @@ allowfullscreen></iframe>
 <h3><span class="section-number">4.3.8. </span>Stochastic, Self-Propagating Star Formation<a class="headerlink" href="#stochastic-self-propagating-star-formation" title="Permalink to this headline">#</a></h3>
 </div>
 </div>
-<div class="section" id="elliptical-galaxies">
-<h2><span class="section-number">4.4. </span>Elliptical Galaxies<a class="headerlink" href="#elliptical-galaxies" title="Permalink to this headline">#</a></h2>
+<div class="section" id="id1">
+<h2><span class="section-number">4.4. </span>Elliptical Galaxies<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
 <div class="section" id="morphological-classes">
 <h3><span class="section-number">4.4.1. </span>Morphological Classes<a class="headerlink" href="#morphological-classes" title="Permalink to this headline">#</a></h3>
 </div>
