@@ -54,6 +54,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="canonical" href="https://saturnaxis.github.io/Cosmology/Chapter_25/milky-way-galaxy.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -881,14 +883,124 @@ title="Print to PDF"
 <h1><span class="section-number">5. </span>The Milky Way Galaxy<a class="headerlink" href="#the-milky-way-galaxy" title="Permalink to this headline">#</a></h1>
 <div class="section" id="counting-the-stars-in-the-sky">
 <h2><span class="section-number">5.1. </span>Counting the Stars in the Sky<a class="headerlink" href="#counting-the-stars-in-the-sky" title="Permalink to this headline">#</a></h2>
+<p>Humans have peered into the heavens and contemplated its vastness.  Sometimes, we have proposed various models to explain its form.  In some civilizations, the stars were believed to be on a celestial sphere that rotated majestically above a fixed, central Earth (i.e., geocentrism of Ptolemy).  When Galileo made his first telescopic observations, we started down a long road that has dramatically expanded our view of the universe.</p>
+<p>it is possible to get at least a general idea about the nature of other galaxies by studying our own Galaxy, but this is very challenging.  We live in a disk of stars, dust, and gas that severely impacts our ability to “see” beyond our relative stellar neighborhood when we look along the plane of the disk.  The problem is most severe when looking toward the center of the Galaxy in the constellation Sagittarius.</p>
+<p>Much of what we know today about the formation and evolution of the Milky Way is encoded in the motions of the Galaxy’s constituents, especially when combined with information about the variations in composition.  Unfortunately, measuring the motions of the stars and gas in the Galaxy is done from a moving observing platform (i.e., the Earth) that is undergoing another motion around the Sun, which is orbiting the Galactic center.</p>
 <div class="section" id="historical-models">
 <h3><span class="section-number">5.1.1. </span>Historical Models<a class="headerlink" href="#historical-models" title="Permalink to this headline">#</a></h3>
+<p>From observations of a <em>dark</em> night sky, an almost continuous band of light appears to circle the Earth.  It is inclined by about <span class="math notranslate nohighlight">\(60^\circ\)</span> with respect to the celestial equator.  It was Galileo who first realized that this Milky Way is a vast collection of individual stars.  In the mid-1700s, Kant and Wright proposed that the Galaxy must be a stellar disk and our Solar System is merely one component within that disk.  In the 1780s, William Herschel produced a map of the Milky Way based crudely on counting the number of stars the he could observe in 683 regions of the sky.  In his analysis, Herschel assumed that</p>
+<ul class="simple">
+<li><p>all stars have approximately the same <em>absolute</em> magnitude,</p></li>
+<li><p>the number density of stars in space is roughly constant,</p></li>
+<li><p>there is nothing between the stars to obscure them, and</p></li>
+<li><p>he could see the the <em>edges</em> of the stellar distribution.</p></li>
+</ul>
+<p>From his data, Herschel concluded that the Sun had to be very near the center of the distribution and that the dimensions measured along the plane of the disk were some <span class="math notranslate nohighlight">\(5\times\)</span> greater than the disk’s vertical thickness.</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Jacobus_Kapteyn">Jacobus Kapteyn</a> confirmed Herschel’s model of the Galaxy, again using the technique of star counting.  Through the use of more quantitative methods, Kapteyn was able specify a distance scale for his model of the Galaxy.  The <strong>Kapteyn universe</strong> was a flattened spheroidal system with a steadily decreasing stellar density with increasing distance from the center.</p>
+<p>In the plane of the Galaxy and at a distance of some <span class="math notranslate nohighlight">\(800\ \rm pc\)</span> from the center, the number density of stars had decreased from its central value by a factor of <span class="math notranslate nohighlight">\(2\)</span>.  On an axis passing through teh center and perpendicular to the central plane, the number density decreased by <span class="math notranslate nohighlight">\(50\%\)</span> over a distance of only <span class="math notranslate nohighlight">\(150\ \rm pc\)</span>.  The number density diminished to <span class="math notranslate nohighlight">\(1\%\)</span> of its central value at distances of <span class="math notranslate nohighlight">\(8500\ \rm pc\)</span> (in the plane) and <span class="math notranslate nohighlight">\(1700\ \rm pc\)</span> (perpendicular to the plane).  Kapteyn concluded that the Sun was located <span class="math notranslate nohighlight">\(38\ \rm pc\)</span> north of the Galactic midplane and <span class="math notranslate nohighlight">\(650\ \rm pc\)</span> from the center, measured along the Galactic midplane.</p>
+<p>To follow Kapteyn’s logic for his nearly heliocentric model of the universe, recall the equation for the distance modulus:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+m-M &amp;= 5\log_{10}\left( \frac{d}{10\ \rm pc}\right), \\
+d &amp;= 10^{(m-M+5)/5}.
+\end{align*}\]</div>
+<p>Assuming a value for <span class="math notranslate nohighlight">\(M\)</span> (e.g., if the spectral class and luminosity class are known) and measuring <span class="math notranslate nohighlight">\(m\)</span> at a telescope, the distance modulus <span class="math notranslate nohighlight">\(m-M\)</span> and the distance <span class="math notranslate nohighlight">\(d\)</span> are readily obtained.  Given the known coordinates of the star on the celestial sphere, its 3D position relative to the Earth is determined.</p>
+<p>In actuality, it is impractical to estimate the distance to each individual star in the way described above because the number of stars in any given region is so great.  Instead, a statistical approach is used that is based on counting the number of stars in specified region down to a predetermined limiting apparent magnitude.  From this counting procedure, the number density of stars at a given distance can be estimated.</p>
+<p>Shortly before Kapteyn’s model was published, Harlow Shapley estimated the distances to 93 globular clusters using <a class="reference external" href="https://en.wikipedia.org/wiki/RR_Lyrae_variable">RR Lyrae</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/W_Virginis">W Virginis</a> stars.  These stars are easily identified in the clusters through their periodic variations in luminosity, and it is a matter of using the period-luminosity relation (to get their absolute magnitudes) to estimate their distances from the Sun.  The distances to the variable stars correspond to the distances to the clusters in which they reside.</p>
+<p>Shapley recognized that the globular clusters are not distributed uniformly throughout space, but are found preferentially in a region of the sky that is centered in the constellation of Sagittarius, at <span class="math notranslate nohighlight">\(15\ \rm kpc\)</span> from the Sun.  He estimated that the most distant clusters are more than <span class="math notranslate nohighlight">\(70 \rm kpc\)</span> form the Sun, over <span class="math notranslate nohighlight">\(55\ \rm kpc\)</span> from the center.  As a result, Shapley believed that the diameter of the Galaxy was on the order of <span class="math notranslate nohighlight">\(100 \rm kpc\)</span>, which is close to <span class="math notranslate nohighlight">\(10 \times\)</span> the diameter estimated by Kapteyn.</p>
+<p>Today, we known that Kapteyn’s universe was too small and the Sun was too near the center, and Shapley’s Galactic model was too large.  Both models errored in part for the same reason:</p>
+<ul class="simple">
+<li><p>the failure to include in their distance estimates the effects of interstellar extinction due to gas and dust.</p></li>
+</ul>
+<p>Kapteyn’s selected regions were largely within the Galactic disk where extinction effects are most severe; as a result, he was unable to see the most distant portions of the Milky Way (causing him to underestimate its size).  The problem is analogous to someone on Earth trying to see the surrounding land while standing in a dense fog with limited visibility.</p>
+<p>Shapely chose to study objects that are generally found well above (and below) the plane of the Milky Way, and are inherently bright, which makes them visible from great distances.  It is in directions perpendicular to the disk that interstellar extinction is least important, although it cannot be neglected entirely.  Errors in the calibration of the period-luminosity relation used by Shapely let to overestimates of the distances to the clusters.  The calibration errors were traced to the effects of interstellar extinction.</p>
+<p>Kapteyn was aware of the errors that interstellar extinction could introduce but he was unable to find any quantitative evidence for the effect.  Other researchers at the time suspected that dust might be responsible for the dark bands running across the Milky Way.</p>
+<p>Further evidence for strong extinction could also be found in Shapely’s own data.  No globular clusters were visible within a region between approximately <span class="math notranslate nohighlight">\(\pm 10^\circ\)</span> of the Galactic plane called the <strong>zone of avoidance</strong>.  Shapely suggested that globular clusters were apparently absent in the zone of avoidance because strong gravitational tidal forces disrupted the objects in that region; this was a similar argument for the existence of the Asteroid Belt in the Solar System.  In reality, interstellar extinction is so severe within the zone of avoidance that the very bright clusters are simply undetectable.</p>
 </div>
 <div class="section" id="the-effects-of-interstellar-extinction">
 <h3><span class="section-number">5.1.2. </span>The Effects of Interstellar Extinction<a class="headerlink" href="#the-effects-of-interstellar-extinction" title="Permalink to this headline">#</a></h3>
+<p>To see how interstellar extinction directly affects the estimates of stellar distances, we find</p>
+<div class="amsmath math notranslate nohighlight" id="equation-d4a41e81-69a1-40eb-b560-b76f8eac6cbf">
+<span class="eqno">(5.1)<a class="headerlink" href="#equation-d4a41e81-69a1-40eb-b560-b76f8eac6cbf" title="Permalink to this equation">#</a></span>\[\begin{align}
+d = 10^{(m_\lambda - M_\lambda - A_\lambda + 5)/5} = d^\prime 10^{-A_\lambda/5},
+\end{align}\]</div>
+<p>where <span class="math notranslate nohighlight">\(d^\prime = 10^{(m_\lambda - M_\lambda + 5)/5}\)</span> is the erroneous estimate of the distance when extinction is neglected, and <span class="math notranslate nohighlight">\(A_\lambda\)</span> is the amount of extinction in magnitudes.  The extinction coefficient and magnitudes (<span class="math notranslate nohighlight">\(M\)</span> and <span class="math notranslate nohighlight">\(m\)</span>) are all a function of wavelength due to the wavelength dependent way that light is scattered (or blocked) by dust or absorbed by gas clouds.  Since <span class="math notranslate nohighlight">\(A_\lambda \geq 0\)</span> in all cases (i.e., extinction can’t make a star appear brighter), <span class="math notranslate nohighlight">\(d\leq d^\prime\)</span>; the true distance is always less than the apparent distance.</p>
+<p>In the disk of the Milky Way, the typical extinction rate in visible wavelengths is <span class="math notranslate nohighlight">\(1\ \rm mag/kpc\)</span>.  The value can vary dramatically if the line of sight includes distinct nebulae (e.g., molecular clouds).  Fortunately, it is often possible to estimate the amount of extinction by considering how dust affect the color of a star (i.e., interstellar reddening).</p>
+<div class="exercise orange admonition" id="Chapter_25/milky-way-galaxy-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 5.1 </span></p>
+<div class="section" id="exercise-content">
+<p><strong>Suppose that a B0 main-sequence star with an absolute visual magnitude of <span class="math notranslate nohighlight">\(M_V = -4.0\)</span> is observed to have an apparent visual magnitude of <span class="math notranslate nohighlight">\(m_V = V = + 8.2\)</span>.</strong></p>
+<p><em>Neglecting interstellar extinction, what would be the estimated distance to the star?</em></p>
+<p>Using the distance modulus equation, we find that the estimated distance <span class="math notranslate nohighlight">\(d^\prime\)</span> is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+d^\prime &amp;= 10^{(V-M_V+5)/5}, \\
+&amp;= 10^{(8.2-(-4)+5)/5} = 10^{3.44} \approx 2800\ \rm pc.
+\end{align*}\]</div>
+<p><em>What would be the estimated distance including some effect of interstellar extinction?</em></p>
+<p>If it is known by some independent means (e.g., reddening) that the amount of extinction along the line of sight is <span class="math notranslate nohighlight">\(1\ \rm mag/kpc\)</span>, then <span class="math notranslate nohighlight">\(A_V = kd\ \rm mag\)</span>, where <span class="math notranslate nohighlight">\(k = 10^{-3}\ \rm mag/pc\)</span> and <span class="math notranslate nohighlight">\(d\)</span> is measured in <span class="math notranslate nohighlight">\(\rm pc\)</span>.  This gives</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+d^\prime &amp;= 10^{(V-M_V-kd+5)/5}, \\
+&amp;= 2800 \times 10^{-kd/5},
+\end{align*}\]</div>
+<p>which may be solved iteratively (or graphically) giving a true distance to the star of <span class="math notranslate nohighlight">\(d = 1400\ \rm pc\)</span>.</p>
+<p>in this case the distance to the star would have been overestimated by almost a factor of two fi the effects of interstellar extinction were not properly accounted for.</p>
+</div>
+</div>
 </div>
 <div class="section" id="differential-and-integrated-star-counts">
 <h3><span class="section-number">5.1.3. </span>Differential and Integrated Star Counts<a class="headerlink" href="#differential-and-integrated-star-counts" title="Permalink to this headline">#</a></h3>
+<p>Kapteyn’s method of star counting was not based on directly determining <span class="math notranslate nohighlight">\(d\)</span> for individual stars.  Rather, the number of stars visible in selected regions of the sky are counted over a specified apparent magnitude range.  Alternatively, all stars in the regions brighter than a chose limit of apparent magnitude can be counted.  These approaches are known as <strong>differential</strong> and <strong>integrated star counts</strong>, respectively.</p>
+<p>The technique of star is still used today to determine the number density of stars in the sky.  The distribution depends on a variety of parameters, including the direction, distance, chemical composition, and spectral classification.  Such information is very helpful to astronomers in their efforts to understand the structure and evolution of the Milky Way.</p>
+<p>Let <span class="math notranslate nohighlight">\(n_M(M,\ S,\ \Omega,\ r)dM\)</span> be the number density of stars with absolute magnitudes between <span class="math notranslate nohighlight">\(M\)</span> and <span class="math notranslate nohighlight">\(M+dM\)</span> and attribute <span class="math notranslate nohighlight">\(S\)</span> (e.g., the Morgan-Keenan spectral class) that lie within a solid angle <span class="math notranslate nohighlight">\(\Omega\)</span> in a specific direction at a distance <span class="math notranslate nohighlight">\(r\)</span> from the observer.  The number density <span class="math notranslate nohighlight">\(n_M\)</span> has units of <span class="math notranslate nohighlight">\(1/\rm pc^3/mag\)</span>, and the actual number density of stars having attribute <span class="math notranslate nohighlight">\(S\)</span> is given by</p>
+<div class="amsmath math notranslate nohighlight" id="equation-4fa8ddff-5c4c-4c3d-b329-3317eac74531">
+<span class="eqno">(5.2)<a class="headerlink" href="#equation-4fa8ddff-5c4c-4c3d-b329-3317eac74531" title="Permalink to this equation">#</a></span>\[\begin{align}
+n(S\, \Omega,\ r) = \int_{-\infty}^{\infty} n_M(M,\ S,\ \Omega,\ r)dM.
+\end{align}\]</div>
+<p>In Kapteyn’s original study, he considered general star counts that tracked absolute magnitude, regardless of spectral class.</p>
+<p>If the number density <span class="math notranslate nohighlight">\(n_M\)</span> is integrated over the volume of a cone defined by the solid angle <span class="math notranslate nohighlight">\(\Omega\)</span> and extending from the observer at <span class="math notranslate nohighlight">\(r=0\)</span> to some distance <span class="math notranslate nohighlight">\(r=d\)</span>, the result is <span class="math notranslate nohighlight">\(N_M(M,\ S,\ \Omega,\ d)dM\)</span>, which is the total number of stars with absolute magnitudes in the range <span class="math notranslate nohighlight">\(M\)</span> to <span class="math notranslate nohighlight">\(M+dM\)</span> that are found within the conical volume of space.  Using <span class="math notranslate nohighlight">\(dV = \Omega r^2 dr\)</span> in spherical coordinates, this is</p>
+<div class="math notranslate nohighlight" id="equation-integ-star-cnt">
+<span class="eqno">(5.3)<a class="headerlink" href="#equation-integ-star-cnt" title="Permalink to this equation">#</a></span>\[N_M(M,\ S,\ \Omega,\ d)dM = \left[ \int_0^d n_M(M,\ S,\ \Omega,\ r) \Omega r^2 dr\right]dM.\]</div>
+<p>Equation <a class="reference internal" href="#equation-integ-star-cnt">(5.3)</a> is the general expression for the <em>integrated stars count</em>, written in terms of the limiting distance <span class="math notranslate nohighlight">\(d\)</span>.  This means that <span class="math notranslate nohighlight">\(n_M dM\)</span> can be obtained from <span class="math notranslate nohighlight">\(N_M dM\)</span> (with limiting distance <span class="math notranslate nohighlight">\(r\)</span>) by differentiating:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+n_M(M,\ S,\ \Omega,\ r) dM = \frac{1}{\Omega r^2} \frac{d}{dr}\left(N_M dM \right).
+\end{align*}\]</div>
+<p>Those stars sharing the same absolute magnitude will have different apparent magnitudes because they lie at different distances from us.  We can use the distance modulus (corrected for interstellar extinction) to replace the limiting distance <span class="math notranslate nohighlight">\(d\)</span> with the apparent magnitude <span class="math notranslate nohighlight">\(m\)</span>.  This results in <span class="math notranslate nohighlight">\(\overline{N}_M(M,\ S,\ \Omega,\ m)dM\)</span>, which is the integrated star count written in terms of the limiting magnitude or the number of stars that appear brighter than the limiting magnitude <span class="math notranslate nohighlight">\(m\)</span>.</p>
+<p>If the limiting magnitude is increased slightly, then the limiting distance becomes correspondingly greater and the conical volume is extended to include more stars.  The increase in the number of included stars is</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\left[ \frac{\overline{N}_M(M,\ S,\ \Omega,\ m)}{dm} dm\right]dM.
+\end{align*}\]</div>
+<p>This defines the <em>differential star count</em>,</p>
+<div class="amsmath math notranslate nohighlight" id="equation-c32376e1-5dbe-46ee-8d67-7a6bca31206b">
+<span class="eqno">(5.4)<a class="headerlink" href="#equation-c32376e1-5dbe-46ee-8d67-7a6bca31206b" title="Permalink to this equation">#</a></span>\[\begin{align}
+A_M(M,\ S,\ \Omega,\ m)dM\ dm \equiv \frac{d\overline{N}_M(M,\ S,\ \Omega,\ m)}{dm}dM\ dm,
+\end{align}\]</div>
+<p>which is the number of stars with an absolute magnitude in the range <span class="math notranslate nohighlight">\(M\)</span> and <span class="math notranslate nohighlight">\(M+dM\)</span> that are found within a solid angle <span class="math notranslate nohighlight">\(\Omega\)</span> and have apparent magnitudes in teh range between <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(m+dm\)</span>.</p>
+<p>A simple (and unrealistic) illustration of the use of integrated and differential star counts, consider the case of an infinite universe of <em>uniform</em> stellar density (i.e., <span class="math notranslate nohighlight">\(n_M(M,\ S,\ \Omega,\ r) = n_M(M,S) = \text{constant}\)</span>) and no interstellar extinction (<span class="math notranslate nohighlight">\(A = 0\)</span>). Then Eq. <a class="reference internal" href="#equation-integ-star-cnt">(5.3)</a> becomes (after canceling <span class="math notranslate nohighlight">\(dM\)</span>),</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+N_M(M,\ S, \Omega,\ d) &amp;= n_M(M,S)\Omega \int_0^d r^2\ dr, \\
+&amp;= \frac{\Omega d^3}{3}n_M(M,S).
+\end{align*}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When the last expression is considered over all directions, <span class="math notranslate nohighlight">\(\Omega = 4\pi\)</span> and <span class="math notranslate nohighlight">\(\Omega d^3/3\)</span> is just the volume of sphere of radius <span class="math notranslate nohighlight">\(d\)</span>.</p>
+</div>
+<p>Expressing <span class="math notranslate nohighlight">\(d\)</span> in units of parsec and writing it in terms of the apparent magnitude <span class="math notranslate nohighlight">\(m\)</span>, we have</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\overline{N}_M(M,\ S, \Omega,\ m) &amp;= \frac{\Omega}{3}n_M(M,\ S)10^{3(m-M+5)/5}.
+\end{align*}\]</div>
+<p>Using properties of logarithms, we get</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\overline{N}_M(M,\ S, \Omega,\ m) &amp;= \frac{\Omega}{3}n_M(M,\ S)e^{\ln 10^{3(m-M+5)/5}}, \\
+&amp;= \frac{\Omega}{3}n_M(M,\ S)e^{\left[3(m-M+5)/5 \right] \ln 10}.
+\end{align*}\]</div>
 </div>
 </div>
 <div class="section" id="basic-morphology">
