@@ -1483,8 +1483,8 @@ title="Print to PDF"
 <li><p>In 1842 Christian Doppler showed that as a source of sound moves through a medium (e.g., air), the wavelength is compressed in the forward direction and expanded in the backward direction. <em>(Doppler Effect)</em></p></li>
 <li><p>Doppler deduced that the difference between the observed wavelength <span class="math notranslate nohighlight">\(\lambda_{\rm obs}\)</span> for a moving source of sound and the rest wavelength <span class="math notranslate nohighlight">\(\lambda_{\rm rest}\)</span> measured in the laboratory for a reference source is related to the radial velocity <span class="math notranslate nohighlight">\(v_r\)</span></p></li>
 </ul>
-<div class="amsmath math notranslate nohighlight" id="equation-1944f994-50a9-42c7-8878-686a3301c1b4">
-<span class="eqno">(1)<a class="headerlink" href="#equation-1944f994-50a9-42c7-8878-686a3301c1b4" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-36010163-6d8e-4af6-8e26-54e92a05dfb1">
+<span class="eqno">(1)<a class="headerlink" href="#equation-36010163-6d8e-4af6-8e26-54e92a05dfb1" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{\lambda_{\rm obs}-\lambda_{\rm rest}}{\lambda_{\rm rest}} = \frac{\Delta \lambda}{\lambda_{\rm rest}} = \frac{v_r}{v_s},
 \end{align}\]</div>
 <ul class="simple">
@@ -1684,6 +1684,145 @@ $<span class="math notranslate nohighlight">\(\mathcal{L}=\sqrt{-(Δs)^2}\)</spa
 <h2>Feb 2 (Kennedy &amp; Freeman)<a class="headerlink" href="#feb-2-kennedy-freeman" title="Permalink to this headline">#</a></h2>
 <div class="section" id="black-holes-i">
 <h3>Black Holes I<a class="headerlink" href="#black-holes-i" title="Permalink to this headline">#</a></h3>
+<p><strong>3.2.4 Curved Spacetime and the Schwarzschild Metric</strong></p>
+<ul class="simple">
+<li><p>In spacetime curved by mass, even straightest worldlines curve</p></li>
+<li><p><strong>Geodesics-</strong> Straightest possible worldlines</p></li>
+<li><p>Massless particles follow null geodesics</p></li>
+<li><p>Einstein realized: paths followed by freely falling objects are geodesics</p></li>
+<li><p>3 fundamental features developed:</p>
+<ol class="simple">
+<li><p>Mass acts on spacetime, telling it how to curve.</p></li>
+<li><p>Spacetime acts on mass, telling it how to move.</p></li>
+<li><p>Any freely falling particle follows the straightest possible worldline through spacetime.</p></li>
+</ol>
+</li>
+<li><p>For symmetry, use spherical coordinates:</p></li>
+</ul>
+<p>Metric b/w 2 nearby points in flat space-</p>
+<div class="amsmath math notranslate nohighlight" id="equation-4ba8aa92-7ce7-4da1-ad1f-1c253a60a3d8">
+<span class="eqno">(2)<a class="headerlink" href="#equation-4ba8aa92-7ce7-4da1-ad1f-1c253a60a3d8" title="Permalink to this equation">#</a></span>\[\begin{align}
+(d\ell)^2 = (dr)^2 + (r\ d\theta)^2 + (r\ \sin{\theta}\ d\phi)^2,
+\end{align}\]</div>
+<p>Metric in flat spacetime-</p>
+<div class="amsmath math notranslate nohighlight" id="equation-82516e56-6955-4773-b98e-7a3131f8351a">
+<span class="eqno">(3)<a class="headerlink" href="#equation-82516e56-6955-4773-b98e-7a3131f8351a" title="Permalink to this equation">#</a></span>\[\begin{align}
+(ds)^2 = (c\ dt)^2 - (dr)^2 - (r\ d\theta)^2 - (r\ \sin{\theta}\ d\phi)^2.
+\end{align}\]</div>
+<ul class="simple">
+<li><p>Step one- calculate how this object acts on spacetime</p></li>
+</ul>
+<p>In curved spacetime around a massive sphere:</p>
+<ol class="simple">
+<li><p>The origin (which is inside the sphere) should not be used as a point of reference…  Instead imagine a series of nested concentric spheres centered at the origin.</p></li>
+<li><p>The surface area of a sphere can be measured w/o approaching the origin, so the coordinate <span class="math notranslate nohighlight">\(r\)</span> will be defined by the surface of that sphere having an area <span class="math notranslate nohighlight">\(4\pi r^2\)</span>.</p></li>
+<li><p>As an object moves through the curved spacetime, its <strong>coordinate speed</strong> is just the rate of change of the spatial coordinates.</p></li>
+</ol>
+<ul class="simple">
+<li><p>At large distances spacetime is “flat”</p></li>
+<li><p>Gravitational time dialation is given by:
+<a class="reference internal" href="../Chapter_17/general-relativity-and-black-holes.html#equation-grav-time-dilation">(3.12)</a></p></li>
+<li><p><strong>Karl Schwarzschild-</strong> solved Einstein’s feild equations</p></li>
+<li><p>His solution is <strong>ONLY VALID</strong> in empty space outside the object</p></li>
+<li><p>Contains the “curvature of space”</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight" id="equation-f316f9ee-e7dd-494a-b03b-d2a262560c6a">
+<span class="eqno">(4)<a class="headerlink" href="#equation-f316f9ee-e7dd-494a-b03b-d2a262560c6a" title="Permalink to this equation">#</a></span>\[\begin{align}
+d\mathcal{L} = \sqrt{-(ds)^2} = \frac{dr}{\sqrt{1-2GM/(rc^2)}}.
+\end{align}\]</div>
+<ul class="simple">
+<li><p>Distance <span class="math notranslate nohighlight">\(d\mathcal{L}\)</span> b/w two points on the same radial line is <strong>GREATER</strong> than the coordinate difference <span class="math notranslate nohighlight">\(dr\)</span></p></li>
+<li><p>Factor <span class="math notranslate nohighlight">\(1/\sqrt{1-2GM/(rc^2)}\)</span> must be included in any calculation of spatial distances
+*Also incorporates time dialtaion and gravitational redshift</p></li>
+</ul>
+<p>If a clock is at rest at the radial coordinate <span class="math notranslate nohighlight">\(r\)</span>, then the proper time <span class="math notranslate nohighlight">\(d\tau\)</span> it records is related to the time that elapses at an infinite distance by:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-a4d4c2e3-5156-45a9-88cf-47c986a97014">
+<span class="eqno">(5)<a class="headerlink" href="#equation-a4d4c2e3-5156-45a9-88cf-47c986a97014" title="Permalink to this equation">#</a></span>\[\begin{align}
+d\tau = \frac{ds}{c} = dt \sqrt{1-2GM/(rc^2)}.
+\end{align}\]</div>
+<ul class="simple">
+<li><p>B/c <span class="math notranslate nohighlight">\(d\tau &lt; dt\)</span>, time passes more slowly closer to the massive sphere.</p></li>
+</ul>
+<p><strong>3.2.5 The Orbit of a Satellite</strong></p>
+<ul class="simple">
+<li><p>According to Newton a satellite orbiting Earth can be found by:</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{v^2}{r} &amp;= \frac{GM}{r^2}, \\
+v &amp;= \sqrt{\frac{GM}{r}},
+\end{align*}\]</div>
+<p>where <span class="math notranslate nohighlight">\(v\)</span> is the orbital speed.</p>
+<ul class="simple">
+<li><p>Determining MAX interval b/w fixed events requires conservation of energy, momentum, and angular momentum</p></li>
+</ul>
+<p>Assume the satellite travels around the equator of the host w/ an angular speed <span class="math notranslate nohighlight">\(\omega = v/r\)</span>.</p>
+<ul class="simple">
+<li><p>For a closed, unperturbed orbit, we find <span class="math notranslate nohighlight">\(dr = 0\)</span>, <span class="math notranslate nohighlight">\(d\theta = 0\)</span>, and <span class="math notranslate nohighlight">\(d\phi = \omega dt\)</span>.</p></li>
+<li><p>Apply to Schwarzschild metric</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+(ds)^2 &amp;= \left[ \left(c\sqrt{1-2GM/rc^2 }\right) - r^2 \omega^2 \right]dt^2, \\
+&amp;= \left( c^2 - \frac{2GM}{r} -r^2\omega^2 \right)dt^2.
+\end{align*}\]</div>
+<p>*We assumed that the orbit is closed and unperturbed</p>
+<ul class="simple">
+<li><p>For this to be true -&gt; the satellites must begin and end at the same position <span class="math notranslate nohighlight">\(r_o\)</span> for all worldlines</p></li>
+<li><p>It can move rapidly to a radius <span class="math notranslate nohighlight">\(r\)</span>, as long as it returns at the same speed</p></li>
+</ul>
+<p>To find extremum:
+$<span class="math notranslate nohighlight">\( \frac{d}{dr}(\Delta s) = \frac{d}{dr} \left(\int_0^T \sqrt{c^2-\frac{2GM}{r} - r^2\omega^2 }dt \right) = 0. \)</span>$
+The derivative may be taken inside the integral-</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{d}{dr} \sqrt{c^2-\frac{2GM}{r} - r^2\omega^2 } &amp;= 0,\\
+\frac{d}{dr} \left( \frac{2GM}{r} - r^2\omega^2 \right) &amp;= 0,\\
+\frac{2GM}{r^2} - 2r\omega^2 &amp;=0.
+\end{align*}\]</div>
+<p>Using <span class="math notranslate nohighlight">\(v=r\omega\)</span>-</p>
+<div class="amsmath math notranslate nohighlight" id="equation-54c1bdc4-535a-4e77-a0c3-13e7ce75ad09">
+<span class="eqno">(6)<a class="headerlink" href="#equation-54c1bdc4-535a-4e77-a0c3-13e7ce75ad09" title="Permalink to this equation">#</a></span>\[\begin{align}
+v = r \omega = \sqrt{\frac{GM}{r}},
+\end{align}\]</div>
+<ul class="simple">
+<li><p>This is the <strong>COORDINATE SPEED</strong> of the satellite</p></li>
+</ul>
+<p><strong>3.3 Black Holes</strong></p>
+<ul class="simple">
+<li><p><strong>John Michell-</strong> believed that stream of particles should be influenced by gravity
+*A star with 500 times more gravity than the Sun would be strong enough to prevent light from escaping -&gt; Escape Velocity = Speed of Light</p></li>
+</ul>
+<p>Newtonian Formula shows:
+$<span class="math notranslate nohighlight">\( R = \frac{2GM}{c^2}\)</span>$
+is the radius of a star whose escape velocity is the speed of light</p>
+<ul class="simple">
+<li><p>Oppenheimer and Snyder described the gravitational collapse of a massive star that exhausted its sources of nuclear fusion</p></li>
+</ul>
+<p><strong>3.3.1 The Schwarzschild Radius</strong></p>
+<ul class="simple">
+<li><p>Schwarzschild radius, also called gravitational radius, the radius below which the gravitational attraction between the particles of a body must cause it to undergo irreversible gravitational collapse.</p></li>
+<li><p>The speed of light measured by an observed suspended above the collapsed star must always be . A distant observer can determine that the light is delayed as it moves through curved spacetime. The apparent speed of light (i.e., the rate of change for the spatial coordinates of a photon) is called the coordinate speed of light.</p></li>
+</ul>
+<p><strong>3.3.2 A trip into a black Hole</strong></p>
+<ul class="simple">
+<li><p>The coordinate speed of light becomes slower as the astronomer approaches the black hole, so the signals travel back to us more slowly.</p></li>
+<li><p>The gravitational pull on the astronomer’s feet (nearer to the black hole) is stronger than on the astronomer’s head.</p></li>
+<li><p>The astronomer need be indestructible because the tidal force would tear the astronomer apart at a distance of several hundred kilometers from the black hole.</p></li>
+<li><p>If the photons are pulled toward the center, then they can’t make the return trip for you to detect them. This means that the astronomer never has an opportunity to glimpse the singularity.</p></li>
+</ul>
+<p><strong>3.3.3 Mass ranges of Black Holes</strong></p>
+<ul class="simple">
+<li><p>Stellar-mass black holes may from directly or indirectly as a consequence of the core-collapse of a sufficiently massive supergiant star.</p></li>
+<li><p>It is not clear how intermediate-mass objects might form, although correlation of IMBHs with the cores of globular clusters and low-mass galaxies suggests that they develop through mergers of stars (to form supermassive stars that undergo core-collapse), or by the merger of stellar-mass black holes.</p></li>
+<li><p>Supermassive black holes (SMBHs) lie at the centers of many galaxies (probably most). Our own Milky Way Galaxy has a central black hole.</p></li>
+<li><p>Primordial black holes may have been manufactured in the instants of the universe.</p></li>
+</ul>
+<p><strong>3.3.4 Black Holes have no hair!</strong></p>
+<ul class="simple">
+<li><p>Once the surface of collapsing star reaches the event horizon, the exterior spacetime horizon is spherically symmetric and described by the Schwarzschild metric.</p></li>
+<li><p>If the angular momentum of a rotating black hole were to exceed this limit, there would be no event horizon and a naked singularity would appear (in violation of the Law of Cosmic Censorship).</p></li>
+</ul>
 </div>
 </div>
 <div class="section" id="feb-7-carey-leonard">
@@ -1865,6 +2004,56 @@ band tends to emphasize you, hot stars in regions of recent star formation.</p><
 <h2>Feb 16 (Leonard &amp; Freeman)<a class="headerlink" href="#feb-16-leonard-freeman" title="Permalink to this headline">#</a></h2>
 <div class="section" id="nature-of-galaxies-iii">
 <h3>Nature of Galaxies III<a class="headerlink" href="#nature-of-galaxies-iii" title="Permalink to this headline">#</a></h3>
+<p><strong>4.2.8 Metallicity and Color Gradients of Spirals</strong></p>
+<ul class="simple">
+<li><p>Individual spiral galaxies also exhibit color gradients with their bulges generally being redder than their disks. This arises for two reasons: metallicity gradients and star formation activity.</p></li>
+<li><p>Star formation (the second major cause of color gradients) implies that the disks of spiral galaxies are more actively involved in star-making than are their bulges. This is consistent with the distribution of gas and dust in the galaxies.</p></li>
+<li><p>Metallicity correlates with the absolute magnitude of galaxies</p></li>
+</ul>
+<p><strong>4.2.9 X-ray Luminosity</strong></p>
+<ul class="simple">
+<li><p>The X-ray luminosities of galaxies also provide some information concerning their evolution.</p></li>
+<li><p>X-rays are due to a class of objects that constitutes an approximately constant fraction of the population of all objects in spirals. The suspected sources are X-ray binaries.</p></li>
+<li><p>It is probable that supernova remnants also contribute to the X-ray emission.</p></li>
+</ul>
+<p><strong>4.2.10 Supermassive black holes</strong></p>
+<ul class="simple">
+<li><p>How do we know that there is a SMBH in the middle of the milky way? Observations of stellar and gas motions near the centers of some spirals suggest the presence of supermassive black holes.</p></li>
+<li><p>To determine an accurate value for the mass, an appropriate choice of  must be made. As the observations move farther from the black hole, contributions to the total mass increase from surrounding stars and gas.</p></li>
+</ul>
+<p><strong>4.2.11 Specific Frequency of globular clusters</strong></p>
+<ul class="simple">
+<li><p>Galaxies that are more spheroidally dominant (i.e., earlier Hubble types) were more efficient at forming globular clusters during their histories.</p></li>
+</ul>
+<p><strong>4.3 Spiral Structure</strong></p>
+<ul class="simple">
+<li><p>Galaxies exhibit a rich variety of spiral structure, which vary in</p></li>
+</ul>
+<p>-the number of arms and how tightly wound they are,</p>
+<p>-degree of smoothness in the distribution of stars and gas</p>
+<p>-surface brightness, and</p>
+<p>-the existence (or lack) of bars.</p>
+<ul class="simple">
+<li><p>Not all spirals are grand designs with two distinct arms. For instance, M101 has four arms, and NGC 2841 has a series of partial arm fragments. Galaxies like NGC 2841, which do not possess well-defined spiral arms that are traceable over a significant angular distance are called flocculent spirals.</p></li>
+<li><p>The optical images of spiral galaxies are dominated by their arms because very luminous O and B main-sequence stars and H II regions are found preferentially in the arms.</p></li>
+<li><p>When spiral galaxies are observed in red light, the arms become much broader and less pronounced. Although they still remain detectable. Observations at red wavelengths emphasize the emission of long-lived, lower-mass main-sequence stars and red giants, which implies that the bulk of the disk is dominated by older stars.</p></li>
+</ul>
+<p><strong>4.3.1 Trailing and Leading Spiral Arms</strong></p>
+<ul class="simple">
+<li><p>The general appearance of spiral galaxies suggests that their arms are trailing, where the tips of the arms point in the opposite direction relative to the direction of rotation.</p></li>
+<li><p>What is the distinction between trailing and leading? Distinguishing between trailing and leading arms (along the direction of rotation) requires determination of the orientation of the plane of the galaxy relative to our line-of-sight</p></li>
+</ul>
+<p><strong>4.3.2 The winding problem</strong></p>
+<ul class="simple">
+<li><p>One problem arises when the nature of the spiral structure is considered: material arms composed of a fixed set of identifiable stars and gas clouds would necessarily “wind up” on a timescale that is short compared to the age of the galaxy.</p></li>
+<li><p>The simplest idea for the origin of spiral arms is that somehow the material in the galaxy condensed into its spiral pattern from the very start, and that pattern has remained fixed since then. Unfortunately, this idea immediately runs into trouble because galaxies exhibit differential rotation.</p></li>
+</ul>
+<p><strong>4.3.3 The Lin-Shu Density Wave Theory</strong></p>
+<ul class="simple">
+<li><p>C.C. Lin and Frank Shu proposed that spiral structure arises because of the presence of long-lived quasistatic density waves.</p></li>
+<li><p>Less massive, redder stars will be able to live much longer (some much longer than the current age of the galaxy) and so will continue through the density wave and become distributed throughout the disk.</p></li>
+<li><p>It is likely that less dust and gas will be found in these outer regions of the galaxy.</p></li>
+</ul>
 </div>
 </div>
 <div class="section" id="feb-21-exam-i">
