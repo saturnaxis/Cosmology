@@ -942,8 +942,8 @@ d &amp;= 10^{(m-M+5)/5}.
 <div class="section" id="the-effects-of-interstellar-extinction">
 <h3><span class="section-number">5.1.2. </span>The Effects of Interstellar Extinction<a class="headerlink" href="#the-effects-of-interstellar-extinction" title="Permalink to this headline">#</a></h3>
 <p>To see how interstellar extinction directly affects the estimates of stellar distances, we find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4c17084d-39de-4a1b-aaf0-c6e5fbfac43a">
-<span class="eqno">(5.1)<a class="headerlink" href="#equation-4c17084d-39de-4a1b-aaf0-c6e5fbfac43a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f5b7fc7e-61ae-4df9-8363-cb0c6192f15f">
+<span class="eqno">(5.1)<a class="headerlink" href="#equation-f5b7fc7e-61ae-4df9-8363-cb0c6192f15f" title="Permalink to this equation">#</a></span>\[\begin{align}
 d = 10^{(m_\lambda - M_\lambda - A_\lambda + 5)/5} = d^\prime 10^{-A_\lambda/5},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(d^\prime = 10^{(m_\lambda - M_\lambda + 5)/5}\)</span> is the erroneous estimate of the distance when extinction is neglected, and <span class="math notranslate nohighlight">\(A_\lambda\)</span> is the amount of extinction in magnitudes.  The extinction coefficient and magnitudes (<span class="math notranslate nohighlight">\(M\)</span> and <span class="math notranslate nohighlight">\(m\)</span>) are all a function of wavelength due to the wavelength dependent way that light is scattered (or blocked) by dust or absorbed by gas clouds.  Since <span class="math notranslate nohighlight">\(A_\lambda \geq 0\)</span> in all cases (i.e., extinction can’t make a star appear brighter), <span class="math notranslate nohighlight">\(d\leq d^\prime\)</span>; the true distance is always less than the apparent distance.</p>
@@ -988,8 +988,8 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 </div>
 <p>Let <span class="math notranslate nohighlight">\(n_M(M,\ S,\ \Omega,\ r)dM\)</span> be the number density of stars with absolute magnitudes between <span class="math notranslate nohighlight">\(M\)</span> and <span class="math notranslate nohighlight">\(M+dM\)</span> and attribute <span class="math notranslate nohighlight">\(S\)</span> (e.g., the Morgan-Keenan spectral class) that lie within a solid angle <span class="math notranslate nohighlight">\(\Omega\)</span> in a specific direction at a distance <span class="math notranslate nohighlight">\(r\)</span> from the observer.  The number density <span class="math notranslate nohighlight">\(n_M\)</span> has units of <span class="math notranslate nohighlight">\(1/\rm pc^3/mag\)</span>, and the actual number density of stars having attribute <span class="math notranslate nohighlight">\(S\)</span> is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-00e7cc35-1627-4f8e-8226-7568c49889ea">
-<span class="eqno">(5.2)<a class="headerlink" href="#equation-00e7cc35-1627-4f8e-8226-7568c49889ea" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-035224ae-2db1-44ae-9bf2-ddfdb4130181">
+<span class="eqno">(5.2)<a class="headerlink" href="#equation-035224ae-2db1-44ae-9bf2-ddfdb4130181" title="Permalink to this equation">#</a></span>\[\begin{align}
 n(S\, \Omega,\ r) = \int_{-\infty}^{\infty} n_M(M,\ S,\ \Omega,\ r)dM.
 \end{align}\]</div>
 <p>In Kapteyn’s original study, he considered general star counts that tracked absolute magnitude, regardless of spectral class.</p>
@@ -1008,8 +1008,8 @@ n_M(M,\ S,\ \Omega,\ r) dM = \frac{1}{\Omega r^2} \frac{d}{dr}\left(N_M dM \righ
 \left[ \frac{\overline{N}_M(M,\ S,\ \Omega,\ m)}{dm} dm\right]dM.
 \end{align*}\]</div>
 <p>This defines the <em>differential star count</em>,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2c27d8f4-9cf1-415f-b9ff-f3cc1ac55178">
-<span class="eqno">(5.4)<a class="headerlink" href="#equation-2c27d8f4-9cf1-415f-b9ff-f3cc1ac55178" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3b40d90f-b19c-497f-960d-60bfb385d26e">
+<span class="eqno">(5.4)<a class="headerlink" href="#equation-3b40d90f-b19c-497f-960d-60bfb385d26e" title="Permalink to this equation">#</a></span>\[\begin{align}
 A_M(M,\ S,\ \Omega,\ m)dM\ dm \equiv \frac{d\overline{N}_M(M,\ S,\ \Omega,\ m)}{dm}dM\ dm,
 \end{align}\]</div>
 <p>which is the number of stars with an absolute magnitude in the range <span class="math notranslate nohighlight">\(M\)</span> and <span class="math notranslate nohighlight">\(M+dM\)</span> that are found within a solid angle <span class="math notranslate nohighlight">\(\Omega\)</span> and have apparent magnitudes in therange between <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(m+dm\)</span>.</p>
@@ -1047,8 +1047,8 @@ A_M(M,\ S, \Omega,\ m) &amp;= \frac{\Omega}{3}n_M(M,\ S)e^{\ln 10^{3(m-M+5)/5}},
 <div class="section" id="the-distance-to-the-galactic-center">
 <h3><span class="section-number">5.2.1. </span>The Distance to the Galactic Center<a class="headerlink" href="#the-distance-to-the-galactic-center" title="Permalink to this headline">#</a></h3>
 <p>Herschel and Kapteyn believed that the Milky way is possesses a disk of stars including the Sun as a member.  Shapley suspected that the Sun does not reside at the center of the disk, but is actually located roughly 1/3 of the way out from the middle.  From the Earth, the center of the disk lies in the constellation Sagittarius, corresponding to avery compact emission source known as Sgr <span class="math notranslate nohighlight">\(A^\star\)</span> (A-star) at the J2000 equatorial coordinates</p>
-<div class="amsmath math notranslate nohighlight" id="equation-41f9df49-7c73-4025-be8a-70610ffe35e5">
-<span class="eqno">(5.5)<a class="headerlink" href="#equation-41f9df49-7c73-4025-be8a-70610ffe35e5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b3535f90-e902-4dc0-aaca-f91370350c2e">
+<span class="eqno">(5.5)<a class="headerlink" href="#equation-b3535f90-e902-4dc0-aaca-f91370350c2e" title="Permalink to this equation">#</a></span>\[\begin{align}
 \alpha_{\rm Sgr\ A^\star} &amp;=\ \ 17{\rm h}45{\rm m}40.0409{\rm s}, \\
 \delta_{\rm Sgr\ A^\star} &amp;= {-29}^\circ 00^\prime 28.118^{\prime\prime}.
 \end{align}\]</div>
@@ -1073,14 +1073,14 @@ A_M(M,\ S, \Omega,\ m) &amp;= \frac{\Omega}{3}n_M(M,\ S)e^{\ln 10^{3(m-M+5)/5}},
 </div>
 <p>The thick disk probably contains an older population of stars and has a scale height of <span class="math notranslate nohighlight">\({\sim}1\ \rm kpc\)</span>.  The number of stars <em>per unit volume</em> in the thick disk is only about <span class="math notranslate nohighlight">\(8.5\%\)</span> of that in the thin disk at the Galactic midplane.</p>
 <p>When the thin and thick disks are combined, empirical fits to the stellar number density derived from star count data give</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f92f2850-7783-46ca-8cdf-10bc05be20dc">
-<span class="eqno">(5.6)<a class="headerlink" href="#equation-f92f2850-7783-46ca-8cdf-10bc05be20dc" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b861de47-9239-4ae9-9f49-4e5e80c47648">
+<span class="eqno">(5.6)<a class="headerlink" href="#equation-b861de47-9239-4ae9-9f49-4e5e80c47648" title="Permalink to this equation">#</a></span>\[\begin{align}
 n(z,\ R) = n_o \left( e^{-z/z_{\rm thin}} + 0.085e^{-z/z_{\rm thick}} \right)e^{-R/h_R},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(z\)</span> is the vertical height above the midplane of the Galaxy, <span class="math notranslate nohighlight">\(R\)</span> is the radial distance (in cylindrical coordinates) from the Galactic center, <span class="math notranslate nohighlight">\(h_R &gt; 2.25\ \rm kpc\)</span> is the disk scale length, and <span class="math notranslate nohighlight">\(n_o \sim 0.02\ {\rm stars/pc^3}\)</span> for the absolute magnitude range <span class="math notranslate nohighlight">\(4.5 \leq M_V \leq 9.5\)</span>.  Relative to the density coefficient: the scale heights and the disk scale length are all somewhat uncertain.  The Sun is a member of the thin disk and is currently located about <span class="math notranslate nohighlight">\(30\ \rm pc\)</span> above the midplane.</p>
 <p>The <strong>luminosity density</strong> (i.e., luminosity per unit volume) of the thin disk is often modeled with the functional form</p>
-<div class="amsmath math notranslate nohighlight" id="equation-df21b9d7-c358-4a89-8426-553c50e61a58">
-<span class="eqno">(5.7)<a class="headerlink" href="#equation-df21b9d7-c358-4a89-8426-553c50e61a58" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-4948592a-6ea8-4d8d-8207-9fe09e135a13">
+<span class="eqno">(5.7)<a class="headerlink" href="#equation-4948592a-6ea8-4d8d-8207-9fe09e135a13" title="Permalink to this equation">#</a></span>\[\begin{align}
 L(R,\ z) &amp;= 2L_o\frac{L_o}{2}e^{-R/h_R}\left(e^{z/z_o}+e^{-z/z_o}\right)^{-1}, \\
 &amp;= L_o e^{-R/h_R} \text{sech}^2(z/z_o),
 \end{align}\]</div>
@@ -1097,8 +1097,8 @@ L(R,\ z) &amp;= 2L_o\frac{L_o}{2}e^{-R/h_R}\left(e^{z/z_o}+e^{-z/z_o}\right)^{-1
 <p>In reality, a wide range of metallicities exists in stars.  At one end are the extreme Pop. I stars and on the other, the hypothetical Pop. III stars.  Between Pop. I and Pop. II stars are intermediate (or <strong>disk</strong>) population stars.</p>
 <p>The important parameter of composition is quantified by the <em>ratio</em> of iron to hydrogen and has become almost universally adopted because iron lines are generally identifiable in stellar spectra.  During a supernova detonation (particularly of Type Ia), iron is ejected, which enriches the ISM.  New stars can then be created with a greater abundance of iron in their atmospheres relative to their predecessors.</p>
 <p>As a result, the iron content should correlate with stellar age, where the youngest (most recently formed) stars have the highest relative abundance of iron.  The iron-to-hydrogen ratio in the atmosphere of a star is compared with the Sun’s value through</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d694a629-c5ed-4563-ae08-2f9e71519825">
-<span class="eqno">(5.8)<a class="headerlink" href="#equation-d694a629-c5ed-4563-ae08-2f9e71519825" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-f4088e30-150d-4414-a289-cf9391376765">
+<span class="eqno">(5.8)<a class="headerlink" href="#equation-f4088e30-150d-4414-a289-cf9391376765" title="Permalink to this equation">#</a></span>\[\begin{align}
 [{\rm Fe}/{\rm H}] \equiv \log_{10}\left[\frac{(N_{\rm Fe}/N_{\rm H})_{\rm star}}{(N_{\rm Fe}/N_{\rm H})_\odot} \right],
 \end{align}\]</div>
 <p>and is referred to as the <a class="reference external" href="https://en.wikipedia.org/wiki/Metallicity">metallicity</a>.</p>
@@ -1123,8 +1123,8 @@ L(R,\ z) &amp;= 2L_o\frac{L_o}{2}e^{-R/h_R}\left(e^{z/z_o}+e^{-z/z_o}\right)^{-1
 <h3><span class="section-number">5.2.5. </span>Mass-to-Light Ratios<a class="headerlink" href="#mass-to-light-ratios" title="Permalink to this headline">#</a></h3>
 <p>From star counts and orbital motions, te estimated stellar mass of the thin disk is roughly <span class="math notranslate nohighlight">\(6\times 10^{10}\ M_\odot\)</span> with another <span class="math notranslate nohighlight">\(0.5 \times 10^{10}\ M_\odot\)</span> of gas and dust.  The luminosity in the blue is <span class="math notranslate nohighlight">\(L_B = 1.8 \times 10^{10}\ L_\odot\)</span>.  When the first of these parameters is divided by the second, the result is the <strong>mass-to-light ratio</strong>, which is <span class="math notranslate nohighlight">\(M/L_B \approx 3 M_\odot/L_\odot\)</span>.  This quantity gives us information about the kinds of stars responsible for the generation of the light.</p>
 <p>Along the main sequence, a star’s luminosity depends on its mass (i.e., mass-luminosity relation), with</p>
-<div class="amsmath math notranslate nohighlight" id="equation-db573ae0-199b-423d-864d-88120d7ef3ed">
-<span class="eqno">(5.9)<a class="headerlink" href="#equation-db573ae0-199b-423d-864d-88120d7ef3ed" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b7df3e69-0a3c-47db-be22-6009a1a664d4">
+<span class="eqno">(5.9)<a class="headerlink" href="#equation-b7df3e69-0a3c-47db-be22-6009a1a664d4" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{L}{L_\odot} = \left(\frac{M}{M_\odot} \right)^\alpha,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\alpha \simeq 4\)</span> above about <span class="math notranslate nohighlight">\(0.5\ M_\odot\)</span> and <span class="math notranslate nohighlight">\(\alpha \simeq 2.3\)</span> for less massive stars.  Assuming that most of the disk stars are on the main-sequence, an “average” stellar mass can be estimated.  Substituting the observed mass-to-light ratio and solving for the mass, we have</p>
@@ -1201,8 +1201,8 @@ allowfullscreen></iframe>
 <p>Although the vertical scale height of the thin disk is near <span class="math notranslate nohighlight">\(350\ \rm pc\)</span> in the Sun’s vicinity, the scale height increases somewhat toward the inner regions of the Galaxy, where the disk meets the <strong>Galactic bulge</strong>.  The bulge is not simply an extension of the disk but is an independent component of the Galaxy.  The mass of the bulge is roughly <span class="math notranslate nohighlight">\(10^{10}\ M_\odot\)</span> and its <span class="math notranslate nohighlight">\(B\)</span>-band luminosity is near <span class="math notranslate nohighlight">\(3\times 10^9\ L_\odot\)</span>.  This gives a mass-to-light ratio of <span class="math notranslate nohighlight">\(3\ M_\odot/L_\odot\)</span>, which is comparable to the mass-to-light ratio for the thin disk.</p>
 <p>The boxy (or elongated) bulge is evident in the <a class="reference external" href="https://en.wikipedia.org/wiki/Cosmic_Background_Explorer">COsmic Background Explorer</a> (COBE) satellite image of the Galaxy.  The image was produced by combining observations at <span class="math notranslate nohighlight">\(1.2,\ 2.2,\ \text{and } 3.4\ \rm \mu m\)</span>.  Using the COBE data together with observations of RR Lyraes and cool (K and M) giants, we find that the variation in the number density of stars in the bulge corresponds to a vertical scale height from <span class="math notranslate nohighlight">\(100-500\ \rm pc\)</span>, depending on the stellar ages used to make the determination (i.e., younger stars yield smaller scale heights).</p>
 <p>The surface brightness <span class="math notranslate nohighlight">\(I\)</span> of the bulge (measured in units of <span class="math notranslate nohighlight">\(L_\odot/{\rm pc}^2\)</span>) exhibits an approximate radial dependence of the form</p>
-<div class="amsmath math notranslate nohighlight" id="equation-962ce232-866c-4a45-abe7-9c9fa6796b0c">
-<span class="eqno">(5.10)<a class="headerlink" href="#equation-962ce232-866c-4a45-abe7-9c9fa6796b0c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-3ad01d27-a10b-49d7-899e-e99fbc2fe583">
+<span class="eqno">(5.10)<a class="headerlink" href="#equation-3ad01d27-a10b-49d7-899e-e99fbc2fe583" title="Permalink to this equation">#</a></span>\[\begin{align}
 \log_10\left[\frac{I(r)}{I_e} \right] = -3.3307\left[\left( \frac{r}{r_e}\right)^{1/4} -1 \right],
 \end{align}\]</div>
 <p>which is a <span class="math notranslate nohighlight">\(r^{1/4}\)</span> law (or de Vaucoulurs profile) described by the effective radius <span class="math notranslate nohighlight">\(r_e\)</span> and the surface brightness <span class="math notranslate nohighlight">\(I_e\)</span> measured at <span class="math notranslate nohighlight">\(r_e\)</span>.  Formally, <span class="math notranslate nohighlight">\(r_e\)</span> is the radius in which 1/2 of the bulge’s light is emitted.  At the infrared wavelength of <span class="math notranslate nohighlight">\(12\ \rm \mu m\)</span>, star count data from the <a class="reference external" href="https://en.wikipedia.org/wiki/IRAS">InfraRed Astronomical Satellite</a> (IRAS) suggests an effective radius of <span class="math notranslate nohighlight">\({\sim}0.7\ \rm kpc\)</span>.  Similar results were found by COBE.</p>
@@ -1234,11 +1234,19 @@ allowfullscreen></iframe>
 <li><p>young clusters with  <span class="math notranslate nohighlight">\([{\rm Fe}/{\rm H}] &gt; -0.8\)</span> form a much flatter distribution and may even be associated with the thick disk.</p></li>
 </ul>
 <p>The notable exception is the well-studied globular cluster 47 Tucana (47 Tuc or NGC 104), which is located <span class="math notranslate nohighlight">\(3.2\ \rm kpc\)</span> below the Galactic plane and has an unusually high metallicity of <span class="math notranslate nohighlight">\([{\rm Fe}/{\rm H}] = -0.67\)</span>.  Some astronomers have argued that 47 Tuc is a member of the halo population, while others consider 47 Tuc to be a member of the thick disk.</p>
+<div class="figure align-default" id="globular-clusters-fig">
+<a class="reference internal image-reference" href="../_images/Fig12.jpg"><img alt="Globular Cluster structure" src="../_images/Fig12.jpg" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.10 </span><span class="caption-text">Metal-poor globular clusters form a nearly spherical distribution about the Galactic center, while more metal-rich clusters are found near the Galactic plane. Image Credit: Carroll &amp; Ostlie (2007). Figure adapted from <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1985ApJ...293..424Z/abstract">Zinn (1985)</a>.</span><a class="headerlink" href="#globular-clusters-fig" title="Permalink to this image">#</a></p>
+</div>
 <p>Our Galaxy is known to contain at least 150 globular clusters with distances from the Milky Way ranging from <span class="math notranslate nohighlight">\(0.5-120\ \rm kpc\)</span>.  The youngest globular clusters appear to be about <span class="math notranslate nohighlight">\(11\ \rm Gyr\)</span> old, and the oldest are probably a little over <span class="math notranslate nohighlight">\(13\ \rm Gyr\)</span> old (nearly the age of the universe; see <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/2003Sci...299...65K/abstract">Krauss &amp; Chaboyer (2003)</a>).  It now appears that a significant age spread of 2 billion years or so exists between the youngest and oldest members of the halo.</p>
+<div class="figure align-default" id="gaia-globular-clusters-fig">
+<a class="reference internal image-reference" href="https://www.cnrs.fr/sites/default/files/inline-images/imgFRsmol.jpg"><img alt="Gaia Globular Cluster structure" src="https://www.cnrs.fr/sites/default/files/inline-images/imgFRsmol.jpg" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.11 </span><span class="caption-text">Distribution of globular clusters in the Milky Way superimposed on a map of the Milky Way compiled from data obtained with the Gaia Space Observatory. Figure Credit: <a class="reference external" href="https://www.cnrs.fr/en/discovery-least-metallic-stellar-structure-milky-way">CNRS</a>. Image Credit: N. Martin / Strasbourg Astronomical Observatory / CNRS; Canada-France-Hawaii Telescope / Coelum; ESA / Gaia / DPAC.</span><a class="headerlink" href="#gaia-globular-clusters-fig" title="Permalink to this image">#</a></p>
+</div>
 <p>Although 144 of the globular clusters are found within <span class="math notranslate nohighlight">\(42\ \rm kpc\)</span> of the Galactic center, 6 globular clusters have been found between <span class="math notranslate nohighlight">\(69-123\ \rm kpc\)</span> of the Galactic center.  Some astronomers have suggested that those six most distant clusters may have been captured by the Milky Way or may be dwarf spheroidal galaxies, much as <span class="math notranslate nohighlight">\(\omega\)</span> Cen and the Sagittarius dwarf galaxy may have been.  If we do not include these very remote objects, the metal-poor clusters seem to be confined to a halo with a radius of <span class="math notranslate nohighlight">\({\sim}42\ \rm kpc\)</span>.  The detection of extremely distant and luminous field stars suggests that a stellar halo radius of <span class="math notranslate nohighlight">\(50\ \rm kpc\)</span> could be more appropriate.</p>
 <p>The number density profile of the metal-poor globular clusters and the field stars has the form</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e4be7805-f4f6-473e-9b17-949818a4a642">
-<span class="eqno">(5.11)<a class="headerlink" href="#equation-e4be7805-f4f6-473e-9b17-949818a4a642" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8a62f046-95a1-4d97-bf4b-a7c3479bc795">
+<span class="eqno">(5.11)<a class="headerlink" href="#equation-8a62f046-95a1-4d97-bf4b-a7c3479bc795" title="Permalink to this equation">#</a></span>\[\begin{align}
 n_{\rm halo}(r) = n_{o,\rm halo}(r/a)^{-3.5},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(n_{o,\rm halo} \simeq 4 \times 10^{-5}\ {\rm pc^{-3}}\)</span> is roughly <span class="math notranslate nohighlight">\(0.2\%\)</span> of the thin disk’s midplane.  The scale length <span class="math notranslate nohighlight">\(a\)</span> of the number density distribution is several thousand parsecs.  At visible wavelengths, the effective radius of the halo <span class="math notranslate nohighlight">\(r^{1/4}\)</span> law is <span class="math notranslate nohighlight">\(r_e = 2.7\ \rm kpc\)</span>.</p>
