@@ -942,8 +942,8 @@ d &amp;= 10^{(m-M+5)/5}.
 <div class="section" id="the-effects-of-interstellar-extinction">
 <h3><span class="section-number">5.1.2. </span>The Effects of Interstellar Extinction<a class="headerlink" href="#the-effects-of-interstellar-extinction" title="Permalink to this headline">#</a></h3>
 <p>To see how interstellar extinction directly affects the estimates of stellar distances, we find</p>
-<div class="amsmath math notranslate nohighlight" id="equation-367ebde3-606d-4b4a-9a2e-4e5f622962da">
-<span class="eqno">(5.1)<a class="headerlink" href="#equation-367ebde3-606d-4b4a-9a2e-4e5f622962da" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-617880b4-5a19-41bb-8eda-2342b84bdf2d">
+<span class="eqno">(5.1)<a class="headerlink" href="#equation-617880b4-5a19-41bb-8eda-2342b84bdf2d" title="Permalink to this equation">#</a></span>\[\begin{align}
 d = 10^{(m_\lambda - M_\lambda - A_\lambda + 5)/5} = d^\prime 10^{-A_\lambda/5},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(d^\prime = 10^{(m_\lambda - M_\lambda + 5)/5}\)</span> is the erroneous estimate of the distance when extinction is neglected, and <span class="math notranslate nohighlight">\(A_\lambda\)</span> is the amount of extinction in magnitudes.  The extinction coefficient and magnitudes (<span class="math notranslate nohighlight">\(M\)</span> and <span class="math notranslate nohighlight">\(m\)</span>) are all a function of wavelength due to the wavelength dependent way that light is scattered (or blocked) by dust or absorbed by gas clouds.  Since <span class="math notranslate nohighlight">\(A_\lambda \geq 0\)</span> in all cases (i.e., extinction can’t make a star appear brighter), <span class="math notranslate nohighlight">\(d\leq d^\prime\)</span>; the true distance is always less than the apparent distance.</p>
@@ -988,8 +988,8 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 </div>
 <p>Let <span class="math notranslate nohighlight">\(n_M(M,\ S,\ \Omega,\ r)dM\)</span> be the number density of stars with absolute magnitudes between <span class="math notranslate nohighlight">\(M\)</span> and <span class="math notranslate nohighlight">\(M+dM\)</span> and attribute <span class="math notranslate nohighlight">\(S\)</span> (e.g., the Morgan-Keenan spectral class) that lie within a solid angle <span class="math notranslate nohighlight">\(\Omega\)</span> in a specific direction at a distance <span class="math notranslate nohighlight">\(r\)</span> from the observer.  The number density <span class="math notranslate nohighlight">\(n_M\)</span> has units of <span class="math notranslate nohighlight">\(1/\rm pc^3/mag\)</span>, and the actual number density of stars having attribute <span class="math notranslate nohighlight">\(S\)</span> is given by</p>
-<div class="amsmath math notranslate nohighlight" id="equation-83053332-1a09-4ad0-8e26-6f0b8c49973c">
-<span class="eqno">(5.2)<a class="headerlink" href="#equation-83053332-1a09-4ad0-8e26-6f0b8c49973c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ae1ddb6f-3dbc-49bb-baa7-64c37f93e995">
+<span class="eqno">(5.2)<a class="headerlink" href="#equation-ae1ddb6f-3dbc-49bb-baa7-64c37f93e995" title="Permalink to this equation">#</a></span>\[\begin{align}
 n(S\, \Omega,\ r) = \int_{-\infty}^{\infty} n_M(M,\ S,\ \Omega,\ r)dM.
 \end{align}\]</div>
 <p>In Kapteyn’s original study, he considered general star counts that tracked absolute magnitude, regardless of spectral class.</p>
@@ -1008,8 +1008,8 @@ n_M(M,\ S,\ \Omega,\ r) dM = \frac{1}{\Omega r^2} \frac{d}{dr}\left(N_M dM \righ
 \left[ \frac{\overline{N}_M(M,\ S,\ \Omega,\ m)}{dm} dm\right]dM.
 \end{align*}\]</div>
 <p>This defines the <em>differential star count</em>,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-aecb7291-57bf-4973-adb8-723f65816edb">
-<span class="eqno">(5.4)<a class="headerlink" href="#equation-aecb7291-57bf-4973-adb8-723f65816edb" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-02e0bd87-e087-4cde-b503-51d44cc209ba">
+<span class="eqno">(5.4)<a class="headerlink" href="#equation-02e0bd87-e087-4cde-b503-51d44cc209ba" title="Permalink to this equation">#</a></span>\[\begin{align}
 A_M(M,\ S,\ \Omega,\ m)dM\ dm \equiv \frac{d\overline{N}_M(M,\ S,\ \Omega,\ m)}{dm}dM\ dm,
 \end{align}\]</div>
 <p>which is the number of stars with an absolute magnitude in the range <span class="math notranslate nohighlight">\(M\)</span> and <span class="math notranslate nohighlight">\(M+dM\)</span> that are found within a solid angle <span class="math notranslate nohighlight">\(\Omega\)</span> and have apparent magnitudes in therange between <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(m+dm\)</span>.</p>
@@ -1047,8 +1047,8 @@ A_M(M,\ S, \Omega,\ m) &amp;= \frac{\Omega}{3}n_M(M,\ S)e^{\ln 10^{3(m-M+5)/5}},
 <div class="section" id="the-distance-to-the-galactic-center">
 <h3><span class="section-number">5.2.1. </span>The Distance to the Galactic Center<a class="headerlink" href="#the-distance-to-the-galactic-center" title="Permalink to this headline">#</a></h3>
 <p>Herschel and Kapteyn believed that the Milky Way is possesses a disk of stars including the Sun as a member.  Shapley suspected that the Sun does not reside at the center of the disk, but is actually located roughly 1/3 of the way out from the middle.  From the Earth, the center of the disk lies in the constellation Sagittarius, corresponding to avery compact emission source known as Sgr <span class="math notranslate nohighlight">\(A^\star\)</span> (A-star) at the J2000 equatorial coordinates</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b198c109-0811-4a79-82b8-8c570da68001">
-<span class="eqno">(5.5)<a class="headerlink" href="#equation-b198c109-0811-4a79-82b8-8c570da68001" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-420bf9d9-7ed0-451f-b740-9ae957ce5629">
+<span class="eqno">(5.5)<a class="headerlink" href="#equation-420bf9d9-7ed0-451f-b740-9ae957ce5629" title="Permalink to this equation">#</a></span>\[\begin{align}
 \alpha_{\rm Sgr\ A^\star} &amp;=\ \ 17{\rm h}45{\rm m}40.0409{\rm s}, \\
 \delta_{\rm Sgr\ A^\star} &amp;= {-29}^\circ 00^\prime 28.118^{\prime\prime}.
 \end{align}\]</div>
@@ -1073,14 +1073,14 @@ A_M(M,\ S, \Omega,\ m) &amp;= \frac{\Omega}{3}n_M(M,\ S)e^{\ln 10^{3(m-M+5)/5}},
 </div>
 <p>The thick disk probably contains an older population of stars and has a scale height of <span class="math notranslate nohighlight">\({\sim}1\ \rm kpc\)</span>.  The number of stars <em>per unit volume</em> in the thick disk is only about <span class="math notranslate nohighlight">\(8.5\%\)</span> of that in the thin disk at the Galactic midplane.</p>
 <p>When the thin and thick disks are combined, empirical fits to the stellar number density derived from star count data give</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d6606c57-c0f4-4368-a0d3-fb92296195f1">
-<span class="eqno">(5.6)<a class="headerlink" href="#equation-d6606c57-c0f4-4368-a0d3-fb92296195f1" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-bb806907-cdcc-460b-8919-75a26c855fdc">
+<span class="eqno">(5.6)<a class="headerlink" href="#equation-bb806907-cdcc-460b-8919-75a26c855fdc" title="Permalink to this equation">#</a></span>\[\begin{align}
 n(z,\ R) = n_o \left( e^{-z/z_{\rm thin}} + 0.085e^{-z/z_{\rm thick}} \right)e^{-R/h_R},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(z\)</span> is the vertical height above the midplane of the Galaxy, <span class="math notranslate nohighlight">\(R\)</span> is the radial distance (in cylindrical coordinates) from the Galactic center, <span class="math notranslate nohighlight">\(h_R &gt; 2.25\ \rm kpc\)</span> is the disk scale length, and <span class="math notranslate nohighlight">\(n_o \sim 0.02\ {\rm stars/pc^3}\)</span> for the absolute magnitude range <span class="math notranslate nohighlight">\(4.5 \leq M_V \leq 9.5\)</span>.  Relative to the density coefficient: the scale heights and the disk scale length are all somewhat uncertain.  The Sun is a member of the thin disk and is currently located about <span class="math notranslate nohighlight">\(30\ \rm pc\)</span> above the midplane.</p>
 <p>The <strong>luminosity density</strong> (i.e., luminosity per unit volume) of the thin disk is often modeled with the functional form</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0a7943b5-8ee6-4195-adea-6f9efab26e01">
-<span class="eqno">(5.7)<a class="headerlink" href="#equation-0a7943b5-8ee6-4195-adea-6f9efab26e01" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b95867e4-0710-479e-a63b-fe93a3a18140">
+<span class="eqno">(5.7)<a class="headerlink" href="#equation-b95867e4-0710-479e-a63b-fe93a3a18140" title="Permalink to this equation">#</a></span>\[\begin{align}
 L(R,\ z) &amp;= 2L_o e^{-R/h_R}\left(e^{z/z_o}+e^{-z/z_o}\right)^{-1}, \\
 &amp;= L_o e^{-R/h_R} \text{sech}^2(z/z_o),
 \end{align}\]</div>
@@ -1097,8 +1097,8 @@ L(R,\ z) &amp;= 2L_o e^{-R/h_R}\left(e^{z/z_o}+e^{-z/z_o}\right)^{-1}, \\
 <p>In reality, a wide range of metallicities exists in stars.  At one end are the extreme Pop. I stars and on the other, the hypothetical Pop. III stars.  Between Pop. I and Pop. II stars are intermediate (or <strong>disk</strong>) population stars.</p>
 <p>The important parameter of composition is quantified by the <em>ratio</em> of iron to hydrogen and has become almost universally adopted because iron lines are generally identifiable in stellar spectra.  During a supernova detonation (particularly of Type Ia), iron is ejected, which enriches the ISM.  New stars can then be created with a greater abundance of iron in their atmospheres relative to their predecessors.</p>
 <p>As a result, the iron content should correlate with stellar age, where the youngest (most recently formed) stars have the highest relative abundance of iron.  The iron-to-hydrogen ratio in the atmosphere of a star is compared with the Sun’s value through</p>
-<div class="amsmath math notranslate nohighlight" id="equation-61a29d97-d248-48fe-ba68-fe1cb43aaded">
-<span class="eqno">(5.8)<a class="headerlink" href="#equation-61a29d97-d248-48fe-ba68-fe1cb43aaded" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d16726c1-c215-43fd-ac1b-c86054d59617">
+<span class="eqno">(5.8)<a class="headerlink" href="#equation-d16726c1-c215-43fd-ac1b-c86054d59617" title="Permalink to this equation">#</a></span>\[\begin{align}
 [{\rm Fe}/{\rm H}] \equiv \log_{10}\left[\frac{(N_{\rm Fe}/N_{\rm H})_{\rm star}}{(N_{\rm Fe}/N_{\rm H})_\odot} \right],
 \end{align}\]</div>
 <p>and is referred to as the <a class="reference external" href="https://en.wikipedia.org/wiki/Metallicity">metallicity</a>.</p>
@@ -1123,8 +1123,8 @@ L(R,\ z) &amp;= 2L_o e^{-R/h_R}\left(e^{z/z_o}+e^{-z/z_o}\right)^{-1}, \\
 <h3><span class="section-number">5.2.5. </span>Mass-to-Light Ratios<a class="headerlink" href="#mass-to-light-ratios" title="Permalink to this headline">#</a></h3>
 <p>From star counts and orbital motions, te estimated stellar mass of the thin disk is roughly <span class="math notranslate nohighlight">\(6\times 10^{10}\ M_\odot\)</span> with another <span class="math notranslate nohighlight">\(0.5 \times 10^{10}\ M_\odot\)</span> of gas and dust.  The luminosity in the blue is <span class="math notranslate nohighlight">\(L_B = 1.8 \times 10^{10}\ L_\odot\)</span>.  When the first of these parameters is divided by the second, the result is the <strong>mass-to-light ratio</strong>, which is <span class="math notranslate nohighlight">\(M/L_B \approx 3 M_\odot/L_\odot\)</span>.  This quantity gives us information about the kinds of stars responsible for the generation of the light.</p>
 <p>Along the main sequence, a star’s luminosity depends on its mass (i.e., mass-luminosity relation), with</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ba979012-1e29-4f20-a45a-790784ba2edf">
-<span class="eqno">(5.9)<a class="headerlink" href="#equation-ba979012-1e29-4f20-a45a-790784ba2edf" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-bc00d715-ce7d-40bb-8da3-a97087983101">
+<span class="eqno">(5.9)<a class="headerlink" href="#equation-bc00d715-ce7d-40bb-8da3-a97087983101" title="Permalink to this equation">#</a></span>\[\begin{align}
 \frac{L}{L_\odot} = \left(\frac{M}{M_\odot} \right)^\alpha,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\alpha \simeq 4\)</span> above about <span class="math notranslate nohighlight">\(0.5\ M_\odot\)</span> and <span class="math notranslate nohighlight">\(\alpha \simeq 2.3\)</span> for less massive stars.  Assuming that most of the disk stars are on the main-sequence, an “average” stellar mass can be estimated.  Substituting the observed mass-to-light ratio and solving for the mass, we have</p>
@@ -1201,8 +1201,8 @@ allowfullscreen></iframe>
 <p>Although the vertical scale height of the thin disk is near <span class="math notranslate nohighlight">\(350\ \rm pc\)</span> in the Sun’s vicinity, the scale height increases somewhat toward the inner regions of the Galaxy, where the disk meets the <strong>Galactic bulge</strong>.  The bulge is not simply an extension of the disk but is an independent component of the Galaxy.  The mass of the bulge is roughly <span class="math notranslate nohighlight">\(10^{10}\ M_\odot\)</span> and its <span class="math notranslate nohighlight">\(B\)</span>-band luminosity is near <span class="math notranslate nohighlight">\(3\times 10^9\ L_\odot\)</span>.  This gives a mass-to-light ratio of <span class="math notranslate nohighlight">\(3\ M_\odot/L_\odot\)</span>, which is comparable to the mass-to-light ratio for the thin disk.</p>
 <p>The boxy (or elongated) bulge is evident in the <a class="reference external" href="https://en.wikipedia.org/wiki/Cosmic_Background_Explorer">COsmic Background Explorer</a> (COBE) satellite image of the Galaxy.  The image was produced by combining observations at <span class="math notranslate nohighlight">\(1.2,\ 2.2,\ \text{and } 3.4\ \rm \mu m\)</span>.  Using the COBE data together with observations of RR Lyraes and cool (K and M) giants, we find that the variation in the number density of stars in the bulge corresponds to a vertical scale height from <span class="math notranslate nohighlight">\(100-500\ \rm pc\)</span>, depending on the stellar ages used to make the determination (i.e., younger stars yield smaller scale heights).</p>
 <p>The surface brightness <span class="math notranslate nohighlight">\(I\)</span> of the bulge (measured in units of <span class="math notranslate nohighlight">\(L_\odot/{\rm pc}^2\)</span>) exhibits an approximate radial dependence of the form</p>
-<div class="amsmath math notranslate nohighlight" id="equation-808624fa-8302-4e47-9555-f8397d3450a7">
-<span class="eqno">(5.10)<a class="headerlink" href="#equation-808624fa-8302-4e47-9555-f8397d3450a7" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-feef0499-9f09-40df-89c2-2c7d626ea854">
+<span class="eqno">(5.10)<a class="headerlink" href="#equation-feef0499-9f09-40df-89c2-2c7d626ea854" title="Permalink to this equation">#</a></span>\[\begin{align}
 \log_{10}\left[\frac{I(r)}{I_e} \right] = -3.3307\left[\left( \frac{r}{r_e}\right)^{1/4} -1 \right],
 \end{align}\]</div>
 <p>which is a <span class="math notranslate nohighlight">\(r^{1/4}\)</span> law (or de Vaucoulurs profile) described by the effective radius <span class="math notranslate nohighlight">\(r_e\)</span> and the surface brightness <span class="math notranslate nohighlight">\(I_e\)</span> measured at <span class="math notranslate nohighlight">\(r_e\)</span>.  Formally, <span class="math notranslate nohighlight">\(r_e\)</span> is the radius in which 1/2 of the bulge’s light is emitted.  At the infrared wavelength of <span class="math notranslate nohighlight">\(12\ \rm \mu m\)</span>, star count data from the <a class="reference external" href="https://en.wikipedia.org/wiki/IRAS">InfraRed Astronomical Satellite</a> (IRAS) suggests an effective radius of <span class="math notranslate nohighlight">\({\sim}0.7\ \rm kpc\)</span>.  Similar results were found by COBE.</p>
@@ -1245,8 +1245,8 @@ allowfullscreen></iframe>
 </div>
 <p>Although 144 of the globular clusters are found within <span class="math notranslate nohighlight">\(42\ \rm kpc\)</span> of the Galactic center, 6 globular clusters have been found between <span class="math notranslate nohighlight">\(69-123\ \rm kpc\)</span> of the Galactic center.  Some astronomers have suggested that those six most distant clusters may have been captured by the Milky Way or may be dwarf spheroidal galaxies, much as <span class="math notranslate nohighlight">\(\omega\)</span> Cen and the Sagittarius dwarf galaxy may have been.  If we do not include these very remote objects, the metal-poor clusters seem to be confined to a halo with a radius of <span class="math notranslate nohighlight">\({\sim}42\ \rm kpc\)</span>.  The detection of extremely distant and luminous field stars suggests that a stellar halo radius of <span class="math notranslate nohighlight">\(50\ \rm kpc\)</span> could be more appropriate.</p>
 <p>The number density profile of the metal-poor globular clusters and the field stars has the form</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8645774e-68c4-4ffa-8e97-775d24d64943">
-<span class="eqno">(5.11)<a class="headerlink" href="#equation-8645774e-68c4-4ffa-8e97-775d24d64943" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-05e10bcc-64e3-4e7d-8ed6-58a0fba314fb">
+<span class="eqno">(5.11)<a class="headerlink" href="#equation-05e10bcc-64e3-4e7d-8ed6-58a0fba314fb" title="Permalink to this equation">#</a></span>\[\begin{align}
 n_{\rm halo}(r) = n_{o,\rm halo}(r/a)^{-3.5},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(n_{o,\rm halo} \simeq 4 \times 10^{-5}\ {\rm pc^{-3}}\)</span> is roughly <span class="math notranslate nohighlight">\(0.2\%\)</span> of the thin disk’s midplane.  The scale length <span class="math notranslate nohighlight">\(a\)</span> of the number density distribution is several thousand parsecs.  At visible wavelengths, the effective radius of the halo <span class="math notranslate nohighlight">\(r^{1/4}\)</span> law is <span class="math notranslate nohighlight">\(r_e = 2.7\ \rm kpc\)</span>.</p>
@@ -1255,8 +1255,8 @@ n_{\rm halo}(r) = n_{o,\rm halo}(r/a)^{-3.5},
 <h3><span class="section-number">5.3.8. </span>The Dark Matter Halo<a class="headerlink" href="#the-dark-matter-halo" title="Permalink to this headline">#</a></h3>
 <p>When the masses of all the luminous components of the Galaxy are combined (e.g.,  thin and thick disks, ISM, Galactic bulge, stellar halo, and the bar), the total mass of luminous matter in the Galaxy is estimated to be <span class="math notranslate nohighlight">\(9 \times 10^{10}\ M_\odot\)</span>.  There is another crucial component to the overall structure of our Galaxy.  There may also be an unseen element that is responsible for the generation of the warps in the H I distribution near the outer edges of the luminous disk.</p>
 <p>This <strong>dark matter halo</strong> seems to be roughly spherically distributed, enveloping the stellar halo and extending out to <span class="math notranslate nohighlight">\({\sim}230\ \rm kpc\)</span>.  The dark matter halo has an apparent mass distribution of the form,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-18459c92-38e0-44d3-9c77-dd094d099faf">
-<span class="eqno">(5.12)<a class="headerlink" href="#equation-18459c92-38e0-44d3-9c77-dd094d099faf" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-183083c7-f25a-455c-803b-c7cd0548fc2c">
+<span class="eqno">(5.12)<a class="headerlink" href="#equation-183083c7-f25a-455c-803b-c7cd0548fc2c" title="Permalink to this equation">#</a></span>\[\begin{align}
 \rho(r) = \frac{\rho_o}{\left( r/a\right) \left(1+r/a \right)^2},
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\rho_o\)</span> and <span class="math notranslate nohighlight">\(a\)</span> are fitted coefficients using the mass distribution in the dark matter halo.</p>
@@ -1384,8 +1384,8 @@ b_{\rm asc} &amp;= 0^\circ.
 <li><p>the vertical coordinate <span class="math notranslate nohighlight">\(z\)</span> increases to the north.</p></li>
 </ul>
 <p>The corresponding velocity components are traditionally labeled as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fc4e6447-2ed6-4f35-b354-0b2e6338a55c">
-<span class="eqno">(5.13)<a class="headerlink" href="#equation-fc4e6447-2ed6-4f35-b354-0b2e6338a55c" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-1925368c-cda9-40e6-a267-4f895f527475">
+<span class="eqno">(5.13)<a class="headerlink" href="#equation-1925368c-cda9-40e6-a267-4f895f527475" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Pi &amp;\equiv \frac{dR}{dt}, \\
 \Theta &amp;\equiv R\frac{d\theta}{dt}, \\
 Z &amp;\equiv \frac{dz}{dt}.
@@ -1410,8 +1410,8 @@ Z_{\rm LSR} &amp;\equiv 0,
 <p>where <span class="math notranslate nohighlight">\(\Theta_o \equiv \Theta(R_o)\)</span> and <span class="math notranslate nohighlight">\(R_o\)</span> is the solar Galactocentric distance.</p>
 <p>Note that once the LSR is chosen, the Sun immediately begins to drift away from it, which implies that twe would effectively need to redefine the reference point constantly.  In reality, this is not a significant problem because the <span class="math notranslate nohighlight">\(230\ \rm Myr\)</span> orbital period of the LSR is long compared to the time since modern telescopic observations began.  Consequently there has not been sufficient time for the effect to become noticeable.</p>
 <p>The velocity of the a star <em>relative to the LSR</em> is known as the star’s <strong>peculiar velocity</strong> and is given by,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f56f6a55-5396-4bca-b4a6-e18d5636a034">
-<span class="eqno">(5.14)<a class="headerlink" href="#equation-f56f6a55-5396-4bca-b4a6-e18d5636a034" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7d12c98d-293c-4634-a587-f6764cb0f4b2">
+<span class="eqno">(5.14)<a class="headerlink" href="#equation-7d12c98d-293c-4634-a587-f6764cb0f4b2" title="Permalink to this equation">#</a></span>\[\begin{align}
 \mathbf{V} &amp;= \left( V_R,\ V_\theta,\ V_z \right) \equiv \left(u,\ v,\ w\right), \\
 u &amp;= \Pi - \Pi_{\rm LSR} = \Pi, \\
 v &amp;= \Theta -\Theta_{\rm LSR} =\Theta -\Theta_o, \\
@@ -1420,27 +1420,27 @@ w &amp; = Z-Z_{\rm LSR} = Z.
 <p>The Sun’s peculiar velocity relative to the LSR is generally referred to as simply the <strong>solar motion</strong>.</p>
 <p>The average of <span class="math notranslate nohighlight">\(u4\)</span> and <span class="math notranslate nohighlight">\(w\)</span> for all stars in the solar neighborhood (excluding the Sun) <em>should</em> be nearly zero if we assume an axisymmetric Galaxy.  There should be as many stars moving inward as outward, and there should be as many stars moving toward the NGP as toward the SGP due to symmetries about both the rotation axis and the midplane.  In reality, this is not quite true because the Galaxy is not precisely axisymmetric, but the error is not that significant.</p>
 <p>We assume that summing over a sample of <span class="math notranslate nohighlight">\(N\)</span> nearby stars,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a1ad4c5f-8750-4cb4-9fd5-6033d48a5927">
-<span class="eqno">(5.15)<a class="headerlink" href="#equation-a1ad4c5f-8750-4cb4-9fd5-6033d48a5927" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-287a64c4-e090-4002-98c6-c3ffea508cfd">
+<span class="eqno">(5.15)<a class="headerlink" href="#equation-287a64c4-e090-4002-98c6-c3ffea508cfd" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle u \rangle &amp;= \frac{1}{N} \sum_{i=1}^N u_i \simeq 0, \\
 \langle w \rangle &amp;= \frac{1}{N} \sum_{i=1}^N w_i \simeq 0.
 \end{align}\]</div>
 <p>The same assumption <strong>cannot be made</strong> for the <span class="math notranslate nohighlight">\(v\)</span> component.  Consider the orbits of three hypothetical stars <span class="math notranslate nohighlight">\((A,\ B,\ C)\)</span> that intersect at the LSR.  Stars with different average orbital radii (as with elliptical orbits) must follow paths that bring them very close to the LSR if they are members of the solar neighborhood and eligible for inclusion in the calculation of <span class="math notranslate nohighlight">\(\langle v \rangle\)</span>.</p>
 <p>If we consider the special case that <span class="math notranslate nohighlight">\(u = w = 0\)</span> for all stars in our sample, then the stars must be at either their most distant point (<strong>apogacticon</strong>) or closest approach (<strong>perigalacticon</strong>) from the Galactic center when they coincide wth the LSR.  Then, for two stars <span class="math notranslate nohighlight">\((A,\ B)\)</span> to follow their specified orbits, it is necessary that <span class="math notranslate nohighlight">\(\Theta_A(R_o) &lt; \Theta_o\)</span> and <span class="math notranslate nohighlight">\(\Theta_B(R_o) &gt; \Theta_o\)</span>.  This implies that <span class="math notranslate nohighlight">\(v_A &lt;0\)</span> and <span class="math notranslate nohighlight">\(v_b &gt; 0\)</span>.  Since more stars reside inside the Galactocentric distance than beyond it,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0aa48fff-02d3-43e6-a0a6-f1858baada5d">
-<span class="eqno">(5.16)<a class="headerlink" href="#equation-0aa48fff-02d3-43e6-a0a6-f1858baada5d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-42093b64-c74e-4126-88da-f1f28c79c008">
+<span class="eqno">(5.16)<a class="headerlink" href="#equation-42093b64-c74e-4126-88da-f1f28c79c008" title="Permalink to this equation">#</a></span>\[\begin{align}
 \langle v \rangle &lt; 0.
 \end{align}\]</div>
 <p>The velocity that is measured for a particular star relative to the Sun is just the difference between the star’s peculiar velocity and the solar motion with respect to the LSR, or</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8bb64e76-e4ad-4eed-8d04-c0f0bac0aded">
-<span class="eqno">(5.17)<a class="headerlink" href="#equation-8bb64e76-e4ad-4eed-8d04-c0f0bac0aded" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e5538391-5ae1-441e-b895-efc34be5d716">
+<span class="eqno">(5.17)<a class="headerlink" href="#equation-e5538391-5ae1-441e-b895-efc34be5d716" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Delta u &amp;\equiv u-u_\odot, \\
 \Delta v &amp;\equiv v-v_\odot, \\
 \Delta w &amp;\equiv w-w_\odot.
 \end{align}\]</div>
 <p>Using the average values of the stellar peculiar velocity components and solving for the solar motion, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-25d693f3-7607-46cc-9b48-d013cc67dfea">
-<span class="eqno">(5.18)<a class="headerlink" href="#equation-25d693f3-7607-46cc-9b48-d013cc67dfea" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-82b58e12-b35d-4c95-af38-b59c16a1af93">
+<span class="eqno">(5.18)<a class="headerlink" href="#equation-82b58e12-b35d-4c95-af38-b59c16a1af93" title="Permalink to this equation">#</a></span>\[\begin{align}
 u_\odot &amp;= -\langle \Delta u \rangle, \\
 v_\odot &amp;= \langle v \rangle - \langle \Delta v \rangle, \\
 w_\odot &amp;= - \langle \Delta w \rangle.
@@ -1463,8 +1463,8 @@ w_\odot &amp;= - \langle \Delta w \rangle.
 \[ \langle \Delta v \rangle = C\sigma_u^2 - v_\odot, \]</div>
 <p>where <span class="math notranslate nohighlight">\(-v_\odot\)</span> is simply the <span class="math notranslate nohighlight">\(y\)</span> intercept on a graph of <span class="math notranslate nohighlight">\(\langle \Delta v \rangle\)</span> versus <span class="math notranslate nohighlight">\(\sigma_u^2\)</span> and <span class="math notranslate nohighlight">\(C\)</span> is the slope of the line.</p>
 <p>The components of the Sun’s peculiar velocity are</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a6086233-ea6e-43b1-978f-8cdb4e58eeb8">
-<span class="eqno">(5.19)<a class="headerlink" href="#equation-a6086233-ea6e-43b1-978f-8cdb4e58eeb8" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-e295c039-1d8c-4aef-ac39-a2d21d33aa79">
+<span class="eqno">(5.19)<a class="headerlink" href="#equation-e295c039-1d8c-4aef-ac39-a2d21d33aa79" title="Permalink to this equation">#</a></span>\[\begin{align}
 u_\odot &amp;= -10 \pm 0.4\ {\rm km/s},
 v_\odot &amp;= 5.2 \pm 0.6\ {\rm km/s},
 w_\odot &amp;= 7.2 \pm 0.4\ {\rm kms/},
@@ -1487,8 +1487,8 @@ w_\odot &amp;= 7.2 \pm 0.4\ {\rm kms/},
 <p>Because stars with the smallest peculiar velocities don’t drift away from the LSR as quickly, they must occupy orbits that are similar to the LSR and implies that these young stars are members of the thin disk.  On the other hand, the stars with the largest peculiar velocities follow very different paths about the center of the Galaxy.  In particular, stars with large <span class="math notranslate nohighlight">\(|w|\)</span> must be passing through the solar neighborhood on trajectories that will carry them to great distances above and below the disk.  These old, metal-poor stars are the high-velocity stars that are a part of the stellar halo.</p>
 <p>A second common feature of peculiar velocity diagrams is the clear asymmetries in the velocity ellipsoids along the <span class="math notranslate nohighlight">\(v\)</span> axis as a function of metallicity or age, where this is known as <strong>asymmetric drift</strong>.  Few stars are observed with <span class="math notranslate nohighlight">\(v &gt; + 65\ \rm km/s\)</span>, but there are metal-poor RR Lyraes and subdwarfs with <span class="math notranslate nohighlight">\(v&lt; - 250\ \rm km/s\)</span>.  A nearly circular “envelope” with a radius of <span class="math notranslate nohighlight">\(300\ \rm km/s\)</span> can be drawn around the high-velocity stars.  The center of the velocity envelope appears to be near <span class="math notranslate nohighlight">\(v=-220\ \rm km/s\)</span> for both <span class="math notranslate nohighlight">\(u-v\)</span> and <span class="math notranslate nohighlight">\(w-v\)</span> diagrams.</p>
 <p>If on average, the stellar halo is rotating very slowly (if at all), then the orbital velocity of the LSR should reveal itself as a point of symmetry along the <span class="math notranslate nohighlight">\(v\)</span> axis.  This is because halo stars with <span class="math notranslate nohighlight">\(\Theta \simeq 0\)</span> (i.e., no motion along the direction of Galactic rotation) should exhibit peculiar velocities that simply reflect the motion of the LSR (i.e., <span class="math notranslate nohighlight">\(v\simeq -\Theta_o\)</span>).  Stars that have orbital components that are in the opposite sense from the overall Galactic rotation direction have <span class="math notranslate nohighlight">\(v&lt; -\Theta_o\)</span>.  Through this argument, the orbital speed of the LSR is given as</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d3ddee19-b828-4092-877e-fa18e29f4419">
-<span class="eqno">(5.20)<a class="headerlink" href="#equation-d3ddee19-b828-4092-877e-fa18e29f4419" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-5d8bc34a-4ebd-4b65-9888-f131062897e0">
+<span class="eqno">(5.20)<a class="headerlink" href="#equation-5d8bc34a-4ebd-4b65-9888-f131062897e0" title="Permalink to this equation">#</a></span>\[\begin{align}
 \Theta_o(R_o) = 220\ \rm km/s,
 \end{align}\]</div>
 <p>and is the presently accepted IAU standard.</p>
@@ -1573,8 +1573,8 @@ R\cos{\alpha} &amp;= R_o \sin{\ell}, \\
 R\sin{\alpha} &amp;= R_o \cos{\ell} - d.
 \end{align*}\]</div>
 <p>Substituting these relations into the velocity equations, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-42903f3c-d881-4acb-9f62-b6fe1ff81839">
-<span class="eqno">(5.21)<a class="headerlink" href="#equation-42903f3c-d881-4acb-9f62-b6fe1ff81839" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-12e35a31-674a-4312-b790-56baa584db94">
+<span class="eqno">(5.21)<a class="headerlink" href="#equation-12e35a31-674a-4312-b790-56baa584db94" title="Permalink to this equation">#</a></span>\[\begin{align}
 v_r &amp;= (\Omega - \Omega_o)R_o \sin{\ell}, \\
 v_t &amp;= (\Omega - \Omega_o)R_o \cos{\ell} - \Omega d.
 \end{align}\]</div>
@@ -1597,23 +1597,67 @@ v_t &amp;\simeq \left[\frac{d\Theta}{dR}\bigg \vert_{R_o} - \frac{\Theta_o}{R_o}
 <div class="math notranslate nohighlight">
 \[ R_o = d\cos{\ell} + R\cos{\beta} \simeq d\cos{\ell} + R, \]</div>
 <p>where the latter result is due to the small-angle approximation (i.e., <span class="math notranslate nohighlight">\(\cos{\beta} \simeq 1\)</span>), since <span class="math notranslate nohighlight">\(d\ll R_o\)</span> implies that <span class="math notranslate nohighlight">\(\beta \ll 1\ \text{radian}\)</span>.  Using the appropriate trigonometric identities and defining the <strong>Oort constants</strong></p>
-<div class="amsmath math notranslate nohighlight" id="equation-1eb17b51-adbc-4a65-aecb-db4828d0bece">
-<span class="eqno">(5.22)<a class="headerlink" href="#equation-1eb17b51-adbc-4a65-aecb-db4828d0bece" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-54a97f2b-78c0-4bab-8845-9358659e42fd">
+<span class="eqno">(5.22)<a class="headerlink" href="#equation-54a97f2b-78c0-4bab-8845-9358659e42fd" title="Permalink to this equation">#</a></span>\[\begin{align}
 A \equiv -\frac{1}{2}\left[\frac{d\Theta}{dR}\bigg \vert_{R_o} - \frac{\Theta_o}{R_o}\right], \\
 B \equiv -\frac{1}{2}\left[\frac{d\Theta}{dR}\bigg \vert_{R_o} + \frac{\Theta_o}{R_o}\right].
 \end{align}\]</div>
 <p>Then, we have</p>
-<div class="amsmath math notranslate nohighlight" id="equation-52d41668-d4e9-42da-83ff-5169f780e43a">
-<span class="eqno">(5.23)<a class="headerlink" href="#equation-52d41668-d4e9-42da-83ff-5169f780e43a" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ebfa9371-62c9-4e65-8548-b6064bab079c">
+<span class="eqno">(5.23)<a class="headerlink" href="#equation-ebfa9371-62c9-4e65-8548-b6064bab079c" title="Permalink to this equation">#</a></span>\[\begin{align}
 v_r &amp;\simeq Ad\sin{2\ell}, \\
 v_t &amp;\simeq Ad\cos{2\ell} + Bd.
+\end{align}\]</div>
+<p>For stars in the directions <span class="math notranslate nohighlight">\(\ell = 0^\circ\)</span> and <span class="math notranslate nohighlight">\(\ell = 180^\circ\)</span>, the lines of sight are perpendicular to their motions relative to the LSR.  AS a result, the radial velocity must be zero.  For <span class="math notranslate nohighlight">\(\ell = 90^\circ\)</span> or <span class="math notranslate nohighlight">\(270^\circ\)</span>, the stars begin observed are essentially the same circular orbit as the Sun and are moving with the same speed and <span class="math notranslate nohighlight">\(v_r = 0\ \rm km/s\)</span>.</p>
+<p>At intermediate angles, the situation is somewhat more complicated.</p>
+<ul class="simple">
+<li><p>If we assume that in the solar neighborhood, <span class="math notranslate nohighlight">\(\Omega(R)\)</span> is <a class="reference external" href="https://en.wiktionary.org/wiki/monotonic_decreasing">monotonically decreasing</a> outward, then at <span class="math notranslate nohighlight">\(\ell = 45^\circ\)</span>, the observed star is closer to the Galactic center and is “outrunning” the Sun.  Therefore, we measure a positive radial velocity as the star is moving away from the Sun (relatively speaking).  The same is true at <span class="math notranslate nohighlight">\(\ell = 225^\circ\)</span> due to symmetry.</p></li>
+<li><p>For <span class="math notranslate nohighlight">\(\ell = 135^\circ\)</span>, The Sun is “overtaking” the star, which results in a negative radial velocity as the star appears to moving toward the Sun.  The same is true at <span class="math notranslate nohighlight">\(\ell = 315^\circ\)</span> due to symmetry.</p></li>
+</ul>
+<p>This results in a double sine curve, where a similar analysis of the transverse velocity also produces a double sine curve (with an additive constant).  For a sample of stars (all with similar distances <span class="math notranslate nohighlight">\(d\)</span>), the amplitudes of the <span class="math notranslate nohighlight">\(v_r\)</span> and <span class="math notranslate nohighlight">\(v_t\)</span> give the Oort constants <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, respectively.</p>
+<p>It is now possible to derive several important relationships between the Oort constants <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, and the local parameters of Galactic rotation <span class="math notranslate nohighlight">\((R_o,\ \Theta_o,\ \Omega_o,\ [d\Theta /dR]_{R_o})\)</span>.  From the equations for the Oort constants, we immediately find that</p>
+<div class="amsmath math notranslate nohighlight" id="equation-72fec54b-2742-4f69-97a1-d033b1c0f33d">
+<span class="eqno">(5.24)<a class="headerlink" href="#equation-72fec54b-2742-4f69-97a1-d033b1c0f33d" title="Permalink to this equation">#</a></span>\[\begin{align}
+\Omega_o &amp;= \frac{\Theta_o}{R_o} = A-B, \\
+\frac{d\Theta}{dR}\bigg \vert_{R_o} &amp;= -(A+B).
+\end{align}\]</div>
+<p>Another useful relation can be found by considering the largest radial velocity seen along the line of sight at a constant Galactic longitude <span class="math notranslate nohighlight">\(\ell\)</span>.  Consider a star with the maximum observable radial velocity at point <span class="math notranslate nohighlight">\(T\)</span> (i.e. the position where <span class="math notranslate nohighlight">\(\alpha = 0^\circ\)</span>).  It is at this tangent point that the distance to the Galactic center will be a minimum and <span class="math notranslate nohighlight">\(\Theta(R)\)</span> will be a maximum (under the assumption that <span class="math notranslate nohighlight">\(\Theta(R)\)</span> is monotonically decreasing from the center outward).  The orbital velocity vector is directed along the line of sight at that position.  This minimum distance from the Galactic center is given by</p>
+<div class="math notranslate nohighlight">
+\[ R_{\rm min} = R_o \sin{\ell}, \]</div>
+<p>and the maximum radial velocity is</p>
+<div class="math notranslate nohighlight">
+\[ v_{\rm r,max} = \Theta(R_{\rm min}) - \Theta_o(R_o)\sin{\ell}. \]</div>
+<p>For Galactic longitudes near <em>but less than</em> <span class="math notranslate nohighlight">\(90^\circ\)</span> (or near but greater than <span class="math notranslate nohighlight">\(270^\circ\)</span>; inside the solar circle), then <span class="math notranslate nohighlight">\(d\ll R_o\)</span> <span class="math notranslate nohighlight">\(R\sim R_o\)</span>, and <span class="math notranslate nohighlight">\(\Theta(R)\)</span> can be expressed in terms of a Taylor expansion about <span class="math notranslate nohighlight">\(\Theta_o\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ \Theta(R_{\rm min}) = \Theta_o(R_o) + \frac{d\Theta}{dR}\bigg \vert_{R_o} \left(R_{\rm min}-R_o\right) + \cdots . \]</div>
+<p>Substituting <span class="math notranslate nohighlight">\(\Theta(R_{\rm min})\)</span> into the expression for <span class="math notranslate nohighlight">\(v_{\rm r,max}\)</span>, retaining the first-order terms, and making use of equation for the Oort constant <span class="math notranslate nohighlight">\(A\)</span>, we find</p>
+<div class="amsmath math notranslate nohighlight" id="equation-6f114b5f-28b2-4112-9a69-93ac77727e65">
+<span class="eqno">(5.25)<a class="headerlink" href="#equation-6f114b5f-28b2-4112-9a69-93ac77727e65" title="Permalink to this equation">#</a></span>\[\begin{align}
+v_{\rm r,max} \simeq 2A R_o \left( 1-\sin{\ell} \right).
+\end{align}\]</div>
+<p>One last relation associates <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> with the dispersions of peculiar velocities in the <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> directions:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-5a7652ac-db7c-4079-9113-bc613ab2445f">
+<span class="eqno">(5.26)<a class="headerlink" href="#equation-5a7652ac-db7c-4079-9113-bc613ab2445f" title="Permalink to this equation">#</a></span>\[\begin{align}
+\frac{-B}{A-B} = \frac{\sigma_v^2}{\sigma_u^2}.
+\end{align}\]</div>
+<p>Because <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> provide critical information about Galactic differential rotation in the solar neighborhood, considerable effort is spent into determining these constant.  The Gaia spacecraft (launched in 2013) has allowed improved measurements of the Oort constants (<a class="reference external" href="https://ui.adsabs.harvard.edu/abs/2017MNRAS.468L..63B">Bovy 2017</a>) as</p>
+<div class="amsmath math notranslate nohighlight" id="equation-99660f29-d5cc-4e2e-8863-61ca1c7146d6">
+<span class="eqno">(5.27)<a class="headerlink" href="#equation-99660f29-d5cc-4e2e-8863-61ca1c7146d6" title="Permalink to this equation">#</a></span>\[\begin{align}
+A &amp;= 15.3 \pm 0.6\ {\rm km/s/kpc}, \\
+B &amp;= -11.9 \pm 0.4\ {\rm km/s/kpc}.
 \end{align}\]</div>
 </div>
 <div class="section" id="hydrogen-21-cm-line-as-a-probe-of-galactic-structure">
 <h3><span class="section-number">5.4.5. </span>Hydrogen 21-cm Line as a Probe of Galactic Structure<a class="headerlink" href="#hydrogen-21-cm-line-as-a-probe-of-galactic-structure" title="Permalink to this headline">#</a></h3>
+<p>To determine the large-scale velocity structure of the Galactic disk, we must find more general expression for <span class="math notranslate nohighlight">\(v_r\)</span> and <span class="math notranslate nohighlight">\(v_t\)</span> that do not rely on first-order Taylor series expansions.  The 21-cm emission from H I is able to penetrate virtually the entire Galaxy, which makes it an indispensible tool in probing the structure of the Milky Way.  By measuring <span class="math notranslate nohighlight">\(v_r\)</span> as a function of <span class="math notranslate nohighlight">\(\ell\)</span>, the Galactic rotation curve can be determined provided that the distance (from the Sun) of the emitting region can be found.</p>
+<p>When a specific cloud is encountered along the line of sight, the wavelength of the radiation from that cloud is Doppler shifted because of the effects of differential Galactic rotation.  The intensity of the radiation at a given wavelength (or velocity) is proportional to the number of hydrogen atoms along the line of sight in the cloud.  The peaks in a typical 21-cm H I line profile correspond to the H I clouds along the line of sight (but at different distances) in the Galaxy.</p>
+<p>The principle difficulty in using 21-cm radiation to determine <span class="math notranslate nohighlight">\(\Omega(R)\)</span> (and <span class="math notranslate nohighlight">\(\Theta(R)\)</span>) lies in measuring <span class="math notranslate nohighlight">\(d\)</span>.  This problem can be overcome by selecting the largest radial velocity measured along each line of sight, which must originate in the region <span class="math notranslate nohighlight">\(R_{\rm min}\)</span> from the Galactic center (i.e., <span class="math notranslate nohighlight">\(d = R_o \cos{\ell}\)</span>).  By measuring <span class="math notranslate nohighlight">\(v_{\rm r,max}\)</span> for <span class="math notranslate nohighlight">\(0^\circ &lt; \ell &lt; 90^\circ\)</span> and <span class="math notranslate nohighlight">\(270^\circ &lt; \ell &lt; 360^\circ\)</span>, we can determine the rotation curve within the solar Galactocentric radius.</p>
+<p>The above technique does not work for the intermediate longitudes <span class="math notranslate nohighlight">\(90^\circ &lt; \ell &lt; 270^\circ\)</span> because there is no unique orbit for which a maximum radial velocity can be observed.  The method also tends to break down near <span class="math notranslate nohighlight">\(\ell =90^\circ\)</span> and <span class="math notranslate nohighlight">\(\ell = 270^\circ\)</span> because v_r becomes rather insensitive to changes in distance from the Sun.  For longitudes within approximately <span class="math notranslate nohighlight">\(20^\circ\)</span> from the Galactic center, the clouds that have markedly non-circular motions exist in that region, where this creates problems so that the assumptions underlying the preceding analysis are not valid.</p>
 </div>
 <div class="section" id="the-flat-rotation-curve-and-evidence-of-dark-matter">
 <h3><span class="section-number">5.4.6. </span>The Flat Rotation Curve and Evidence of Dark Matter<a class="headerlink" href="#the-flat-rotation-curve-and-evidence-of-dark-matter" title="Permalink to this headline">#</a></h3>
+<p>To measure <span class="math notranslate nohighlight">\(\Theta(R)\)</span> for <span class="math notranslate nohighlight">\(R&gt; R_o\)</span>, we must rely on objects available in the Galactic plane (e.g., Cepheids) for which we can directly obtain distances.  These data suggests that the rotation curve of the Galaxy dose not decrease significantly with distance beyond <span class="math notranslate nohighlight">\(R_o\)</span> and may actually increase somewhat.  This means that near <span class="math notranslate nohighlight">\(R_o\)</span> the Oort constants are related by <span class="math notranslate nohighlight">\(A&lt;-B\)</span>.</p>
+<p>It came as a great surprise to astronomers to discover that the Galactic rotation curve is essentially constant beyond <span class="math notranslate nohighlight">\(R_o\)</span>.  According to Newtonian mechanics, if most of the mass where interior to the solar circle, the rotation curve should drop off as <span class="math notranslate nohighlight">\(\Theta \propto 1/\sqrt{R}\)</span> (i.e., Keplerian motion).  The fact that it does not implies that as significant amount of mass exists beyond <span class="math notranslate nohighlight">\(R_o\)</span>.  This result was particularly unexpected since most of the luminosity of the Galaxy is produced by matter residing inside <span class="math notranslate nohighlight">\(R_o\)</span>.</p>
 </div>
 <div class="section" id="some-methods-for-determining-distances">
 <h3><span class="section-number">5.4.7. </span>Some Methods for Determining Distances<a class="headerlink" href="#some-methods-for-determining-distances" title="Permalink to this headline">#</a></h3>
