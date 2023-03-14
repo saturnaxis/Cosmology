@@ -54,6 +54,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="canonical" href="https://saturnaxis.github.io/Cosmology/Chapter_27/structure-of-the-universe.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -476,16 +478,188 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#the-extragalactic-distance-scale">
    7.1. The Extragalactic Distance Scale
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#unveiling-the-3rd-dimension">
+     7.1.1. Unveiling the 3rd Dimension
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-wilson-bappu-effect">
+     7.1.2. The Wilson-Bappu Effect
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-cepheid-distance-scale">
+     7.1.3. The Cepheid Distance Scale
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#supernovae-as-distance-indicators">
+     7.1.4. Supernovae as Distance Indicators
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#type-ia-light-curves">
+     7.1.5. Type Ia Light Curves
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-novae-in-distance-determinations">
+     7.1.6. Using Novae in Distance Determinations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#secondary-distance-indicators">
+     7.1.7. Secondary Distance Indicators
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-globular-cluster-luminosity-function">
+     7.1.8. The Globular Cluster Luminosity Function
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-planetary-nebula-luminosity-function">
+     7.1.9. The Planetary Nebula Luminosity Function
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-surface-brightness-fluctuation-method">
+     7.1.10. The Surface Brightness Fluctuation Method
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-tully-fisher-relation">
+     7.1.11. The Tully-Fisher Relation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-d-sigma-relation">
+     7.1.12. The
+     <span class="math notranslate nohighlight">
+      \(D-\sigma\)
+     </span>
+     Relation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-brightest-galaxies-in-clusters">
+     7.1.13. The Brightest Galaxies in Clusters
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#the-expansion-of-the-universe">
    7.2. The Expansion of the Universe
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hubble-s-law-of-universal-expansion">
+     7.2.1. Hubble’s Law of Universal Expansion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-expansion-of-space-and-the-hubble-flow">
+     7.2.2. The Expansion of Space and the Hubble Flow
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-value-of-the-hubble-constant">
+     7.2.3. The Value of the Hubble Constant
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-big-bang">
+     7.2.4. The Big Bang
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#clusters-of-galaxies">
    7.3. Clusters of Galaxies
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-classification-of-clusters">
+     7.3.1. The Classification of Clusters
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-local-group">
+     7.3.2. The Local Group
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other-groups-within-10-rm-mpc-of-the-local-group">
+     7.3.3. Other Groups within
+     <span class="math notranslate nohighlight">
+      \(10\ \rm Mpc\)
+     </span>
+     of the Local Group
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-virgo-cluster-a-rich-irregular-cluster">
+     7.3.4. The Virgo Cluster: A Rich,
+     <em>
+      Irregular
+     </em>
+     Cluster
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-coma-cluster-a-rich-regular-cluster">
+     7.3.5. The Coma Cluster: A Rich,
+     <em>
+      Regular
+     </em>
+     Cluster
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#evidence-for-the-evolution-of-galaxies">
+     7.3.6. Evidence for the Evolution of Galaxies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-preponderance-of-matter-between-the-galaxies">
+     7.3.7. A Preponderance of Matter between the Galaxies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-hot-intracluster-gas">
+     7.3.8. The Hot, Intracluster Gas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-existence-of-superclusters">
+     7.3.9. The Existence of Superclusters
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#large-scale-motions-relative-to-the-hubble-flow">
+     7.3.10. Large-scale Motions Relative to the Hubble Flow
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bubbles-and-voids-structure-on-the-largest-scales">
+     7.3.11. Bubbles and Voids: Structure on the Largest Scales
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quantifying-large-scale-structure">
+     7.3.12. Quantifying Large-scale Structure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-were-the-seeds-of-structure">
+     7.3.13. What were the Seeds of Structure?
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#homework">
@@ -518,16 +692,188 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#the-extragalactic-distance-scale">
    7.1. The Extragalactic Distance Scale
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#unveiling-the-3rd-dimension">
+     7.1.1. Unveiling the 3rd Dimension
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-wilson-bappu-effect">
+     7.1.2. The Wilson-Bappu Effect
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-cepheid-distance-scale">
+     7.1.3. The Cepheid Distance Scale
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#supernovae-as-distance-indicators">
+     7.1.4. Supernovae as Distance Indicators
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#type-ia-light-curves">
+     7.1.5. Type Ia Light Curves
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-novae-in-distance-determinations">
+     7.1.6. Using Novae in Distance Determinations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#secondary-distance-indicators">
+     7.1.7. Secondary Distance Indicators
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-globular-cluster-luminosity-function">
+     7.1.8. The Globular Cluster Luminosity Function
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-planetary-nebula-luminosity-function">
+     7.1.9. The Planetary Nebula Luminosity Function
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-surface-brightness-fluctuation-method">
+     7.1.10. The Surface Brightness Fluctuation Method
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-tully-fisher-relation">
+     7.1.11. The Tully-Fisher Relation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-d-sigma-relation">
+     7.1.12. The
+     <span class="math notranslate nohighlight">
+      \(D-\sigma\)
+     </span>
+     Relation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-brightest-galaxies-in-clusters">
+     7.1.13. The Brightest Galaxies in Clusters
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#the-expansion-of-the-universe">
    7.2. The Expansion of the Universe
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hubble-s-law-of-universal-expansion">
+     7.2.1. Hubble’s Law of Universal Expansion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-expansion-of-space-and-the-hubble-flow">
+     7.2.2. The Expansion of Space and the Hubble Flow
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-value-of-the-hubble-constant">
+     7.2.3. The Value of the Hubble Constant
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-big-bang">
+     7.2.4. The Big Bang
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#clusters-of-galaxies">
    7.3. Clusters of Galaxies
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-classification-of-clusters">
+     7.3.1. The Classification of Clusters
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-local-group">
+     7.3.2. The Local Group
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#other-groups-within-10-rm-mpc-of-the-local-group">
+     7.3.3. Other Groups within
+     <span class="math notranslate nohighlight">
+      \(10\ \rm Mpc\)
+     </span>
+     of the Local Group
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-virgo-cluster-a-rich-irregular-cluster">
+     7.3.4. The Virgo Cluster: A Rich,
+     <em>
+      Irregular
+     </em>
+     Cluster
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-coma-cluster-a-rich-regular-cluster">
+     7.3.5. The Coma Cluster: A Rich,
+     <em>
+      Regular
+     </em>
+     Cluster
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#evidence-for-the-evolution-of-galaxies">
+     7.3.6. Evidence for the Evolution of Galaxies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-preponderance-of-matter-between-the-galaxies">
+     7.3.7. A Preponderance of Matter between the Galaxies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-hot-intracluster-gas">
+     7.3.8. The Hot, Intracluster Gas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-existence-of-superclusters">
+     7.3.9. The Existence of Superclusters
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#large-scale-motions-relative-to-the-hubble-flow">
+     7.3.10. Large-scale Motions Relative to the Hubble Flow
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bubbles-and-voids-structure-on-the-largest-scales">
+     7.3.11. Bubbles and Voids: Structure on the Largest Scales
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quantifying-large-scale-structure">
+     7.3.12. Quantifying Large-scale Structure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-were-the-seeds-of-structure">
+     7.3.13. What were the Seeds of Structure?
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#homework">
@@ -551,12 +897,102 @@ title="Print to PDF"
 <h1><span class="section-number">7. </span>The Structure of the Universe<a class="headerlink" href="#the-structure-of-the-universe" title="Permalink to this headline">#</a></h1>
 <div class="section" id="the-extragalactic-distance-scale">
 <h2><span class="section-number">7.1. </span>The Extragalactic Distance Scale<a class="headerlink" href="#the-extragalactic-distance-scale" title="Permalink to this headline">#</a></h2>
+<div class="section" id="unveiling-the-3rd-dimension">
+<h3><span class="section-number">7.1.1. </span>Unveiling the 3rd Dimension<a class="headerlink" href="#unveiling-the-3rd-dimension" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="the-wilson-bappu-effect">
+<h3><span class="section-number">7.1.2. </span>The Wilson-Bappu Effect<a class="headerlink" href="#the-wilson-bappu-effect" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="the-cepheid-distance-scale">
+<h3><span class="section-number">7.1.3. </span>The Cepheid Distance Scale<a class="headerlink" href="#the-cepheid-distance-scale" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="supernovae-as-distance-indicators">
+<h3><span class="section-number">7.1.4. </span>Supernovae as Distance Indicators<a class="headerlink" href="#supernovae-as-distance-indicators" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="type-ia-light-curves">
+<h3><span class="section-number">7.1.5. </span>Type Ia Light Curves<a class="headerlink" href="#type-ia-light-curves" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="using-novae-in-distance-determinations">
+<h3><span class="section-number">7.1.6. </span>Using Novae in Distance Determinations<a class="headerlink" href="#using-novae-in-distance-determinations" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="secondary-distance-indicators">
+<h3><span class="section-number">7.1.7. </span>Secondary Distance Indicators<a class="headerlink" href="#secondary-distance-indicators" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="the-globular-cluster-luminosity-function">
+<h3><span class="section-number">7.1.8. </span>The Globular Cluster Luminosity Function<a class="headerlink" href="#the-globular-cluster-luminosity-function" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="the-planetary-nebula-luminosity-function">
+<h3><span class="section-number">7.1.9. </span>The Planetary Nebula Luminosity Function<a class="headerlink" href="#the-planetary-nebula-luminosity-function" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="the-surface-brightness-fluctuation-method">
+<h3><span class="section-number">7.1.10. </span>The Surface Brightness Fluctuation Method<a class="headerlink" href="#the-surface-brightness-fluctuation-method" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="the-tully-fisher-relation">
+<h3><span class="section-number">7.1.11. </span>The Tully-Fisher Relation<a class="headerlink" href="#the-tully-fisher-relation" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="the-d-sigma-relation">
+<h3><span class="section-number">7.1.12. </span>The <span class="math notranslate nohighlight">\(D-\sigma\)</span> Relation<a class="headerlink" href="#the-d-sigma-relation" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="the-brightest-galaxies-in-clusters">
+<h3><span class="section-number">7.1.13. </span>The Brightest Galaxies in Clusters<a class="headerlink" href="#the-brightest-galaxies-in-clusters" title="Permalink to this headline">#</a></h3>
+</div>
 </div>
 <div class="section" id="the-expansion-of-the-universe">
 <h2><span class="section-number">7.2. </span>The Expansion of the Universe<a class="headerlink" href="#the-expansion-of-the-universe" title="Permalink to this headline">#</a></h2>
+<div class="section" id="hubble-s-law-of-universal-expansion">
+<h3><span class="section-number">7.2.1. </span>Hubble’s Law of Universal Expansion<a class="headerlink" href="#hubble-s-law-of-universal-expansion" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="the-expansion-of-space-and-the-hubble-flow">
+<h3><span class="section-number">7.2.2. </span>The Expansion of Space and the Hubble Flow<a class="headerlink" href="#the-expansion-of-space-and-the-hubble-flow" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="the-value-of-the-hubble-constant">
+<h3><span class="section-number">7.2.3. </span>The Value of the Hubble Constant<a class="headerlink" href="#the-value-of-the-hubble-constant" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="the-big-bang">
+<h3><span class="section-number">7.2.4. </span>The Big Bang<a class="headerlink" href="#the-big-bang" title="Permalink to this headline">#</a></h3>
+</div>
 </div>
 <div class="section" id="clusters-of-galaxies">
 <h2><span class="section-number">7.3. </span>Clusters of Galaxies<a class="headerlink" href="#clusters-of-galaxies" title="Permalink to this headline">#</a></h2>
+<div class="section" id="the-classification-of-clusters">
+<h3><span class="section-number">7.3.1. </span>The Classification of Clusters<a class="headerlink" href="#the-classification-of-clusters" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="the-local-group">
+<h3><span class="section-number">7.3.2. </span>The Local Group<a class="headerlink" href="#the-local-group" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="other-groups-within-10-rm-mpc-of-the-local-group">
+<h3><span class="section-number">7.3.3. </span>Other Groups within <span class="math notranslate nohighlight">\(10\ \rm Mpc\)</span> of the Local Group<a class="headerlink" href="#other-groups-within-10-rm-mpc-of-the-local-group" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="the-virgo-cluster-a-rich-irregular-cluster">
+<h3><span class="section-number">7.3.4. </span>The Virgo Cluster: A Rich, <em>Irregular</em> Cluster<a class="headerlink" href="#the-virgo-cluster-a-rich-irregular-cluster" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="the-coma-cluster-a-rich-regular-cluster">
+<h3><span class="section-number">7.3.5. </span>The Coma Cluster: A Rich, <em>Regular</em> Cluster<a class="headerlink" href="#the-coma-cluster-a-rich-regular-cluster" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="evidence-for-the-evolution-of-galaxies">
+<h3><span class="section-number">7.3.6. </span>Evidence for the Evolution of Galaxies<a class="headerlink" href="#evidence-for-the-evolution-of-galaxies" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="a-preponderance-of-matter-between-the-galaxies">
+<h3><span class="section-number">7.3.7. </span>A Preponderance of Matter between the Galaxies<a class="headerlink" href="#a-preponderance-of-matter-between-the-galaxies" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="the-hot-intracluster-gas">
+<h3><span class="section-number">7.3.8. </span>The Hot, Intracluster Gas<a class="headerlink" href="#the-hot-intracluster-gas" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="the-existence-of-superclusters">
+<h3><span class="section-number">7.3.9. </span>The Existence of Superclusters<a class="headerlink" href="#the-existence-of-superclusters" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="large-scale-motions-relative-to-the-hubble-flow">
+<h3><span class="section-number">7.3.10. </span>Large-scale Motions Relative to the Hubble Flow<a class="headerlink" href="#large-scale-motions-relative-to-the-hubble-flow" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="bubbles-and-voids-structure-on-the-largest-scales">
+<h3><span class="section-number">7.3.11. </span>Bubbles and Voids: Structure on the Largest Scales<a class="headerlink" href="#bubbles-and-voids-structure-on-the-largest-scales" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="quantifying-large-scale-structure">
+<h3><span class="section-number">7.3.12. </span>Quantifying Large-scale Structure<a class="headerlink" href="#quantifying-large-scale-structure" title="Permalink to this headline">#</a></h3>
+</div>
+<div class="section" id="what-were-the-seeds-of-structure">
+<h3><span class="section-number">7.3.13. </span>What were the Seeds of Structure?<a class="headerlink" href="#what-were-the-seeds-of-structure" title="Permalink to this headline">#</a></h3>
+</div>
 </div>
 <div class="section" id="homework">
 <h2><span class="section-number">7.4. </span><strong>Homework</strong><a class="headerlink" href="#homework" title="Permalink to this headline">#</a></h2>
