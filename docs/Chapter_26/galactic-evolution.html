@@ -758,8 +758,8 @@ title="Print to PDF"
 </ul>
 <p><em>Kinetic energy is transferred from <span class="math notranslate nohighlight">\(M\)</span> to the surrounding material as the speed of <span class="math notranslate nohighlight">\(M\)</span> is reduced.</em></p>
 <p>The physical quantities involved in dynamical friction are the mass <span class="math notranslate nohighlight">\(M\)</span>, the speed <span class="math notranslate nohighlight">\(v_M\)</span> of the massive object, and the mass density <span class="math notranslate nohighlight">\(\rho\)</span> of the surrounding material.  AS a result, the expression for the force must contain <span class="math notranslate nohighlight">\(GM\)</span>, <span class="math notranslate nohighlight">\(v_M\)</span>, and <span class="math notranslate nohighlight">\(\rho\)</span> only.  The expression for the force of dynamical friction is will have the following form,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5b788432-46e7-4592-aa9d-055113364a3f">
-<span class="eqno">(6.1)<a class="headerlink" href="#equation-5b788432-46e7-4592-aa9d-055113364a3f" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7b7a4a8f-eb88-411c-8e7c-a43080c89c5e">
+<span class="eqno">(6.1)<a class="headerlink" href="#equation-7b7a4a8f-eb88-411c-8e7c-a43080c89c5e" title="Permalink to this equation">#</a></span>\[\begin{align}
 f_d \simeq C \left(\frac{GM}{v_M} \right)^2 \rho,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(C\)</span> is dimensionless, but not a constant.  It is a function that depends on how <span class="math notranslate nohighlight">\(v_M\)</span> compares with the velocity dispersion <span class="math notranslate nohighlight">\(\sigma\)</span> of the surrounding medium (see <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1987gady.book.....B/abstract">Binney &amp; Tremaine (1987)</a> for more details).  For <span class="math notranslate nohighlight">\(v_M \sim 3\sigma\)</span>, the typical values of $C are</p>
@@ -794,19 +794,74 @@ f_d &amp;= C \left(\frac{GM}{v_M} \right)^2 \rho(r),\\
 <div class="math notranslate nohighlight">
 \[ \int_{r_i}^0 r dr = -\frac{CGM}{4\pi v_M}\int_0^{t_c} dt. \]</div>
 <p>Solving for the cluster lifetime yields</p>
-<div class="amsmath math notranslate nohighlight" id="equation-fde1a8b1-8957-46dc-9d2f-6625a1c3aae5">
-<span class="eqno">(6.2)<a class="headerlink" href="#equation-fde1a8b1-8957-46dc-9d2f-6625a1c3aae5" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-05b9f74d-f333-4da6-a632-cb0d1ec499d0">
+<span class="eqno">(6.2)<a class="headerlink" href="#equation-05b9f74d-f333-4da6-a632-cb0d1ec499d0" title="Permalink to this equation">#</a></span>\[\begin{align}
 t_c = \frac{2\pi v_M}{CGM}r_i^2.
 \end{align}\]</div>
 <p>This expression can be inverted to find the most distant cluster that could have been captured (via dynamical friction) within the estimated age of the galaxy:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-169af5bd-851b-40e8-8b3e-247bd8c8c774">
-<span class="eqno">(6.3)<a class="headerlink" href="#equation-169af5bd-851b-40e8-8b3e-247bd8c8c774" title="Permalink to this equation">#</a></span>\[\begin{align}
-r_{\rm max} = \sqrt{C\left(\frac{t_{\rm max}}{2\pi} \right)\left(\frac{GM}{v_M} \right)}
-.
+<div class="amsmath math notranslate nohighlight" id="equation-4734cf46-71ee-4418-9b24-95e2f0a1aaaa">
+<span class="eqno">(6.3)<a class="headerlink" href="#equation-4734cf46-71ee-4418-9b24-95e2f0a1aaaa" title="Permalink to this equation">#</a></span>\[\begin{align}
+r_{\rm max} = \sqrt{C\left(\frac{t_{\rm max}}{2\pi} \right)\left(\frac{GM}{v_M} \right)}.
 \end{align}\]</div>
+<div class="exercise orange admonition" id="Chapter_26/galactic-evolution-exercise-0">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6.1 </span></p>
+<div class="section" id="exercise-content">
+<p><strong>Consider a globular cluster that orbits the Andromeda galaxy (M31).  Assume that the cluster’s mass is <span class="math notranslate nohighlight">\(M = 5 \times 10^6\ M_\odot\)</span> and its velocity is <span class="math notranslate nohighlight">\(v_m = 250\ \rm km/s\)</span>, which is typical for the rotation curve in the outer part of the galaxy.  The age of M31 is approximately <span class="math notranslate nohighlight">\(13\ \rm Gyr\)</span>.</strong></p>
+<p><em>What is the maximum distance from the center that the globular cluster could have originated (assuming only inspiral from dynamical friction)?</em></p>
+<p>Since we are looking for the <em>maximum</em> distance, the value of <span class="math notranslate nohighlight">\(t_{\rm max} = 13\ {\rm Gyr} = 1.3\times 10^{10}\ {\rm yr}\)</span>.  The typical value for <span class="math notranslate nohighlight">\(C\)</span> is <span class="math notranslate nohighlight">\(76\)</span> in globular clusters.  Thus, we find (after converting to appropriate units)</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} 
+r_{\rm max} &amp;=\sqrt{C\left(\frac{t_{\rm max}}{2\pi} \right)\left(\frac{GM}{v_M} \right)}, \\
+&amp;= \sqrt{76\left[\frac{(1.3\times 10^{10}\ {\rm yr})(3.16\times 10^7\ {\rm s/yr})}{2\pi} \right] \left[\frac{(6.67\times 10^{-11}\ {\rm N\ m^2/kg^2})(5 \times 10^{6}\ M_\odot)(1.989 \times 10^{30}\ \rm kg/M_\odot)}{2.5\times 10^5\ {\rm m/s}} \right]}, \\
+&amp;= 3720\ {\rm pc} = 3.72\ {\rm kpc}.
+\end{align*}\]</div>
+<p>Similar mass clusters in M31 that were within approximately <span class="math notranslate nohighlight">\(4\ \rm kpc\)</span> fo the center of the galaxy would have spiraled into its nucleus by now.  The maximum radius <span class="math notranslate nohighlight">\(r_{\max} \propto \sqrt{M}\)</span>, which implies that globular clusters with <span class="math notranslate nohighlight">\(M &gt; 5\times 10^6\ M_\odot\)</span> could have been gathered from greater distances.  This may explain why there are not any very massive globular clusters remaining around M31 today.</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.constants</span> <span class="kn">import</span> <span class="n">G</span><span class="p">,</span> <span class="n">parsec</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">M_sun</span> <span class="o">=</span> <span class="mf">1.989e30</span> <span class="c1">#mass of Sun in kg</span>
+<span class="n">sec2yr</span> <span class="o">=</span> <span class="mi">3600</span><span class="o">*</span><span class="mi">24</span><span class="o">*</span><span class="mf">365.25</span>
+
+<span class="n">t_max</span> <span class="o">=</span> <span class="mf">1.3e10</span><span class="o">*</span><span class="n">sec2yr</span> <span class="c1">#Age of M31 in sec</span>
+<span class="n">C</span> <span class="o">=</span> <span class="mi">76</span> <span class="c1">#constant for globular clusters</span>
+<span class="n">M</span> <span class="o">=</span> <span class="mf">5e6</span><span class="o">*</span><span class="n">M_sun</span> <span class="c1">#mass of globular cluster in M_sun (to kg)</span>
+<span class="n">v_M</span> <span class="o">=</span> <span class="mf">250e3</span> <span class="c1">#rotation speed of globular cluster in m/s</span>
+
+<span class="n">r_max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">C</span><span class="o">*</span><span class="n">t_max</span><span class="o">*</span><span class="n">G</span><span class="o">*</span><span class="n">M</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">v_M</span><span class="p">))</span> <span class="c1">#maximum radius in m</span>
+<span class="n">r_max</span> <span class="o">/=</span> <span class="n">parsec</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The maximum radius of the globular cluster is </span><span class="si">%1.2f</span><span class="s2"> kpc.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">r_max</span><span class="o">/</span><span class="mi">1000</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The maximum radius of the globular cluster is 3.72 kpc.
+</pre></div>
+</div>
+</div>
+</div>
+<p>Not only are globular clusters affected by dynamical friction but so are satellite galaxies.  A stream of material has been tidally stripped from the Magellanic Clouds.  It appears that dynamical friction will ultimately cause the Magellanic Clouds to merge with the Milky Way some <span class="math notranslate nohighlight">\(14\ \rm Gyr\)</span> in the future.  This is a fate already suffered by the Sagittarius dSph galaxy, which is a remnant of the dwarf galaxy in Canis Major and possibly a progenitor galaxy of <span class="math notranslate nohighlight">\(\omega\)</span> Cen.</p>
+<p>The process of satellite accretion has a variety of possible consequences.  The gravitational torques involved in the merger of a satellite galaxy in a retrograde orbit could produce the counter-rotating cores that are observed in some elliptical galaxies.  In a disk galaxy, mergers may excite global oscillation modes and are capable of producing the featureless disks that are characteristic of Ir (amorphous) galaxies.</p>
 </div>
 <div class="section" id="rapid-encounters">
 <h3><span class="section-number">6.1.3. </span>Rapid Encounters<a class="headerlink" href="#rapid-encounters" title="Permalink to this headline">#</a></h3>
+<p>In contrast to the slow encounters via dynamical friction are rapid encounters that occur so quickly between two galaxies that their stars do not have time to respond.  Even in the special case where two galaxies pass through one another, there is no significant dynamical friction because there is no appreciable density enhancement.</p>
+<p>In this <em>impulse approximation</em>, the stars barely have time to alter their positions.  As a result, the internal potential energy <span class="math notranslate nohighlight">\(U\)</span> of each galaxy is unchanged by the collision.  However, the gravitational work that each galaxy performs on the other has <em>increased</em> the internal kinetic energies of both galaxies in a random way.  This internal kinetic energy comes at the expense of the overall kinetic energies of the galaxies’ motions with respect to one another.</p>
+<p>The amount of internal energy gained by galaxies depends on the proximity of the approach <span class="math notranslate nohighlight">\(r_{\rm min}\)</span> of the galaxies involved, with energy declining rapidly from more distant encounters (<span class="math notranslate nohighlight">\(E \propto 1/r_{\rm min}^4\)</span>).</p>
+<p>Suppose that one of the galaxies gains some internal kinetic energy during the interaction.  To determine how it will respond, assume that the galaxy was initially in equilibrium, which means that the virial theorem was applicable prior to the encounter and its initial kinetic, potential, and total energies were related by <span class="math notranslate nohighlight">\(2K_i = -U_i = -2E_i\)</span>.</p>
+<p>Imagine that during the encounter the galaxy’s internal kinetic energy increased by <span class="math notranslate nohighlight">\(\Delta K\)</span>.  Since the potential energy has remained essentially remained constant, that means the galaxy’s total energy has to increase by the same factor <span class="math notranslate nohighlight">\(\Delta K\)</span>, or <span class="math notranslate nohighlight">\(E_f = E_i + \Delta K\)</span>.  As a result, the galaxy has been thrown <em>out of</em> virial equilibrium.  After a few orbital periods, the equilibrium can be re-established, and then the final kinetic energy must be (according to the virial theorem)</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+K_f &amp;= K_i + \Delta K, \qquad&amp; \text{(just after collision)} \\
+K_f^\prime &amp;= -E_f = -(E_i + \Delta K) = K_i - \Delta K, \qquad&amp; \text{(after equilibration)} \\
+K_f^\prime &amp;= K_f - 2\Delta K.
+\end{align*}\]</div>
+<p>A equilibrium is regained, the internal kinetic energy of the galaxy actually <em>decreases</em> by <span class="math notranslate nohighlight">\(2\Delta K\)</span> from the value it had just after the collision.</p>
 </div>
 <div class="section" id="modeling-interactions-with-n-body-simulations">
 <h3><span class="section-number">6.1.4. </span>Modeling Interactions with <span class="math notranslate nohighlight">\(N\)</span>-Body Simulations<a class="headerlink" href="#modeling-interactions-with-n-body-simulations" title="Permalink to this headline">#</a></h3>
