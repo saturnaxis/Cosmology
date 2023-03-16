@@ -758,8 +758,8 @@ title="Print to PDF"
 </ul>
 <p><em>Kinetic energy is transferred from <span class="math notranslate nohighlight">\(M\)</span> to the surrounding material as the speed of <span class="math notranslate nohighlight">\(M\)</span> is reduced.</em></p>
 <p>The physical quantities involved in dynamical friction are the mass <span class="math notranslate nohighlight">\(M\)</span>, the speed <span class="math notranslate nohighlight">\(v_M\)</span> of the massive object, and the mass density <span class="math notranslate nohighlight">\(\rho\)</span> of the surrounding material.  AS a result, the expression for the force must contain <span class="math notranslate nohighlight">\(GM\)</span>, <span class="math notranslate nohighlight">\(v_M\)</span>, and <span class="math notranslate nohighlight">\(\rho\)</span> only.  The expression for the force of dynamical friction is will have the following form,</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7b7a4a8f-eb88-411c-8e7c-a43080c89c5e">
-<span class="eqno">(6.1)<a class="headerlink" href="#equation-7b7a4a8f-eb88-411c-8e7c-a43080c89c5e" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-ec47bb67-0d27-4ff0-950c-12cd1e81d30c">
+<span class="eqno">(6.1)<a class="headerlink" href="#equation-ec47bb67-0d27-4ff0-950c-12cd1e81d30c" title="Permalink to this equation">#</a></span>\[\begin{align}
 f_d \simeq C \left(\frac{GM}{v_M} \right)^2 \rho,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(C\)</span> is dimensionless, but not a constant.  It is a function that depends on how <span class="math notranslate nohighlight">\(v_M\)</span> compares with the velocity dispersion <span class="math notranslate nohighlight">\(\sigma\)</span> of the surrounding medium (see <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1987gady.book.....B/abstract">Binney &amp; Tremaine (1987)</a> for more details).  For <span class="math notranslate nohighlight">\(v_M \sim 3\sigma\)</span>, the typical values of $C are</p>
@@ -794,13 +794,13 @@ f_d &amp;= C \left(\frac{GM}{v_M} \right)^2 \rho(r),\\
 <div class="math notranslate nohighlight">
 \[ \int_{r_i}^0 r dr = -\frac{CGM}{4\pi v_M}\int_0^{t_c} dt. \]</div>
 <p>Solving for the cluster lifetime yields</p>
-<div class="amsmath math notranslate nohighlight" id="equation-05b9f74d-f333-4da6-a632-cb0d1ec499d0">
-<span class="eqno">(6.2)<a class="headerlink" href="#equation-05b9f74d-f333-4da6-a632-cb0d1ec499d0" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7f28b15f-4b40-480e-be56-3681f00f8343">
+<span class="eqno">(6.2)<a class="headerlink" href="#equation-7f28b15f-4b40-480e-be56-3681f00f8343" title="Permalink to this equation">#</a></span>\[\begin{align}
 t_c = \frac{2\pi v_M}{CGM}r_i^2.
 \end{align}\]</div>
 <p>This expression can be inverted to find the most distant cluster that could have been captured (via dynamical friction) within the estimated age of the galaxy:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-4734cf46-71ee-4418-9b24-95e2f0a1aaaa">
-<span class="eqno">(6.3)<a class="headerlink" href="#equation-4734cf46-71ee-4418-9b24-95e2f0a1aaaa" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-26da05a8-1505-475a-9ccb-154aa28957b4">
+<span class="eqno">(6.3)<a class="headerlink" href="#equation-26da05a8-1505-475a-9ccb-154aa28957b4" title="Permalink to this equation">#</a></span>\[\begin{align}
 r_{\rm max} = \sqrt{C\left(\frac{t_{\rm max}}{2\pi} \right)\left(\frac{GM}{v_M} \right)}.
 \end{align}\]</div>
 <div class="exercise orange admonition" id="Chapter_26/galactic-evolution-exercise-0">
@@ -861,7 +861,83 @@ K_f &amp;= K_i + \Delta K, \qquad&amp; \text{(just after collision)} \\
 K_f^\prime &amp;= -E_f = -(E_i + \Delta K) = K_i - \Delta K, \qquad&amp; \text{(after equilibration)} \\
 K_f^\prime &amp;= K_f - 2\Delta K.
 \end{align*}\]</div>
-<p>A equilibrium is regained, the internal kinetic energy of the galaxy actually <em>decreases</em> by <span class="math notranslate nohighlight">\(2\Delta K\)</span> from the value it had just after the collision.</p>
+<p>As equilibrium is regained, the internal kinetic energy of the galaxy actually <em>decreases</em> by <span class="math notranslate nohighlight">\(2\Delta K\)</span> from the value it had just after the collision.</p>
+<p><em>How does the galaxy accomplish this reduction?</em></p>
+<ol class="simple">
+<li><p>It can regain equilibrium by converting excess kinetic energy into an increased (i.e., less negative) gravitational potential energy.  The galaxy <em>expands slightly</em> as the separation between its masses increases.</p></li>
+<li><p>It can reduce the kinetic energy by the most energetic components carrying it out away from the galaxy in the form of stars and gas.  This evaporation cools the galaxy and moves it towards a new equilibrium.</p></li>
+</ol>
+<p>Both of these processes may occur, where the specific circumstances of the collision will determine which one dominates.  For example, a high-speed, nearly head-on collision may produce a <strong>ring galaxy</strong> (e.g., the <a class="reference external" href="https://en.wikipedia.org/wiki/Cartwheel_Galaxy">Cartwheel galaxy</a>).</p>
+<p>If two galaxies are gravitationally bound to ne another, they will eventually merge given enough time.  Galaxies do not follow the same trajectories as if they were point masses because of their extended mass distributions.  Some orbital energy is diverted into increasing the galaxies’ internal energy, and the orbit shrinks a bit.  Tidal forces may also dissipate the orbital energy by pulling stars and gas out of one or both galaxies, which is known as <strong>tidal stripping</strong>.</p>
+<p>The python code below produces a figure for point masses in a circular orbit, where it contains valuable insights for the present case of extended galaxies in non-circular orbits.  In particular, the tidal radii <span class="math notranslate nohighlight">\(\ell_1\)</span> and <span class="math notranslate nohighlight">\(\ell_2\)</span> are the distances from the center of each galaxy to the inner Lagrange point <span class="math notranslate nohighlight">\(L_1\)</span>.  As the two galaxies move about one another, the shape of the equipotential surfaces and the values of the tidal radii are constantly changing.  If stars or clouds of gas extend beyond a galaxy’s tidal radius, they have an tendency to escape from the gravitational well.  As a result, the density of galactic material undergoes a sharp decline beyond the tidal radius.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> 
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1">#Restricted Three Body Problem Psuedopotential contours</span>
+<span class="c1">#see Musielak &amp; Quarles (2014); https://ui.adsabs.harvard.edu/abs/2014RPPh...77f5901M/abstract</span>
+<span class="c1">#see MIT Opencourseware; https://ocw.mit.edu/courses/16-07-dynamics-fall-2009/841521e447f7e8ef98d92c4a9755eef2_MIT16_07F09_Lec18.pdf</span>
+
+<span class="k">def</span> <span class="nf">eff_grav_pot</span><span class="p">(</span><span class="n">M_1</span><span class="p">,</span><span class="n">M_2</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+    <span class="n">r_sqr</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span>
+    <span class="n">s_1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">x</span><span class="o">-</span><span class="n">x_1</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">s_2</span> <span class="o">=</span>  <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">x</span><span class="o">-</span><span class="n">x_2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">y</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">phi</span> <span class="o">=</span> <span class="o">-</span><span class="n">G</span><span class="o">*</span><span class="p">(</span><span class="n">M_1</span><span class="o">/</span><span class="n">s_1</span> <span class="o">+</span> <span class="n">M_2</span><span class="o">/</span><span class="n">s_2</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">omega_sqr</span><span class="o">*</span><span class="n">r_sqr</span>
+    <span class="k">return</span> <span class="n">phi</span><span class="o">/</span><span class="n">v_M</span>
+
+<span class="k">def</span> <span class="nf">plot_Lagrange</span><span class="p">(</span><span class="n">Lx</span><span class="p">,</span><span class="n">Ly</span><span class="p">,</span><span class="n">lbl</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">Lx</span><span class="p">,</span><span class="n">Ly</span><span class="p">,</span><span class="n">lbl</span><span class="p">,</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span><span class="n">verticalalignment</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">)</span>
+
+<span class="n">R_sun</span> <span class="o">=</span> <span class="mf">0.00465047</span> <span class="c1"># radius of the Sun in AU</span>
+<span class="n">G</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">M_1</span> <span class="o">=</span> <span class="mf">0.85</span> <span class="c1">#mass of star 1 in M_sun</span>
+<span class="n">M_2</span> <span class="o">=</span> <span class="mf">0.17</span> <span class="c1">#mass of star 2 in M_sun</span>
+<span class="n">mu</span> <span class="o">=</span> <span class="n">M_2</span><span class="o">/</span><span class="p">(</span><span class="n">M_1</span><span class="o">+</span><span class="n">M_2</span><span class="p">)</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="o">-</span><span class="n">mu</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mf">0.718</span><span class="o">*</span><span class="n">R_sun</span> <span class="c1">#semimajor axis of binary in AU</span>
+<span class="n">omega_sqr</span> <span class="o">=</span> <span class="n">G</span><span class="o">*</span><span class="p">(</span><span class="n">M_1</span><span class="o">+</span><span class="n">M_2</span><span class="p">)</span><span class="o">/</span><span class="n">a</span><span class="o">**</span><span class="mi">3</span> <span class="c1">#squared mean motion of the binary (2*pi/P)^2</span>
+<span class="n">v_M</span> <span class="o">=</span> <span class="n">G</span><span class="o">*</span><span class="p">(</span><span class="n">M_1</span><span class="o">+</span><span class="n">M_2</span><span class="p">)</span><span class="o">/</span><span class="n">a</span>
+
+<span class="n">phi_loc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">3.</span><span class="p">,</span><span class="o">-</span><span class="mf">1.875</span><span class="p">,</span><span class="o">-</span><span class="mf">1.768</span><span class="p">,</span><span class="o">-</span><span class="mf">1.583</span><span class="p">,</span><span class="o">-</span><span class="mf">1.431</span><span class="p">]),</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">L_1</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="p">(</span><span class="n">alpha</span><span class="o">/</span><span class="mf">3.</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="mf">3.</span><span class="p">)</span>
+<span class="n">L_2</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="p">(</span><span class="n">alpha</span><span class="o">/</span><span class="mf">3.</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="mf">3.</span><span class="p">)</span>
+<span class="n">L_3</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">5</span><span class="o">*</span><span class="n">alpha</span><span class="o">/</span><span class="mf">12.</span><span class="p">)</span>
+<span class="n">L_4x</span><span class="p">,</span> <span class="n">L_4y</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="p">(</span><span class="n">M_1</span><span class="o">-</span><span class="n">M_2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">M_1</span><span class="o">+</span><span class="n">M_2</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mf">2.</span>
+<span class="n">L_5x</span><span class="p">,</span> <span class="n">L_5y</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="p">(</span><span class="n">M_1</span><span class="o">-</span><span class="n">M_2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">M_1</span><span class="o">+</span><span class="n">M_2</span><span class="p">),</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mf">2.</span>
+
+<span class="n">x_1</span> <span class="o">=</span> <span class="o">-</span><span class="n">mu</span><span class="o">*</span><span class="n">a</span> <span class="c1">#x-position to the left of the center of mass for mass 1</span>
+<span class="n">x_2</span> <span class="o">=</span> <span class="n">alpha</span><span class="o">*</span><span class="n">a</span> <span class="c1">#x-position to the right of the center of mass for mass 2</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+
+<span class="n">x_coord</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mf">2.01</span><span class="p">,</span><span class="mf">0.001</span><span class="p">)</span><span class="o">*</span><span class="n">a</span>
+<span class="n">y_coord</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mf">2.01</span><span class="p">,</span><span class="mf">0.001</span><span class="p">)</span><span class="o">*</span><span class="n">a</span>
+<span class="n">X</span><span class="p">,</span><span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">x_coord</span><span class="p">,</span><span class="n">y_coord</span><span class="p">)</span>
+<span class="n">Z</span> <span class="o">=</span> <span class="n">eff_grav_pot</span><span class="p">(</span><span class="n">M_1</span><span class="p">,</span><span class="n">M_2</span><span class="p">,</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">)</span>
+
+<span class="n">CS</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">contour</span><span class="p">(</span><span class="n">X</span><span class="o">/</span><span class="n">a</span><span class="p">,</span><span class="n">Y</span><span class="o">/</span><span class="n">a</span><span class="p">,</span><span class="n">Z</span><span class="p">,</span><span class="n">levels</span><span class="o">=</span><span class="n">phi_loc</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_1</span><span class="o">/</span><span class="n">a</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;k.&#39;</span><span class="p">,</span><span class="n">ms</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_2</span><span class="o">/</span><span class="n">a</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s1">&#39;k.&#39;</span><span class="p">,</span><span class="n">ms</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+
+<span class="n">plot_Lagrange</span><span class="p">(</span><span class="n">L_1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;$L_1$&quot;</span><span class="p">)</span>
+<span class="n">plot_Lagrange</span><span class="p">(</span><span class="n">L_2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;$L_2$&quot;</span><span class="p">)</span>
+<span class="n">plot_Lagrange</span><span class="p">(</span><span class="n">L_3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;$L_3$&quot;</span><span class="p">)</span>
+<span class="n">plot_Lagrange</span><span class="p">(</span><span class="n">L_4x</span><span class="p">,</span><span class="n">L_4y</span><span class="p">,</span><span class="s2">&quot;$L_4$&quot;</span><span class="p">)</span>
+<span class="n">plot_Lagrange</span><span class="p">(</span><span class="n">L_5x</span><span class="p">,</span><span class="n">L_5y</span><span class="p">,</span><span class="s2">&quot;$L_5$&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/galactic-evolution_4_0.png" src="../_images/galactic-evolution_4_0.png" />
+</div>
+</div>
+<p><strong>Polar-ring galaxies</strong> and <strong>dust-lane ellipticals</strong> are normal galaxies that are orbited by rings of gas, dust, and stars that were stripped from other galaxies as they passed by or merged.  Polar rings contain <span class="math notranslate nohighlight">\(10^9\ M_\odot\)</span> (or more) of gas and are found only around elliptical or S0 galaxies.  It is estimated that <span class="math notranslate nohighlight">\({\sim}5%\)</span> of all S0 galaxies have (or did have in the past) a polar ring.</p>
+<p>Because the rings respond to the gravitational field of the galaxies, astronomers use them as probes of the 3D distribution of matter (both luminous and dark) in their host galaxies.  The results of studying several polar-ring galaxies show that they are surrounded by spherical dark halos.  An example of a well-known dust-lane elliptical is Centaurus A (NGC 512), which is also a powerful radio source.  An extreme case of a gaseous ring (no stars) is that one that encircles the central two galaxies of the M96 group in the constellation Leo.  The gas is in an elliptical orbit around the two galaxies, where the eccentricity is <span class="math notranslate nohighlight">\(e=0.402\)</span>.</p>
+<p>An elliptical orbit is the result of an inverse-square law force, which means that the gas in the M96 group must lie <em>beyond</em> andy dark matter halos surrounding the two galaxies.  The semimajor axis of the orbit is <span class="math notranslate nohighlight">\(a = 101\ \rm kpc\)</span>, so the maximum extent of any dark halo must be given by <span class="math notranslate nohighlight">\(r_p = a(1-e) = 60\ \rm kpc\)</span>, the perigalacton distance.  This calculation must be viewed cautiously because the ring is merely a locus of gas and may not in fact coincide with the orbit followed by a single particle.</p>
 </div>
 <div class="section" id="modeling-interactions-with-n-body-simulations">
 <h3><span class="section-number">6.1.4. </span>Modeling Interactions with <span class="math notranslate nohighlight">\(N\)</span>-Body Simulations<a class="headerlink" href="#modeling-interactions-with-n-body-simulations" title="Permalink to this headline">#</a></h3>
