@@ -551,6 +551,11 @@ title="Print to PDF"
      7.1.12. The Brightest Galaxies in Clusters
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-summary-of-distance-indicators">
+     7.1.13. A Summary of Distance Indicators
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -767,6 +772,11 @@ title="Print to PDF"
      7.1.12. The Brightest Galaxies in Clusters
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-summary-of-distance-indicators">
+     7.1.13. A Summary of Distance Indicators
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -916,8 +926,8 @@ title="Print to PDF"
 <h3><span class="section-number">7.1.3. </span>The Cepheid Distance Scale<a class="headerlink" href="#the-cepheid-distance-scale" title="Permalink to this headline">#</a></h3>
 <p>For more distant objects, astronomers turn to the <a class="reference external" href="https://en.wikipedia.org/wiki/Period-luminosity_relation">period-luminosity relation</a> for Cepheids.  Before this relation could be used, it had to be calibrated by finding a classical Cepheid.  The nearest one (Polaris) was too far away (<span class="math notranslate nohighlight">\({\sim}200\ \rm pc\)</span>) for trigonometric parallax to be useful when the first calibrations were being performed in the early 20th century.</p>
 <p>In 1913, Ejnar Hertzsprung used the Sun’s motion of <span class="math notranslate nohighlight">\(16.5\ \rm km/s\)</span> with respect to the LSR to provide a longer baseline for parallax measurements.  It was this technique of <a class="reference external" href="https://saturnaxis.github.io/Cosmology/Chapter_25/milky-way-galaxy.html#some-methods-for-determining-distances">secular parallax</a> that enabled him to determine the average distance to a classical Cepheid with a period of <span class="math notranslate nohighlight">\(6.6\ \rm days\)</span>.  Hertzsprung then used this information to calibrate the period-luminosity relation, where Shapley carried out a similar procedure.  The distances to more Cepheids have been measured by parallax and other methods since then, and the period-luminosity relation has become well established.  Astronomer today use a period-luminosity relation in the form (<a class="reference external" href="https://iopscience.iop.org/article/10.1088/0004-637X/709/1/120/pdf">Marengo et al. (2010)</a>)</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d331a73e-1a94-469e-88b9-da4df76108cc">
-<span class="eqno">(7.1)<a class="headerlink" href="#equation-d331a73e-1a94-469e-88b9-da4df76108cc" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-67faf994-caf3-4557-a94b-e47e9d95e399">
+<span class="eqno">(7.1)<a class="headerlink" href="#equation-67faf994-caf3-4557-a94b-e47e9d95e399" title="Permalink to this equation">#</a></span>\[\begin{align}
 M_V = \alpha\left[\log_{10} P -1.0 \right] + \beta,
 \end{align}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\beta\)</span> accounts for the finite width of the instability strip on the H-R diagram.  Carroll &amp; Ostlie (2007) use <span class="math notranslate nohighlight">\(\alpha = -3.53\)</span> and <span class="math notranslate nohighlight">\(\beta = 2.13(B-V) - 5.66\)</span>, where Marengo et al. (2010) use <span class="math notranslate nohighlight">\(\alpha = -3.37 \pm 0.06\)</span> and <span class="math notranslate nohighlight">\(\beta = -5.65 \pm 0.02\)</span> in the K band.  In both cases, <span class="math notranslate nohighlight">\(P\)</span> is the pulsation period in units of days, where <span class="math notranslate nohighlight">\(B-V\)</span> refers to the color index.  For classical Cepheids <span class="math notranslate nohighlight">\(B-V\approx 0.4\text{ to } 1.1\)</span>.  After the star’s absolute magnitude has been calculated, it can be combined with the star’s apparent magnitude to give its distance modulus.</p>
@@ -1068,27 +1078,214 @@ The absolute magnitude of the Type Ia supernova is approximatley -17.69.
 </section>
 <section id="the-planetary-nebula-luminosity-function">
 <h3><span class="section-number">7.1.8. </span>The Planetary Nebula Luminosity Function<a class="headerlink" href="#the-planetary-nebula-luminosity-function" title="Permalink to this headline">#</a></h3>
+<p>A galaxy’s planetary nebulae are determined using a similar statistical analysis through the <strong>planetary nebula luminosity function</strong> (PNLF).  Using the Leo I group of galaxies, their luminosity increases with measurement of the absolute magnitude at <span class="math notranslate nohighlight">\(\lambda = 500.7\ \rm nm\)</span>.</p>
+<p>Using extragalactic planetary nebulae in this way is a reliable method of finding the distances to elliptical galaxies within about <span class="math notranslate nohighlight">\(20\ \rm Mpc\)</span>.  As a larger sample of galaxies was studied, the cutoff absolute magnitude is <span class="math notranslate nohighlight">\(M_{5007} = -4.53\)</span>.  This method can be adopted as a standard candle for the brightest planetary nebula.  If the promise of this method is fulfilled, it should reach out to a distance of <span class="math notranslate nohighlight">\(\sim 50\ \rm Mpc\)</span>.</p>
 </section>
 <section id="the-surface-brightness-fluctuation-method">
 <h3><span class="section-number">7.1.9. </span>The Surface Brightness Fluctuation Method<a class="headerlink" href="#the-surface-brightness-fluctuation-method" title="Permalink to this headline">#</a></h3>
+<p>Astronomers turn to the global properties of galaxies to probe even farther (up to <span class="math notranslate nohighlight">\(100\ \rm Mpc\)</span> or more).  One promising approach is to use how a CCD camera record the appearance of a galaxy.  Some pixels will record more stars than others due to the spatial fluctuation in the galaxy’s surface brightness, but the overall appearance should become smoother with increasing distance.  The results of a statistical analysis describe the magnitude of the pixel-to-pixel variation, and this is correlated with the galaxy’s distance.  With HST, the <strong>surface brightness fluctuation method</strong> could reach out to <span class="math notranslate nohighlight">\(125\ \rm Mpc\)</span>, but it is usually applied more locally.</p>
 </section>
 <section id="the-tully-fisher-relation">
 <h3><span class="section-number">7.1.10. </span>The Tully-Fisher Relation<a class="headerlink" href="#the-tully-fisher-relation" title="Permalink to this headline">#</a></h3>
+<p>The Tully-Fisher relation for spiral galaxies also provides a valuable tool for determining extragalactic distances.  This is a relation between the luminosity of a spiral galaxy and its maximum rotation velocity.</p>
+<div class="exercise orange admonition" id="Chapter_27/structure-of-the-universe-exercise-2">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7.3 </span></p>
+<section id="exercise-content">
+<p><strong>The rotation velocity <span class="math notranslate nohighlight">\(W_R^i\)</span> in M81 is approximately <span class="math notranslate nohighlight">\(484\ \rm km/s\)</span> and the apparent <span class="math notranslate nohighlight">\(H\)</span> magnitude is <span class="math notranslate nohighlight">\(4.29\)</span> (already corrected for extinction).</strong></p>
+<p><em>What is the infrared absolute magnitude <span class="math notranslate nohighlight">\(M_H\)</span> and distance to M81?</em></p>
+<p>Using the relation Pierce and Tully (1992)  (Eq. <a class="reference internal" href="../Chapter_24/nature-of-galaxies.html#equation-tully-hmag-relation">(4.6)</a>), we can use the measured rotation velocity to find the <span class="math notranslate nohighlight">\(H\)</span> band absolute magnitude as:</p>
+<div class="math notranslate nohighlight">
+\[ M_H = -9.50\left(\log_{10}{484\ {\rm km/s}}-2.50 \right) - 21.67 = -23.43. \]</div>
+<p>With the apparent and absolute magnitudes in the <span class="math notranslate nohighlight">\(H\)</span> band, we can then calculate the distance to M81 using the distance modulus,</p>
+<div class="math notranslate nohighlight">
+\[ d = 10^{(4.29 - (-23.43)+5)/5} = 3.49\ \rm Mpc.\]</div>
+</section>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">W_R</span> <span class="o">=</span> <span class="mi">484</span> <span class="c1">#measured rotation velocity of M81 in km/s</span>
+<span class="n">app_H</span> <span class="o">=</span> <span class="mf">4.29</span>
+<span class="n">abs_H</span> <span class="o">=</span> <span class="o">-</span><span class="mf">9.5</span><span class="o">*</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log10</span><span class="p">(</span><span class="n">W_R</span><span class="p">)</span><span class="o">-</span><span class="mf">2.5</span><span class="p">)</span> <span class="o">-</span><span class="mf">21.67</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The absolute H magnitude of M81 is </span><span class="si">%2.2f</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="n">abs_H</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---------------------------&quot;</span><span class="p">)</span>
+
+<span class="n">d</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="p">((</span><span class="n">app_H</span><span class="o">-</span><span class="n">abs_H</span><span class="o">+</span><span class="mi">5</span><span class="p">)</span><span class="o">/</span><span class="mf">5.</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The distance to M81 is </span><span class="si">%1.3e</span><span class="s2"> pc or </span><span class="si">%1.2f</span><span class="s2"> Mpc.&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="n">d</span><span class="o">/</span><span class="mf">1e6</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The absolute H magnitude of M81 is -23.43.
+---------------------------
+The distance to M81 is 3.493e+06 pc or 3.49 Mpc.
+</pre></div>
+</div>
+</div>
+</div>
+<p>The appeal of the Tully-Fisher method of distance determination lies in its accuracy (typically <span class="math notranslate nohighlight">\(\pm 0.4\ \rm mag\)</span> in the IR) and its great range (as far as <span class="math notranslate nohighlight">\(100\ \rm Mpc\)</span>).  Nearby spirals whose distances have been accurately measured by Cepheids can be used for its calibration.</p>
+<p>The Tully-Fisher method has been applied to 161 spiral galaxies belonging to the Virgo cluster, which resulted in producing a 3D map of the cluster and that the Virgo cluster extends along the line-of-sight about <span class="math notranslate nohighlight">\(4\times\)</span> its diameter on the sky.</p>
 </section>
 <section id="the-d-sigma-relation">
 <h3><span class="section-number">7.1.11. </span>The <span class="math notranslate nohighlight">\(D-\sigma\)</span> Relation<a class="headerlink" href="#the-d-sigma-relation" title="Permalink to this headline">#</a></h3>
+<p>The analogous correlation for elliptical galaxies (the <a class="reference external" href="https://saturnaxis.github.io/Cosmology/Chapter_24/nature-of-galaxies.html#the-faber-jackson-relation">Faber-Jackson relation</a>; <span class="math notranslate nohighlight">\(L \propto \sigma_r^4\)</span>) shows considerable scatter.  The <span class="math notranslate nohighlight">\(\mathbf{D-\sigma}\)</span> relation compares the velocity dispersion <span class="math notranslate nohighlight">\(\sigma\)</span> to the diameter <span class="math notranslate nohighlight">\(D\)</span> of an elliptical galaxy.  The galaxy’s angular diameter <span class="math notranslate nohighlight">\(D\)</span> out to a surface brightness level of <span class="math notranslate nohighlight">\(20.75\ \rm {B{-}mag/arcsec^2}\)</span>.</p>
+<p>Because the surface brightness is independent of galaxy’s distance (within <span class="math notranslate nohighlight">\(500\ \rm Mcp\)</span>), <span class="math notranslate nohighlight">\(D\)</span> is inversely proportional to the galaxy’s distance <span class="math notranslate nohighlight">\(d\)</span>.  If the galaxy were twice as far away, its angular diameter would be half as large.  In this way, <span class="math notranslate nohighlight">\(D\)</span> provides a <em>standard ruler</em> rather than a standard candle.  There is a tighter relationship between <span class="math notranslate nohighlight">\(\sigma\)</span> and <span class="math notranslate nohighlight">\(D\)</span> than there is between <span class="math notranslate nohighlight">\(\sigma\)</span> and <span class="math notranslate nohighlight">\(L\)</span>.  An empirical logarithmic relation between <span class="math notranslate nohighlight">\(D\)</span> and <span class="math notranslate nohighlight">\(\sigma\)</span> for the galaxies in a cluster (all at about the same distance) is</p>
+<div class="amsmath math notranslate nohighlight" id="equation-0100fb2c-57f3-47d4-83b5-c19d907021aa">
+<span class="eqno">(7.2)<a class="headerlink" href="#equation-0100fb2c-57f3-47d4-83b5-c19d907021aa" title="Permalink to this equation">#</a></span>\[\begin{align} 
+\log_{10}{D} = 1.333\log_{10}{\sigma} + C,
+\end{align}\]</div>
+<p>where the constant <span class="math notranslate nohighlight">\(C\)</span> depends on the distance to the cluster of galaxies.  Unfortunately, there are no bright elliptical galaxies available for the accurate calibration of this <span class="math notranslate nohighlight">\(D-\sigma\)</span> method by primary distance indicators (e.g., Cepheids).  However, because the slopes of the lines from a logarithmic plot of <span class="math notranslate nohighlight">\(sigma\)</span> vs. <span class="math notranslate nohighlight">\(D\)</span> are very nearly the same, the vertical distance between the lines for two different clusters is</p>
+<div class="math notranslate nohighlight">
+\[ \log_{10}{D_1} - \log_{10}{D_2} = C_1 - C_2. \]</div>
+<p>Because <span class="math notranslate nohighlight">\(D\)</span> is inversely proportional to a galaxy’s distance <span class="math notranslate nohighlight">\(d\)</span>, the <em>relative</em> distances between the two clusters can be found using</p>
+<div class="amsmath math notranslate nohighlight" id="equation-dd187817-125d-4e45-aaa1-592e5ddac6cb">
+<span class="eqno">(7.3)<a class="headerlink" href="#equation-dd187817-125d-4e45-aaa1-592e5ddac6cb" title="Permalink to this equation">#</a></span>\[\begin{align}
+\frac{d_2}{d_1} = \frac{D_1}{D_2} = 10^{C_1-C_2}.
+\end{align}\]</div>
+<p>The <span class="math notranslate nohighlight">\(D-\sigma\)</span> relation can be a powerful tool for studying the distribution of galaxy clusters because the inherent brightness of giant elliptical galaxies.  This technique also has the potential of exceeding the range of the Tully-Fisher relation.</p>
+<div class="exercise orange admonition" id="Chapter_27/structure-of-the-universe-exercise-3">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7.4 </span></p>
+<section id="exercise-content">
+<p><strong>The <span class="math notranslate nohighlight">\(y\)</span>-intercept for a <span class="math notranslate nohighlight">\(\sigma\)</span> vs. <span class="math notranslate nohighlight">\(D\)</span> plot indicates that the value of <span class="math notranslate nohighlight">\(C\)</span> for the Virgo cluster is <span class="math notranslate nohighlight">\(-1.237\)</span>, and for the Coma cluster it is <span class="math notranslate nohighlight">\(-1.967\)</span>.</strong></p>
+<p><em>What is the ratio of distances between the two clusters of galaxies?  How much farther is one galaxy cluster compared to the other?</em></p>
+<p>The distance ratio between the two clusters can be determined through the ratio of distance formulae.  This results in simply subtracting the values of <span class="math notranslate nohighlight">\(C\)</span> for the respective clusters and using the result as the exponent using a base-10, or</p>
+<div class="math notranslate nohighlight">
+\[ \frac{d_{\rm Coma}}{d_{\rm Virgo}} = 10^{C_{\rm Virgo}-C_{\rm coma}} = 5.37. \]</div>
+<p>The distance ratio tells us that the Coma cluster is <span class="math notranslate nohighlight">\(5.37\times\)</span> farther away than the Virgo cluster.</p>
+</section>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">C_Virgo</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.237</span>
+<span class="n">C_Coma</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.967</span>
+
+<span class="n">d_ratio</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="n">C_Virgo</span> <span class="o">-</span> <span class="n">C_Coma</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The relative distance between the two clusters is </span><span class="si">%1.2f</span><span class="s2">.&quot;</span> <span class="o">%</span> <span class="n">d_ratio</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The relative distance between the two clusters is 5.37.
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="the-brightest-galaxies-in-clusters">
 <h3><span class="section-number">7.1.12. </span>The Brightest Galaxies in Clusters<a class="headerlink" href="#the-brightest-galaxies-in-clusters" title="Permalink to this headline">#</a></h3>
+<p>Just as the brightest H II regions or the brightest red supergiants have been used to determine the distance to individual galaxies, the brightest galaxy in a cluster can be used to obtain the cluster’s distance.</p>
+<p>From a composite luminosity function, we can see a sharp decline in the function at the bright end (more negative <span class="math notranslate nohighlight">\(M\)</span>), which indicates that the absolute magnitude of the brightest galaxy can be determined with some accuracy.  The average value of the absolute visual magnitude for the brightest galaxy in ten nearby clusters is <span class="math notranslate nohighlight">\(M_V = -22.83 \pm 0.61\)</span>, where this is <span class="math notranslate nohighlight">\(3.2\)</span> magnitudes brighter than a Type Ia supernova at peak brilliance and in principle, this method should reach <span class="math notranslate nohighlight">\(4\times\)</span> farther than with supernovae (to <span class="math notranslate nohighlight">\(&gt;4000\ \rm Mpc\)</span>).</p>
+<p>The danger in using this method is that galaxies and galaxy cluster both evolve.  For example, the brightest galaxy in a contemporary cluster may not have existed in its present form billions of years ago.  the giant cD galaxies often found at the centers of reich clusters are probably the result of galactic mergers.  Using a general galaxy luminosity function calibrated with nearby clusters may not be appropriate for very distant, and consequently younger-looking clusters.</p>
+</section>
+<section id="a-summary-of-distance-indicators">
+<h3><span class="section-number">7.1.13. </span>A Summary of Distance Indicators<a class="headerlink" href="#a-summary-of-distance-indicators" title="Permalink to this headline">#</a></h3>
+<p>The extragalactic distance scale is not a simple ladder, with just on sequence of steps possible for measuring the greatest distances.  Different astronomers use different techniques and choose different calibrations.  There are variations with every method, and the relations are chosen only to representative.</p>
+<p>Table <a class="reference internal" href="#distance-table"><span class="std std-numref">7.1</span></a> lists the distance to the Virgo cluster as determined by many of these methods.  It also shows the uncertainty (in <span class="math notranslate nohighlight">\(\rm mag\)</span>) associated with each of these techniques.  Overall, the distances are in good agreement, where the modern value is <span class="math notranslate nohighlight">\(16.5 \pm 0.1\ \rm Mpc\)</span> (see <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/2007ApJ...655..144M/abstract">Mei et al. (2007)</a>).  These methods are sufficiently accurate to determine the features of our corner of the universe, out to a distance of a few <span class="math notranslate nohighlight">\(100\ \rm Mpc\)</span>.</p>
+<table class="table" id="distance-table">
+<caption><span class="caption-number">Table 7.1 </span><span class="caption-text">Distance Indicators (Adapted from <a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1992PASP..104..599J/abstract">Jacoby et al. (1992)</a>)</span><a class="headerlink" href="#distance-table" title="Permalink to this table">#</a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Method</p></th>
+<th class="head"><p>Uncertainty for <br> a Single Galaxy <br> (mag)</p></th>
+<th class="head"><p>Distance to <br> the Virgo Cluster <br> (Mpc)</p></th>
+<th class="head"><p>Range <br> (Mpc)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Cepheids</p></td>
+<td><p><span class="math notranslate nohighlight">\(0.16\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(15-25\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(29\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Novae</p></td>
+<td><p><span class="math notranslate nohighlight">\(0.4\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(21.1 \pm 3.9\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(20\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Planetary nebula <br> luminosity function</p></td>
+<td><p><span class="math notranslate nohighlight">\(0.3\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(15.4 \pm 1.1\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(50\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Globular cluster <br> luminosity function</p></td>
+<td><p><span class="math notranslate nohighlight">\(0.4\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(18.8 \pm 3.8\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(50\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Surface brightness <br> luminosity function</p></td>
+<td><p><span class="math notranslate nohighlight">\(0.3\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(15.9 \pm 0.9\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(50\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Tully-Fisher relation</p></td>
+<td><p><span class="math notranslate nohighlight">\(0.4\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(15.8 \pm 1.5\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(&gt;100\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(D-\sigma\)</span> relation</p></td>
+<td><p><span class="math notranslate nohighlight">\(0.5\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(16.8 \pm 2.4\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(&gt;100\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Type Ia supernovae</p></td>
+<td><p><span class="math notranslate nohighlight">\(0.10\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(19.4 \pm 5.0\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(&gt;1000\)</span></p></td>
+</tr>
+</tbody>
+</table>
 </section>
 </section>
 <section id="the-expansion-of-the-universe">
 <h2><span class="section-number">7.2. </span>The Expansion of the Universe<a class="headerlink" href="#the-expansion-of-the-universe" title="Permalink to this headline">#</a></h2>
+<p>In the early 1900s, astronomers began making systematic observations of the galactic radial velocities by measuring their Doppler-shifted spectral lines.  It was hoped that if the motions of these objects were found to be random, then the Sun’s motion in the Milky Wya should be related to the vector sum of the radial velocities of the spiral nebulae.</p>
+<p>It was <a class="reference external" href="https://en.wikipedia.org/wiki/Vesto_M._Slipher">Vesto Slipher</a> who first discovered that this plan was doomed to failure.  The velocities of the spiral nebulae were <em>not</em> random.  Instead, most of the spectra showed redshifted spectral lines.  Slipher announced in 1914 that most of the 12 galaxies he surveyed were rapidly moving <em>away</em> from Earth, although M31’s blueshifted spectrum indicated it was approaching Earth at nearly <span class="math notranslate nohighlight">\(300\ \rm km/s\)</span>.  It was quickly realized that these galaxies were not <em>only</em> moving away from Earth but moving away from each other as well.</p>
+<p>Astronomers began to talk about these galactic motions in terms of an expansion.  Meanwhile, Slipher continuted his measurements, and by 1925, he had examined <span class="math notranslate nohighlight">\(40\)</span> galaxies with spectra showing redshifted lines were much more common than those exhibiting blueshifts.  Slipher concluded that nearly every galaxy he examined was rapidly receding from Earth.</p>
 <section id="hubble-s-law-of-universal-expansion">
 <h3><span class="section-number">7.2.1. </span>Hubble’s Law of Universal Expansion<a class="headerlink" href="#hubble-s-law-of-universal-expansion" title="Permalink to this headline">#</a></h3>
+<p>In 1925, Hubble discovered Cepheid variable stars in M31, which established that the Andromeda “nebula” was in fact an external galaxy.  Hubble continued his search for Cepheids, while determining the distances to <span class="math notranslate nohighlight">\(18\)</span> galaxies.  He combined his results with Slipher’s velocities and discovered tha a galaxy’s recessional velocity <span class="math notranslate nohighlight">\(v\)</span> was proportional to its distance <span class="math notranslate nohighlight">\(d\)</span>.  In 1929, Hubble presented his results in a paper at a meeting of the National Academy of Sciences (<a class="reference external" href="https://ui.adsabs.harvard.edu/abs/1929PNAS...15..168H/abstract">Hubble (1929)</a>), which included the relation,</p>
+<div class="amsmath math notranslate nohighlight" id="equation-9f158e9b-6c66-4d50-ba9e-19a4ea9264d9">
+<span class="eqno">(7.4)<a class="headerlink" href="#equation-9f158e9b-6c66-4d50-ba9e-19a4ea9264d9" title="Permalink to this equation">#</a></span>\[\begin{align}
+v = H_o d.
+\end{align}\]</div>
+<p>This relation is today called <strong>Hubble’s law</strong>, where the proportionality constant is called the <strong>Hubble constant</strong> <span class="math notranslate nohighlight">\(H_o\)</span>.  The recessional velocity is usually given in <span class="math notranslate nohighlight">\(\rm km/s\)</span> and the distance <span class="math notranslate nohighlight">\(d\)</span> in <span class="math notranslate nohighlight">\(\rm Mpc\)</span>, so Hubble’s constant <span class="math notranslate nohighlight">\(H_o\)</span> has units of <span class="math notranslate nohighlight">\(\rm km/s/Mpc\)</span>.</p>
+<p>Hubble realized that he had discovered an exceptionally powerful method of finding distance to remote galaxies simply by measuring their redshifts.  his early results show a linear fit to a scattering of points on a graph of velocity <span class="math notranslate nohighlight">\(v\)</span> vs. distance <span class="math notranslate nohighlight">\(d\)</span>.  Hubble continued to compile distances and redshifts to strengthen this relationship, with much of the work done my his assistant, <a class="reference external" href="https://en.wikipedia.org/wiki/Milton_L._Humason">Milton Humason</a>.</p>
+<p>Humason literally worked his up to the top at Mt. Wilson Observatory, where he started out as a mule packer when the observatory was begin constructed.  Then, he served as a restaurant busboy, janitor, and night assistant at Mt. Wilson.  After Humason gained permission to observe on the smaller telescopes, Hubble was so impressed with the results that Humason ended up as his assistant.  Humason exposed and measured most of the photographic plates himself.  By 1934, the distances and velocities of <span class="math notranslate nohighlight">\(32\)</span> galaxies were obtained and the expansion of the universe became an observational feature of the universe.</p>
+<p>Interestingly, the idea of a universal expansion was simultaneously being developed by theorists.  <a class="reference external" href="https://en.wikipedia.org/wiki/Willem_de_Sitter">Willem de Sitter</a> used Einstein’s theory of general relativity to describe a universe that was <strong>expanding</strong>.  Although de Sitter’s solution of Einstein’s equations described a vacuum (universe devoid of matter), it did predict a redshift that increased with the distance from the light’s origin.</p>
+<p>Hubble was aware of de Sitter’s work, where Hubble referenced the expansion ast the de Sitter effect.  Other theorists later found additional solutions that also indicated a universal expansion, but astronomers were unaware of their results until 1930.  Einstein himself initially favored a <em>static</em> universe that was neither expanding nor contracting.  However, the observations of Hubble and Humason forced Einstein to abandon this view in 1930.</p>
 </section>
 <section id="the-expansion-of-space-and-the-hubble-flow">
 <h3><span class="section-number">7.2.2. </span>The Expansion of Space and the Hubble Flow<a class="headerlink" href="#the-expansion-of-space-and-the-hubble-flow" title="Permalink to this headline">#</a></h3>
+<p>To understand what <em>the expansion of the universe</em> really means, suppose that the Earth were to expand, doubling in size during an hour’s time.</p>
+<p>Initially, Yellowstone National Park is <span class="math notranslate nohighlight">\(500\ \rm km\)</span> from Salt Lake City; Albuquerque is <span class="math notranslate nohighlight">\(1000\ \rm km\)</span> away; and Minneapolis is at <span class="math notranslate nohighlight">\(2000\ \rm km\)</span>.  An hour later, each of these distances have doubled (e.g., Yellowstone is now <span class="math notranslate nohighlight">\(1000\ \rm km\)</span>) so that a Salt Lake City resident would find Yellowstone drifted away at <span class="math notranslate nohighlight">\(500\ \rm km/hr\)</span>, Albuquerque moved away at <span class="math notranslate nohighlight">\(1000\ \rm km/hr\)</span>, and Minneapolis receded at <span class="math notranslate nohighlight">\(2000\ \rm km/hr\)</span>.  Thus a recessional velocity that is proportional to distance is the natural result of an expansion that is both <strong>isotropic</strong> and <strong>homogenous</strong> (i.e., same in magnitude in every direction and at every location).  Observers in yellow stone, Albuquerque, and Minneapolis would arrive at the same conclusion.  Everyone involved in the expansion sees everyone else moving away with a velocity that obey’s Hubble’s law.</p>
+<p>There is a vital distinction between the velocity of a galaxy through space (i.e., <strong>peculiar velocity</strong>) and its <strong>recessional velocity</strong> due to the expansion of the universe.  A galaxy’s recessional velocity is <em>not</em> due to its motion through space; instead the galaxy is being <em>carried</em> along with the surrounding space as the universe expands.  The motion of galaxies as they participate in the expansion of the universe is the <strong>Hubble flow</strong>.  In the same manner, a galaxy’s <strong>cosmological redshift</strong> is produced by the expansion as the wavelength of the light emitted by the galaxy is stretched along with the space through which the light travels.</p>
+<p>For this reason, the cosmological redshift is not related to the galaxy’s recessional velocity by the Doppler shift equations.  Those equations were derived for a static, <em>Euclidean</em> spacetime and do not include the effects of the expanding, <em>curved</em> spacetime of our universe.</p>
+<p>Nevertheless, astronomers frequently translate a measured redshift <span class="math notranslate nohighlight">\(z\)</span> into a radial velocity that a galaxy would have <em>if</em> it had a peculiar velocity instead of its actual recessional velocity.  For example, the statement that <em>quasar SDSS 1030+0524 appears to be moving away from us at more than <span class="math notranslate nohighlight">\(96\%\)</span> of the speed of light</em> must be interpreted with the above caveat in mind.  For <span class="math notranslate nohighlight">\(z \leq 2\)</span>, the distance estimate obtained using Hubble’s law (<a class="reference external" href="https://ui.adsabs.harvard.edu/abs/2004PASA...21...97D/abstract">Davis &amp; Lineweaver (2004)</a>),</p>
+<div class="amsmath math notranslate nohighlight" id="equation-54ad94ef-63c4-49ba-baed-6409b828f4e0">
+<span class="eqno">(7.5)<a class="headerlink" href="#equation-54ad94ef-63c4-49ba-baed-6409b828f4e0" title="Permalink to this equation">#</a></span>\[\begin{align}
+d \simeq \frac{c}{H_o} \frac{(z+1)^2 - 1}{(z+1)^2 + 1}, 
+\end{align}\]</div>
+<p>differs from actual proper distance (including the effects of curved spacetime) by less than <span class="math notranslate nohighlight">\(5\%\)</span>.  When <span class="math notranslate nohighlight">\(z\ll 1\)</span>, the expression for the distance assumes the nonrelativistic form</p>
+<div class="amsmath math notranslate nohighlight" id="equation-4757105c-a14e-4c40-b1e9-50dd5804d8bf">
+<span class="eqno">(7.6)<a class="headerlink" href="#equation-4757105c-a14e-4c40-b1e9-50dd5804d8bf" title="Permalink to this equation">#</a></span>\[\begin{align}
+d = \frac{cz}{H_o}, 
+\end{align}\]</div>
+<p>as would be found using Hubble’s law and significant errors in the distance arise when <span class="math notranslate nohighlight">\(z\gtrsim 0.13\)</span>.</p>
+<p>It is important to realize that although the universe is expanding, this does not mean that the orbits of the planets around the Sun have been expanding too.</p>
+<ul class="simple">
+<li><p>Gravitationally bound systems do not participate in the universal expansion.</p></li>
+<li><p>There is no compelling evidence that the constants that govern the fundamental laws of physics (e.g., Newton’s gravitational constant <span class="math notranslate nohighlight">\(G\)</span>) were once different from their present values.</p></li>
+<li><p>Thus the sizes of atoms, planetary systems, and galaxies have <em>not</em> changed because of the expansion of space.</p></li>
+</ul>
 </section>
 <section id="the-value-of-the-hubble-constant">
 <h3><span class="section-number">7.2.3. </span>The Value of the Hubble Constant<a class="headerlink" href="#the-value-of-the-hubble-constant" title="Permalink to this headline">#</a></h3>
