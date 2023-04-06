@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Introduction to Python &#8212; ASTR3220 Cosmology</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -641,9 +642,9 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="introduction-to-python">
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-python">
 <h1>Introduction to Python<a class="headerlink" href="#introduction-to-python" title="Permalink to this headline">#</a></h1>
-<div class="section" id="what-is-python">
+<section id="what-is-python">
 <h2>What is Python?<a class="headerlink" href="#what-is-python" title="Permalink to this headline">#</a></h2>
 <p>Python is an interpreted high-level programming language that converts human-friendly commands into computer instructions.  This means that it takes human-readable code as input and then interprets the code into machine language.  In a sense, other computer languages involve a similar process; however languages like C/C++ or Fortran are much more efficient at it.  But, those languages are categorized as compiled languages because they are converted to machine code once the compilation process is complete.  Python programs are analyzed by the interpreter “on the fly”, which causes Python to run much slower.  Luckily, hardware and software (OS) improvements have been so dramatic over the past 30+ years that the hit to performance is not as noticeable.  The advantage to coding in an interpreted language is that it is easier to tweak and debug because the variables are stored in local memory and there is no need to re-compile with every change.</p>
 <p>Additionally, Python can be easily run from the command-line, which allows users to experiment with Python commands without having to create a fully fledged program.  For this course, we will make use of Jupyter notebooks, which are similar to notebooks in Mathematica.  In the previous chapter, we experimented with storing variables and creating a numpy array.  Python can be used for arithmetic tasks as well.  Try this:</p>
@@ -719,8 +720,8 @@ title="Print to PDF"
 </div>
 </div>
 <p>You may be asking where this might be important.  Python includes a function for square root (e.g., <span class="math notranslate nohighlight">\(\sqrt{x}\)</span> = sqrt(X)), but not for higher roots.  Some Python (and C) programs will change 1/3 from a cube root into 0 and return 1.</p>
-</div>
-<div class="section" id="comments">
+</section>
+<section id="comments">
 <h2>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">#</a></h2>
 <p>Every programming language allows for the programmer to leave notes (or comments) within the code.  Adding comments to your code is very important because</p>
 <ul class="simple">
@@ -728,8 +729,8 @@ title="Print to PDF"
 <li><p>The <em>future person</em> to read the code may not be <em>future you</em> and they will not know what you were thinking.</p></li>
 </ul>
 <p>Comments can be designated with the # (hashtag) symbol, where the text that follows it is ignored by the interpreter until the next line.  However this can be impractical if you are providing a description of a function that takes many lines.  In this case, three ‘ (apostrophe) symbols are used to begin a <em>block comment</em>, where another three ‘ symbols are needed to end the block comment.  Otherwise, the interpreter will either return an error or not do anything at all.</p>
-</div>
-<div class="section" id="simple-input-output">
+</section>
+<section id="simple-input-output">
 <h2>Simple Input &amp; Output<a class="headerlink" href="#simple-input-output" title="Permalink to this headline">#</a></h2>
 <p>We could read from a file using the <em>genfromtxt</em> function from Numpy, but you may want to take in some user input “on the fly”.  This can be accomplished using the <em>input</em> function, where you will need to designate a variable to store the user input.  You could try the following in a python interpreter (like Google Colab):</p>
 <blockquote>
@@ -858,8 +859,8 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="variable-types">
+</section>
+<section id="variable-types">
 <h2>Variable Types<a class="headerlink" href="#variable-types" title="Permalink to this headline">#</a></h2>
 <p>Thus far, I hinted at the different types of variables in Python.  Those are the typical variables that exist in all programming languages.  However, there are two broad divisions in variable types in Python: a) <em>numeric</em> and <em>sequence</em> types. Numeric types hold a single number, such as an integer, floating point number, or a complex number (e.g., 2-3<em>i</em>).  Sequence types hold multiple objects (imagine a filled grocery bag), which could be single numbers, characters, or even collections of different things.</p>
 <ul class="simple">
@@ -999,7 +1000,7 @@ The element in the 0th row and 2nd column is:  3
 </div>
 </div>
 </div>
-<div class="section" id="sequence-tricks">
+<section id="sequence-tricks">
 <h3>Sequence Tricks<a class="headerlink" href="#sequence-tricks" title="Permalink to this headline">#</a></h3>
 <p>If you are needing to store of <em>N</em> numbers, but don’t know the values beforehand.  Here are two ways:</p>
 <ol class="simple">
@@ -1079,8 +1080,8 @@ Replacing an element of ValueData with a string:  [0, 2, 2, 3, &#39;Nina&#39;, 5
 </div>
 </div>
 <p>The last two lines mixed the data types so that a string is now in the list of values.  <strong>Do you think a sort will work?</strong></p>
-</div>
-<div class="section" id="iterables">
+</section>
+<section id="iterables">
 <h3>Iterables<a class="headerlink" href="#iterables" title="Permalink to this headline">#</a></h3>
 <p>Python allows for special functions called <em>iterables</em> that can contain the instructions to generate a list without allocating the memory.  A common iterable is the <strong>range</strong> function, which generates a list of <em>integers</em> given three parameters: starting value, stopping value, and increment (must be an integer).  This is especially useful if you need to quickly generate a range of indices for a process or array.</p>
 <div class="cell docutils container">
@@ -1152,9 +1153,9 @@ Replacing an element of ValueData with a string:  [0, 2, 2, 3, &#39;Nina&#39;, 5
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="mathematical-operators">
+</section>
+</section>
+<section id="mathematical-operators">
 <h2>Mathematical Operators<a class="headerlink" href="#mathematical-operators" title="Permalink to this headline">#</a></h2>
 <p>Thus far, you have seen typical arithmetic operators +-*/ on numerical values.  However, these operators don’t work the same way with lists.  The + operator for two lists does not add them together, rather it <strong>concatenates</strong> them (i.e., joins the lists).  A similar process occurs with strings because they are lists of characters.  The * operator makes copies of lists instead of multiplying the elements.</p>
 <p>Division (/) has a few quirks, where it works fine for floats.  But it does <em>third-grade</em> math for integers (i.e., the result is the integer portion of the actual answer).  There are instances when you might want the <em>third-grade</em> math behavior for floats, in which case you can use the floor division (//) operator.  At the beginning of this chapter, you saw that ** is responsible for exponentiation.  The modulo operator (%) returns the remainder, although it was also used for string conversions.</p>
@@ -1209,8 +1210,8 @@ The next value is  2
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="lines-in-python">
+</section>
+<section id="lines-in-python">
 <h2>Lines in Python<a class="headerlink" href="#lines-in-python" title="Permalink to this headline">#</a></h2>
 <p>Python uses spaces and indentation as part of the syntax.  This is in contrast to C/C++, Fortran, or JAVA that use (), {}, or ; to separate out bits of code.  The Python interpreter actually cares about blank spaces before commands on a line.  As a result, there are two types of lines: <strong>physical</strong> or <strong>logical</strong> lines.</p>
 <div class="cell docutils container">
@@ -1241,8 +1242,8 @@ this line is multiple     physical lines but is     just one logical line
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="control-structures">
+</section>
+<section id="control-structures">
 <h2>Control Structures<a class="headerlink" href="#control-structures" title="Permalink to this headline">#</a></h2>
 <p>Control statements direct or modify the flow of logic within a program thereby allowing the program to be flexible depending on what happens.  For example, “If you are hungry, then eat lunch” is a control statement.  Control statements require a conditional (boolean) to evaluate before taking an action.  Most control statements have a clear end point, where <strong>While</strong> does not (be careful with while loops).</p>
 <p>Conditionals
@@ -1411,10 +1412,10 @@ A conditional is anything that can be evaluated as either <strong>True</strong> 
 </pre></div>
 </div>
 <p>After executing the lines within the for loop, the next Item will be the next value in the Sequence.  The most common for is <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">i</span> <span class="pre">in</span> <span class="pre">range(start,stop)</span></code>, where the range function generates the sequence and <em>i</em> is simply the index within the range.  <strong>Make sure that the Sequence is not being changed within the for loop</strong>.</p>
-</div>
-<div class="section" id="functions">
+</section>
+<section id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">#</a></h2>
-<div class="section" id="defining-a-function">
+<section id="defining-a-function">
 <h3>Defining a function<a class="headerlink" href="#defining-a-function" title="Permalink to this headline">#</a></h3>
 <p>A <strong>function</strong> is a bit of code that you want to use more than once.  It can be a calculation, such as find the distance between two points, or it could be an action like draw a graph or save some data to a file.  Functions are defined using <strong>def</strong> and the function name must start with a letter, while the rest of the name can be composed of numbers, letters or underscore.  After the function name, there is a set of () that contains a list of input variables that are passed to the function.  The def command should end with a colon (:).  The lines following the def command are an indented block and non-indented lines (relative to the def command) are outside the function.</p>
 <p>Generally, the first line of a function is a comment block that describes the use of the function, including any assumptions for the input variables (e.g., type, format).  A function can return a value, but this is not required and depends on the inheritance of variables.  The return value can be numerical or a boolean (True or False).</p>
@@ -1543,8 +1544,8 @@ values after function call  4 5 9
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="passing-functions">
+</section>
+<section id="passing-functions">
 <h3>Passing functions<a class="headerlink" href="#passing-functions" title="Permalink to this headline">#</a></h3>
 <p>Python treats functions just like any other variable.  This means that you can store function in other variables or sequences.  Even passing functions into other functions is allowed.</p>
 <div class="cell docutils container">
@@ -1586,9 +1587,9 @@ function value at pi/6 is:  0.5773502691896257
 </div>
 </div>
 <p>The functions in this example are stored in a list, referred to as elements in lists, and passed to other functions.</p>
-</div>
-</div>
-<div class="section" id="program-structure">
+</section>
+</section>
+<section id="program-structure">
 <h2>Program Structure<a class="headerlink" href="#program-structure" title="Permalink to this headline">#</a></h2>
 <p>Python programs allow for a lot of flexibility, which is one of its strengths.  However, this much freedom can also be a source of confusion.  When we develop a program, we must employ some convention to make it easier for others to read and/or use.  This is similar to how we choose to write from left to right or drive on the <em>right</em> side of the road (those silly Brits).  As a result a common program structure is as follows:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#Program title</span>
@@ -1605,8 +1606,8 @@ function value at pi/6 is:  0.5773502691896257
 <span class="n">Program</span> <span class="n">end</span> <span class="c1">#sometimes you need to close the opened objects (files, figures, processing pool, etc.)</span>
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1620,7 +1621,7 @@ function value at pi/6 is:  0.5773502691896257
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./Preamble"
         },
         predefinedOutput: true

@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>9. Cosmology &#8212; ASTR3220 Cosmology</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -54,6 +55,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="canonical" href="https://saturnaxis.github.io/Cosmology/Chapter_29/cosmology.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -476,21 +479,245 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#newtonian-cosmology">
    9.1. Newtonian Cosmology
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#olber-s-paradox">
+     9.1.1. Olber’s Paradox
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-cosmological-principle">
+     9.1.2. The Cosmological Principle
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-simple-pressureless-dust-model-of-the-universe">
+     9.1.3. A Simple Pressureless “Dust” Model of the Universe
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-evolution-of-the-pressureless-dust-universe">
+     9.1.4. The Evolution of the Pressureless “Dust” Universe
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-age-of-the-pressureless-dust-universe">
+     9.1.5. The Age of the Pressureless “Dust” Universe
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-lookback-time">
+     9.1.6. The Lookback Time
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#extending-our-simple-model-to-include-pressure">
+     9.1.7. Extending Our Simple Model to Include Pressure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-deceleration-parameter">
+     9.1.8. The Deceleration Parameter
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#the-cosmic-microwave-background-cmb">
    9.2. The Cosmic Microwave Background (CMB)
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-steady-state-model-of-the-universe">
+     9.2.1. The Steady-State Model of the Universe
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-cooling-of-the-universe-after-the-big-bang">
+     9.2.2. The Cooling of the Universe after the Big Bang
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-discovery-of-the-cmb">
+     9.2.3. The Discovery of the CMB
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-dipole-anisotropy-of-the-cmb">
+     9.2.4. The Dipole Anisotropy of the CMB
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-sunyaev-zel-dovich-effect">
+     9.2.5. The Sunyaev-Zel’dovich Effect
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#does-the-cmb-constitute-a-preferred-frame-of-reference">
+     9.2.6. Does the CMB Constitute a Preferred Frame of Reference?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-two-component-model-of-the-universe">
+     9.2.7. A Two-component Model of the Universe
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#neutrino-decoupling">
+     9.2.8. Neutrino Decoupling
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-energy-density-of-relativistic-particles">
+     9.2.9. The Energy Density of Relativistic Particles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#transition-from-the-radiation-to-the-matter-era">
+     9.2.10. Transition from the Radiation to the Matter Era
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#expansion-in-the-two-component-model">
+     9.2.11. Expansion in the Two-component Model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#big-bang-nucleosynthesis">
+     9.2.12. Big Bang Nucleosynthesis
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-origin-of-the-cmb">
+     9.2.13. The origin of the CMB
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-surface-of-last-scattering">
+     9.2.14. The Surface of Last Scattering
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-conditions-at-recombination">
+     9.2.15. The Conditions at Recombination
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-dawn-of-precision-cosmology">
+     9.2.16. The Dawn of Precision Cosmology
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#relativistic-cosmology">
    9.3. Relativistic Cosmology
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#euclidean-elliptic-and-hyperbolic-geometries">
+     9.3.1. Euclidean, Elliptic, and Hyperbolic Geometries
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-robertson-walker-metric-for-curved-spacetime">
+     9.3.2. The Robertson-Walker Metric for Curved Spacetime
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-friedmann-equation">
+     9.3.3. The Friedmann Equation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-cosmological-constant">
+     9.3.4. The Cosmological Constant
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-effects-of-dark-energy">
+     9.3.5. The Effects of Dark Energy
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-lambda-era">
+     9.3.6. The
+     <span class="math notranslate nohighlight">
+      \(\Lambda\)
+     </span>
+     Era
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#model-universes-on-the-omega-m-0-omega-lambda-0-plane">
+     9.3.7. Model Universes on the
+     <span class="math notranslate nohighlight">
+      \(\Omega_{m,0}-\Omega_{\Lambda,0}\)
+     </span>
+     Plane
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#observational-cosmology">
    9.4. Observational Cosmology
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-origin-of-the-cosmological-redshift">
+     9.4.1. The Origin of the Cosmological Redshift
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#distances-to-the-most-remote-objects-in-the-universe">
+     9.4.2. Distances to the Most Remote Objects in the Universe
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-particle-horizon-and-the-horizon-distance">
+     9.4.3. The Particle Horizon and the Horizon Distance
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-arrival-of-photons">
+     9.4.4. The Arrival of Photons
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-maximum-visible-age-of-a-source">
+     9.4.5. The Maximum Visible Age of a Source
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-comoving-coordinate-varpi-z">
+     9.4.6. The Comoving Coordinate
+     <span class="math notranslate nohighlight">
+      \(\varpi(z)\)
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-proper-distance">
+     9.4.7. The Proper Distance
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-luminosity-distance">
+     9.4.8. The Luminosity Distance
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-redshift-magnitude-relation">
+     9.4.9. The Redshift Magnitude Relation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#angular-diameter-distance">
+     9.4.10. Angular Diameter Distance
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#homework">
@@ -523,21 +750,245 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#newtonian-cosmology">
    9.1. Newtonian Cosmology
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#olber-s-paradox">
+     9.1.1. Olber’s Paradox
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-cosmological-principle">
+     9.1.2. The Cosmological Principle
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-simple-pressureless-dust-model-of-the-universe">
+     9.1.3. A Simple Pressureless “Dust” Model of the Universe
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-evolution-of-the-pressureless-dust-universe">
+     9.1.4. The Evolution of the Pressureless “Dust” Universe
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-age-of-the-pressureless-dust-universe">
+     9.1.5. The Age of the Pressureless “Dust” Universe
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-lookback-time">
+     9.1.6. The Lookback Time
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#extending-our-simple-model-to-include-pressure">
+     9.1.7. Extending Our Simple Model to Include Pressure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-deceleration-parameter">
+     9.1.8. The Deceleration Parameter
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#the-cosmic-microwave-background-cmb">
    9.2. The Cosmic Microwave Background (CMB)
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-steady-state-model-of-the-universe">
+     9.2.1. The Steady-State Model of the Universe
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-cooling-of-the-universe-after-the-big-bang">
+     9.2.2. The Cooling of the Universe after the Big Bang
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-discovery-of-the-cmb">
+     9.2.3. The Discovery of the CMB
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-dipole-anisotropy-of-the-cmb">
+     9.2.4. The Dipole Anisotropy of the CMB
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-sunyaev-zel-dovich-effect">
+     9.2.5. The Sunyaev-Zel’dovich Effect
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#does-the-cmb-constitute-a-preferred-frame-of-reference">
+     9.2.6. Does the CMB Constitute a Preferred Frame of Reference?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-two-component-model-of-the-universe">
+     9.2.7. A Two-component Model of the Universe
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#neutrino-decoupling">
+     9.2.8. Neutrino Decoupling
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-energy-density-of-relativistic-particles">
+     9.2.9. The Energy Density of Relativistic Particles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#transition-from-the-radiation-to-the-matter-era">
+     9.2.10. Transition from the Radiation to the Matter Era
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#expansion-in-the-two-component-model">
+     9.2.11. Expansion in the Two-component Model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#big-bang-nucleosynthesis">
+     9.2.12. Big Bang Nucleosynthesis
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-origin-of-the-cmb">
+     9.2.13. The origin of the CMB
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-surface-of-last-scattering">
+     9.2.14. The Surface of Last Scattering
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-conditions-at-recombination">
+     9.2.15. The Conditions at Recombination
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-dawn-of-precision-cosmology">
+     9.2.16. The Dawn of Precision Cosmology
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#relativistic-cosmology">
    9.3. Relativistic Cosmology
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#euclidean-elliptic-and-hyperbolic-geometries">
+     9.3.1. Euclidean, Elliptic, and Hyperbolic Geometries
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-robertson-walker-metric-for-curved-spacetime">
+     9.3.2. The Robertson-Walker Metric for Curved Spacetime
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-friedmann-equation">
+     9.3.3. The Friedmann Equation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-cosmological-constant">
+     9.3.4. The Cosmological Constant
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-effects-of-dark-energy">
+     9.3.5. The Effects of Dark Energy
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-lambda-era">
+     9.3.6. The
+     <span class="math notranslate nohighlight">
+      \(\Lambda\)
+     </span>
+     Era
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#model-universes-on-the-omega-m-0-omega-lambda-0-plane">
+     9.3.7. Model Universes on the
+     <span class="math notranslate nohighlight">
+      \(\Omega_{m,0}-\Omega_{\Lambda,0}\)
+     </span>
+     Plane
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#observational-cosmology">
    9.4. Observational Cosmology
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-origin-of-the-cosmological-redshift">
+     9.4.1. The Origin of the Cosmological Redshift
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#distances-to-the-most-remote-objects-in-the-universe">
+     9.4.2. Distances to the Most Remote Objects in the Universe
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-particle-horizon-and-the-horizon-distance">
+     9.4.3. The Particle Horizon and the Horizon Distance
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-arrival-of-photons">
+     9.4.4. The Arrival of Photons
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-maximum-visible-age-of-a-source">
+     9.4.5. The Maximum Visible Age of a Source
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-comoving-coordinate-varpi-z">
+     9.4.6. The Comoving Coordinate
+     <span class="math notranslate nohighlight">
+      \(\varpi(z)\)
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-proper-distance">
+     9.4.7. The Proper Distance
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-luminosity-distance">
+     9.4.8. The Luminosity Distance
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-redshift-magnitude-relation">
+     9.4.9. The Redshift Magnitude Relation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#angular-diameter-distance">
+     9.4.10. Angular Diameter Distance
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#homework">
@@ -557,28 +1008,151 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="cosmology">
+  <section class="tex2jax_ignore mathjax_ignore" id="cosmology">
 <h1><span class="section-number">9. </span>Cosmology<a class="headerlink" href="#cosmology" title="Permalink to this headline">#</a></h1>
-<div class="section" id="newtonian-cosmology">
+<section id="newtonian-cosmology">
 <h2><span class="section-number">9.1. </span>Newtonian Cosmology<a class="headerlink" href="#newtonian-cosmology" title="Permalink to this headline">#</a></h2>
-</div>
-<div class="section" id="the-cosmic-microwave-background-cmb">
+<section id="olber-s-paradox">
+<h3><span class="section-number">9.1.1. </span>Olber’s Paradox<a class="headerlink" href="#olber-s-paradox" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-cosmological-principle">
+<h3><span class="section-number">9.1.2. </span>The Cosmological Principle<a class="headerlink" href="#the-cosmological-principle" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="a-simple-pressureless-dust-model-of-the-universe">
+<h3><span class="section-number">9.1.3. </span>A Simple Pressureless “Dust” Model of the Universe<a class="headerlink" href="#a-simple-pressureless-dust-model-of-the-universe" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-evolution-of-the-pressureless-dust-universe">
+<h3><span class="section-number">9.1.4. </span>The Evolution of the Pressureless “Dust” Universe<a class="headerlink" href="#the-evolution-of-the-pressureless-dust-universe" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-age-of-the-pressureless-dust-universe">
+<h3><span class="section-number">9.1.5. </span>The Age of the Pressureless “Dust” Universe<a class="headerlink" href="#the-age-of-the-pressureless-dust-universe" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-lookback-time">
+<h3><span class="section-number">9.1.6. </span>The Lookback Time<a class="headerlink" href="#the-lookback-time" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="extending-our-simple-model-to-include-pressure">
+<h3><span class="section-number">9.1.7. </span>Extending Our Simple Model to Include Pressure<a class="headerlink" href="#extending-our-simple-model-to-include-pressure" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-deceleration-parameter">
+<h3><span class="section-number">9.1.8. </span>The Deceleration Parameter<a class="headerlink" href="#the-deceleration-parameter" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="the-cosmic-microwave-background-cmb">
 <h2><span class="section-number">9.2. </span>The Cosmic Microwave Background (CMB)<a class="headerlink" href="#the-cosmic-microwave-background-cmb" title="Permalink to this headline">#</a></h2>
-</div>
-<div class="section" id="relativistic-cosmology">
+<section id="the-steady-state-model-of-the-universe">
+<h3><span class="section-number">9.2.1. </span>The Steady-State Model of the Universe<a class="headerlink" href="#the-steady-state-model-of-the-universe" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-cooling-of-the-universe-after-the-big-bang">
+<h3><span class="section-number">9.2.2. </span>The Cooling of the Universe after the Big Bang<a class="headerlink" href="#the-cooling-of-the-universe-after-the-big-bang" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-discovery-of-the-cmb">
+<h3><span class="section-number">9.2.3. </span>The Discovery of the CMB<a class="headerlink" href="#the-discovery-of-the-cmb" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-dipole-anisotropy-of-the-cmb">
+<h3><span class="section-number">9.2.4. </span>The Dipole Anisotropy of the CMB<a class="headerlink" href="#the-dipole-anisotropy-of-the-cmb" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-sunyaev-zel-dovich-effect">
+<h3><span class="section-number">9.2.5. </span>The Sunyaev-Zel’dovich Effect<a class="headerlink" href="#the-sunyaev-zel-dovich-effect" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="does-the-cmb-constitute-a-preferred-frame-of-reference">
+<h3><span class="section-number">9.2.6. </span>Does the CMB Constitute a Preferred Frame of Reference?<a class="headerlink" href="#does-the-cmb-constitute-a-preferred-frame-of-reference" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="a-two-component-model-of-the-universe">
+<h3><span class="section-number">9.2.7. </span>A Two-component Model of the Universe<a class="headerlink" href="#a-two-component-model-of-the-universe" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="neutrino-decoupling">
+<h3><span class="section-number">9.2.8. </span>Neutrino Decoupling<a class="headerlink" href="#neutrino-decoupling" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-energy-density-of-relativistic-particles">
+<h3><span class="section-number">9.2.9. </span>The Energy Density of Relativistic Particles<a class="headerlink" href="#the-energy-density-of-relativistic-particles" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="transition-from-the-radiation-to-the-matter-era">
+<h3><span class="section-number">9.2.10. </span>Transition from the Radiation to the Matter Era<a class="headerlink" href="#transition-from-the-radiation-to-the-matter-era" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="expansion-in-the-two-component-model">
+<h3><span class="section-number">9.2.11. </span>Expansion in the Two-component Model<a class="headerlink" href="#expansion-in-the-two-component-model" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="big-bang-nucleosynthesis">
+<h3><span class="section-number">9.2.12. </span>Big Bang Nucleosynthesis<a class="headerlink" href="#big-bang-nucleosynthesis" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-origin-of-the-cmb">
+<h3><span class="section-number">9.2.13. </span>The origin of the CMB<a class="headerlink" href="#the-origin-of-the-cmb" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-surface-of-last-scattering">
+<h3><span class="section-number">9.2.14. </span>The Surface of Last Scattering<a class="headerlink" href="#the-surface-of-last-scattering" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-conditions-at-recombination">
+<h3><span class="section-number">9.2.15. </span>The Conditions at Recombination<a class="headerlink" href="#the-conditions-at-recombination" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-dawn-of-precision-cosmology">
+<h3><span class="section-number">9.2.16. </span>The Dawn of Precision Cosmology<a class="headerlink" href="#the-dawn-of-precision-cosmology" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="relativistic-cosmology">
 <h2><span class="section-number">9.3. </span>Relativistic Cosmology<a class="headerlink" href="#relativistic-cosmology" title="Permalink to this headline">#</a></h2>
-</div>
-<div class="section" id="observational-cosmology">
+<section id="euclidean-elliptic-and-hyperbolic-geometries">
+<h3><span class="section-number">9.3.1. </span>Euclidean, Elliptic, and Hyperbolic Geometries<a class="headerlink" href="#euclidean-elliptic-and-hyperbolic-geometries" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-robertson-walker-metric-for-curved-spacetime">
+<h3><span class="section-number">9.3.2. </span>The Robertson-Walker Metric for Curved Spacetime<a class="headerlink" href="#the-robertson-walker-metric-for-curved-spacetime" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-friedmann-equation">
+<h3><span class="section-number">9.3.3. </span>The Friedmann Equation<a class="headerlink" href="#the-friedmann-equation" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-cosmological-constant">
+<h3><span class="section-number">9.3.4. </span>The Cosmological Constant<a class="headerlink" href="#the-cosmological-constant" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-effects-of-dark-energy">
+<h3><span class="section-number">9.3.5. </span>The Effects of Dark Energy<a class="headerlink" href="#the-effects-of-dark-energy" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-lambda-era">
+<h3><span class="section-number">9.3.6. </span>The <span class="math notranslate nohighlight">\(\Lambda\)</span> Era<a class="headerlink" href="#the-lambda-era" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="model-universes-on-the-omega-m-0-omega-lambda-0-plane">
+<h3><span class="section-number">9.3.7. </span>Model Universes on the <span class="math notranslate nohighlight">\(\Omega_{m,0}-\Omega_{\Lambda,0}\)</span> Plane<a class="headerlink" href="#model-universes-on-the-omega-m-0-omega-lambda-0-plane" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="observational-cosmology">
 <h2><span class="section-number">9.4. </span>Observational Cosmology<a class="headerlink" href="#observational-cosmology" title="Permalink to this headline">#</a></h2>
-</div>
-<div class="section" id="homework">
+<section id="the-origin-of-the-cosmological-redshift">
+<h3><span class="section-number">9.4.1. </span>The Origin of the Cosmological Redshift<a class="headerlink" href="#the-origin-of-the-cosmological-redshift" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="distances-to-the-most-remote-objects-in-the-universe">
+<h3><span class="section-number">9.4.2. </span>Distances to the Most Remote Objects in the Universe<a class="headerlink" href="#distances-to-the-most-remote-objects-in-the-universe" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-particle-horizon-and-the-horizon-distance">
+<h3><span class="section-number">9.4.3. </span>The Particle Horizon and the Horizon Distance<a class="headerlink" href="#the-particle-horizon-and-the-horizon-distance" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-arrival-of-photons">
+<h3><span class="section-number">9.4.4. </span>The Arrival of Photons<a class="headerlink" href="#the-arrival-of-photons" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-maximum-visible-age-of-a-source">
+<h3><span class="section-number">9.4.5. </span>The Maximum Visible Age of a Source<a class="headerlink" href="#the-maximum-visible-age-of-a-source" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-comoving-coordinate-varpi-z">
+<h3><span class="section-number">9.4.6. </span>The Comoving Coordinate <span class="math notranslate nohighlight">\(\varpi(z)\)</span><a class="headerlink" href="#the-comoving-coordinate-varpi-z" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-proper-distance">
+<h3><span class="section-number">9.4.7. </span>The Proper Distance<a class="headerlink" href="#the-proper-distance" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-luminosity-distance">
+<h3><span class="section-number">9.4.8. </span>The Luminosity Distance<a class="headerlink" href="#the-luminosity-distance" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="the-redshift-magnitude-relation">
+<h3><span class="section-number">9.4.9. </span>The Redshift Magnitude Relation<a class="headerlink" href="#the-redshift-magnitude-relation" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="angular-diameter-distance">
+<h3><span class="section-number">9.4.10. </span>Angular Diameter Distance<a class="headerlink" href="#angular-diameter-distance" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="homework">
 <h2><span class="section-number">9.5. </span><strong>Homework</strong><a class="headerlink" href="#homework" title="Permalink to this headline">#</a></h2>
 <div class="admonition-problem-1 admonition">
 <p class="admonition-title">Problem 1</p>
 <p>Problem 1 goes here.</p>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -592,7 +1166,7 @@ title="Print to PDF"
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./Chapter_29"
         },
         predefinedOutput: true
